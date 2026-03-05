@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre nosotros",
+    "solutions": "Nuestras soluciones",
+    "partners": "Socios",
+    "news": "Noticias",
+    "faq": "FAQ",
+    "contact": "Contacto",
+    "quote": "Solicitar cotización"
+  },
+  "hero": {
+    "title": "Leader Assurance",
+    "subtitle": "Su socio de confianza en seguros",
+    "description": "Le acompañamos en la protección de su salud, su patrimonio y sus actividades profesionales.",
+    "cta1": "Solicitar consulta",
+    "cta2": "Descubrir nuestras soluciones"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Soluciones adaptadas a cada necesidad",
+    "health": { "title": "Seguro de Salud", "description": "Proteja su salud y la de su familia con coberturas completas." },
+    "business": { "title": "Seguro Empresarial", "description": "Asegure sus actividades profesionales contra todos los riesgos." },
+    "liability": { "title": "Responsabilidad Civil", "description": "Cúbrase contra las consecuencias financieras de sus responsabilidades." },
+    "savings": { "title": "Ahorro e Inversión", "description": "Haga crecer su patrimonio con nuestras soluciones de ahorro." }
+  },
+  "why": {
+    "title": "¿Por qué elegir Leader Assurance?",
+    "subtitle": "Su asesor independiente en seguros",
+    "independent": "Asesor independiente en seguros",
+    "access": "Acceso a varias compañías asociadas",
+    "custom": "Soluciones personalizadas",
+    "analysis": "Análisis de riesgos",
+    "assistance": "Asistencia en caso de siniestro"
+  },
+  "stats": {
+    "clients": "Clientes atendidos",
+    "years": "Años de experiencia",
+    "partners": "Socios aseguradores",
+    "policies": "Pólizas gestionadas"
+  },
+  "testimonials": { "title": "Lo que dicen nuestros clientes", "subtitle": "La satisfacción del cliente es nuestra prioridad" },
+  "about": {
+    "title": "Sobre Leader Assurance",
+    "subtitle": "Su socio de confianza desde hace más de 10 años",
+    "description1": "Leader Assurance SARL es una firma de consultoría y corretaje de seguros con sede en Duala, Camerún.",
+    "description2": "Nuestro enfoque independiente nos permite seleccionar las mejores ofertas del mercado.",
+    "mission": "Nuestra Misión",
+    "missionText": "Ofrecer servicios de asesoría en seguros de calidad superior, personalizados y transparentes.",
+    "vision": "Nuestra Visión",
+    "visionText": "Convertirnos en la firma de corretaje de seguros de referencia en África Central.",
+    "team": "Nuestro Equipo"
+  },
+  "solutions": {
+    "title": "Nuestras Soluciones de Seguros",
+    "subtitle": "Coberturas completas para particulares y empresas",
+    "individuals": "Para Particulares",
+    "companies": "Para Empresas",
+    "learnMore": "Saber más",
+    "getQuote": "Solicitar cotización",
+    "advantages": "Ventajas",
+    "examples": "Ejemplos de situaciones"
+  },
+  "partners": {
+    "title": "Nuestros Socios",
+    "subtitle": "Trabajamos con las mejores compañías de seguros",
+    "description": "Leader Assurance trabaja con varias compañías de seguros reconocidas."
+  },
+  "news": {
+    "title": "Noticias y Consejos",
+    "subtitle": "Manténgase informado sobre seguros y gestión de riesgos",
+    "search": "Buscar un artículo...",
+    "categories": "Categorías",
+    "all": "Todos",
+    "readMore": "Leer más",
+    "share": "Compartir",
+    "recommended": "Artículos recomendados"
+  },
+  "calculator": {
+    "title": "Calculadora de Cotización",
+    "subtitle": "Obtenga una estimación rápida",
+    "type": "Tipo de seguro",
+    "age": "Edad",
+    "employees": "Número de empleados",
+    "coverage": "Nivel de cobertura",
+    "basic": "Básico",
+    "standard": "Estándar",
+    "premium": "Premium",
+    "calculate": "Obtener estimación",
+    "result": "Estimación mensual",
+    "disclaimer": "Esta estimación es indicativa.",
+    "personalized": "Solicitar cotización personalizada"
+  },
+  "faq": { "title": "Preguntas Frecuentes", "subtitle": "Encuentre rápidamente respuestas a sus preguntas" },
+  "contact": {
+    "title": "Contáctenos",
+    "subtitle": "Nuestro equipo está disponible para asistirle",
+    "name": "Nombre completo",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "send": "Enviar mensaje",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado con éxito!",
+    "error": "Error al enviar. Por favor intente de nuevo.",
+    "address": "Dirección",
+    "whatsapp": "Contactar via WhatsApp",
+    "schedule": "Horario de apertura",
+    "scheduleText": "Lunes - Viernes: 8h - 18h\nSábado: 9h - 13h"
+  },
+  "chat": {
+    "title": "Asistente Leader Assurance",
+    "placeholder": "Haga su pregunta...",
+    "send": "Enviar",
+    "welcome": "¡Hola! Soy el asistente de Leader Assurance. ¿Cómo puedo ayudarle hoy?",
+    "contact": "Contactar un asesor"
+  },
+  "cookie": {
+    "message": "Usamos cookies para mejorar su experiencia.",
+    "accept": "Aceptar",
+    "decline": "Rechazar",
+    "learnMore": "Saber más"
+  },
+  "footer": {
+    "tagline": "Su socio de confianza en seguros",
+    "quickLinks": "Enlaces rápidos",
+    "services": "Nuestros servicios",
+    "contact": "Contacto",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de uso",
+    "cookies": "Gestión de cookies",
+    "rights": "Todos los derechos reservados",
+    "follow": "Síguenos"
+  }
+}

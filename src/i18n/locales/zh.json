@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "solutions": "我们的解决方案",
+    "partners": "合作伙伴",
+    "news": "新闻",
+    "faq": "常见问题",
+    "contact": "联系我们",
+    "quote": "申请报价"
+  },
+  "hero": {
+    "title": "Leader Assurance",
+    "subtitle": "您值得信赖的保险伙伴",
+    "description": "我们陪伴您保护您的健康、财产和职业活动。",
+    "cta1": "申请咨询",
+    "cta2": "了解我们的解决方案"
+  },
+  "services": {
+    "title": "我们的服务",
+    "subtitle": "为每种需求量身定制的解决方案",
+    "health": { "title": "健康保险", "description": "用全面的保障保护您和家人的健康。" },
+    "business": { "title": "企业保险", "description": "为您的职业活动防范所有风险。" },
+    "liability": { "title": "民事责任", "description": "保护您免受责任带来的财务后果。" },
+    "savings": { "title": "储蓄与投资", "description": "用我们的储蓄解决方案增值您的财富。" }
+  },
+  "why": {
+    "title": "为什么选择Leader Assurance？",
+    "subtitle": "您的独立保险顾问",
+    "independent": "独立保险顾问",
+    "access": "接触多家合作公司",
+    "custom": "个性化解决方案",
+    "analysis": "风险分析",
+    "assistance": "理赔协助"
+  },
+  "stats": {
+    "clients": "服务客户",
+    "years": "年经验",
+    "partners": "保险合作伙伴",
+    "policies": "管理保单"
+  },
+  "testimonials": { "title": "客户评价", "subtitle": "客户满意度是我们的首要任务" },
+  "about": {
+    "title": "关于Leader Assurance",
+    "subtitle": "10多年来您值得信赖的合作伙伴",
+    "description1": "Leader Assurance有限责任公司是一家总部位于喀麦隆杜阿拉的保险咨询和经纪公司。",
+    "description2": "我们的独立方式使我们能够选择市场上最好的报价。",
+    "mission": "我们的使命",
+    "missionText": "提供优质、个性化和透明的保险咨询服务。",
+    "vision": "我们的愿景",
+    "visionText": "成为中部非洲的标杆保险经纪公司。",
+    "team": "我们的团队"
+  },
+  "solutions": {
+    "title": "我们的保险解决方案",
+    "subtitle": "为个人和企业提供全面保障",
+    "individuals": "个人",
+    "companies": "企业",
+    "learnMore": "了解更多",
+    "getQuote": "申请报价",
+    "advantages": "优势",
+    "examples": "情况示例"
+  },
+  "partners": {
+    "title": "我们的合作伙伴",
+    "subtitle": "我们与最优秀的保险公司合作",
+    "description": "Leader Assurance与多家知名保险公司合作。"
+  },
+  "news": {
+    "title": "新闻与建议",
+    "subtitle": "了解保险和风险管理的最新动态",
+    "search": "搜索文章...",
+    "categories": "类别",
+    "all": "全部",
+    "readMore": "阅读更多",
+    "share": "分享",
+    "recommended": "推荐文章"
+  },
+  "calculator": {
+    "title": "报价计算器",
+    "subtitle": "快速获取您的保险估价",
+    "type": "保险类型",
+    "age": "年龄",
+    "employees": "员工人数",
+    "coverage": "覆盖级别",
+    "basic": "基础",
+    "standard": "标准",
+    "premium": "高级",
+    "calculate": "获取估价",
+    "result": "月度估价",
+    "disclaimer": "此估价仅供参考。",
+    "personalized": "申请个性化报价"
+  },
+  "faq": { "title": "常见问题", "subtitle": "快速找到您问题的答案" },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "我们的团队随时为您提供帮助",
+    "name": "全名",
+    "email": "电子邮件",
+    "phone": "电话",
+    "subject": "主题",
+    "message": "留言",
+    "send": "发送消息",
+    "sending": "发送中...",
+    "success": "消息发送成功！",
+    "error": "发送失败，请重试。",
+    "address": "地址",
+    "whatsapp": "通过WhatsApp联系",
+    "schedule": "营业时间",
+    "scheduleText": "周一至周五：上午8点 - 下午6点\n周六：上午9点 - 下午1点"
+  },
+  "chat": {
+    "title": "Leader Assurance助手",
+    "placeholder": "提出您的问题...",
+    "send": "发送",
+    "welcome": "您好！我是Leader Assurance的助手。今天我能为您提供什么帮助？",
+    "contact": "联系顾问"
+  },
+  "cookie": {
+    "message": "我们使用Cookie来改善您的体验。",
+    "accept": "接受",
+    "decline": "拒绝",
+    "learnMore": "了解更多"
+  },
+  "footer": {
+    "tagline": "您值得信赖的保险伙伴",
+    "quickLinks": "快速链接",
+    "services": "我们的服务",
+    "contact": "联系方式",
+    "privacy": "隐私政策",
+    "terms": "使用条款",
+    "cookies": "Cookie管理",
+    "rights": "版权所有",
+    "follow": "关注我们"
+  }
+}

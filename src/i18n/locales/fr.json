@@ -1,0 +1,202 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "solutions": "Nos solutions",
+    "partners": "Partenaires",
+    "news": "Actualités",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "quote": "Demander un devis"
+  },
+  "hero": {
+    "title": "Leader Assurance",
+    "subtitle": "Votre partenaire de confiance en assurance",
+    "description": "Nous vous accompagnons dans la protection de votre santé, de votre patrimoine et de vos activités professionnelles.",
+    "cta1": "Demander une consultation",
+    "cta2": "Découvrir nos solutions"
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Des solutions adaptées à chaque besoin",
+    "health": {
+      "title": "Assurance Santé",
+      "description": "Protégez votre santé et celle de votre famille avec nos couvertures complètes."
+    },
+    "business": {
+      "title": "Assurance Entreprise",
+      "description": "Sécurisez vos activités professionnelles contre tous les risques."
+    },
+    "liability": {
+      "title": "Responsabilité Civile",
+      "description": "Couvrez-vous contre les conséquences financières de vos responsabilités."
+    },
+    "savings": {
+      "title": "Épargne & Investissement",
+      "description": "Faites fructifier votre patrimoine avec nos solutions d'épargne."
+    }
+  },
+  "why": {
+    "title": "Pourquoi choisir Leader Assurance ?",
+    "subtitle": "Votre conseiller indépendant en assurance",
+    "independent": "Conseiller indépendant en assurance",
+    "access": "Accès à plusieurs compagnies partenaires",
+    "custom": "Solutions personnalisées",
+    "analysis": "Analyse des risques",
+    "assistance": "Assistance en cas de sinistre"
+  },
+  "stats": {
+    "clients": "Clients accompagnés",
+    "years": "Années d'expérience",
+    "partners": "Partenaires d'assurance",
+    "policies": "Polices gérées"
+  },
+  "testimonials": {
+    "title": "Ce que disent nos clients",
+    "subtitle": "La satisfaction de nos clients est notre priorité"
+  },
+  "about": {
+    "title": "À propos de Leader Assurance",
+    "subtitle": "Votre partenaire de confiance depuis plus de 10 ans",
+    "description1": "Leader Assurance SARL est un cabinet de conseil et de courtage en assurance basé à Douala, Cameroun. Nous accompagnons particuliers et entreprises dans la gestion de leurs risques et la protection de leurs actifs.",
+    "description2": "Notre approche indépendante nous permet de sélectionner les meilleures offres du marché pour vous proposer des solutions sur mesure, adaptées à vos besoins spécifiques.",
+    "mission": "Notre Mission",
+    "missionText": "Offrir un service de conseil en assurance de qualité supérieure, personnalisé et transparent, pour permettre à nos clients de prendre les meilleures décisions en matière de protection.",
+    "vision": "Notre Vision",
+    "visionText": "Devenir le cabinet de courtage en assurance de référence en Afrique centrale, reconnu pour son expertise, son intégrité et son engagement envers l'excellence.",
+    "team": "Notre Équipe"
+  },
+  "solutions": {
+    "title": "Nos Solutions d'Assurance",
+    "subtitle": "Des couvertures complètes pour particuliers et entreprises",
+    "individuals": "Pour les Particuliers",
+    "companies": "Pour les Entreprises",
+    "learnMore": "En savoir plus",
+    "getQuote": "Demander un devis",
+    "advantages": "Avantages",
+    "examples": "Exemples de situations",
+    "health": {
+      "title": "Assurance Santé",
+      "description": "Une couverture complète pour vos soins médicaux et ceux de votre famille.",
+      "advantages": ["Remboursement des consultations", "Couverture hospitalisation", "Médicaments inclus", "Accès réseau médical élargi"],
+      "examples": ["Hospitalisation urgente", "Chirurgie programmée", "Soins dentaires", "Maternité"]
+    },
+    "life": {
+      "title": "Assurance Vie",
+      "description": "Protégez l'avenir financier de vos proches.",
+      "advantages": ["Capital garanti", "Rente viagère", "Fiscalité avantageuse", "Bénéficiaires désignés"],
+      "examples": ["Décès prématuré", "Invalidité permanente", "Protection famille", "Succession"]
+    },
+    "travel": {
+      "title": "Assurance Voyage",
+      "description": "Voyagez l'esprit tranquille partout dans le monde.",
+      "advantages": ["Assistance rapatriement", "Frais médicaux", "Annulation voyage", "Bagages perdus"],
+      "examples": ["Voyage d'affaires", "Vacances en famille", "Séjour étudiant", "Expatriation"]
+    },
+    "savings": {
+      "title": "Assurance Épargne",
+      "description": "Construisez votre patrimoine avec des produits d'épargne sécurisés.",
+      "advantages": ["Rendement garanti", "Épargne progressive", "Liquidité", "Protection décès incluse"],
+      "examples": ["Retraite", "Études enfants", "Projet immobilier", "Constitution patrimoine"]
+    },
+    "enterprise": {
+      "title": "Assurance Entreprise",
+      "description": "Protégez votre activité professionnelle contre tous les risques.",
+      "advantages": ["Multirisque professionnel", "Pertes d'exploitation", "Protection actifs", "Couverture globale"],
+      "examples": ["Incendie locaux", "Vol équipements", "Dommages tiers", "Interruption activité"]
+    },
+    "liability": {
+      "title": "Responsabilité Civile Pro",
+      "description": "Couvrez votre responsabilité professionnelle.",
+      "advantages": ["Protection juridique", "Indemnisation dommages", "Défense intérêts", "Couverture erreurs"],
+      "examples": ["Erreur conseils", "Préjudice client", "Litige contractuel", "Dommages corporels"]
+    },
+    "employees": {
+      "title": "Assurance Employés",
+      "description": "Protégez votre capital humain avec des solutions adaptées.",
+      "advantages": ["Prévoyance collective", "Complémentaire santé", "Accidents travail", "Fidélisation talents"],
+      "examples": ["Maladie salarié", "Accident travail", "Décès employé", "Invalidité"]
+    },
+    "assets": {
+      "title": "Protection des Actifs",
+      "description": "Sécurisez tous vos biens et équipements professionnels.",
+      "advantages": ["Tous risques matériels", "Flotte automobile", "Machines industrielles", "Informatique"],
+      "examples": ["Destruction matériel", "Vol équipements", "Bris de machine", "Dégât des eaux"]
+    }
+  },
+  "partners": {
+    "title": "Nos Partenaires",
+    "subtitle": "Nous travaillons avec les meilleures compagnies d'assurance",
+    "description": "Leader Assurance travaille avec plusieurs compagnies d'assurance reconnues afin d'offrir les meilleures solutions adaptées aux besoins de nos clients."
+  },
+  "news": {
+    "title": "Actualités & Conseils",
+    "subtitle": "Restez informé sur l'assurance et la gestion des risques",
+    "search": "Rechercher un article...",
+    "categories": "Catégories",
+    "all": "Tous",
+    "readMore": "Lire la suite",
+    "share": "Partager",
+    "recommended": "Articles recommandés"
+  },
+  "calculator": {
+    "title": "Calculateur de Devis",
+    "subtitle": "Obtenez une estimation rapide de votre assurance",
+    "type": "Type d'assurance",
+    "age": "Âge",
+    "employees": "Nombre d'employés",
+    "coverage": "Niveau de couverture",
+    "basic": "Basique",
+    "standard": "Standard",
+    "premium": "Premium",
+    "calculate": "Obtenir une estimation",
+    "result": "Estimation mensuelle",
+    "disclaimer": "Cette estimation est indicative. Contactez-nous pour un devis personnalisé.",
+    "personalized": "Demander un devis personnalisé"
+  },
+  "faq": {
+    "title": "Questions Fréquentes",
+    "subtitle": "Trouvez rapidement les réponses à vos questions"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Notre équipe est disponible pour vous accompagner",
+    "name": "Nom complet",
+    "email": "Email",
+    "phone": "Téléphone",
+    "subject": "Sujet",
+    "message": "Message",
+    "send": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé avec succès !",
+    "error": "Erreur lors de l'envoi. Veuillez réessayer.",
+    "address": "Adresse",
+    "whatsapp": "Contacter via WhatsApp",
+    "schedule": "Horaires d'ouverture",
+    "scheduleText": "Lundi - Vendredi : 8h00 - 18h00\nSamedi : 9h00 - 13h00"
+  },
+  "chat": {
+    "title": "Assistant Leader Assurance",
+    "placeholder": "Posez votre question...",
+    "send": "Envoyer",
+    "welcome": "Bonjour ! Je suis l'assistant de Leader Assurance. Comment puis-je vous aider aujourd'hui ?",
+    "contact": "Contacter un conseiller"
+  },
+  "cookie": {
+    "message": "Nous utilisons des cookies pour améliorer votre expérience sur notre site.",
+    "accept": "Accepter",
+    "decline": "Refuser",
+    "learnMore": "En savoir plus"
+  },
+  "footer": {
+    "tagline": "Votre partenaire de confiance en assurance",
+    "quickLinks": "Liens rapides",
+    "services": "Nos services",
+    "contact": "Contact",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "cookies": "Gestion des cookies",
+    "rights": "Tous droits réservés",
+    "follow": "Suivez-nous"
+  }
+}
