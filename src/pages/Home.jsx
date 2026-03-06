@@ -71,7 +71,7 @@ const articles = [
     title: 'Comprendre l\'assurance santé au Cameroun',
     excerpt: 'Découvrez tout ce que vous devez savoir sur l\'assurance santé et comment choisir la meilleure couverture pour votre famille.',
     category: 'Santé',
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=250&fit=crop',
+    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=250&fit=crop',
     date: '15 Février 2025',
     slug: 'assurance-sante-cameroun'
   },

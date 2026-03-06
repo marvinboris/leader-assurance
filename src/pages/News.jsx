@@ -20,7 +20,7 @@ const articles = [
     title: 'Comprendre l\'assurance santé au Cameroun',
     excerpt: 'Découvrez tout ce que vous devez savoir sur l\'assurance santé et comment choisir la meilleure couverture pour votre famille au Cameroun.',
     category: 'Santé',
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=450&fit=crop',
+    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=450&fit=crop',
     date: '15 Février 2025',
     readTime: '5 min',
     content: `L'assurance santé est l'une des protections les plus importantes que vous puissiez offrir à votre famille. Au Cameroun, le système de santé public ne couvre pas toujours l'intégralité des frais médicaux, ce qui rend l'assurance santé privée indispensable.

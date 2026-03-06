@@ -31,7 +31,7 @@ const individualsData = [
     icon: Heart,
     color: 'text-red-600 bg-red-50',
     borderColor: 'border-red-100',
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=500&h=300&fit=crop',
+    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&h=300&fit=crop',
   },
   {
     key: 'life',
