@@ -19,31 +19,22 @@
   "services": {
     "title": "Our Services",
     "subtitle": "Solutions tailored to every need",
-    "health": {
-      "title": "Health Insurance",
-      "description": "Protect your health and your family's with comprehensive coverage."
-    },
-    "business": {
-      "title": "Business Insurance",
-      "description": "Secure your professional activities against all risks."
-    },
-    "liability": {
-      "title": "Civil Liability",
-      "description": "Cover yourself against the financial consequences of your liabilities."
-    },
-    "savings": {
-      "title": "Savings & Investment",
-      "description": "Grow your wealth with our savings solutions."
-    }
+    "health": { "title": "Health Insurance", "description": "Protect your health and your family's with comprehensive coverage." },
+    "business": { "title": "Business Insurance", "description": "Secure your professional activities against all risks." },
+    "liability": { "title": "Civil Liability", "description": "Cover yourself against the financial consequences of your liabilities." },
+    "savings": { "title": "Savings & Investment", "description": "Grow your wealth with our savings solutions." }
   },
   "why": {
     "title": "Why choose Leader Assurance?",
     "subtitle": "Your independent insurance advisor",
+    "ourDifference": "Our Difference",
     "independent": "Independent insurance advisor",
     "access": "Access to multiple partner companies",
     "custom": "Personalized solutions",
     "analysis": "Risk analysis",
-    "assistance": "Claims assistance"
+    "assistance": "Claims assistance",
+    "learnMore": "Learn more",
+    "contactUs": "Contact us"
   },
   "stats": {
     "clients": "Clients Served",
@@ -53,7 +44,42 @@
   },
   "testimonials": {
     "title": "What our clients say",
-    "subtitle": "Client satisfaction is our priority"
+    "subtitle": "Client satisfaction is our priority",
+    "list": [
+      { "name": "Jean-Paul Mbarga", "role": "Director, SME Douala", "text": "Leader Assurance helped us find coverage suited to our business while optimizing costs. Professional and responsive service." },
+      { "name": "Marie-Claire Ekoto", "role": "Individual, Yaoundé", "text": "Thanks to the health insurance offered by Leader Assurance, my family and I are well protected. I highly recommend their services." },
+      { "name": "Emmanuel Nganou", "role": "Business owner", "text": "A serious firm that truly cares for its clients. They did a complete risk analysis and proposed the best solutions for us." }
+    ]
+  },
+  "home": {
+    "teamSubtitle": "Dedicated experts at your service",
+    "viewAll": "View all",
+    "viewAllArticles": "View all articles",
+    "ctaTitle": "Ready to protect what matters most?",
+    "ctaDesc": "Contact our experts and get a free personalized quote today.",
+    "getFreeQuote": "Get a free quote",
+    "team": [
+      { "name": "General Manager", "role": "CEO & Founder" },
+      { "name": "Sales Manager", "role": "Commercial Director" },
+      { "name": "Senior Advisor", "role": "Life Insurance Expert" },
+      { "name": "Corporate Manager", "role": "Business Insurance Expert" }
+    ],
+    "articles": [
+      { "title": "Understanding health insurance in Cameroon", "excerpt": "Discover everything you need to know about health insurance and how to choose the best coverage for your family.", "category": "Health", "date": "February 15, 2025" },
+      { "title": "Why businesses need protection", "excerpt": "The financial risks facing African businesses and how insurance can protect them effectively.", "category": "Business", "date": "January 3, 2025" },
+      { "title": "Insurance trends in Africa", "excerpt": "The African insurance market is booming. Analysis of new trends and opportunities.", "category": "Trends", "date": "December 20, 2024" }
+    ],
+    "calculatorPlaceholder": "-- Choose --",
+    "calculatorOptions": {
+      "sante": "Health Insurance",
+      "vie": "Life Insurance",
+      "voyage": "Travel Insurance",
+      "epargne": "Savings",
+      "entreprise": "Business Insurance",
+      "responsabilite": "Civil Liability",
+      "employes": "Employee Insurance",
+      "actifs": "Asset Protection"
+    }
   },
   "about": {
     "title": "About Leader Assurance",
@@ -64,7 +90,42 @@
     "missionText": "To offer superior quality, personalized and transparent insurance advisory services, enabling our clients to make the best protection decisions.",
     "vision": "Our Vision",
     "visionText": "To become the reference insurance brokerage firm in Central Africa, recognized for its expertise, integrity and commitment to excellence.",
-    "team": "Our Team"
+    "team": "Our Team",
+    "ourHistory": "Our Story",
+    "certifiedAdvisor": "Certified Insurance Advisor",
+    "clientsSatisfied": "Satisfied clients",
+    "yearsExperience": "Years of experience",
+    "policiesManaged": "Policies managed",
+    "valuesTitle": "Our Values",
+    "valuesSubtitle": "The principles that guide each of our actions",
+    "journeyTitle": "Our Journey",
+    "journeySubtitle": "15 years of excellence serving our clients",
+    "teamSubtitle": "Passionate experts at your service",
+    "ctaTitle": "Let's work together",
+    "ctaDesc": "Our team is ready to support you in your insurance strategy.",
+    "contactUs": "Get in touch",
+    "values": [
+      { "title": "Integrity", "description": "We act with honesty and transparency in all our interactions." },
+      { "title": "Commitment", "description": "We are fully committed to the satisfaction and protection of our clients." },
+      { "title": "Excellence", "description": "We strive for excellence in every piece of advice and service we offer." },
+      { "title": "Proximity", "description": "We build lasting relationships based on trust and respect." }
+    ],
+    "teamMembers": [
+      { "name": "General Manager", "role": "CEO & Founder", "bio": "Insurance expert with over 15 years of experience in the financial and insurance sector in Central Africa." },
+      { "name": "Sales Manager", "role": "Commercial Director", "bio": "Specialist in commercial development and client relations with expertise in business insurance products." },
+      { "name": "Senior Advisor", "role": "Life & Health Insurance Expert", "bio": "Certified consultant in life and health insurance, she guides individuals in choosing their coverage." },
+      { "name": "Corporate Manager", "role": "Business Insurance Expert", "bio": "Specialist in professional risks and business protection for small and large organizations." },
+      { "name": "Legal Counsel", "role": "Legal Advisor", "bio": "Expert in insurance law, he ensures compliance and supports clients in claims situations." },
+      { "name": "Assistant", "role": "Client Relations", "bio": "First point of contact for our clients, she provides a warm welcome and attentive follow-up on each file." }
+    ],
+    "milestones": [
+      { "year": "2010", "title": "Foundation", "description": "Creation of Leader Assurance SARL in Douala, Cameroon." },
+      { "year": "2013", "title": "Expansion", "description": "Broadening of the partner portfolio and services offered." },
+      { "year": "2016", "title": "Growth", "description": "Reaching 200 active clients and 8 partner companies." },
+      { "year": "2019", "title": "Digitalization", "description": "Launch of our digital tools to better serve our clients." },
+      { "year": "2022", "title": "Recognition", "description": "Awards for excellence in customer service in Central Africa." },
+      { "year": "2025", "title": "Today", "description": "Over 500 clients assisted and 15 insurance partners." }
+    ]
   },
   "solutions": {
     "title": "Our Insurance Solutions",
@@ -72,9 +133,21 @@
     "individuals": "For Individuals",
     "companies": "For Companies",
     "learnMore": "Learn more",
+    "lessDetails": "Less details",
     "getQuote": "Get a quote",
     "advantages": "Advantages",
     "examples": "Situation examples",
+    "howItWorks": "How does it work?",
+    "howItWorksSubtitle": "A simple and transparent process",
+    "ctaTitle": "Need a tailored solution?",
+    "ctaDesc": "Our experts guide you in choosing the best protection.",
+    "ctaButton": "Request a personalized quote",
+    "steps": [
+      { "step": "01", "title": "Consultation", "description": "Initial exchange with our advisor to understand your needs and situation." },
+      { "step": "02", "title": "Analysis", "description": "In-depth analysis of your risks and identification of suitable solutions." },
+      { "step": "03", "title": "Proposal", "description": "Presentation of personalized offers from our best partners." },
+      { "step": "04", "title": "Subscription", "description": "Contract finalization and support throughout the duration of your coverage." }
+    ],
     "health": {
       "title": "Health Insurance",
       "description": "Comprehensive coverage for your medical care and your family's.",
@@ -127,7 +200,29 @@
   "partners": {
     "title": "Our Partners",
     "subtitle": "We work with the best insurance companies",
-    "description": "Leader Assurance works with several recognized insurance companies to offer the best solutions tailored to our clients' needs."
+    "description": "Leader Assurance works with several recognized insurance companies to offer the best solutions tailored to our clients' needs.",
+    "ourCompanies": "Our Partner Companies",
+    "whyBroker": "Why go through a broker?",
+    "whyBrokerSubtitle": "The advantages of working with Leader Assurance",
+    "certified": "Certified and accredited",
+    "certifiedDesc": "Leader Assurance is duly accredited by Cameroonian regulatory authorities (CIMA - Inter-African Conference of Insurance Markets), guaranteeing our compliance and your protection.",
+    "contactUs": "Contact us",
+    "list": [
+      { "specialty": "Life & Non-life", "description": "Market leader in Cameroon, Activa offers a full range of insurance products." },
+      { "specialty": "All risks", "description": "Recognized expert in business and individual insurance in Central Africa." },
+      { "specialty": "Multi-services", "description": "Leading international group with a strong presence in Africa." },
+      { "specialty": "Life & Savings", "description": "Specialist in life insurance and savings products in sub-Saharan Africa." },
+      { "specialty": "Business", "description": "Reference in business insurance and industrial risk management." },
+      { "specialty": "Health", "description": "Expert in health insurance solutions for businesses and individuals." },
+      { "specialty": "Provident", "description": "International specialist in life insurance and provident products." },
+      { "specialty": "Life", "description": "Cameroonian company specializing in life insurance and derivatives." }
+    ],
+    "advantagesList": [
+      { "title": "Multi-company access", "description": "We compare offers from multiple companies to offer you the best rate." },
+      { "title": "Condition negotiation", "description": "Our business volume allows us to negotiate preferential conditions." },
+      { "title": "Verified solvency", "description": "We work only with financially sound and accredited companies." },
+      { "title": "Proximity service", "description": "A single contact at Leader Assurance to manage all your contracts." }
+    ]
   },
   "news": {
     "title": "News & Advice",
@@ -137,7 +232,22 @@
     "all": "All",
     "readMore": "Read more",
     "share": "Share",
-    "recommended": "Recommended articles"
+    "recommended": "Recommended articles",
+    "notFound": "No article found for your search.",
+    "readingTime": "read",
+    "backToArticles": "Back to articles",
+    "needAdvice": "Need advice?",
+    "needAdviceDesc": "Our experts are available to answer all your insurance questions.",
+    "contactUs": "Contact us",
+    "categoryList": ["All", "Health", "Business", "Trends", "Tips", "Protection", "Savings"],
+    "articles": [
+      { "title": "Understanding health insurance in Cameroon", "excerpt": "Discover everything you need to know about health insurance and how to choose the best coverage for your family in Cameroon.", "category": "Health", "date": "February 15, 2025", "readTime": "5 min" },
+      { "title": "Why businesses need protection", "excerpt": "The financial risks facing African businesses and how insurance can protect them effectively.", "category": "Business", "date": "January 3, 2025", "readTime": "7 min" },
+      { "title": "Insurance trends in Africa", "excerpt": "The African insurance market is booming. Analysis of new trends and opportunities.", "category": "Trends", "date": "December 20, 2024", "readTime": "6 min" },
+      { "title": "How to choose the right insurance", "excerpt": "Practical guide to selecting the insurance coverage suited to your specific needs.", "category": "Tips", "date": "November 5, 2024", "readTime": "8 min" },
+      { "title": "The importance of civil liability", "excerpt": "Why civil liability insurance is essential for individuals and professionals.", "category": "Protection", "date": "October 15, 2024", "readTime": "5 min" },
+      { "title": "Life insurance: save and protect", "excerpt": "Discover how life insurance can serve as both a savings tool and protection for your family.", "category": "Savings", "date": "October 1, 2024", "readTime": "6 min" }
+    ]
   },
   "calculator": {
     "title": "Quote Calculator",
@@ -156,7 +266,53 @@
   },
   "faq": {
     "title": "Frequently Asked Questions",
-    "subtitle": "Quickly find answers to your questions"
+    "subtitle": "Quickly find answers to your questions",
+    "searchPlaceholder": "Search for a question...",
+    "notFound": "No question found for your search.",
+    "notAnswered": "Didn't find your answer?",
+    "notAnsweredDesc": "Our team of advisors is available to answer all your specific questions.",
+    "contactUs": "Contact us",
+    "all": "All",
+    "data": [
+      {
+        "key": "general",
+        "category": "General",
+        "questions": [
+          { "q": "What is the role of an insurance broker?", "a": "An insurance broker is an independent intermediary who represents the client's interests. Unlike an exclusive agent of one company, the broker can compare offers from multiple insurers to propose the best solution for your profile and needs." },
+          { "q": "Why use Leader Assurance rather than going directly to a company?", "a": "Leader Assurance offers several advantages: access to multiple companies, personalized and objective advice, negotiation of better conditions, claims support, and a single point of contact for all your contracts. Our service is often at no extra cost to the client." },
+          { "q": "Is Leader Assurance an insurance company?", "a": "No, Leader Assurance is an insurance brokerage and advisory firm. We do not directly bear risks but work with licensed insurance companies to offer you the best coverage." },
+          { "q": "Are you accredited by regulatory authorities?", "a": "Yes, Leader Assurance is duly accredited in accordance with the requirements of CIMA (Inter-African Conference of Insurance Markets) which regulates the insurance sector in Central Africa, including Cameroon." }
+        ]
+      },
+      {
+        "key": "quotes",
+        "category": "Quotes & Contracts",
+        "questions": [
+          { "q": "How do I get a quote?", "a": "You can get a quote in several ways: by filling out our online form on the Contact page, by calling us at +237 696 41 10 12 or +237 681 80 69 75, via WhatsApp, or by visiting our offices in Akwa, Douala. Our response is generally within 24-48 hours." },
+          { "q": "Are quotes free?", "a": "Yes, all our quotes and initial consultations are completely free and without obligation. You are not bound by anything until you have signed a contract." },
+          { "q": "How long does it take to subscribe to insurance?", "a": "Depending on the type of insurance, the time varies. For simple insurance (health, life), subscription can be done in 24 to 48 hours. For more complex coverage (businesses, major assets), the process may take 5 to 10 business days for risk analysis and finalization." },
+          { "q": "Can the contract be modified after subscription?", "a": "Yes, your contracts can be adapted to the evolution of your needs. Endorsements can be added to modify guarantees, capital or beneficiaries. Contact your Leader Assurance advisor for any modification request." }
+        ]
+      },
+      {
+        "key": "business",
+        "category": "Business",
+        "questions": [
+          { "q": "Can businesses customize their coverage?", "a": "Absolutely! This is one of our strengths. Each company has specific risks related to its sector, size and activities. We carry out a complete risk analysis to design tailor-made coverage that exactly meets your needs without excess." },
+          { "q": "What types of businesses can be insured?", "a": "We cover all types of businesses: small businesses, SMEs, large companies, liberal professions, traders, industrialists. Our solutions adapt to all sectors: commerce, industry, services, health, technology, etc." },
+          { "q": "Is professional civil liability insurance mandatory?", "a": "Professional liability is not always legally mandatory for all professions in Cameroon, but it is strongly recommended for any professional activity. It protects your business against the financial consequences of errors, faults or omissions in the exercise of your activity." }
+        ]
+      },
+      {
+        "key": "claims",
+        "category": "Claims",
+        "questions": [
+          { "q": "What should I do in case of a claim?", "a": "In case of a claim: 1) Secure people and property if possible. 2) Immediately contact Leader Assurance and/or the insurance company. 3) Gather evidence (photos, testimonies). 4) Fill out the claim declaration within the deadlines set in the contract. Our team accompanies you throughout this procedure." },
+          { "q": "How long does it take to receive compensation after a claim?", "a": "Deadlines vary depending on the nature and complexity of the claim. For simple claims, compensation can occur within a few weeks. For complex claims requiring expertise, the deadline may be 1 to 3 months. We actively follow each file to accelerate the process." },
+          { "q": "Does Leader Assurance help me in case of dispute with the insurance company?", "a": "Yes, one of our essential roles is to defend your interests against insurance companies. In case of disagreement or dispute, we intervene as your representative to obtain fair and contractually-compliant compensation." }
+        ]
+      }
+    ]
   },
   "contact": {
     "title": "Contact Us",
@@ -173,12 +329,29 @@
     "address": "Address",
     "whatsapp": "Contact via WhatsApp",
     "schedule": "Opening hours",
-    "scheduleText": "Monday - Friday: 8am - 6pm\nSaturday: 9am - 1pm"
+    "scheduleText": "Monday - Friday: 8am - 6pm\nSaturday: 9am - 1pm",
+    "ourCoordinates": "Our contact details",
+    "coordinatesDesc": "Contact us by your preferred method. We respond quickly.",
+    "phones": "Phones",
+    "sendMessage": "Send us a message",
+    "replyDelay": "We will reply as soon as possible.",
+    "fillRequired": "Please fill in all required fields.",
+    "messagePlaceholder": "Describe your insurance need...",
+    "subjectPlaceholder": "-- Choose a subject --",
+    "subjectOptions": {
+      "devis": "Quote request",
+      "sante": "Health Insurance",
+      "entreprise": "Business Insurance",
+      "vie": "Life Insurance",
+      "sinistre": "Claim declaration",
+      "autre": "Other"
+    }
   },
   "chat": {
     "title": "Leader Assurance Assistant",
     "placeholder": "Ask your question...",
     "send": "Send",
+    "online": "Online",
     "welcome": "Hello! I am the Leader Assurance assistant. How can I help you today?",
     "contact": "Contact an advisor"
   },

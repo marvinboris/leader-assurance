@@ -14,15 +14,10 @@ function AnimatedSection({ children }) {
   return <motion.div ref={ref} initial="hidden" animate={inView ? 'visible' : 'hidden'} variants={stagger}>{children}</motion.div>
 }
 
-const articles = [
+const articlesConfig = [
   {
     slug: 'assurance-sante-cameroun',
-    title: 'Comprendre l\'assurance santé au Cameroun',
-    excerpt: 'Découvrez tout ce que vous devez savoir sur l\'assurance santé et comment choisir la meilleure couverture pour votre famille au Cameroun.',
-    category: 'Santé',
     image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=450&fit=crop',
-    date: '15 Février 2025',
-    readTime: '5 min',
     content: `L'assurance santé est l'une des protections les plus importantes que vous puissiez offrir à votre famille. Au Cameroun, le système de santé public ne couvre pas toujours l'intégralité des frais médicaux, ce qui rend l'assurance santé privée indispensable.
 
 **Qu'est-ce que l'assurance santé ?**
@@ -42,12 +37,7 @@ Le choix dépend de plusieurs facteurs : votre âge, votre situation familiale, 
   },
   {
     slug: 'protection-entreprises',
-    title: 'Pourquoi les entreprises doivent se protéger',
-    excerpt: 'Les risques financiers auxquels font face les entreprises africaines et comment l\'assurance peut les protéger efficacement.',
-    category: 'Entreprise',
     image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&h=450&fit=crop',
-    date: '3 Janvier 2025',
-    readTime: '7 min',
     content: `Les entreprises camerounaises font face à de nombreux risques qui peuvent mettre en péril leur activité. L'assurance entreprise est une solution indispensable pour se protéger contre ces aléas.
 
 **Les principaux risques pour les entreprises**
@@ -67,12 +57,7 @@ Notre équipe d'experts analyse votre activité, identifie vos risques spécifiq
   },
   {
     slug: 'tendances-assurance-afrique',
-    title: 'Les tendances de l\'assurance en Afrique',
-    excerpt: 'Le marché de l\'assurance africain est en pleine croissance. Analyse des nouvelles tendances et opportunités.',
-    category: 'Tendances',
     image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=450&fit=crop',
-    date: '20 Décembre 2024',
-    readTime: '6 min',
     content: `Le marché de l'assurance en Afrique connaît une croissance remarquable, portée par l'émergence d'une classe moyenne, la digitalisation et une prise de conscience croissante de l'importance de la protection.
 
 **La croissance du marché africain**
@@ -92,12 +77,7 @@ Le Cameroun se positionne comme un hub assurantiel en Afrique centrale, avec une
   },
   {
     slug: 'choisir-bonne-assurance',
-    title: 'Comment choisir la bonne assurance',
-    excerpt: 'Guide pratique pour sélectionner la couverture d\'assurance adaptée à vos besoins spécifiques.',
-    category: 'Conseils',
     image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=450&fit=crop',
-    date: '5 Novembre 2024',
-    readTime: '8 min',
     content: `Choisir une assurance peut sembler complexe face à la multitude d'offres disponibles. Voici un guide pratique pour vous aider à prendre la bonne décision.
 
 **Étape 1 : Identifier vos besoins**
@@ -118,12 +98,7 @@ Un courtier indépendant comme Leader Assurance peut vous faire économiser du t
   },
   {
     slug: 'assurance-responsabilite-civile',
-    title: 'L\'importance de la responsabilité civile',
-    excerpt: 'Pourquoi l\'assurance responsabilité civile est indispensable pour particuliers et professionnels.',
-    category: 'Protection',
     image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=450&fit=crop',
-    date: '15 Octobre 2024',
-    readTime: '5 min',
     content: `La responsabilité civile (RC) vous protège lorsque vous causez involontairement des dommages à des tiers. C'est une couverture fondamentale que tout individu et toute entreprise devrait posséder.
 
 **Qu'est-ce que la responsabilité civile ?**
@@ -144,12 +119,7 @@ Sans RC, vous devrez assumer personnellement les indemnisations qui peuvent atte
   },
   {
     slug: 'epargne-assurance-vie',
-    title: 'L\'assurance vie : épargner et se protéger',
-    excerpt: 'Découvrez comment l\'assurance vie peut servir à la fois d\'outil d\'épargne et de protection pour votre famille.',
-    category: 'Épargne',
     image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&h=450&fit=crop',
-    date: '1 Octobre 2024',
-    readTime: '6 min',
     content: `L'assurance vie est un produit financier polyvalent qui combine protection en cas de décès et constitution d'une épargne à long terme.
 
 **Double rôle de l'assurance vie**
@@ -167,13 +137,15 @@ Leader Assurance vous accompagne dans le choix du contrat d'assurance vie le plu
   },
 ]
 
-const categories = ['Tous', 'Santé', 'Entreprise', 'Tendances', 'Conseils', 'Protection', 'Épargne']
-
 export default function News() {
   const { t } = useTranslation()
   const { slug } = useParams()
   const [search, setSearch] = useState('')
-  const [activeCategory, setActiveCategory] = useState('Tous')
+  const [activeCatIndex, setActiveCatIndex] = useState(0)
+
+  const articlesData = t('news.articles', { returnObjects: true })
+  const articles = articlesConfig.map((cfg, i) => ({ ...cfg, ...articlesData[i] }))
+  const categoryList = t('news.categoryList', { returnObjects: true })
 
   // Article detail view
   if (slug) {
@@ -184,7 +156,7 @@ export default function News() {
   const filtered = articles.filter(a => {
     const matchSearch = a.title.toLowerCase().includes(search.toLowerCase()) ||
       a.excerpt.toLowerCase().includes(search.toLowerCase())
-    const matchCategory = activeCategory === 'Tous' || a.category === activeCategory
+    const matchCategory = activeCatIndex === 0 || a.category === categoryList[activeCatIndex]
     return matchSearch && matchCategory
   })
 
@@ -223,12 +195,12 @@ export default function News() {
               />
             </div>
             <div className="flex flex-wrap gap-2">
-              {categories.map(cat => (
+              {categoryList.map((cat, i) => (
                 <button
-                  key={cat}
-                  onClick={() => setActiveCategory(cat)}
+                  key={i}
+                  onClick={() => setActiveCatIndex(i)}
                   className={`px-4 py-2.5 rounded-xl text-sm font-medium transition-all ${
-                    activeCategory === cat
+                    activeCatIndex === i
                       ? 'bg-primary-900 text-white shadow-sm'
                       : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200'
                   }`}
@@ -244,7 +216,7 @@ export default function News() {
             {filtered.length === 0 ? (
               <div className="text-center py-20 text-gray-500">
                 <Search size={48} className="mx-auto mb-4 opacity-30" />
-                <p>Aucun article trouvé pour votre recherche.</p>
+                <p>{t('news.notFound')}</p>
               </div>
             ) : (
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -272,7 +244,7 @@ export default function News() {
                         </h3>
                         <p className="text-gray-600 text-sm leading-relaxed mb-4">{article.excerpt}</p>
                         <div className="flex justify-between items-center">
-                          <span className="text-xs text-gray-400">{article.readTime} de lecture</span>
+                          <span className="text-xs text-gray-400">{article.readTime} {t('news.readingTime')}</span>
                           <span className="text-primary-900 text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
                             {t('news.readMore')} <ArrowRight size={13} />
                           </span>
@@ -320,12 +292,12 @@ function ArticleDetail({ article, articles, t }) {
             {/* Article content */}
             <div className="lg:col-span-2">
               <Link to="/news" className="inline-flex items-center gap-2 text-primary-900 font-medium mb-8 hover:gap-3 transition-all">
-                <ArrowLeft size={16} /> Retour aux articles
+                <ArrowLeft size={16} /> {t('news.backToArticles')}
               </Link>
 
               <div className="flex items-center gap-4 text-sm text-gray-500 mb-8">
                 <span className="flex items-center gap-1"><Calendar size={14} /> {article.date}</span>
-                <span>{article.readTime} de lecture</span>
+                <span>{article.readTime} {t('news.readingTime')}</span>
               </div>
 
               <div className="prose prose-primary max-w-none">
@@ -374,10 +346,10 @@ function ArticleDetail({ article, articles, t }) {
             {/* Sidebar */}
             <div>
               <div className="bg-primary-50 rounded-2xl p-6 mb-6">
-                <h3 className="font-heading font-semibold text-primary-900 mb-4">Besoin d'un conseil ?</h3>
-                <p className="text-gray-600 text-sm mb-4">Nos experts sont disponibles pour répondre à toutes vos questions sur l'assurance.</p>
+                <h3 className="font-heading font-semibold text-primary-900 mb-4">{t('news.needAdvice')}</h3>
+                <p className="text-gray-600 text-sm mb-4">{t('news.needAdviceDesc')}</p>
                 <Link to="/contact" className="btn-primary w-full text-center text-sm block">
-                  Nous contacter
+                  {t('news.contactUs')}
                 </Link>
               </div>
 

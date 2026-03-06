@@ -27,11 +27,14 @@
   "why": {
     "title": "为什么选择Leader Assurance？",
     "subtitle": "您的独立保险顾问",
+    "ourDifference": "我们的优势",
     "independent": "独立保险顾问",
     "access": "接触多家合作公司",
     "custom": "个性化解决方案",
     "analysis": "风险分析",
-    "assistance": "理赔协助"
+    "assistance": "理赔协助",
+    "learnMore": "了解更多",
+    "contactUs": "联系我们"
   },
   "stats": {
     "clients": "服务客户",
@@ -39,17 +42,90 @@
     "partners": "保险合作伙伴",
     "policies": "管理保单"
   },
-  "testimonials": { "title": "客户评价", "subtitle": "客户满意度是我们的首要任务" },
+  "testimonials": {
+    "title": "客户评价",
+    "subtitle": "客户满意度是我们的首要任务",
+    "list": [
+      { "name": "让-保罗·姆巴尔加", "role": "杜阿拉中小企业总监", "text": "Leader Assurance帮助我们找到了适合企业的保险方案，同时优化了成本。服务专业，响应迅速。" },
+      { "name": "玛丽-克莱尔·埃科托", "role": "雅温得个人客户", "text": "感谢Leader Assurance提供的健康保险，我和家人得到了很好的保障。强烈推荐他们的服务。" },
+      { "name": "埃马纽埃尔·恩加努", "role": "企业主", "text": "一家真正关心客户的严肃公司。他们对我们的风险进行了全面分析，提出了最佳解决方案。" }
+    ]
+  },
+  "home": {
+    "teamSubtitle": "专业团队，全心为您服务",
+    "viewAll": "查看全部",
+    "viewAllArticles": "查看所有文章",
+    "ctaTitle": "准备好保护最重要的事物了吗？",
+    "ctaDesc": "联系我们的专家，今天就获取免费个性化报价。",
+    "getFreeQuote": "获取免费报价",
+    "team": [
+      { "name": "总经理", "role": "首席执行官兼创始人" },
+      { "name": "销售经理", "role": "商务总监" },
+      { "name": "高级顾问", "role": "人寿保险专家" },
+      { "name": "企业主任", "role": "企业保险专家" }
+    ],
+    "articles": [
+      { "title": "了解喀麦隆的健康保险", "excerpt": "了解关于健康保险您需要知道的一切，以及如何为您的家人选择最佳保障。", "category": "健康", "date": "2025年2月15日" },
+      { "title": "企业为何需要保护", "excerpt": "非洲企业面临的金融风险以及保险如何有效保护它们。", "category": "企业", "date": "2025年1月3日" },
+      { "title": "非洲保险业趋势", "excerpt": "非洲保险市场蓬勃发展。新趋势和机遇分析。", "category": "趋势", "date": "2024年12月20日" }
+    ],
+    "calculatorPlaceholder": "-- 请选择 --",
+    "calculatorOptions": {
+      "sante": "健康保险",
+      "vie": "人寿保险",
+      "voyage": "旅行保险",
+      "epargne": "储蓄",
+      "entreprise": "企业保险",
+      "responsabilite": "民事责任",
+      "employes": "员工保险",
+      "actifs": "资产保护"
+    }
+  },
   "about": {
     "title": "关于Leader Assurance",
     "subtitle": "10多年来您值得信赖的合作伙伴",
-    "description1": "Leader Assurance有限责任公司是一家总部位于喀麦隆杜阿拉的保险咨询和经纪公司。",
-    "description2": "我们的独立方式使我们能够选择市场上最好的报价。",
+    "description1": "Leader Assurance有限责任公司是一家总部位于喀麦隆杜阿拉的保险咨询和经纪公司。我们协助个人和企业管理风险并保护其资产。",
+    "description2": "我们的独立方式使我们能够选择市场上最好的报价，为您提供量身定制的解决方案，以满足您的特定需求。",
     "mission": "我们的使命",
-    "missionText": "提供优质、个性化和透明的保险咨询服务。",
+    "missionText": "提供优质、个性化和透明的保险咨询服务，使我们的客户能够做出最佳的保障决策。",
     "vision": "我们的愿景",
-    "visionText": "成为中部非洲的标杆保险经纪公司。",
-    "team": "我们的团队"
+    "visionText": "成为中部非洲的标杆保险经纪公司，以专业知识、诚信和卓越承诺而著称。",
+    "team": "我们的团队",
+    "ourHistory": "我们的故事",
+    "certifiedAdvisor": "认证保险顾问",
+    "clientsSatisfied": "满意客户",
+    "yearsExperience": "年经验",
+    "policiesManaged": "管理保单",
+    "valuesTitle": "我们的价值观",
+    "valuesSubtitle": "指导我们每项行动的原则",
+    "journeyTitle": "我们的历程",
+    "journeySubtitle": "15年卓越服务我们的客户",
+    "teamSubtitle": "充满热情的专家为您服务",
+    "ctaTitle": "让我们携手合作",
+    "ctaDesc": "我们的团队随时准备支持您的保险战略。",
+    "contactUs": "取得联系",
+    "values": [
+      { "title": "诚信", "description": "我们在所有互动中以诚实和透明的方式行事。" },
+      { "title": "承诺", "description": "我们全力承诺客户的满意度和保护。" },
+      { "title": "卓越", "description": "我们在提供的每一项建议和服务中追求卓越。" },
+      { "title": "亲近", "description": "我们建立基于信任和尊重的持久关系。" }
+    ],
+    "teamMembers": [
+      { "name": "总经理", "role": "首席执行官兼创始人", "bio": "保险专家，在中部非洲金融和保险行业拥有超过15年的经验。" },
+      { "name": "销售经理", "role": "商务总监", "bio": "商业开发和客户关系专家，在企业保险产品方面有丰富经验。" },
+      { "name": "高级顾问", "role": "人寿健康保险专家", "bio": "认证人寿和健康保险顾问，指导个人选择合适的保障方案。" },
+      { "name": "企业主任", "role": "企业保险专家", "bio": "专注于职业风险和中小型企业保护的专家。" },
+      { "name": "法律顾问", "role": "法律顾问", "bio": "保险法专家，确保合规并在理赔情况下支持客户。" },
+      { "name": "助理", "role": "客户关系", "bio": "客户的第一联系人，提供热情接待并认真跟进每个档案。" }
+    ],
+    "milestones": [
+      { "year": "2010", "title": "成立", "description": "在喀麦隆杜阿拉创立Leader Assurance有限责任公司。" },
+      { "year": "2013", "title": "扩张", "description": "扩大合作伙伴组合和提供的服务。" },
+      { "year": "2016", "title": "增长", "description": "达到200名活跃客户和8家合作公司。" },
+      { "year": "2019", "title": "数字化", "description": "推出数字工具以更好地服务客户。" },
+      { "year": "2022", "title": "认可", "description": "荣获中部非洲客户服务卓越奖。" },
+      { "year": "2025", "title": "今天", "description": "超过500名受服务客户和15家保险合作伙伴。" }
+    ]
   },
   "solutions": {
     "title": "我们的保险解决方案",
@@ -57,14 +133,96 @@
     "individuals": "个人",
     "companies": "企业",
     "learnMore": "了解更多",
+    "lessDetails": "收起详情",
     "getQuote": "申请报价",
     "advantages": "优势",
-    "examples": "情况示例"
+    "examples": "情况示例",
+    "howItWorks": "如何运作？",
+    "howItWorksSubtitle": "简单透明的流程",
+    "ctaTitle": "需要量身定制的解决方案？",
+    "ctaDesc": "我们的专家指导您选择最佳保障。",
+    "ctaButton": "申请个性化报价",
+    "steps": [
+      { "step": "01", "title": "咨询", "description": "与我们的顾问初步交流，了解您的需求和情况。" },
+      { "step": "02", "title": "分析", "description": "深入分析您的风险，确定合适的解决方案。" },
+      { "step": "03", "title": "提案", "description": "提供来自我们最佳合作伙伴的个性化报价。" },
+      { "step": "04", "title": "投保", "description": "完成合同并在整个保障期间提供支持。" }
+    ],
+    "health": {
+      "title": "健康保险",
+      "description": "为您和家人的医疗保健提供全面保障。",
+      "advantages": ["报销门诊费用", "住院保障", "含药品费用", "扩大医疗网络"],
+      "examples": ["紧急住院", "计划手术", "牙科护理", "生育保障"]
+    },
+    "life": {
+      "title": "人寿保险",
+      "description": "保护您亲人的财务未来。",
+      "advantages": ["保证资本", "终身年金", "税收优惠", "指定受益人"],
+      "examples": ["早逝", "永久残疾", "家庭保障", "遗产"]
+    },
+    "travel": {
+      "title": "旅行保险",
+      "description": "在世界任何地方安心旅行。",
+      "advantages": ["遣返协助", "医疗费用", "行程取消", "行李丢失"],
+      "examples": ["商务旅行", "家庭度假", "留学", "海外派驻"]
+    },
+    "savings": {
+      "title": "储蓄保险",
+      "description": "用安全的储蓄产品积累财富。",
+      "advantages": ["保证收益", "渐进式储蓄", "流动性", "含身故保障"],
+      "examples": ["退休", "子女教育", "房产项目", "财富积累"]
+    },
+    "enterprise": {
+      "title": "企业保险",
+      "description": "保护您的职业活动免受所有风险。",
+      "advantages": ["多险种综合", "营业中断", "资产保护", "全面覆盖"],
+      "examples": ["办公室火灾", "设备盗窃", "第三方损害", "业务中断"]
+    },
+    "liability": {
+      "title": "职业民事责任",
+      "description": "承保您的职业责任。",
+      "advantages": ["法律保护", "损害赔偿", "利益维护", "错误承保"],
+      "examples": ["建议失误", "客户损失", "合同纠纷", "人身伤害"]
+    },
+    "employees": {
+      "title": "员工保险",
+      "description": "用量身定制的解决方案保护您的人力资本。",
+      "advantages": ["集体预防", "补充医疗", "工伤事故", "人才留存"],
+      "examples": ["员工患病", "工伤事故", "员工身故", "残疾"]
+    },
+    "assets": {
+      "title": "资产保护",
+      "description": "保障您所有的职业资产和设备。",
+      "advantages": ["全险", "车辆队伍", "工业机器", "IT设备"],
+      "examples": ["设备损毁", "设备盗窃", "机械故障", "水损"]
+    }
   },
   "partners": {
     "title": "我们的合作伙伴",
     "subtitle": "我们与最优秀的保险公司合作",
-    "description": "Leader Assurance与多家知名保险公司合作。"
+    "description": "Leader Assurance与多家知名保险公司合作，为客户提供最佳定制解决方案。",
+    "ourCompanies": "我们的合作保险公司",
+    "whyBroker": "为什么选择经纪人？",
+    "whyBrokerSubtitle": "与Leader Assurance合作的优势",
+    "certified": "认证与资质",
+    "certifiedDesc": "Leader Assurance经喀麦隆监管机构（CIMA - 非洲保险市场跨地区会议）正式认证，保证我们的合规性和您的保障。",
+    "contactUs": "联系我们",
+    "list": [
+      { "specialty": "寿险与非寿险", "description": "喀麦隆市场领导者，Activa提供全系列保险产品。" },
+      { "specialty": "全险", "description": "中部非洲公认的企业和个人保险专家。" },
+      { "specialty": "综合服务", "description": "在非洲拥有强大影响力的国际领先集团。" },
+      { "specialty": "寿险与储蓄", "description": "撒哈拉以南非洲寿险和储蓄产品专家。" },
+      { "specialty": "企业", "description": "企业保险和工业风险管理的标杆。" },
+      { "specialty": "健康", "description": "企业和个人健康保险解决方案专家。" },
+      { "specialty": "预防", "description": "国际寿险和预防产品专家。" },
+      { "specialty": "寿险", "description": "专注于寿险及衍生产品的喀麦隆公司。" }
+    ],
+    "advantagesList": [
+      { "title": "多公司接入", "description": "我们比较多家公司的报价，为您提供最优价格。" },
+      { "title": "条件谈判", "description": "我们的业务量使我们能够谈判优惠条件。" },
+      { "title": "经核实的偿付能力", "description": "我们只与财务健全且获认证的公司合作。" },
+      { "title": "贴近服务", "description": "Leader Assurance的单一联系人管理您的所有合同。" }
+    ]
   },
   "news": {
     "title": "新闻与建议",
@@ -74,7 +232,22 @@
     "all": "全部",
     "readMore": "阅读更多",
     "share": "分享",
-    "recommended": "推荐文章"
+    "recommended": "推荐文章",
+    "notFound": "未找到符合您搜索的文章。",
+    "readingTime": "阅读",
+    "backToArticles": "返回文章列表",
+    "needAdvice": "需要建议？",
+    "needAdviceDesc": "我们的专家随时为您解答保险方面的问题。",
+    "contactUs": "联系我们",
+    "categoryList": ["全部", "健康", "企业", "趋势", "技巧", "保障", "储蓄"],
+    "articles": [
+      { "title": "了解喀麦隆的健康保险", "excerpt": "了解关于健康保险您需要知道的一切，以及如何为您在喀麦隆的家人选择最佳保障。", "category": "健康", "date": "2025年2月15日", "readTime": "5分钟" },
+      { "title": "企业为何需要保护", "excerpt": "非洲企业面临的金融风险以及保险如何有效保护它们。", "category": "企业", "date": "2025年1月3日", "readTime": "7分钟" },
+      { "title": "非洲保险业趋势", "excerpt": "非洲保险市场蓬勃发展。新趋势和机遇分析。", "category": "趋势", "date": "2024年12月20日", "readTime": "6分钟" },
+      { "title": "如何选择合适的保险", "excerpt": "选择适合您具体需求的保险保障的实用指南。", "category": "技巧", "date": "2024年11月5日", "readTime": "8分钟" },
+      { "title": "民事责任的重要性", "excerpt": "为什么民事责任保险对个人和专业人士都必不可少。", "category": "保障", "date": "2024年10月15日", "readTime": "5分钟" },
+      { "title": "人寿保险：储蓄与保障", "excerpt": "了解人寿保险如何同时作为储蓄工具和家庭保障。", "category": "储蓄", "date": "2024年10月1日", "readTime": "6分钟" }
+    ]
   },
   "calculator": {
     "title": "报价计算器",
@@ -88,10 +261,59 @@
     "premium": "高级",
     "calculate": "获取估价",
     "result": "月度估价",
-    "disclaimer": "此估价仅供参考。",
+    "disclaimer": "此估价仅供参考。请联系我们获取个性化报价。",
     "personalized": "申请个性化报价"
   },
-  "faq": { "title": "常见问题", "subtitle": "快速找到您问题的答案" },
+  "faq": {
+    "title": "常见问题",
+    "subtitle": "快速找到您问题的答案",
+    "searchPlaceholder": "搜索问题...",
+    "notFound": "未找到符合您搜索的问题。",
+    "notAnswered": "没有找到您的答案？",
+    "notAnsweredDesc": "我们的顾问团队随时准备回答您的具体问题。",
+    "contactUs": "联系我们",
+    "all": "全部",
+    "data": [
+      {
+        "key": "general",
+        "category": "一般问题",
+        "questions": [
+          { "q": "保险经纪人的作用是什么？", "a": "保险经纪人是代表客户利益的独立中间人。与某家公司的专属代理人不同，经纪人可以比较多家保险公司的报价，根据您的情况和需求提出最佳解决方案。" },
+          { "q": "为什么选择Leader Assurance而不是直接找保险公司？", "a": "Leader Assurance提供多项优势：接触多家公司、个性化客观建议、谈判更好的条件、理赔协助，以及所有合同的单一联系人。我们的服务通常对客户不收取额外费用。" },
+          { "q": "Leader Assurance是保险公司吗？", "a": "不是，Leader Assurance是一家保险经纪和咨询公司。我们不直接承担风险，而是与持牌保险公司合作，为您提供最佳保障。" },
+          { "q": "你们获得监管机构认证吗？", "a": "是的，Leader Assurance按照CIMA（非洲保险市场跨地区会议）的要求获得正式认证，该机构监管包括喀麦隆在内的中部非洲保险行业。" }
+        ]
+      },
+      {
+        "key": "quotes",
+        "category": "报价与合同",
+        "questions": [
+          { "q": "如何获取报价？", "a": "您可以通过多种方式获取报价：填写联系页面的在线表格、拨打+237 696 41 10 12或+237 681 80 69 75、通过WhatsApp，或直接前往我们在杜阿拉阿克瓦的办公室。我们通常在24-48小时内回复。" },
+          { "q": "报价是免费的吗？", "a": "是的，我们所有的报价和初次咨询完全免费且无任何义务。在签署合同之前，您不承担任何责任。" },
+          { "q": "投保需要多长时间？", "a": "根据保险类型，时间各不相同。简单保险（健康、人寿）可在24至48小时内完成。更复杂的保障（企业、重要资产）可能需要5至10个工作日进行风险分析和最终确定。" },
+          { "q": "投保后可以修改合同吗？", "a": "是的，您的合同可以根据需求变化进行调整。可以添加附加条款来修改保障、资本或受益人。请联系您的Leader Assurance顾问提出任何修改请求。" }
+        ]
+      },
+      {
+        "key": "business",
+        "category": "企业问题",
+        "questions": [
+          { "q": "企业可以定制其保障吗？", "a": "当然！这是我们的优势之一。每家企业都有与其行业、规模和业务相关的特定风险。我们对您的风险进行全面分析，设计完全满足您需求的量身定制保障。" },
+          { "q": "哪些类型的企业可以投保？", "a": "我们承保所有类型的企业：微型企业、中小企业、大型企业、自由职业者、商人、工业企业。我们的解决方案适应所有行业：商业、工业、服务、健康、技术等。" },
+          { "q": "职业民事责任保险是强制性的吗？", "a": "在喀麦隆，职业民事责任并不总是法律强制要求的，但对于任何职业活动都强烈推荐。它保护您的企业免受职业活动中错误、疏失或遗漏的财务后果。" }
+        ]
+      },
+      {
+        "key": "claims",
+        "category": "理赔问题",
+        "questions": [
+          { "q": "发生理赔事件应怎么做？", "a": "发生理赔事件时：1) 如可能，确保人员和财产安全。2) 立即联系Leader Assurance和/或保险公司。3) 收集证据（照片、证词）。4) 在合同规定的期限内填写理赔申报表。我们的团队全程陪同您完成此程序。" },
+          { "q": "理赔后多久可以获得赔偿？", "a": "期限因理赔的性质和复杂程度而异。简单理赔可在几周内获得赔偿。需要专业评估的复杂理赔，期限可能为1至3个月。我们积极跟进每个案例以加快进程。" },
+          { "q": "Leader Assurance在与保险公司发生纠纷时会帮助我吗？", "a": "是的，我们的基本职责之一就是维护您面对保险公司的利益。发生分歧或纠纷时，我们作为您的代理人进行干预，为您获得与合同相符的公正赔偿。" }
+        ]
+      }
+    ]
+  },
   "contact": {
     "title": "联系我们",
     "subtitle": "我们的团队随时为您提供帮助",
@@ -107,12 +329,29 @@
     "address": "地址",
     "whatsapp": "通过WhatsApp联系",
     "schedule": "营业时间",
-    "scheduleText": "周一至周五：上午8点 - 下午6点\n周六：上午9点 - 下午1点"
+    "scheduleText": "周一至周五：上午8点 - 下午6点\n周六：上午9点 - 下午1点",
+    "ourCoordinates": "联系方式",
+    "coordinatesDesc": "通过您偏好的方式联系我们。我们迅速回复。",
+    "phones": "电话",
+    "sendMessage": "给我们发消息",
+    "replyDelay": "我们会尽快回复您。",
+    "fillRequired": "请填写所有必填字段。",
+    "messagePlaceholder": "描述您的保险需求...",
+    "subjectPlaceholder": "-- 选择主题 --",
+    "subjectOptions": {
+      "devis": "报价申请",
+      "sante": "健康保险",
+      "entreprise": "企业保险",
+      "vie": "人寿保险",
+      "sinistre": "理赔申报",
+      "autre": "其他"
+    }
   },
   "chat": {
     "title": "Leader Assurance助手",
     "placeholder": "提出您的问题...",
     "send": "发送",
+    "online": "在线",
     "welcome": "您好！我是Leader Assurance的助手。今天我能为您提供什么帮助？",
     "contact": "联系顾问"
   },

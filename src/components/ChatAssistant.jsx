@@ -117,7 +117,7 @@ export default function ChatAssistant() {
                 <div className="text-white font-semibold">{t('chat.title')}</div>
                 <div className="flex items-center gap-1.5">
                   <span className="w-2 h-2 bg-green-400 rounded-full" />
-                  <span className="text-white/70 text-xs">En ligne</span>
+                  <span className="text-white/70 text-xs">{t('chat.online')}</span>
                 </div>
               </div>
             </div>

@@ -35,94 +35,44 @@ function AnimatedSection({ children, className = '' }) {
   )
 }
 
-const services = [
+const servicesConfig = [
   { icon: Heart, key: 'health', color: 'bg-red-50 text-red-600', border: 'border-red-100', path: '/solutions?tab=individuals' },
   { icon: Building2, key: 'business', color: 'bg-blue-50 text-blue-600', border: 'border-blue-100', path: '/solutions?tab=companies' },
   { icon: Shield, key: 'liability', color: 'bg-green-50 text-green-600', border: 'border-green-100', path: '/solutions?tab=companies' },
   { icon: TrendingUp, key: 'savings', color: 'bg-purple-50 text-purple-600', border: 'border-purple-100', path: '/solutions?tab=individuals' },
 ]
 
-const testimonials = [
-  {
-    name: 'Jean-Paul Mbarga',
-    role: 'Directeur, PME Douala',
-    text: 'Leader Assurance nous a aidés à trouver une couverture adaptée à notre entreprise tout en optimisant nos coûts. Service professionnel et réactif.',
-    rating: 5,
-    avatar: 'JM'
-  },
-  {
-    name: 'Marie-Claire Ekoto',
-    role: 'Particulier, Yaoundé',
-    text: 'Grâce à l\'assurance santé proposée par Leader Assurance, ma famille et moi sommes bien protégés. Je recommande vivement leurs services.',
-    rating: 5,
-    avatar: 'ME'
-  },
-  {
-    name: 'Emmanuel Nganou',
-    role: 'Chef d\'entreprise',
-    text: 'Un cabinet sérieux qui prend vraiment soin de ses clients. Ils ont fait une analyse complète de nos risques et nous ont proposé les meilleures solutions.',
-    rating: 5,
-    avatar: 'EN'
-  },
+const testimonialsConfig = [
+  { avatar: 'JM', rating: 5 },
+  { avatar: 'ME', rating: 5 },
+  { avatar: 'EN', rating: 5 },
 ]
 
-const articles = [
-  {
-    title: 'Comprendre l\'assurance santé au Cameroun',
-    excerpt: 'Découvrez tout ce que vous devez savoir sur l\'assurance santé et comment choisir la meilleure couverture pour votre famille.',
-    category: 'Santé',
-    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=250&fit=crop',
-    date: '15 Février 2025',
-    slug: 'assurance-sante-cameroun'
-  },
-  {
-    title: 'Pourquoi les entreprises doivent se protéger',
-    excerpt: 'Les risques financiers auxquels font face les entreprises africaines et comment l\'assurance peut les protéger efficacement.',
-    category: 'Entreprise',
-    image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&h=250&fit=crop',
-    date: '3 Janvier 2025',
-    slug: 'protection-entreprises'
-  },
-  {
-    title: 'Les tendances de l\'assurance en Afrique',
-    excerpt: 'Le marché de l\'assurance africain est en pleine croissance. Analyse des nouvelles tendances et opportunités.',
-    category: 'Tendances',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=250&fit=crop',
-    date: '20 Décembre 2024',
-    slug: 'tendances-assurance-afrique'
-  },
+const articlesConfig = [
+  { image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=250&fit=crop', slug: 'assurance-sante-cameroun' },
+  { image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&h=250&fit=crop', slug: 'protection-entreprises' },
+  { image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=250&fit=crop', slug: 'tendances-assurance-afrique' },
 ]
 
-const teamMembers = [
-  {
-    name: 'Directeur Général',
-    role: 'PDG & Fondateur',
-    initials: 'DG',
-    color: 'from-primary-700 to-primary-900'
-  },
-  {
-    name: 'Responsable Commercial',
-    role: 'Directeur Commercial',
-    initials: 'RC',
-    color: 'from-blue-600 to-blue-900'
-  },
-  {
-    name: 'Conseillère Senior',
-    role: 'Expert en Assurance Vie',
-    initials: 'CS',
-    color: 'from-indigo-600 to-indigo-900'
-  },
-  {
-    name: 'Chargé Entreprises',
-    role: 'Expert Assurance Entreprise',
-    initials: 'CE',
-    color: 'from-primary-600 to-primary-900'
-  },
+const teamConfig = [
+  { initials: 'DG', color: 'from-primary-700 to-primary-900' },
+  { initials: 'RC', color: 'from-blue-600 to-blue-900' },
+  { initials: 'CS', color: 'from-indigo-600 to-indigo-900' },
+  { initials: 'CE', color: 'from-primary-600 to-primary-900' },
 ]
 
 export default function Home() {
   const { t } = useTranslation()
   const [statsRef, statsInView] = useInView({ triggerOnce: true, threshold: 0.3 })
+
+  const testimonialsData = t('testimonials.list', { returnObjects: true })
+  const testimonials = testimonialsConfig.map((cfg, i) => ({ ...cfg, ...testimonialsData[i] }))
+
+  const articlesData = t('home.articles', { returnObjects: true })
+  const articles = articlesConfig.map((cfg, i) => ({ ...cfg, ...articlesData[i] }))
+
+  const teamData = t('home.team', { returnObjects: true })
+  const teamMembers = teamConfig.map((cfg, i) => ({ ...cfg, ...teamData[i] }))
 
   return (
     <>
@@ -133,7 +83,6 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
-        {/* Background */}
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1920&h=1080&fit=crop"
@@ -143,7 +92,6 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-primary-950/90 via-primary-900/75 to-primary-900/40" />
         </div>
 
-        {/* Decorative elements */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <div className="absolute top-20 right-20 w-72 h-72 bg-gold-500/10 rounded-full blur-3xl" />
           <div className="absolute bottom-20 left-20 w-96 h-96 bg-primary-600/20 rounded-full blur-3xl" />
@@ -181,12 +129,8 @@ export default function Home() {
                 </Link>
               </div>
 
-              {/* Quick contact */}
               <div className="flex flex-wrap gap-4 mt-10">
-                <a
-                  href="tel:+237696411012"
-                  className="flex items-center gap-2 text-white/70 hover:text-white transition-colors text-sm"
-                >
+                <a href="tel:+237696411012" className="flex items-center gap-2 text-white/70 hover:text-white transition-colors text-sm">
                   <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center">
                     <Phone size={14} />
                   </div>
@@ -208,7 +152,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Scroll indicator */}
         <motion.div
           className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
           animate={{ y: [0, 10, 0] }}
@@ -263,12 +206,9 @@ export default function Home() {
             </motion.div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {services.map(({ icon: Icon, key, color, border, path }) => (
+              {servicesConfig.map(({ icon: Icon, key, color, border, path }) => (
                 <motion.div key={key} variants={fadeUp}>
-                  <Link
-                    to={path}
-                    className={`block card p-6 border ${border} group h-full`}
-                  >
+                  <Link to={path} className={`block card p-6 border ${border} group h-full`}>
                     <div className={`w-14 h-14 ${color} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
                       <Icon size={26} />
                     </div>
@@ -297,7 +237,7 @@ export default function Home() {
               <motion.div variants={fadeUp}>
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-gold-50 text-gold-700 rounded-full text-sm font-medium mb-4">
                   <Award size={15} />
-                  Notre différence
+                  {t('why.ourDifference')}
                 </div>
                 <h2 className="section-title mb-4">{t('why.title')}</h2>
                 <p className="text-gray-600 leading-relaxed mb-8">{t('why.subtitle')}</p>
@@ -321,10 +261,10 @@ export default function Home() {
                 </div>
                 <div className="flex gap-4 mt-8">
                   <Link to="/about" className="btn-primary flex items-center gap-2">
-                    En savoir plus <ArrowRight size={16} />
+                    {t('why.learnMore')} <ArrowRight size={16} />
                   </Link>
                   <Link to="/contact" className="btn-secondary flex items-center gap-2">
-                    Nous contacter
+                    {t('why.contactUs')}
                   </Link>
                 </div>
               </motion.div>
@@ -333,28 +273,11 @@ export default function Home() {
             <AnimatedSection>
               <motion.div variants={fadeUp} className="relative">
                 <div className="grid grid-cols-2 gap-4">
-                  <img
-                    src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&h=300&fit=crop"
-                    alt="Consultation"
-                    className="rounded-2xl h-48 w-full object-cover"
-                  />
-                  <img
-                    src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop"
-                    alt="Business"
-                    className="rounded-2xl h-48 w-full object-cover mt-8"
-                  />
-                  <img
-                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=300&fit=crop"
-                    alt="Team"
-                    className="rounded-2xl h-48 w-full object-cover -mt-4"
-                  />
-                  <img
-                    src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=300&fit=crop"
-                    alt="Meeting"
-                    className="rounded-2xl h-48 w-full object-cover mt-4"
-                  />
+                  <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&h=300&fit=crop" alt="Consultation" className="rounded-2xl h-48 w-full object-cover" />
+                  <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop" alt="Business" className="rounded-2xl h-48 w-full object-cover mt-8" />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=300&fit=crop" alt="Team" className="rounded-2xl h-48 w-full object-cover -mt-4" />
+                  <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=300&fit=crop" alt="Meeting" className="rounded-2xl h-48 w-full object-cover mt-4" />
                 </div>
-                {/* Floating badge */}
                 <div className="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3">
                   <div className="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center">
                     <Award size={22} className="text-gold-400" />
@@ -393,7 +316,7 @@ export default function Home() {
           <AnimatedSection>
             <motion.div variants={fadeUp} className="text-center mb-14">
               <h2 className="section-title">{t('about.team')}</h2>
-              <p className="section-subtitle">Des experts dédiés à votre service</p>
+              <p className="section-subtitle">{t('home.teamSubtitle')}</p>
             </motion.div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
               {teamMembers.map((member, i) => (
@@ -424,22 +347,22 @@ export default function Home() {
               <p className="section-subtitle">{t('testimonials.subtitle')}</p>
             </motion.div>
             <div className="grid md:grid-cols-3 gap-8">
-              {testimonials.map((t_, i) => (
+              {testimonials.map((item, i) => (
                 <motion.div key={i} variants={fadeUp} className="card p-8 relative">
                   <Quote size={32} className="text-primary-100 absolute top-6 right-6" />
                   <div className="flex gap-1 mb-4">
-                    {[...Array(t_.rating)].map((_, j) => (
+                    {[...Array(item.rating)].map((_, j) => (
                       <Star key={j} size={16} className="text-gold-400 fill-gold-400" />
                     ))}
                   </div>
-                  <p className="text-gray-600 leading-relaxed mb-6 italic">"{t_.text}"</p>
+                  <p className="text-gray-600 leading-relaxed mb-6 italic">"{item.text}"</p>
                   <div className="flex items-center gap-3">
                     <div className="w-11 h-11 rounded-full gradient-bg flex items-center justify-center text-white font-semibold text-sm">
-                      {t_.avatar}
+                      {item.avatar}
                     </div>
                     <div>
-                      <div className="font-semibold text-primary-900">{t_.name}</div>
-                      <div className="text-gray-500 text-sm">{t_.role}</div>
+                      <div className="font-semibold text-primary-900">{item.name}</div>
+                      <div className="text-gray-500 text-sm">{item.role}</div>
                     </div>
                   </div>
                 </motion.div>
@@ -459,7 +382,7 @@ export default function Home() {
                 <p className="section-subtitle">{t('news.subtitle')}</p>
               </div>
               <Link to="/news" className="hidden md:flex items-center gap-2 text-primary-900 font-medium hover:gap-3 transition-all">
-                Voir tous <ArrowRight size={16} />
+                {t('home.viewAll')} <ArrowRight size={16} />
               </Link>
             </motion.div>
             <div className="grid md:grid-cols-3 gap-8">
@@ -467,11 +390,7 @@ export default function Home() {
                 <motion.div key={i} variants={fadeUp}>
                   <Link to={`/news/${article.slug}`} className="block card overflow-hidden group h-full">
                     <div className="overflow-hidden h-48">
-                      <img
-                        src={article.image}
-                        alt={article.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
+                      <img src={article.image} alt={article.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                     </div>
                     <div className="p-6">
                       <span className="inline-block px-3 py-1 bg-primary-50 text-primary-900 rounded-full text-xs font-medium mb-3">
@@ -494,7 +413,7 @@ export default function Home() {
             </div>
             <div className="text-center mt-8 md:hidden">
               <Link to="/news" className="btn-primary inline-flex items-center gap-2">
-                Voir tous les articles <ArrowRight size={16} />
+                {t('home.viewAllArticles')} <ArrowRight size={16} />
               </Link>
             </div>
           </AnimatedSection>
@@ -515,15 +434,15 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
-              Prêt à protéger ce qui compte le plus ?
+              {t('home.ctaTitle')}
             </h2>
             <p className="text-white/70 text-lg mb-8 max-w-2xl mx-auto">
-              Contactez nos experts et obtenez un devis personnalisé gratuit dès aujourd'hui.
+              {t('home.ctaDesc')}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link to="/contact" className="btn-gold flex items-center gap-2">
                 <MessageSquare size={18} />
-                Obtenir un devis gratuit
+                {t('home.getFreeQuote')}
               </Link>
               <a
                 href="https://wa.me/237696411012"
@@ -549,14 +468,8 @@ function QuoteCalculator() {
 
   const calculate = () => {
     const base = {
-      'sante': 15000,
-      'vie': 20000,
-      'voyage': 8000,
-      'epargne': 25000,
-      'entreprise': 50000,
-      'responsabilite': 30000,
-      'employes': 20000,
-      'actifs': 35000,
+      'sante': 15000, 'vie': 20000, 'voyage': 8000, 'epargne': 25000,
+      'entreprise': 50000, 'responsabilite': 30000, 'employes': 20000, 'actifs': 35000,
     }
     const coverageMultiplier = { basic: 0.7, standard: 1, premium: 1.5 }
     const ageMultiplier = form.age ? (parseInt(form.age) > 50 ? 1.4 : parseInt(form.age) > 35 ? 1.2 : 1) : 1
@@ -576,15 +489,10 @@ function QuoteCalculator() {
             onChange={e => setForm({...form, type: e.target.value})}
             className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500 text-sm"
           >
-            <option value="">-- Choisir --</option>
-            <option value="sante">Assurance Santé</option>
-            <option value="vie">Assurance Vie</option>
-            <option value="voyage">Assurance Voyage</option>
-            <option value="epargne">Épargne</option>
-            <option value="entreprise">Assurance Entreprise</option>
-            <option value="responsabilite">Responsabilité Civile</option>
-            <option value="employes">Assurance Employés</option>
-            <option value="actifs">Protection Actifs</option>
+            <option value="">{t('home.calculatorPlaceholder')}</option>
+            {['sante','vie','voyage','epargne','entreprise','responsabilite','employes','actifs'].map(key => (
+              <option key={key} value={key}>{t(`home.calculatorOptions.${key}`)}</option>
+            ))}
           </select>
         </div>
         <div>
@@ -615,9 +523,7 @@ function QuoteCalculator() {
                 key={level}
                 onClick={() => setForm({...form, coverage: level})}
                 className={`flex-1 py-3 text-xs font-medium rounded-xl transition-all ${
-                  form.coverage === level
-                    ? 'bg-primary-900 text-white'
-                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                  form.coverage === level ? 'bg-primary-900 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                 }`}
               >
                 {t(`calculator.${level}`)}

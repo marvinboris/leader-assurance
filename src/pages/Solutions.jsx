@@ -114,7 +114,7 @@ function ServiceCard({ service, t }) {
           onClick={() => setExpanded(!expanded)}
           className="text-primary-900 text-sm font-medium flex items-center gap-1 hover:gap-2 transition-all mb-4"
         >
-          {expanded ? 'Moins de détails' : t('solutions.learnMore')}
+          {expanded ? t('solutions.lessDetails') : t('solutions.learnMore')}
           <ArrowRight size={14} className={`transition-transform ${expanded ? 'rotate-90' : ''}`} />
         </button>
 
@@ -237,17 +237,12 @@ export default function Solutions() {
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <motion.div variants={fadeUp} className="text-center mb-14">
-              <h2 className="section-title">Comment ça marche ?</h2>
-              <p className="section-subtitle">Un processus simple et transparent</p>
+              <h2 className="section-title">{t('solutions.howItWorks')}</h2>
+              <p className="section-subtitle">{t('solutions.howItWorksSubtitle')}</p>
             </motion.div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
               <div className="absolute top-12 left-0 right-0 h-0.5 bg-primary-100 hidden lg:block mx-16" />
-              {[
-                { step: '01', title: 'Consultation', description: 'Échange initial avec notre conseiller pour comprendre vos besoins et votre situation.' },
-                { step: '02', title: 'Analyse', description: 'Analyse approfondie de vos risques et identification des solutions adaptées.' },
-                { step: '03', title: 'Proposition', description: 'Présentation d\'offres personnalisées issues de nos meilleurs partenaires.' },
-                { step: '04', title: 'Souscription', description: 'Finalisation du contrat et accompagnement tout au long de la durée de votre couverture.' },
-              ].map((step, i) => (
+              {(t('solutions.steps', { returnObjects: true })).map((step, i) => (
                 <motion.div key={i} variants={fadeUp} className="text-center relative z-10">
                   <div className="w-24 h-24 gradient-bg rounded-3xl flex items-center justify-center mx-auto mb-5 shadow-lg">
                     <span className="text-gold-400 font-heading font-bold text-2xl">{step.step}</span>
@@ -266,14 +261,14 @@ export default function Solutions() {
         <div className="container mx-auto px-4 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h2 className="text-3xl font-heading font-bold text-white mb-4">
-              Besoin d'une solution sur mesure ?
+              {t('solutions.ctaTitle')}
             </h2>
             <p className="text-white/70 mb-8">
-              Nos experts vous accompagnent dans le choix de la meilleure protection.
+              {t('solutions.ctaDesc')}
             </p>
             <Link to="/contact" className="btn-gold inline-flex items-center gap-2">
               <MessageSquare size={18} />
-              Demander un devis personnalisé
+              {t('solutions.ctaButton')}
             </Link>
           </motion.div>
         </div>

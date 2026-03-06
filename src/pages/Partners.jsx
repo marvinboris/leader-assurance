@@ -13,26 +13,24 @@ function AnimatedSection({ children, className = '' }) {
   return <motion.div ref={ref} initial="hidden" animate={inView ? 'visible' : 'hidden'} variants={stagger} className={className}>{children}</motion.div>
 }
 
-const partners = [
-  { name: 'Activa Assurances', country: 'Cameroun', specialty: 'Vie & Non-vie', color: 'from-blue-600 to-blue-900', initials: 'AA', description: 'Leader du marché camerounais, Activa offre une gamme complète de produits d\'assurance.' },
-  { name: 'Chanas Assurances', country: 'Cameroun', specialty: 'Tous risques', color: 'from-red-600 to-red-900', initials: 'CA', description: 'Expert reconnu en assurances entreprises et particuliers en Afrique centrale.' },
-  { name: 'AXA Assurances', country: 'International', specialty: 'Multi-services', color: 'from-indigo-600 to-indigo-900', initials: 'AX', description: 'Groupe international de premier plan avec une présence forte en Afrique.' },
-  { name: 'NSIA Assurances', country: 'Cameroun', specialty: 'Vie & Épargne', color: 'from-green-600 to-green-900', initials: 'NS', description: 'Spécialiste en assurance vie et produits d\'épargne en Afrique subsaharienne.' },
-  { name: 'Saar Assurances', country: 'Cameroun', specialty: 'Entreprises', color: 'from-orange-600 to-orange-900', initials: 'SA', description: 'Référence en assurance entreprise et en gestion des risques industriels.' },
-  { name: 'Zenithe Assurance', country: 'Afrique centrale', specialty: 'Santé', color: 'from-teal-600 to-teal-900', initials: 'ZA', description: 'Expert en solutions d\'assurance santé pour les entreprises et les particuliers.' },
-  { name: 'Beneficial Life', country: 'International', specialty: 'Prévoyance', color: 'from-purple-600 to-purple-900', initials: 'BL', description: 'Spécialiste international en assurance vie et produits de prévoyance.' },
-  { name: 'GIC-Vie', country: 'Cameroun', specialty: 'Vie', color: 'from-primary-600 to-primary-900', initials: 'GV', description: 'Compagnie camerounaise spécialisée en assurance vie et produits dérivés.' },
-]
-
-const advantages = [
-  { title: 'Accès multi-compagnies', description: 'Nous comparons les offres de plusieurs compagnies pour vous proposer le meilleur tarif.' },
-  { title: 'Négociation de conditions', description: 'Notre volume d\'affaires nous permet de négocier des conditions préférentielles.' },
-  { title: 'Solvabilité vérifiée', description: 'Nous travaillons uniquement avec des compagnies financièrement solides et agréées.' },
-  { title: 'Service de proximité', description: 'Un interlocuteur unique chez Leader Assurance pour gérer tous vos contrats.' },
+const partnersConfig = [
+  { name: 'Activa Assurances', country: 'Cameroun', color: 'from-blue-600 to-blue-900', initials: 'AA' },
+  { name: 'Chanas Assurances', country: 'Cameroun', color: 'from-red-600 to-red-900', initials: 'CA' },
+  { name: 'AXA Assurances', country: 'International', color: 'from-indigo-600 to-indigo-900', initials: 'AX' },
+  { name: 'NSIA Assurances', country: 'Cameroun', color: 'from-green-600 to-green-900', initials: 'NS' },
+  { name: 'Saar Assurances', country: 'Cameroun', color: 'from-orange-600 to-orange-900', initials: 'SA' },
+  { name: 'Zenithe Assurance', country: 'Afrique centrale', color: 'from-teal-600 to-teal-900', initials: 'ZA' },
+  { name: 'Beneficial Life', country: 'International', color: 'from-purple-600 to-purple-900', initials: 'BL' },
+  { name: 'GIC-Vie', country: 'Cameroun', color: 'from-primary-600 to-primary-900', initials: 'GV' },
 ]
 
 export default function Partners() {
   const { t } = useTranslation()
+
+  const partnersData = t('partners.list', { returnObjects: true })
+  const partners = partnersConfig.map((cfg, i) => ({ ...cfg, ...partnersData[i] }))
+
+  const advantages = t('partners.advantagesList', { returnObjects: true })
 
   return (
     <>
@@ -75,7 +73,7 @@ export default function Partners() {
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <motion.div variants={fadeUp} className="text-center mb-12">
-              <h2 className="section-title">Nos Compagnies Partenaires</h2>
+              <h2 className="section-title">{t('partners.ourCompanies')}</h2>
             </motion.div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {partners.map((partner, i) => (
@@ -124,8 +122,8 @@ export default function Partners() {
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <motion.div variants={fadeUp} className="text-center mb-12">
-              <h2 className="section-title">Pourquoi passer par un courtier ?</h2>
-              <p className="section-subtitle">Les avantages de travailler avec Leader Assurance</p>
+              <h2 className="section-title">{t('partners.whyBroker')}</h2>
+              <p className="section-subtitle">{t('partners.whyBrokerSubtitle')}</p>
             </motion.div>
             <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
               {advantages.map((adv, i) => (
@@ -151,12 +149,12 @@ export default function Partners() {
             <motion.div variants={fadeUp} className="max-w-4xl mx-auto">
               <div className="gradient-bg rounded-3xl p-10 text-center text-white">
                 <Star size={40} className="text-gold-400 mx-auto mb-4" />
-                <h2 className="text-2xl font-heading font-bold mb-3">Certifié et agréé</h2>
+                <h2 className="text-2xl font-heading font-bold mb-3">{t('partners.certified')}</h2>
                 <p className="text-white/80 mb-6">
-                  Leader Assurance est dûment agréé par les autorités de régulation camerounaises (CIMA - Conférence Interafricaine des Marchés d'Assurances), garantissant notre conformité et votre protection.
+                  {t('partners.certifiedDesc')}
                 </p>
                 <Link to="/contact" className="btn-gold inline-flex items-center gap-2">
-                  Contactez-nous <ArrowRight size={16} />
+                  {t('partners.contactUs')} <ArrowRight size={16} />
                 </Link>
               </div>
             </motion.div>

@@ -16,7 +16,7 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     if (!form.name || !form.email || !form.message) {
-      toast.error('Veuillez remplir tous les champs obligatoires.')
+      toast.error(t('contact.fillRequired'))
       return
     }
     setSending(true)
@@ -57,8 +57,8 @@ export default function Contact() {
             {/* Contact info */}
             <div className="space-y-6">
               <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 }}>
-                <h2 className="section-title mb-2">Nos coordonnées</h2>
-                <p className="text-gray-600 text-sm mb-6">Contactez-nous par le moyen de votre choix. Nous vous répondons rapidement.</p>
+                <h2 className="section-title mb-2">{t('contact.ourCoordinates')}</h2>
+                <p className="text-gray-600 text-sm mb-6">{t('contact.coordinatesDesc')}</p>
               </motion.div>
 
               {[
@@ -70,7 +70,7 @@ export default function Contact() {
                 },
                 {
                   icon: Phone,
-                  title: 'Téléphones',
+                  title: t('contact.phones'),
                   content: '+237 696 41 10 12\n+237 681 80 69 75',
                   color: 'text-green-600 bg-green-50',
                   href: 'tel:+237696411012',
@@ -140,7 +140,7 @@ export default function Contact() {
                 transition={{ delay: 0.2 }}
                 className="card p-8"
               >
-                <h2 className="text-2xl font-heading font-bold text-primary-900 mb-6">Envoyez-nous un message</h2>
+                <h2 className="text-2xl font-heading font-bold text-primary-900 mb-6">{t('contact.sendMessage')}</h2>
 
                 {sent ? (
                   <div className="flex flex-col items-center justify-center py-12 text-center">
@@ -148,7 +148,7 @@ export default function Contact() {
                       <CheckCircle size={40} className="text-green-600" />
                     </div>
                     <h3 className="text-xl font-heading font-semibold text-primary-900 mb-2">{t('contact.success')}</h3>
-                    <p className="text-gray-600">Nous vous répondrons dans les plus brefs délais.</p>
+                    <p className="text-gray-600">{t('contact.replyDelay')}</p>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-5">
@@ -203,13 +203,13 @@ export default function Contact() {
                           onChange={handleChange}
                           className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500 transition-colors"
                         >
-                          <option value="">-- Choisir un sujet --</option>
-                          <option value="devis">Demande de devis</option>
-                          <option value="sante">Assurance Santé</option>
-                          <option value="entreprise">Assurance Entreprise</option>
-                          <option value="vie">Assurance Vie</option>
-                          <option value="sinistre">Déclaration de sinistre</option>
-                          <option value="autre">Autre</option>
+                          <option value="">{t('contact.subjectPlaceholder')}</option>
+                          <option value="devis">{t('contact.subjectOptions.devis')}</option>
+                          <option value="sante">{t('contact.subjectOptions.sante')}</option>
+                          <option value="entreprise">{t('contact.subjectOptions.entreprise')}</option>
+                          <option value="vie">{t('contact.subjectOptions.vie')}</option>
+                          <option value="sinistre">{t('contact.subjectOptions.sinistre')}</option>
+                          <option value="autre">{t('contact.subjectOptions.autre')}</option>
                         </select>
                       </div>
                     </div>
@@ -223,7 +223,7 @@ export default function Contact() {
                         value={form.message}
                         onChange={handleChange}
                         rows={5}
-                        placeholder="Décrivez votre besoin en assurance..."
+                        placeholder={t('contact.messagePlaceholder')}
                         required
                         className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500 transition-colors resize-none"
                       />

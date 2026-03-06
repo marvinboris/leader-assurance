@@ -27,11 +27,14 @@
   "why": {
     "title": "¿Por qué elegir Leader Assurance?",
     "subtitle": "Su asesor independiente en seguros",
+    "ourDifference": "Nuestra diferencia",
     "independent": "Asesor independiente en seguros",
     "access": "Acceso a varias compañías asociadas",
     "custom": "Soluciones personalizadas",
     "analysis": "Análisis de riesgos",
-    "assistance": "Asistencia en caso de siniestro"
+    "assistance": "Asistencia en caso de siniestro",
+    "learnMore": "Saber más",
+    "contactUs": "Contáctenos"
   },
   "stats": {
     "clients": "Clientes atendidos",
@@ -39,17 +42,90 @@
     "partners": "Socios aseguradores",
     "policies": "Pólizas gestionadas"
   },
-  "testimonials": { "title": "Lo que dicen nuestros clientes", "subtitle": "La satisfacción del cliente es nuestra prioridad" },
+  "testimonials": {
+    "title": "Lo que dicen nuestros clientes",
+    "subtitle": "La satisfacción del cliente es nuestra prioridad",
+    "list": [
+      { "name": "Jean-Paul Mbarga", "role": "Director, PYME Duala", "text": "Leader Assurance nos ayudó a encontrar una cobertura adecuada para nuestra empresa optimizando costos. Servicio profesional y receptivo." },
+      { "name": "Marie-Claire Ekoto", "role": "Particular, Yaundé", "text": "Gracias al seguro de salud de Leader Assurance, mi familia y yo estamos bien protegidos. Recomiendo ampliamente sus servicios." },
+      { "name": "Emmanuel Nganou", "role": "Empresario", "text": "Una firma seria que cuida a sus clientes. Realizaron un análisis completo de nuestros riesgos y nos propusieron las mejores soluciones." }
+    ]
+  },
+  "home": {
+    "teamSubtitle": "Expertos dedicados a su servicio",
+    "viewAll": "Ver todos",
+    "viewAllArticles": "Ver todos los artículos",
+    "ctaTitle": "¿Listo para proteger lo que más importa?",
+    "ctaDesc": "Contacte a nuestros expertos y obtenga una cotización personalizada gratuita hoy.",
+    "getFreeQuote": "Obtener cotización gratuita",
+    "team": [
+      { "name": "Director General", "role": "CEO y Fundador" },
+      { "name": "Responsable Comercial", "role": "Director Comercial" },
+      { "name": "Asesora Senior", "role": "Experta en Seguros de Vida" },
+      { "name": "Responsable Empresas", "role": "Experto en Seguros Empresariales" }
+    ],
+    "articles": [
+      { "title": "Entender el seguro de salud en Camerún", "excerpt": "Descubra todo lo que necesita saber sobre el seguro de salud y cómo elegir la mejor cobertura para su familia.", "category": "Salud", "date": "15 de febrero de 2025" },
+      { "title": "Por qué las empresas deben protegerse", "excerpt": "Los riesgos financieros que enfrentan las empresas africanas y cómo el seguro puede protegerlas eficazmente.", "category": "Empresas", "date": "3 de enero de 2025" },
+      { "title": "Tendencias del seguro en África", "excerpt": "El mercado asegurador africano está en pleno auge. Análisis de nuevas tendencias y oportunidades.", "category": "Tendencias", "date": "20 de diciembre de 2024" }
+    ],
+    "calculatorPlaceholder": "-- Elegir --",
+    "calculatorOptions": {
+      "sante": "Seguro de Salud",
+      "vie": "Seguro de Vida",
+      "voyage": "Seguro de Viaje",
+      "epargne": "Ahorro",
+      "entreprise": "Seguro Empresarial",
+      "responsabilite": "Responsabilidad Civil",
+      "employes": "Seguro de Empleados",
+      "actifs": "Protección de Activos"
+    }
+  },
   "about": {
     "title": "Sobre Leader Assurance",
     "subtitle": "Su socio de confianza desde hace más de 10 años",
-    "description1": "Leader Assurance SARL es una firma de consultoría y corretaje de seguros con sede en Duala, Camerún.",
-    "description2": "Nuestro enfoque independiente nos permite seleccionar las mejores ofertas del mercado.",
+    "description1": "Leader Assurance SARL es una firma de consultoría y corretaje de seguros con sede en Duala, Camerún. Asistimos a particulares y empresas en la gestión de sus riesgos y la protección de sus activos.",
+    "description2": "Nuestro enfoque independiente nos permite seleccionar las mejores ofertas del mercado para proporcionarle soluciones a medida, adaptadas a sus necesidades específicas.",
     "mission": "Nuestra Misión",
-    "missionText": "Ofrecer servicios de asesoría en seguros de calidad superior, personalizados y transparentes.",
+    "missionText": "Ofrecer servicios de asesoría en seguros de calidad superior, personalizados y transparentes, permitiendo a nuestros clientes tomar las mejores decisiones de protección.",
     "vision": "Nuestra Visión",
-    "visionText": "Convertirnos en la firma de corretaje de seguros de referencia en África Central.",
-    "team": "Nuestro Equipo"
+    "visionText": "Convertirnos en la firma de corretaje de seguros de referencia en África Central, reconocida por su experiencia, integridad y compromiso con la excelencia.",
+    "team": "Nuestro Equipo",
+    "ourHistory": "Nuestra Historia",
+    "certifiedAdvisor": "Asesor de Seguros Certificado",
+    "clientsSatisfied": "Clientes satisfechos",
+    "yearsExperience": "Años de experiencia",
+    "policiesManaged": "Pólizas gestionadas",
+    "valuesTitle": "Nuestros Valores",
+    "valuesSubtitle": "Los principios que guían cada una de nuestras acciones",
+    "journeyTitle": "Nuestro Recorrido",
+    "journeySubtitle": "15 años de excelencia al servicio de nuestros clientes",
+    "teamSubtitle": "Expertos apasionados a su servicio",
+    "ctaTitle": "Trabajemos juntos",
+    "ctaDesc": "Nuestro equipo está listo para acompañarle en su estrategia de seguros.",
+    "contactUs": "Ponerse en contacto",
+    "values": [
+      { "title": "Integridad", "description": "Actuamos con honestidad y transparencia en todas nuestras interacciones." },
+      { "title": "Compromiso", "description": "Estamos plenamente comprometidos con la satisfacción y protección de nuestros clientes." },
+      { "title": "Excelencia", "description": "Buscamos la excelencia en cada consejo y servicio que ofrecemos." },
+      { "title": "Proximidad", "description": "Construimos relaciones duraderas basadas en la confianza y el respeto." }
+    ],
+    "teamMembers": [
+      { "name": "Director General", "role": "CEO y Fundador", "bio": "Experto en seguros con más de 15 años de experiencia en el sector financiero y asegurador en África Central." },
+      { "name": "Responsable Comercial", "role": "Director Comercial", "bio": "Especialista en desarrollo comercial y relaciones con clientes con experiencia en productos de seguros empresariales." },
+      { "name": "Asesora Senior", "role": "Experta en Seguros de Vida y Salud", "bio": "Consultora certificada en seguros de vida y salud, acompaña a los particulares en la elección de sus coberturas." },
+      { "name": "Responsable Empresas", "role": "Experto en Seguros Empresariales", "bio": "Especialista en riesgos profesionales y protección de empresas, grandes y pequeñas." },
+      { "name": "Jurista", "role": "Asesor Jurídico", "bio": "Experto en derecho de seguros, vela por el cumplimiento y apoya a los clientes en situaciones de siniestros." },
+      { "name": "Asistente", "role": "Relaciones con Clientes", "bio": "Primer punto de contacto de nuestros clientes, asegura una cálida bienvenida y un seguimiento atento de cada expediente." }
+    ],
+    "milestones": [
+      { "year": "2010", "title": "Fundación", "description": "Creación de Leader Assurance SARL en Duala, Camerún." },
+      { "year": "2013", "title": "Expansión", "description": "Ampliación de la cartera de socios y los servicios ofrecidos." },
+      { "year": "2016", "title": "Crecimiento", "description": "Alcanzar 200 clientes activos y 8 compañías socias." },
+      { "year": "2019", "title": "Digitalización", "description": "Lanzamiento de nuestras herramientas digitales para servir mejor a nuestros clientes." },
+      { "year": "2022", "title": "Reconocimiento", "description": "Distinciones por excelencia en el servicio al cliente en África Central." },
+      { "year": "2025", "title": "Hoy", "description": "Más de 500 clientes atendidos y 15 socios aseguradores." }
+    ]
   },
   "solutions": {
     "title": "Nuestras Soluciones de Seguros",
@@ -57,14 +133,96 @@
     "individuals": "Para Particulares",
     "companies": "Para Empresas",
     "learnMore": "Saber más",
+    "lessDetails": "Menos detalles",
     "getQuote": "Solicitar cotización",
     "advantages": "Ventajas",
-    "examples": "Ejemplos de situaciones"
+    "examples": "Ejemplos de situaciones",
+    "howItWorks": "¿Cómo funciona?",
+    "howItWorksSubtitle": "Un proceso simple y transparente",
+    "ctaTitle": "¿Necesita una solución a medida?",
+    "ctaDesc": "Nuestros expertos le acompañan en la elección de la mejor protección.",
+    "ctaButton": "Solicitar cotización personalizada",
+    "steps": [
+      { "step": "01", "title": "Consulta", "description": "Intercambio inicial con nuestro asesor para comprender sus necesidades y situación." },
+      { "step": "02", "title": "Análisis", "description": "Análisis exhaustivo de sus riesgos e identificación de soluciones adecuadas." },
+      { "step": "03", "title": "Propuesta", "description": "Presentación de ofertas personalizadas de nuestros mejores socios." },
+      { "step": "04", "title": "Suscripción", "description": "Finalización del contrato y acompañamiento durante toda la duración de su cobertura." }
+    ],
+    "health": {
+      "title": "Seguro de Salud",
+      "description": "Cobertura completa para sus cuidados médicos y los de su familia.",
+      "advantages": ["Reembolso de consultas", "Cobertura hospitalización", "Medicamentos incluidos", "Red médica ampliada"],
+      "examples": ["Hospitalización urgente", "Cirugía programada", "Cuidados dentales", "Maternidad"]
+    },
+    "life": {
+      "title": "Seguro de Vida",
+      "description": "Proteja el futuro financiero de sus seres queridos.",
+      "advantages": ["Capital garantizado", "Renta vitalicia", "Beneficios fiscales", "Beneficiarios designados"],
+      "examples": ["Muerte prematura", "Invalidez permanente", "Protección familiar", "Herencia"]
+    },
+    "travel": {
+      "title": "Seguro de Viaje",
+      "description": "Viaje tranquilo en cualquier parte del mundo.",
+      "advantages": ["Asistencia repatriación", "Gastos médicos", "Cancelación de viaje", "Equipaje perdido"],
+      "examples": ["Viaje de negocios", "Vacaciones en familia", "Estancia estudiantil", "Expatriación"]
+    },
+    "savings": {
+      "title": "Seguro de Ahorro",
+      "description": "Construya su patrimonio con productos de ahorro seguros.",
+      "advantages": ["Rendimiento garantizado", "Ahorro progresivo", "Liquidez", "Protección de fallecimiento incluida"],
+      "examples": ["Jubilación", "Educación de hijos", "Proyecto inmobiliario", "Constitución de patrimonio"]
+    },
+    "enterprise": {
+      "title": "Seguro Empresarial",
+      "description": "Proteja su actividad profesional contra todos los riesgos.",
+      "advantages": ["Multirriesgo profesional", "Pérdidas de explotación", "Protección de activos", "Cobertura global"],
+      "examples": ["Incendio locales", "Robo equipos", "Daños a terceros", "Interrupción actividad"]
+    },
+    "liability": {
+      "title": "Responsabilidad Civil Pro",
+      "description": "Cubra su responsabilidad profesional.",
+      "advantages": ["Protección jurídica", "Indemnización daños", "Defensa intereses", "Cobertura errores"],
+      "examples": ["Error de asesoría", "Perjuicio al cliente", "Litigio contractual", "Daños corporales"]
+    },
+    "employees": {
+      "title": "Seguro de Empleados",
+      "description": "Proteja su capital humano con soluciones adaptadas.",
+      "advantages": ["Previsión colectiva", "Complemento de salud", "Accidentes laborales", "Retención de talentos"],
+      "examples": ["Enfermedad del empleado", "Accidente laboral", "Fallecimiento del empleado", "Invalidez"]
+    },
+    "assets": {
+      "title": "Protección de Activos",
+      "description": "Asegure todos sus bienes y equipos profesionales.",
+      "advantages": ["Todos los riesgos materiales", "Flota de vehículos", "Máquinas industriales", "Equipos informáticos"],
+      "examples": ["Destrucción de material", "Robo de equipos", "Avería de máquina", "Daños por agua"]
+    }
   },
   "partners": {
     "title": "Nuestros Socios",
     "subtitle": "Trabajamos con las mejores compañías de seguros",
-    "description": "Leader Assurance trabaja con varias compañías de seguros reconocidas."
+    "description": "Leader Assurance trabaja con varias compañías de seguros reconocidas para ofrecer las mejores soluciones adaptadas a las necesidades de nuestros clientes.",
+    "ourCompanies": "Nuestras Compañías Socias",
+    "whyBroker": "¿Por qué recurrir a un corredor?",
+    "whyBrokerSubtitle": "Las ventajas de trabajar con Leader Assurance",
+    "certified": "Certificado y acreditado",
+    "certifiedDesc": "Leader Assurance está debidamente acreditado por las autoridades reguladoras camerunesas (CIMA - Conferencia Interafricana de Mercados de Seguros), garantizando nuestro cumplimiento y su protección.",
+    "contactUs": "Contáctenos",
+    "list": [
+      { "specialty": "Vida y No-vida", "description": "Líder del mercado camerunés, Activa ofrece una gama completa de productos de seguros." },
+      { "specialty": "Todos los riesgos", "description": "Experto reconocido en seguros empresariales y de particulares en África Central." },
+      { "specialty": "Multi-servicios", "description": "Grupo internacional líder con fuerte presencia en África." },
+      { "specialty": "Vida y Ahorro", "description": "Especialista en seguros de vida y productos de ahorro en África subsahariana." },
+      { "specialty": "Empresas", "description": "Referencia en seguros empresariales y gestión de riesgos industriales." },
+      { "specialty": "Salud", "description": "Experto en soluciones de seguro de salud para empresas y particulares." },
+      { "specialty": "Previsión", "description": "Especialista internacional en seguros de vida y productos de previsión." },
+      { "specialty": "Vida", "description": "Compañía camerunesa especializada en seguros de vida y derivados." }
+    ],
+    "advantagesList": [
+      { "title": "Acceso multi-compañías", "description": "Comparamos ofertas de varias compañías para proponerle la mejor tarifa." },
+      { "title": "Negociación de condiciones", "description": "Nuestro volumen de negocios nos permite negociar condiciones preferentes." },
+      { "title": "Solvencia verificada", "description": "Trabajamos solo con compañías financieramente sólidas y acreditadas." },
+      { "title": "Servicio de proximidad", "description": "Un interlocutor único en Leader Assurance para gestionar todos sus contratos." }
+    ]
   },
   "news": {
     "title": "Noticias y Consejos",
@@ -74,11 +232,26 @@
     "all": "Todos",
     "readMore": "Leer más",
     "share": "Compartir",
-    "recommended": "Artículos recomendados"
+    "recommended": "Artículos recomendados",
+    "notFound": "No se encontró ningún artículo para su búsqueda.",
+    "readingTime": "de lectura",
+    "backToArticles": "Volver a los artículos",
+    "needAdvice": "¿Necesita un consejo?",
+    "needAdviceDesc": "Nuestros expertos están disponibles para responder a todas sus preguntas sobre seguros.",
+    "contactUs": "Contáctenos",
+    "categoryList": ["Todos", "Salud", "Empresas", "Tendencias", "Consejos", "Protección", "Ahorro"],
+    "articles": [
+      { "title": "Entender el seguro de salud en Camerún", "excerpt": "Descubra todo lo que necesita saber sobre el seguro de salud y cómo elegir la mejor cobertura para su familia en Camerún.", "category": "Salud", "date": "15 de febrero de 2025", "readTime": "5 min" },
+      { "title": "Por qué las empresas deben protegerse", "excerpt": "Los riesgos financieros que enfrentan las empresas africanas y cómo el seguro puede protegerlas eficazmente.", "category": "Empresas", "date": "3 de enero de 2025", "readTime": "7 min" },
+      { "title": "Tendencias del seguro en África", "excerpt": "El mercado asegurador africano está en pleno auge. Análisis de nuevas tendencias y oportunidades.", "category": "Tendencias", "date": "20 de diciembre de 2024", "readTime": "6 min" },
+      { "title": "Cómo elegir el seguro correcto", "excerpt": "Guía práctica para seleccionar la cobertura de seguro adecuada a sus necesidades específicas.", "category": "Consejos", "date": "5 de noviembre de 2024", "readTime": "8 min" },
+      { "title": "La importancia de la responsabilidad civil", "excerpt": "Por qué el seguro de responsabilidad civil es indispensable para particulares y profesionales.", "category": "Protección", "date": "15 de octubre de 2024", "readTime": "5 min" },
+      { "title": "El seguro de vida: ahorrar y protegerse", "excerpt": "Descubra cómo el seguro de vida puede servir como herramienta de ahorro y protección para su familia.", "category": "Ahorro", "date": "1 de octubre de 2024", "readTime": "6 min" }
+    ]
   },
   "calculator": {
     "title": "Calculadora de Cotización",
-    "subtitle": "Obtenga una estimación rápida",
+    "subtitle": "Obtenga una estimación rápida de su seguro",
     "type": "Tipo de seguro",
     "age": "Edad",
     "employees": "Número de empleados",
@@ -88,10 +261,59 @@
     "premium": "Premium",
     "calculate": "Obtener estimación",
     "result": "Estimación mensual",
-    "disclaimer": "Esta estimación es indicativa.",
+    "disclaimer": "Esta estimación es indicativa. Contáctenos para una cotización personalizada.",
     "personalized": "Solicitar cotización personalizada"
   },
-  "faq": { "title": "Preguntas Frecuentes", "subtitle": "Encuentre rápidamente respuestas a sus preguntas" },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Encuentre rápidamente respuestas a sus preguntas",
+    "searchPlaceholder": "Buscar una pregunta...",
+    "notFound": "No se encontró ninguna pregunta para su búsqueda.",
+    "notAnswered": "¿No encontró su respuesta?",
+    "notAnsweredDesc": "Nuestro equipo de asesores está disponible para responder a todas sus preguntas específicas.",
+    "contactUs": "Contáctenos",
+    "all": "Todos",
+    "data": [
+      {
+        "key": "general",
+        "category": "General",
+        "questions": [
+          { "q": "¿Cuál es el papel de un corredor de seguros?", "a": "Un corredor de seguros es un intermediario independiente que representa los intereses del cliente. A diferencia de un agente exclusivo de una compañía, el corredor puede comparar ofertas de varios aseguradores para proponer la mejor solución según su perfil y necesidades." },
+          { "q": "¿Por qué usar Leader Assurance en vez de ir directamente a una compañía?", "a": "Leader Assurance le ofrece varias ventajas: acceso a múltiples compañías, asesoramiento personalizado y objetivo, negociación de mejores condiciones, acompañamiento en caso de siniestro y un interlocutor único para todos sus contratos. Nuestro servicio es a menudo sin costo adicional para el cliente." },
+          { "q": "¿Es Leader Assurance una compañía de seguros?", "a": "No, Leader Assurance es una firma de corretaje y asesoría en seguros. No asumimos riesgos directamente, pero trabajamos con compañías de seguros autorizadas para ofrecerle las mejores coberturas." },
+          { "q": "¿Están acreditados por las autoridades reguladoras?", "a": "Sí, Leader Assurance está debidamente acreditada de acuerdo con los requisitos de la CIMA (Conferencia Interafricana de Mercados de Seguros) que regula el sector asegurador en África Central, incluido Camerún." }
+        ]
+      },
+      {
+        "key": "quotes",
+        "category": "Cotizaciones y Contratos",
+        "questions": [
+          { "q": "¿Cómo obtener una cotización?", "a": "Puede obtener una cotización de varias formas: rellenando nuestro formulario en línea en la página Contacto, llamándonos al +237 696 41 10 12 o +237 681 80 69 75, vía WhatsApp, o visitando directamente nuestras oficinas en Akwa, Duala. Nuestra respuesta suele ser en 24-48 horas." },
+          { "q": "¿Son gratuitas las cotizaciones?", "a": "Sí, todas nuestras cotizaciones y consultas iniciales son completamente gratuitas y sin compromiso. No tiene ninguna obligación hasta que firme un contrato." },
+          { "q": "¿Cuánto tiempo se tarda en suscribir un seguro?", "a": "Según el tipo de seguro, el plazo varía. Para seguros simples (salud, vida), la suscripción puede realizarse en 24 a 48 horas. Para coberturas más complejas (empresas, activos importantes), el proceso puede tardar de 5 a 10 días hábiles." },
+          { "q": "¿Se puede modificar el contrato después de la suscripción?", "a": "Sí, sus contratos pueden adaptarse a la evolución de sus necesidades. Se pueden añadir adendas para modificar garantías, capitales o beneficiarios. Contacte a su asesor Leader Assurance para cualquier solicitud de modificación." }
+        ]
+      },
+      {
+        "key": "business",
+        "category": "Empresas",
+        "questions": [
+          { "q": "¿Pueden las empresas personalizar su cobertura?", "a": "¡Absolutamente! Es uno de nuestros puntos fuertes. Cada empresa tiene riesgos específicos relacionados con su sector, tamaño y actividades. Realizamos un análisis completo de sus riesgos para diseñar una cobertura a medida." },
+          { "q": "¿Qué tipos de empresas pueden asegurarse?", "a": "Cubrimos todo tipo de empresas: micropymes, pymes, grandes empresas, profesiones liberales, comerciantes, industriales. Nuestras soluciones se adaptan a todos los sectores de actividad." },
+          { "q": "¿Es obligatorio el seguro de responsabilidad civil profesional?", "a": "La RC profesional no siempre es legalmente obligatoria para todas las profesiones en Camerún, pero es muy recomendable para cualquier actividad profesional. Protege a su empresa contra las consecuencias financieras de errores u omisiones en el ejercicio de su actividad." }
+        ]
+      },
+      {
+        "key": "claims",
+        "category": "Siniestros",
+        "questions": [
+          { "q": "¿Qué hacer en caso de siniestro?", "a": "En caso de siniestro: 1) Asegure a las personas y los bienes si es posible. 2) Contacte inmediatamente a Leader Assurance y/o a la compañía de seguros. 3) Reúna pruebas (fotos, testimonios). 4) Complete la declaración de siniestro dentro de los plazos previstos en el contrato. Nuestro equipo le acompaña en todo el proceso." },
+          { "q": "¿Cuánto tiempo tarda la indemnización tras un siniestro?", "a": "Los plazos varían según la naturaleza y complejidad del siniestro. Para siniestros simples, la indemnización puede producirse en pocas semanas. Para siniestros complejos que requieran peritaje, el plazo puede ser de 1 a 3 meses." },
+          { "q": "¿Me ayuda Leader Assurance en caso de litigio con la compañía de seguros?", "a": "Sí, uno de nuestros roles esenciales es defender sus intereses frente a las compañías de seguros. En caso de desacuerdo o litigio, intervenimos como su mandatario para obtenerle una indemnización justa y conforme a su contrato." }
+        ]
+      }
+    ]
+  },
   "contact": {
     "title": "Contáctenos",
     "subtitle": "Nuestro equipo está disponible para asistirle",
@@ -107,12 +329,29 @@
     "address": "Dirección",
     "whatsapp": "Contactar via WhatsApp",
     "schedule": "Horario de apertura",
-    "scheduleText": "Lunes - Viernes: 8h - 18h\nSábado: 9h - 13h"
+    "scheduleText": "Lunes - Viernes: 8h - 18h\nSábado: 9h - 13h",
+    "ourCoordinates": "Nuestros datos de contacto",
+    "coordinatesDesc": "Contáctenos por el medio de su elección. Le respondemos rápidamente.",
+    "phones": "Teléfonos",
+    "sendMessage": "Envíenos un mensaje",
+    "replyDelay": "Le responderemos lo antes posible.",
+    "fillRequired": "Por favor complete todos los campos obligatorios.",
+    "messagePlaceholder": "Describa su necesidad de seguro...",
+    "subjectPlaceholder": "-- Elegir un asunto --",
+    "subjectOptions": {
+      "devis": "Solicitud de cotización",
+      "sante": "Seguro de Salud",
+      "entreprise": "Seguro Empresarial",
+      "vie": "Seguro de Vida",
+      "sinistre": "Declaración de siniestro",
+      "autre": "Otro"
+    }
   },
   "chat": {
     "title": "Asistente Leader Assurance",
     "placeholder": "Haga su pregunta...",
     "send": "Enviar",
+    "online": "En línea",
     "welcome": "¡Hola! Soy el asistente de Leader Assurance. ¿Cómo puedo ayudarle hoy?",
     "contact": "Contactar un asesor"
   },

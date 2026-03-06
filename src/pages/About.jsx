@@ -21,33 +21,39 @@ function AnimatedSection({ children, className = '' }) {
   )
 }
 
-const values = [
-  { icon: Shield, title: 'Intégrité', description: 'Nous agissons avec honnêteté et transparence dans toutes nos interactions.', color: 'text-blue-600 bg-blue-50' },
-  { icon: Heart, title: 'Engagement', description: 'Nous nous engageons pleinement pour la satisfaction et la protection de nos clients.', color: 'text-red-600 bg-red-50' },
-  { icon: Award, title: 'Excellence', description: 'Nous visons l\'excellence dans chaque conseil et service que nous offrons.', color: 'text-yellow-600 bg-yellow-50' },
-  { icon: Users, title: 'Proximité', description: 'Nous construisons des relations durables basées sur la confiance et le respect.', color: 'text-green-600 bg-green-50' },
+const valuesConfig = [
+  { icon: Shield, color: 'text-blue-600 bg-blue-50' },
+  { icon: Heart, color: 'text-red-600 bg-red-50' },
+  { icon: Award, color: 'text-yellow-600 bg-yellow-50' },
+  { icon: Users, color: 'text-green-600 bg-green-50' },
 ]
 
-const teamMembers = [
-  { initials: 'DG', name: 'Directeur Général', role: 'PDG & Fondateur', color: 'from-primary-700 to-primary-900', bio: 'Expert en assurance avec plus de 15 ans d\'expérience dans le secteur financier et assurantiel en Afrique centrale.' },
-  { initials: 'RC', name: 'Responsable Commercial', role: 'Directeur Commercial', color: 'from-blue-600 to-blue-900', bio: 'Spécialiste du développement commercial et des relations clients avec une expertise en produits d\'assurance entreprise.' },
-  { initials: 'CS', name: 'Conseillère Senior', role: 'Expert Assurance Vie & Santé', color: 'from-indigo-600 to-indigo-900', bio: 'Consultante certifiée en assurance vie et santé, elle accompagne les particuliers dans le choix de leurs couvertures.' },
-  { initials: 'CE', name: 'Chargé Entreprises', role: 'Expert Assurance Entreprise', color: 'from-primary-600 to-primary-900', bio: 'Spécialiste des risques professionnels et de la protection des entreprises, petites et grandes structures.' },
-  { initials: 'JF', name: 'Juriste', role: 'Conseiller Juridique', color: 'from-purple-600 to-purple-900', bio: 'Expert en droit des assurances, il veille à la conformité et accompagne les clients dans les situations de sinistres.' },
-  { initials: 'AF', name: 'Assistante', role: 'Relation Client', color: 'from-teal-600 to-teal-900', bio: 'Premier point de contact de nos clients, elle assure un accueil chaleureux et un suivi attentif de chaque dossier.' },
-]
-
-const milestones = [
-  { year: '2010', title: 'Fondation', description: 'Création de Leader Assurance SARL à Douala, Cameroun.' },
-  { year: '2013', title: 'Expansion', description: 'Élargissement du portefeuille de partenaires et des services offerts.' },
-  { year: '2016', title: 'Croissance', description: 'Atteinte de 200 clients actifs et 8 compagnies partenaires.' },
-  { year: '2019', title: 'Digitalisation', description: 'Lancement de nos outils digitaux pour mieux servir nos clients.' },
-  { year: '2022', title: 'Reconnaissance', description: 'Distinctions pour l\'excellence du service client en Afrique centrale.' },
-  { year: '2025', title: 'Aujourd\'hui', description: 'Plus de 500 clients accompagnés et 15 partenaires d\'assurance.' },
+const teamConfig = [
+  { initials: 'DG', color: 'from-primary-700 to-primary-900' },
+  { initials: 'RC', color: 'from-blue-600 to-blue-900' },
+  { initials: 'CS', color: 'from-indigo-600 to-indigo-900' },
+  { initials: 'CE', color: 'from-primary-600 to-primary-900' },
+  { initials: 'JF', color: 'from-purple-600 to-purple-900' },
+  { initials: 'AF', color: 'from-teal-600 to-teal-900' },
 ]
 
 export default function About() {
   const { t } = useTranslation()
+
+  const valuesData = t('about.values', { returnObjects: true })
+  const values = valuesConfig.map((cfg, i) => ({ ...cfg, ...valuesData[i] }))
+
+  const teamData = t('about.teamMembers', { returnObjects: true })
+  const teamMembers = teamConfig.map((cfg, i) => ({ ...cfg, ...teamData[i] }))
+
+  const milestones = t('about.milestones', { returnObjects: true })
+
+  const statsItems = [
+    { label: '500+', sub: t('about.clientsSatisfied') },
+    { label: '15+', sub: t('stats.partners') },
+    { label: '10+', sub: t('about.yearsExperience') },
+    { label: '1200+', sub: t('about.policiesManaged') },
+  ]
 
   return (
     <>
@@ -64,7 +70,7 @@ export default function About() {
         <div className="container mx-auto px-4 relative z-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center text-white max-w-3xl mx-auto">
             <span className="inline-block px-4 py-2 bg-white/10 rounded-full text-sm font-medium mb-4">
-              Notre Histoire
+              {t('about.ourHistory')}
             </span>
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">{t('about.title')}</h1>
             <p className="text-white/80 text-lg">{t('about.subtitle')}</p>
@@ -82,12 +88,7 @@ export default function About() {
                 <p className="text-gray-600 leading-relaxed mb-4">{t('about.description1')}</p>
                 <p className="text-gray-600 leading-relaxed mb-8">{t('about.description2')}</p>
                 <div className="grid grid-cols-2 gap-4">
-                  {[
-                    { label: '500+', sub: 'Clients satisfaits' },
-                    { label: '15+', sub: 'Partenaires' },
-                    { label: '10+', sub: 'Ans d\'expérience' },
-                    { label: '1200+', sub: 'Polices gérées' },
-                  ].map((s, i) => (
+                  {statsItems.map((s, i) => (
                     <div key={i} className="bg-primary-50 rounded-2xl p-4 text-center">
                       <div className="text-2xl font-heading font-bold text-primary-900">{s.label}</div>
                       <div className="text-gray-500 text-sm mt-1">{s.sub}</div>
@@ -111,7 +112,7 @@ export default function About() {
                     </div>
                     <div>
                       <div className="font-heading font-bold text-primary-900">Leader Assurance</div>
-                      <div className="text-gray-500 text-sm">Assureur Conseil Certifié</div>
+                      <div className="text-gray-500 text-sm">{t('about.certifiedAdvisor')}</div>
                     </div>
                   </div>
                 </div>
@@ -128,7 +129,7 @@ export default function About() {
             {[
               { icon: Target, title: t('about.mission'), text: t('about.missionText'), color: 'bg-primary-900', light: 'bg-primary-50 text-primary-700' },
               { icon: Eye, title: t('about.vision'), text: t('about.visionText'), color: 'bg-gold-500', light: 'bg-gold-50 text-gold-700' },
-            ].map(({ icon: Icon, title, text, color, light }, i) => (
+            ].map(({ icon: Icon, title, text, color }, i) => (
               <AnimatedSection key={i}>
                 <motion.div variants={fadeUp} className="card p-8 h-full">
                   <div className={`w-14 h-14 ${color} rounded-2xl flex items-center justify-center mb-5`}>
@@ -148,8 +149,8 @@ export default function About() {
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <motion.div variants={fadeUp} className="text-center mb-14">
-              <h2 className="section-title">Nos Valeurs</h2>
-              <p className="section-subtitle">Les principes qui guident chacune de nos actions</p>
+              <h2 className="section-title">{t('about.valuesTitle')}</h2>
+              <p className="section-subtitle">{t('about.valuesSubtitle')}</p>
             </motion.div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {values.map((value, i) => (
@@ -171,8 +172,8 @@ export default function About() {
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <motion.div variants={fadeUp} className="text-center mb-14">
-              <h2 className="section-title">Notre Parcours</h2>
-              <p className="section-subtitle">15 ans d'excellence au service de nos clients</p>
+              <h2 className="section-title">{t('about.journeyTitle')}</h2>
+              <p className="section-subtitle">{t('about.journeySubtitle')}</p>
             </motion.div>
             <div className="relative max-w-4xl mx-auto">
               <div className="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-primary-100 hidden md:block" />
@@ -206,7 +207,7 @@ export default function About() {
           <AnimatedSection>
             <motion.div variants={fadeUp} className="text-center mb-14">
               <h2 className="section-title">{t('about.team')}</h2>
-              <p className="section-subtitle">Des experts passionnés à votre service</p>
+              <p className="section-subtitle">{t('about.teamSubtitle')}</p>
             </motion.div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {teamMembers.map((member, i) => (
@@ -229,13 +230,13 @@ export default function About() {
         <div className="container mx-auto px-4 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h2 className="text-3xl font-heading font-bold text-white mb-4">
-              Travaillons ensemble
+              {t('about.ctaTitle')}
             </h2>
             <p className="text-white/70 mb-8 max-w-xl mx-auto">
-              Notre équipe est prête à vous accompagner dans votre stratégie d'assurance.
+              {t('about.ctaDesc')}
             </p>
             <Link to="/contact" className="btn-gold inline-flex items-center gap-2">
-              Prendre contact <ArrowRight size={16} />
+              {t('about.contactUs')} <ArrowRight size={16} />
             </Link>
           </motion.div>
         </div>
