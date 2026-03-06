@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "leader-assurance-cm",
     "public": "dist",
     "ignore": [
       "firebase.json",

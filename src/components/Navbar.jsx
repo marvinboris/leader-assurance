@@ -44,7 +44,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white shadow-md py-2' : 'bg-white/95 backdrop-blur-sm py-3'
+        scrolled ? 'bg-white shadow-md' : 'bg-white/95 backdrop-blur-sm'
       }`}
     >
       {/* Top bar */}
@@ -64,7 +64,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      <nav className="container mx-auto px-4">
+      <nav className={`container mx-auto px-4 transition-all duration-300 ${scrolled ? 'py-2' : 'py-3'}`}>
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 flex-shrink-0">
