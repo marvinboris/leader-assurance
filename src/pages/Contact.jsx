@@ -40,8 +40,19 @@ export default function Contact() {
     setInvalid({})
     setSending(true)
     setStatus({ kind: 'status', text: '' })
-    // Simulate sending
-    await new Promise(r => setTimeout(r, 1500))
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...form, website: formRef.current.elements.website.value }),
+      })
+      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+    } catch {
+      setSending(false)
+      setStatus({ kind: 'alert', text: t('contact.error') })
+      toast.error(t('contact.error'))
+      return
+    }
     setSending(false)
     toast.success(t('contact.success'))
     setForm(EMPTY_FORM)
@@ -104,6 +115,7 @@ export default function Contact() {
                   <div><label htmlFor="subject" className={labelClass}>{t('contact.subject')}</label><select id="subject" name="subject" className="field" value={form.subject} onChange={handleChange}><option value="">{t('contact.subjectPlaceholder')}</option>{SUBJECTS.map(s => <option key={s} value={s}>{t(`contact.subjectOptions.${s}`)}</option>)}</select></div>
                   <div className="sm:col-span-2"><label htmlFor="message" className={labelClass}>{t('contact.message')} <span className="text-gold">*</span></label><textarea id="message" name="message" rows={5} className="field resize-y" placeholder={t('contact.messagePlaceholder')} required aria-required="true" value={form.message} onChange={handleChange} {...invalidProps('message')} /></div>
                 </div>
+                <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute -start-[9999px] h-px w-px opacity-0" defaultValue="" />
                 <button id="contact-submit" type="submit" disabled={sending} className="button button-gold mt-6 w-full sm:w-auto"><span id="submit-label">{sending ? t('contact.sending') : t('contact.send')}</span><span aria-hidden="true" className="inline-block rtl:-scale-x-100">↗</span></button>
                 <p id="form-status" className={`mt-4 min-h-6 text-small ${status.kind === 'alert' ? 'text-error' : 'text-muted'}`} role={status.kind} aria-live={status.kind === 'alert' ? 'assertive' : 'polite'}>{status.text}</p>
                 <p className="mt-2 text-micro text-muted">* {t('ui.contact.requiredNote')}</p>
