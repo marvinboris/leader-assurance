@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leader Assurance — Courtier indépendant à Douala · Maquette B</title>
+<meta name="description" content="Leader Assurance compare les offres de plusieurs compagnies pour vous. Santé, vie, entreprise, responsabilité civile. Douala, Cameroun.">
+<link rel="icon" href="../logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#0b1433', navy: '#0d1b5e', 'navy-2': '#1a2a78', paper: '#f3f5fa', sheet: '#ffffff',
+          rule: '#d5dbe8', muted: '#5b6684', gold: '#f2b233', 'gold-ink': '#7a5200', wa: '#1f8f4e'
+        },
+        fontFamily: {
+          display: ['Newsreader', 'Georgia', 'serif'],
+          sans: ['"Hanken Grotesk"', 'system-ui', 'sans-serif'],
+          mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace']
+        },
+        borderRadius: { DEFAULT: '2px' },
+        maxWidth: { page: '1280px' }
+      }
+    }
+  }
+</script>
+<style>
+  body { font-family: 'Hanken Grotesk', system-ui, sans-serif; }
+  .label { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; }
+  .h-display { font-family: 'Newsreader', Georgia, serif; letter-spacing: -0.02em; line-height: 1; }
+  .ulink { background: linear-gradient(#f2b233,#f2b233) left bottom / 0 2px no-repeat; transition: background-size .2s; }
+  .ulink:hover, .ulink:focus-visible { background-size: 100% 2px; }
+  :focus-visible { outline: 2px solid #0d1b5e; outline-offset: 2px; }
+  .on-dark :focus-visible { outline-color: #f2b233; }
+  .reveal { opacity: 0; transform: translateY(12px); transition: opacity .5s cubic-bezier(.2,.7,.2,1), transform .5s cubic-bezier(.2,.7,.2,1); }
+  .reveal.in { opacity: 1; transform: none; }
+  .row { opacity: 0; transform: translateY(6px); transition: opacity .4s, transform .4s; }
+  .ledger.in .row { opacity: 1; transform: none; }
+  .pick { position: relative; isolation: isolate; }
+  .pick::before { content: ''; position: absolute; inset: 0; background: #f2b233; transform: scaleX(0); transform-origin: left; transition: transform .6s cubic-bezier(.2,.7,.2,1) .7s; z-index: -1; }
+  .ledger.in .pick::before { transform: scaleX(1); }
+  .offset { box-shadow: 6px 6px 0 #0d1b5e; }
+  details > summary { list-style: none; } details > summary::-webkit-details-marker { display: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal, .row { opacity: 1; transform: none; transition: none; }
+    .pick::before { transform: scaleX(1); transition: none; }
+    .ulink { transition: none; }
+  }
+</style>
+</head>
+<body class="bg-paper text-ink antialiased">
+
+<a href="#devis" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 bg-navy text-white px-4 py-2">Aller au formulaire de devis</a>
+
+<!-- Bandeau -->
+<div class="bg-ink text-white/80 on-dark">
+  <div class="max-w-page mx-auto px-6 lg:px-10 h-9 flex items-center justify-between label">
+    <span class="truncate">Courtage indépendant<span class="hidden sm:inline"> · Akwa, Douala</span></span>
+    <a href="tel:+237696411012" class="hidden sm:inline hover:text-gold">+237 696 41 10 12</a>
+  </div>
+</div>
+
+<!-- Nav -->
+<header class="border-b border-rule bg-paper/95 backdrop-blur sticky top-0 z-40">
+  <nav class="max-w-page mx-auto px-6 lg:px-10 h-[72px] flex items-center justify-between" aria-label="Navigation principale">
+    <a href="#" class="flex items-center gap-3">
+      <img src="../logo.jpg" alt="" class="w-10 h-10 object-contain">
+      <span class="h-display text-[22px]">Leader Assurance</span>
+    </a>
+    <ul class="hidden lg:flex items-center gap-8 text-[14px] font-medium">
+      <li><a class="ulink" href="#solutions">Solutions</a></li>
+      <li><a class="ulink" href="#methode">Méthode</a></li>
+      <li><a class="ulink" href="#preuves">Clients</a></li>
+      <li><a class="ulink" href="#partenaires">Partenaires</a></li>
+      <li><a class="ulink" href="#contact">Contact</a></li>
+    </ul>
+    <div class="flex items-center gap-3">
+      <a href="#devis" class="hidden sm:inline-flex items-center gap-2 bg-navy hover:bg-navy-2 text-white text-[14px] font-semibold px-5 py-3 rounded">Demander un devis <span aria-hidden="true">→</span></a>
+      <details class="lg:hidden relative">
+        <summary class="cursor-pointer label border border-rule px-3 py-2 rounded" aria-label="Ouvrir le menu">Menu</summary>
+        <ul class="absolute right-0 mt-2 w-56 bg-sheet border border-rule text-[15px] divide-y divide-rule">
+          <li><a class="block px-4 py-3" href="#solutions">Solutions</a></li>
+          <li><a class="block px-4 py-3" href="#methode">Méthode</a></li>
+          <li><a class="block px-4 py-3" href="#preuves">Clients</a></li>
+          <li><a class="block px-4 py-3" href="#partenaires">Partenaires</a></li>
+          <li><a class="block px-4 py-3 font-semibold" href="#devis">Demander un devis →</a></li>
+        </ul>
+      </details>
+    </div>
+  </nav>
+</header>
+
+<main>
+<!-- § 01 Hero -->
+<section class="max-w-page mx-auto px-6 lg:px-10 pt-14 lg:pt-24 pb-16 lg:pb-28 grid lg:grid-cols-12 gap-12 lg:gap-6">
+  <div class="lg:col-span-7 reveal">
+    <p class="label text-muted mb-8">§ 01 — Conseil &amp; courtage en assurance</p>
+    <h1 class="h-display text-[clamp(44px,7vw,104px)]">
+      Nous comparons les assureurs.<br><em class="text-navy">Vous</em> signez avec le bon.
+    </h1>
+    <p class="mt-8 max-w-[34rem] text-[18px] leading-[1.6] text-muted">
+      Leader Assurance n'appartient à aucune compagnie. Nous mettons en concurrence plus de quinze assureurs pour protéger votre santé, votre famille et votre entreprise — puis nous restons à vos côtés le jour du sinistre.
+    </p>
+    <div class="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
+      <a href="#devis" class="inline-flex items-center gap-2 bg-navy hover:bg-navy-2 text-white text-[15px] font-semibold px-6 py-4 rounded">Obtenir mon devis gratuit <span aria-hidden="true">→</span></a>
+      <a href="https://wa.me/237696411012?text=Bonjour%20Leader%20Assurance%2C%20je%20souhaite%20un%20conseil." class="inline-flex items-center gap-3 text-[15px] font-semibold">
+        <span class="w-2.5 h-2.5 rounded-full bg-wa" aria-hidden="true"></span>
+        <span class="ulink">Écrire sur WhatsApp</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Registre comparatif -->
+  <aside class="lg:col-span-5 lg:col-start-8 reveal" aria-label="Exemple de mise en concurrence">
+    <div class="ledger bg-sheet border border-rule">
+      <div class="flex items-center justify-between px-5 py-4 border-b border-rule">
+        <span class="label text-muted">Dossier type · Santé famille, 4 pers.</span>
+        <span class="label text-navy">8 offres</span>
+      </div>
+      <ol class="text-[15px]">
+        <li class="row grid grid-cols-[44px_1fr_auto] items-center px-5 py-3 border-b border-rule" style="transition-delay:.06s"><span class="font-mono text-[12px] text-muted">01</span><span>Activa Assurances</span><span class="label text-muted">Étudiée</span></li>
+        <li class="row grid grid-cols-[44px_1fr_auto] items-center px-5 py-3 border-b border-rule" style="transition-delay:.12s"><span class="font-mono text-[12px] text-muted">02</span><span>Chanas Assurances</span><span class="label text-muted">Étudiée</span></li>
+        <li class="row grid grid-cols-[44px_1fr_auto] items-center px-5 py-3 border-b border-rule" style="transition-delay:.18s"><span class="font-mono text-[12px] text-muted">03</span><span>AXA Assurances</span><span class="label text-muted">Étudiée</span></li>
+        <li class="row grid grid-cols-[44px_1fr_auto] items-center px-5 py-3 border-b border-rule" style="transition-delay:.24s"><span class="font-mono text-[12px] text-muted">04</span><span>NSIA Assurances</span><span class="label text-muted">Étudiée</span></li>
+        <li class="row grid grid-cols-[44px_1fr_auto] items-center px-5 py-3 border-b border-rule" style="transition-delay:.30s"><span class="font-mono text-[12px] text-muted">05</span><span>Saar Assurances</span><span class="label text-muted">Étudiée</span></li>
+        <li class="row grid grid-cols-[44px_1fr_auto] items-center px-5 py-3 border-b border-rule" style="transition-delay:.36s"><span class="font-mono text-[12px] text-muted">06</span><span>Zenithe Assurance</span><span class="label text-muted">Étudiée</span></li>
+        <li class="row grid grid-cols-[44px_1fr_auto] items-center px-5 py-3 border-b border-rule" style="transition-delay:.42s"><span class="font-mono text-[12px] text-muted">07</span><span>Beneficial Life</span><span class="label text-muted">Étudiée</span></li>
+        <li class="row grid grid-cols-[44px_1fr_auto] items-center px-5 py-3 border-b border-rule" style="transition-delay:.48s"><span class="font-mono text-[12px] text-muted">08</span><span>GIC-Vie</span><span class="label text-muted">Étudiée</span></li>
+        <li class="row pick grid grid-cols-[44px_1fr_auto] items-center px-5 py-4 font-semibold" style="transition-delay:.54s"><span class="font-mono text-[12px]">→</span><span>Votre recommandation</span><span class="label">Retenue</span></li>
+      </ol>
+    </div>
+    <p class="mt-4 label text-muted">Garanties · plafonds · délais de remboursement · prime</p>
+  </aside>
+</section>
+
+<!-- Chiffres -->
+<section aria-label="Chiffres clés" class="border-y border-rule bg-sheet">
+  <dl class="max-w-page mx-auto px-6 lg:px-10 grid grid-cols-2 lg:grid-cols-4 divide-x divide-rule">
+    <div class="py-8 pr-4 lg:pr-6 reveal"><dt class="label text-muted">Clients accompagnés</dt><dd class="h-display text-[40px] lg:text-[64px] mt-2">500+</dd></div>
+    <div class="py-8 px-4 lg:px-6 reveal"><dt class="label text-muted">Années d'expérience</dt><dd class="h-display text-[40px] lg:text-[64px] mt-2">10+</dd></div>
+    <div class="py-8 pr-4 lg:px-6 reveal border-t lg:border-t-0 border-rule"><dt class="label text-muted">Compagnies partenaires</dt><dd class="h-display text-[40px] lg:text-[64px] mt-2">15+</dd></div>
+    <div class="py-8 px-4 lg:px-6 reveal border-t lg:border-t-0 border-rule"><dt class="label text-muted">Polices gérées</dt><dd class="h-display text-[40px] lg:text-[64px] mt-2">1&nbsp;200+</dd></div>
+  </dl>
+</section>
+
+<!-- § 02 Solutions -->
+<section id="solutions" class="max-w-page mx-auto px-6 lg:px-10 py-[72px] lg:py-[112px]">
+  <div class="grid lg:grid-cols-12 gap-6 mb-14">
+    <p class="lg:col-span-3 label text-muted pt-3">§ 02 — Solutions</p>
+    <h2 class="lg:col-span-8 h-display text-[44px] lg:text-[64px] reveal">Deux portes d'entrée.<br><em>Un seul conseiller.</em></h2>
+  </div>
+  <div class="grid lg:grid-cols-2 gap-12 lg:gap-6">
+    <div class="reveal">
+      <div class="flex items-baseline justify-between border-b-2 border-ink pb-3">
+        <h3 class="h-display text-[30px]">Particuliers &amp; familles</h3><span class="label text-muted">A</span>
+      </div>
+      <ul class="text-[18px]">
+        <li><a href="#devis" data-type="Assurance Santé" class="pick-type group grid grid-cols-[1fr_auto] gap-4 py-5 border-b border-rule"><span><span class="font-semibold">Santé</span><span class="block text-[15px] text-muted mt-1">Hospitalisation, soins courants, maternité — pour vous et vos proches.</span></span><span aria-hidden="true" class="transition-transform group-hover:translate-x-1">→</span></a></li>
+        <li><a href="#devis" data-type="Assurance Vie" class="pick-type group grid grid-cols-[1fr_auto] gap-4 py-5 border-b border-rule"><span><span class="font-semibold">Vie &amp; prévoyance</span><span class="block text-[15px] text-muted mt-1">Mettre votre famille à l'abri, quoi qu'il arrive.</span></span><span aria-hidden="true" class="transition-transform group-hover:translate-x-1">→</span></a></li>
+        <li><a href="#devis" data-type="Épargne" class="pick-type group grid grid-cols-[1fr_auto] gap-4 py-5 border-b border-rule"><span><span class="font-semibold">Épargne &amp; investissement</span><span class="block text-[15px] text-muted mt-1">Faire fructifier votre patrimoine, préparer les études, la retraite.</span></span><span aria-hidden="true" class="transition-transform group-hover:translate-x-1">→</span></a></li>
+        <li><a href="#devis" data-type="Assurance Voyage" class="pick-type group grid grid-cols-[1fr_auto] gap-4 py-5 border-b border-rule"><span><span class="font-semibold">Voyage</span><span class="block text-[15px] text-muted mt-1">Couverture médicale et assistance à l'étranger, visa inclus.</span></span><span aria-hidden="true" class="transition-transform group-hover:translate-x-1">→</span></a></li>
+      </ul>
+    </div>
+    <div class="reveal lg:mt-24">
+      <div class="flex items-baseline justify-between border-b-2 border-ink pb-3">
+        <h3 class="h-display text-[30px]">Entreprises &amp; PME</h3><span class="label text-muted">B</span>
+      </div>
+      <ul class="text-[18px]">
+        <li><a href="#devis" data-type="Assurance Entreprise" class="pick-type group grid grid-cols-[1fr_auto] gap-4 py-5 border-b border-rule"><span><span class="font-semibold">Multirisque entreprise</span><span class="block text-[15px] text-muted mt-1">Locaux, stocks, matériel, perte d'exploitation.</span></span><span aria-hidden="true" class="transition-transform group-hover:translate-x-1">→</span></a></li>
+        <li><a href="#devis" data-type="Responsabilité Civile" class="pick-type group grid grid-cols-[1fr_auto] gap-4 py-5 border-b border-rule"><span><span class="font-semibold">Responsabilité civile</span><span class="block text-[15px] text-muted mt-1">Les dommages causés à des tiers ne mettent pas votre activité en péril.</span></span><span aria-hidden="true" class="transition-transform group-hover:translate-x-1">→</span></a></li>
+        <li><a href="#devis" data-type="Assurance Employés" class="pick-type group grid grid-cols-[1fr_auto] gap-4 py-5 border-b border-rule"><span><span class="font-semibold">Santé collective des employés</span><span class="block text-[15px] text-muted mt-1">Fidéliser vos équipes avec une couverture négociée.</span></span><span aria-hidden="true" class="transition-transform group-hover:translate-x-1">→</span></a></li>
+        <li><a href="#devis" data-type="Protection Actifs" class="pick-type group grid grid-cols-[1fr_auto] gap-4 py-5 border-b border-rule"><span><span class="font-semibold">Flotte &amp; actifs</span><span class="block text-[15px] text-muted mt-1">Véhicules, équipements, marchandises transportées.</span></span><span aria-hidden="true" class="transition-transform group-hover:translate-x-1">→</span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- § 03 Méthode -->
+<section id="methode" class="bg-navy text-white on-dark">
+  <div class="max-w-page mx-auto px-6 lg:px-10 py-[72px] lg:py-[112px]">
+    <div class="grid lg:grid-cols-12 gap-6 mb-16">
+      <p class="lg:col-span-3 label text-white/60 pt-3">§ 03 — Notre différence</p>
+      <h2 class="lg:col-span-8 h-display text-[44px] lg:text-[64px] reveal">Un assureur vend <em>son</em> contrat.<br>Un courtier défend <em class="text-gold">le vôtre</em>.</h2>
+    </div>
+    <ol class="grid md:grid-cols-2 lg:grid-cols-4 border-t border-navy-2">
+      <li class="reveal py-8 md:pr-8 border-b lg:border-b-0 border-navy-2 lg:border-r">
+        <span class="font-mono text-gold text-[13px]">01</span>
+        <h3 class="h-display text-[30px] mt-6">Analyse des risques</h3>
+        <p class="mt-3 text-white/75 leading-[1.6]">On part de votre situation réelle — famille, activité, actifs — pas d'un catalogue.</p>
+      </li>
+      <li class="reveal py-8 md:pl-8 lg:pr-8 border-b lg:border-b-0 border-navy-2 lg:border-r">
+        <span class="font-mono text-gold text-[13px]">02</span>
+        <h3 class="h-display text-[30px] mt-6">Mise en concurrence</h3>
+        <p class="mt-3 text-white/75 leading-[1.6]">Nous interrogeons plusieurs compagnies et comparons garanties, exclusions et prix.</p>
+      </li>
+      <li class="reveal py-8 md:pr-8 lg:pl-8 border-b md:border-b-0 border-navy-2 lg:border-r">
+        <span class="font-mono text-gold text-[13px]">03</span>
+        <h3 class="h-display text-[30px] mt-6">Recommandation claire</h3>
+        <p class="mt-3 text-white/75 leading-[1.6]">Une proposition expliquée en mots simples. Vous décidez, sans pression.</p>
+      </li>
+      <li class="reveal py-8 md:pl-8">
+        <span class="font-mono text-gold text-[13px]">04</span>
+        <h3 class="h-display text-[30px] mt-6">Assistance sinistre</h3>
+        <p class="mt-3 text-white/75 leading-[1.6]">Le jour où il faut être remboursé, c'est nous qui suivons le dossier avec l'assureur.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- § 04 Témoignages -->
+<section id="preuves" class="max-w-page mx-auto px-6 lg:px-10 py-[72px] lg:py-[112px] grid lg:grid-cols-12 gap-12 lg:gap-6">
+  <p class="lg:col-span-3 label text-muted pt-3">§ 04 — Ils nous confient leurs risques</p>
+  <figure class="lg:col-span-9 reveal">
+    <blockquote class="h-display italic text-[30px] lg:text-[44px] leading-[1.15]">
+      « Leader Assurance nous a aidés à trouver une couverture adaptée à notre entreprise tout en <span class="bg-gold/60 not-italic px-1">optimisant nos coûts</span>. Service professionnel et réactif. »
+    </blockquote>
+    <figcaption class="mt-6 label text-muted">Jean-Paul Mbarga — Directeur, PME, Douala</figcaption>
+  </figure>
+  <div class="lg:col-start-4 lg:col-span-9 grid md:grid-cols-2 gap-10 border-t border-rule pt-10">
+    <figure class="reveal">
+      <blockquote class="h-display italic text-[22px] leading-[1.35]">« Grâce à l'assurance santé proposée par Leader Assurance, ma famille et moi sommes bien protégés. »</blockquote>
+      <figcaption class="mt-4 label text-muted">Marie-Claire Ekoto — Particulier, Yaoundé</figcaption>
+    </figure>
+    <figure class="reveal">
+      <blockquote class="h-display italic text-[22px] leading-[1.35]">« Ils ont fait une analyse complète de nos risques et nous ont proposé les meilleures solutions. »</blockquote>
+      <figcaption class="mt-4 label text-muted">Emmanuel Nganou — Chef d'entreprise</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- Partenaires -->
+<section id="partenaires" class="border-t border-rule bg-sheet">
+  <div class="max-w-page mx-auto px-6 lg:px-10 py-14 grid lg:grid-cols-12 gap-6 items-baseline">
+    <p class="lg:col-span-3 label text-muted">Compagnies partenaires</p>
+    <ul class="lg:col-span-9 flex flex-wrap gap-x-8 gap-y-3 h-display text-[22px] lg:text-[30px] text-navy">
+      <li>Activa</li><li aria-hidden="true" class="text-rule">/</li>
+      <li>Chanas</li><li aria-hidden="true" class="text-rule">/</li>
+      <li>AXA</li><li aria-hidden="true" class="text-rule">/</li>
+      <li>NSIA</li><li aria-hidden="true" class="text-rule">/</li>
+      <li>Saar</li><li aria-hidden="true" class="text-rule">/</li>
+      <li>Zenithe</li><li aria-hidden="true" class="text-rule">/</li>
+      <li>Beneficial Life</li><li aria-hidden="true" class="text-rule">/</li>
+      <li>GIC-Vie</li>
+    </ul>
+  </div>
+</section>
+
+<!-- § 05 Devis -->
+<section id="devis" class="bg-ink text-white on-dark">
+  <div class="max-w-page mx-auto px-6 lg:px-10 py-[72px] lg:py-[112px] grid lg:grid-cols-12 gap-12 lg:gap-6">
+    <div class="lg:col-span-5 reveal">
+      <p class="label text-white/60 mb-8">§ 05 — Devis gratuit</p>
+      <h2 class="h-display text-[44px] lg:text-[64px]">Trois champs.<br><em class="text-gold">Un conseiller vous rappelle.</em></h2>
+      <p class="mt-6 text-white/75 text-[18px] leading-[1.6] max-w-[28rem]">Dites-nous ce que vous voulez protéger. Un conseiller vous recontacte avec une comparaison, sans engagement.</p>
+      <dl id="contact" class="mt-12 grid gap-6 text-[16px]">
+        <div><dt class="label text-white/60">Téléphone</dt><dd class="mt-1"><a class="ulink" href="tel:+237696411012">+237 696 41 10 12</a> · <a class="ulink" href="tel:+237681806975">+237 681 80 69 75</a></dd></div>
+        <div><dt class="label text-white/60">E-mail</dt><dd class="mt-1"><a class="ulink" href="mailto:leaderassurance1@yahoo.fr">leaderassurance1@yahoo.fr</a></dd></div>
+        <div><dt class="label text-white/60">Cabinet</dt><dd class="mt-1"><a class="ulink" href="https://maps.google.com/?q=Rue+Bernab%C3%A9+Akwa+Douala">Rue Bernabé, Akwa — Douala, Cameroun</a></dd></div>
+      </dl>
+    </div>
+    <form id="quote" class="lg:col-span-6 lg:col-start-7 bg-sheet text-ink p-6 lg:p-10 offset reveal" novalidate>
+      <div class="flex items-center justify-between border-b border-rule pb-4 mb-8">
+        <span class="label text-muted">Demande de devis</span><span class="label text-gold-ink">Gratuit · sans engagement</span>
+      </div>
+      <label for="type" class="label text-muted">1 · Je veux assurer</label>
+      <select id="type" name="type" required class="mt-2 w-full bg-sheet border border-rule rounded px-4 py-3 text-[16px]">
+        <option value="">— Choisir —</option>
+        <option>Assurance Santé</option><option>Assurance Vie</option><option>Assurance Voyage</option><option>Épargne</option>
+        <option>Assurance Entreprise</option><option>Responsabilité Civile</option><option>Assurance Employés</option><option>Protection Actifs</option>
+      </select>
+      <label for="name" class="label text-muted block mt-6">2 · Nom complet</label>
+      <input id="name" name="name" required autocomplete="name" class="mt-2 w-full bg-sheet border border-rule rounded px-4 py-3 text-[16px]" placeholder="Ex. Marie Ekoto">
+      <label for="phone" class="label text-muted block mt-6">3 · Téléphone / WhatsApp</label>
+      <input id="phone" name="phone" required type="tel" autocomplete="tel" inputmode="tel" pattern="[+0-9 ]{8,}" class="mt-2 w-full bg-sheet border border-rule rounded px-4 py-3 text-[16px]" placeholder="+237 6XX XX XX XX">
+      <p id="err" role="alert" class="mt-4 text-[14px] text-[#b42318] min-h-[1.25rem]"></p>
+      <button class="mt-2 w-full inline-flex justify-center items-center gap-2 bg-navy hover:bg-navy-2 text-white text-[15px] font-semibold px-6 py-4 rounded">Envoyer ma demande via WhatsApp <span aria-hidden="true">→</span></button>
+      <p class="mt-4 text-[13px] text-muted">Votre demande s'ouvre dans WhatsApp, prête à envoyer au +237 696 41 10 12.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="bg-ink text-white/60 border-t border-white/10 on-dark">
+  <div class="max-w-page mx-auto px-6 lg:px-10 py-10 flex flex-col md:flex-row gap-4 md:items-center justify-between text-[14px]">
+    <p><span class="h-display text-white text-[18px]">Leader Assurance SARL</span> — Conseil &amp; courtage en assurance, Douala.</p>
+    <p class="label">Maquette B — Opus 5.5 · opus-design</p>
+  </div>
+</footer>
+
+<script>
+  // Reveal au scroll
+  const io = new IntersectionObserver((es) => es.forEach(e => {
+    if (!e.isIntersecting) return
+    e.target.classList.add('in')
+    e.target.querySelector('.ledger')?.classList.add('in')
+    io.unobserve(e.target)
+  }), { threshold: 0.15 })
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el))
+
+  // Lien solution → présélection du type
+  document.querySelectorAll('.pick-type').forEach(a => a.addEventListener('click', () => {
+    document.getElementById('type').value = a.dataset.type
+  }))
+
+  // Devis → WhatsApp
+  document.getElementById('quote').addEventListener('submit', (ev) => {
+    ev.preventDefault()
+    const f = ev.target, err = document.getElementById('err')
+    const bad = [...f.elements].find(el => el.willValidate && !el.checkValidity())
+    if (bad) { err.textContent = 'Merci de compléter : ' + f.querySelector(`label[for="${bad.id}"]`).textContent.replace(/^\d · /, '') + '.'; bad.focus(); return }
+    err.textContent = ''
+    const msg = `Bonjour Leader Assurance, je souhaite un devis.\nType : ${f.elements.type.value}\nNom : ${f.elements.name.value.trim()}\nTél : ${f.elements.phone.value.trim()}`
+    window.open('https://wa.me/237696411012?text=' + encodeURIComponent(msg), '_blank', 'noopener')
+  })
+</script>
+</body>
+</html>

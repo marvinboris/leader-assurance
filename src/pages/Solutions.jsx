@@ -1,276 +1,197 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
 import { Helmet } from 'react-helmet-async'
-import { Link, useSearchParams } from 'react-router-dom'
-import {
-  Heart, Shield, Plane, TrendingUp, Building2, Users, HardHat, Package,
-  CheckCircle2, ArrowRight, MessageSquare
-} from 'lucide-react'
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
-}
-
-const stagger = { visible: { transition: { staggerChildren: 0.1 } } }
-
-function AnimatedSection({ children, className = '' }) {
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 })
-  return (
-    <motion.div ref={ref} initial="hidden" animate={inView ? 'visible' : 'hidden'} variants={stagger} className={className}>
-      {children}
-    </motion.div>
-  )
-}
+import { Link, useParams, useSearchParams } from 'react-router-dom'
 
 const individualsData = [
-  {
-    key: 'health',
-    icon: Heart,
-    color: 'text-red-600 bg-red-50',
-    borderColor: 'border-red-100',
-    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&h=300&fit=crop',
-  },
-  {
-    key: 'life',
-    icon: Shield,
-    color: 'text-blue-600 bg-blue-50',
-    borderColor: 'border-blue-100',
-    image: 'https://images.unsplash.com/photo-1529220502050-f15e570c634e?w=500&h=300&fit=crop',
-  },
-  {
-    key: 'travel',
-    icon: Plane,
-    color: 'text-sky-600 bg-sky-50',
-    borderColor: 'border-sky-100',
-    image: 'https://images.unsplash.com/photo-1488085061387-422e29b40080?w=500&h=300&fit=crop',
-  },
-  {
-    key: 'savings',
-    icon: TrendingUp,
-    color: 'text-purple-600 bg-purple-50',
-    borderColor: 'border-purple-100',
-    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=500&h=300&fit=crop',
-  },
+  { key: 'health', id: 'sante' },
+  { key: 'life', id: 'vie' },
+  { key: 'travel', id: 'voyage' },
+  { key: 'savings', id: 'epargne' },
 ]
 
 const companiesData = [
-  {
-    key: 'enterprise',
-    icon: Building2,
-    color: 'text-primary-700 bg-primary-50',
-    borderColor: 'border-primary-100',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500&h=300&fit=crop',
-  },
-  {
-    key: 'liability',
-    icon: Shield,
-    color: 'text-green-700 bg-green-50',
-    borderColor: 'border-green-100',
-    image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=500&h=300&fit=crop',
-  },
-  {
-    key: 'employees',
-    icon: Users,
-    color: 'text-teal-700 bg-teal-50',
-    borderColor: 'border-teal-100',
-    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&h=300&fit=crop',
-  },
-  {
-    key: 'assets',
-    icon: Package,
-    color: 'text-amber-700 bg-amber-50',
-    borderColor: 'border-amber-100',
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=500&h=300&fit=crop',
-  },
+  { key: 'enterprise', id: 'entreprise' },
+  { key: 'liability', id: 'responsabilite' },
+  { key: 'employees', id: 'employes' },
+  { key: 'assets', id: 'actifs' },
 ]
 
-function ServiceCard({ service, t }) {
-  const { icon: Icon, key, color, borderColor, image } = service
-  const [expanded, setExpanded] = useState(false)
+const TABS = ['individuals', 'companies']
 
-  const advantages = t(`solutions.${key}.advantages`, { returnObjects: true }) || []
-  const examples = t(`solutions.${key}.examples`, { returnObjects: true }) || []
+// Résout le paramètre /solutions/:category : onglet ou produit (clé ou ancre de la maquette)
+function resolveCategory(category) {
+  if (!category) return {}
+  if (TABS.includes(category)) return { tab: category }
+  const inIndividuals = individualsData.find(p => p.key === category || p.id === category)
+  if (inIndividuals) return { tab: 'individuals', product: inIndividuals }
+  const inCompanies = companiesData.find(p => p.key === category || p.id === category)
+  if (inCompanies) return { tab: 'companies', product: inCompanies }
+  return {}
+}
 
+function ProductList({ products, t, open, onToggle }) {
   return (
-    <motion.div variants={fadeUp} className={`card border ${borderColor} overflow-hidden`}>
-      <div className="h-48 overflow-hidden">
-        <img src={image} alt={t(`solutions.${key}.title`)} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-      </div>
-      <div className="p-6">
-        <div className={`w-12 h-12 ${color} rounded-xl flex items-center justify-center mb-4`}>
-          <Icon size={22} />
-        </div>
-        <h3 className="font-heading font-bold text-primary-900 text-xl mb-2">
-          {t(`solutions.${key}.title`)}
-        </h3>
-        <p className="text-gray-600 text-sm leading-relaxed mb-4">
-          {t(`solutions.${key}.description`)}
-        </p>
-
-        <button
-          onClick={() => setExpanded(!expanded)}
-          className="text-primary-900 text-sm font-medium flex items-center gap-1 hover:gap-2 transition-all mb-4"
-        >
-          {expanded ? t('solutions.lessDetails') : t('solutions.learnMore')}
-          <ArrowRight size={14} className={`transition-transform ${expanded ? 'rotate-90' : ''}`} />
-        </button>
-
-        {expanded && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            className="space-y-4 border-t border-gray-100 pt-4"
-          >
-            {Array.isArray(advantages) && advantages.length > 0 && (
-              <div>
-                <h4 className="font-semibold text-primary-900 text-sm mb-2">{t('solutions.advantages')}</h4>
-                <ul className="space-y-1.5">
-                  {advantages.map((adv, i) => (
-                    <li key={i} className="flex items-center gap-2 text-sm text-gray-600">
-                      <CheckCircle2 size={14} className="text-green-500 flex-shrink-0" />
-                      {adv}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-            {Array.isArray(examples) && examples.length > 0 && (
-              <div>
-                <h4 className="font-semibold text-primary-900 text-sm mb-2">{t('solutions.examples')}</h4>
-                <div className="flex flex-wrap gap-2">
-                  {examples.map((ex, i) => (
-                    <span key={i} className="px-2 py-1 bg-gray-100 text-gray-600 rounded-full text-xs">{ex}</span>
-                  ))}
+    <div className="divide-y divide-line border-y border-line">
+      {products.map(({ key, id }, index) => {
+        const advantages = t(`solutions.${key}.advantages`, { returnObjects: true })
+        const examples = t(`solutions.${key}.examples`, { returnObjects: true })
+        return (
+          <article key={key} className="grid scroll-mt-24 gap-6 py-8 md:grid-cols-12 md:gap-8" id={id}>
+            <div className="md:col-span-3">
+              <p className="eyebrow text-muted">{String(index + 1).padStart(2, '0')} · {t(`ui.solutions.eyebrows.${key}`)}</p>
+              <h3 className="mt-3 font-display text-3xl text-ink">{t(`solutions.${key}.title`)}</h3>
+            </div>
+            <div className="md:col-span-5">
+              <p className="text-body">{t(`solutions.${key}.description`)}</p>
+              <details
+                className="group mt-5"
+                open={open === key}
+                onToggle={e => onToggle(key, e.currentTarget.open)}
+              >
+                <summary className="cursor-pointer text-small font-extrabold text-ink underline decoration-gold decoration-2 underline-offset-4">{t('solutions.learnMore')}</summary>
+                <div className="mt-5 grid gap-5 sm:grid-cols-2">
+                  <div>
+                    <h4 className="text-small font-extrabold text-ink">{t('solutions.advantages')}</h4>
+                    <ul className="mt-2 list-inside list-disc space-y-1 text-small text-body">
+                      {Array.isArray(advantages) && advantages.map((item, i) => <li key={i}>{item}</li>)}
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="text-small font-extrabold text-ink">{t('solutions.examples')}</h4>
+                    <ul className="mt-2 list-inside list-disc space-y-1 text-small text-body">
+                      {Array.isArray(examples) && examples.map((item, i) => <li key={i}>{item}</li>)}
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            )}
-          </motion.div>
-        )}
-
-        <Link to="/contact" className="btn-primary w-full text-center text-sm mt-4 flex items-center justify-center gap-2">
-          <MessageSquare size={15} />
-          {t('solutions.getQuote')}
-        </Link>
-      </div>
-    </motion.div>
+              </details>
+            </div>
+            <div className="md:col-span-3 md:col-start-10 md:text-end">
+              <Link className="button button-navy" to="/contact#devis">{t('solutions.getQuote')} <span aria-hidden="true">↗</span></Link>
+            </div>
+          </article>
+        )
+      })}
+    </div>
   )
 }
 
 export default function Solutions() {
   const { t } = useTranslation()
-  const [searchParams] = useSearchParams()
-  const [activeTab, setActiveTab] = useState('individuals')
+  const { category } = useParams()
+  const [searchParams, setSearchParams] = useSearchParams()
+  const resolved = resolveCategory(category)
+  const queryTab = searchParams.get('tab')
+  const [activeTab, setActiveTab] = useState(
+    resolved.tab || (TABS.includes(queryTab) ? queryTab : 'individuals')
+  )
+  const [openKey, setOpenKey] = useState(resolved.product?.key ?? null)
+
+  // La catégorie de l'URL ne s'applique qu'au changement de route : sinon elle écraserait le clic sur un onglet.
+  useEffect(() => {
+    const next = resolveCategory(category)
+    if (next.tab) setActiveTab(next.tab)
+    setOpenKey(next.product?.key ?? null)
+    if (next.product) {
+      requestAnimationFrame(() =>
+        document.getElementById(next.product.id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      )
+    }
+  }, [category])
 
   useEffect(() => {
-    const tab = searchParams.get('tab')
-    if (tab === 'companies' || tab === 'individuals') setActiveTab(tab)
-  }, [searchParams])
+    if (TABS.includes(queryTab)) setActiveTab(queryTab)
+  }, [queryTab])
+
+  const selectTab = key => {
+    setActiveTab(key)
+    const params = new URLSearchParams(searchParams)
+    params.set('tab', key)
+    setSearchParams(params, { replace: true })
+  }
+
+  const handleToggle = (key, isOpen) => setOpenKey(current => (isOpen ? key : current === key ? null : current))
+
+  const steps = t('solutions.steps', { returnObjects: true })
+  const tabClass = key => `solution-tab border-b-2 py-2 text-small font-extrabold ${
+    activeTab === key ? 'border-gold text-ink' : 'border-transparent text-muted'
+  }`
 
   return (
     <>
       <Helmet>
-        <title>Nos Solutions d'Assurance - Leader Assurance</title>
-        <meta name="description" content="Découvrez toutes nos solutions d'assurance pour particuliers et entreprises à Douala, Cameroun." />
+        <title>{t('ui.solutions.metaTitle')}</title>
+        <meta name="description" content={t('ui.solutions.metaDesc')} />
       </Helmet>
 
-      {/* Hero */}
-      <section className="relative pt-32 pb-20 gradient-bg overflow-hidden">
-        <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&h=600&fit=crop" alt="" className="w-full h-full object-cover opacity-10" />
-        </div>
-        <div className="container mx-auto px-4 relative z-10 text-center text-white">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">{t('solutions.title')}</h1>
-            <p className="text-white/80 text-lg max-w-2xl mx-auto">{t('solutions.subtitle')}</p>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Tab selector */}
-      <section className="py-12 bg-white sticky top-20 z-30 shadow-sm">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-center">
-            <div className="inline-flex bg-gray-100 p-1 rounded-2xl gap-1">
-              <button
-                onClick={() => setActiveTab('individuals')}
-                className={`px-8 py-3 rounded-xl font-semibold text-sm transition-all ${
-                  activeTab === 'individuals'
-                    ? 'bg-primary-900 text-white shadow-md'
-                    : 'text-gray-600 hover:text-primary-900'
-                }`}
-              >
-                {t('solutions.individuals')}
-              </button>
-              <button
-                onClick={() => setActiveTab('companies')}
-                className={`px-8 py-3 rounded-xl font-semibold text-sm transition-all ${
-                  activeTab === 'companies'
-                    ? 'bg-primary-900 text-white shadow-md'
-                    : 'text-gray-600 hover:text-primary-900'
-                }`}
-              >
-                {t('solutions.companies')}
-              </button>
-            </div>
+      <section className="bg-ink-deep text-white">
+        <div className="site-wrap grid hero-detail content-center gap-8 py-16 md:grid-cols-12 md:items-end md:py-22">
+          <div className="md:col-span-7">
+            <p className="eyebrow mb-5 text-focus">{t('ui.solutions.heroEyebrow')}</p>
+            <h1 className="display-title max-w-3xl">{t('ui.solutions.heroTitle')}</h1>
           </div>
+          <p className="max-w-xl text-lead text-white/80 md:col-span-5 md:pb-2">{t('ui.solutions.heroText')}</p>
         </div>
       </section>
 
-      {/* Services grid */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <AnimatedSection>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {(activeTab === 'individuals' ? individualsData : companiesData).map(service => (
-                <ServiceCard key={service.key} service={service} t={t} />
-              ))}
+      <nav className="sticky top-0 z-10 border-b border-line bg-paper" aria-label={t('ui.solutions.navLabel')}>
+        <div className="site-wrap flex flex-wrap gap-x-8 gap-y-2 py-4">
+          <button type="button" className={tabClass('individuals')} aria-pressed={activeTab === 'individuals'} onClick={() => selectTab('individuals')}>{t('solutions.individuals')}</button>
+          <button type="button" className={tabClass('companies')} aria-pressed={activeTab === 'companies'} onClick={() => selectTab('companies')}>{t('solutions.companies')}</button>
+        </div>
+      </nav>
+
+      {activeTab === 'individuals' ? (
+        <section className="site-wrap py-16 md:py-22" aria-labelledby="individuals-title">
+          <div className="mb-12 grid gap-6 md:grid-cols-12 md:items-end">
+            <h2 id="individuals-title" className="section-title text-ink md:col-span-6">{t('ui.solutions.individualsTitle')}</h2>
+            <p className="max-w-xl text-body md:col-span-5 md:col-start-8">{t('ui.solutions.individualsText')}</p>
+          </div>
+          <ProductList products={individualsData} t={t} open={openKey} onToggle={handleToggle} />
+        </section>
+      ) : (
+        <section className="bg-mist" aria-labelledby="companies-title">
+          <div className="site-wrap py-16 md:py-22">
+            <div className="mb-12 grid gap-6 md:grid-cols-12 md:items-end">
+              <h2 id="companies-title" className="section-title text-ink md:col-span-6">{t('ui.solutions.companiesTitle')}</h2>
+              <p className="max-w-xl text-body md:col-span-5 md:col-start-8">{t('ui.solutions.companiesText')}</p>
             </div>
-          </AnimatedSection>
-        </div>
-      </section>
+            <ProductList products={companiesData} t={t} open={openKey} onToggle={handleToggle} />
+          </div>
+        </section>
+      )}
 
-      {/* Process */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <AnimatedSection>
-            <motion.div variants={fadeUp} className="text-center mb-14">
+      <section className="bg-ink py-16 text-white md:py-22">
+        <div className="site-wrap">
+          <div className="grid gap-6 border-b border-white/20 pb-10 md:grid-cols-12 md:items-end">
+            <div className="md:col-span-6">
+              <p className="eyebrow mb-4 text-focus">{t('ui.solutions.processEyebrow')}</p>
               <h2 className="section-title">{t('solutions.howItWorks')}</h2>
-              <p className="section-subtitle">{t('solutions.howItWorksSubtitle')}</p>
-            </motion.div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
-              <div className="absolute top-12 left-0 right-0 h-0.5 bg-primary-100 hidden lg:block mx-16" />
-              {(t('solutions.steps', { returnObjects: true })).map((step, i) => (
-                <motion.div key={i} variants={fadeUp} className="text-center relative z-10">
-                  <div className="w-24 h-24 gradient-bg rounded-3xl flex items-center justify-center mx-auto mb-5 shadow-lg">
-                    <span className="text-gold-400 font-heading font-bold text-2xl">{step.step}</span>
-                  </div>
-                  <h3 className="font-heading font-semibold text-primary-900 text-lg mb-2">{step.title}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{step.description}</p>
-                </motion.div>
-              ))}
             </div>
-          </AnimatedSection>
+            <p className="text-lead text-white/75 md:col-span-5 md:col-start-8">{t('ui.solutions.processText')}</p>
+          </div>
+          <ol className="grid gap-8 pt-10 sm:grid-cols-2 lg:grid-cols-4">
+            {Array.isArray(steps) && steps.map((step, i) => (
+              <li key={i} className="border-s border-gold ps-5">
+                <p className="font-display text-4xl text-focus">{step.step}</p>
+                <h3 className="mt-4 text-2xl">{step.title}</h3>
+                <p className="mt-3 text-small leading-relaxed text-white/75">{step.description}</p>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20 gradient-bg">
-        <div className="container mx-auto px-4 text-center">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <h2 className="text-3xl font-heading font-bold text-white mb-4">
-              {t('solutions.ctaTitle')}
-            </h2>
-            <p className="text-white/70 mb-8">
-              {t('solutions.ctaDesc')}
-            </p>
-            <Link to="/contact" className="btn-gold inline-flex items-center gap-2">
-              <MessageSquare size={18} />
-              {t('solutions.ctaButton')}
-            </Link>
-          </motion.div>
+      <section className="bg-gold-pale py-16 md:py-22">
+        <div className="site-wrap grid gap-8 md:grid-cols-12 md:items-center">
+          <div className="md:col-span-8">
+            <p className="eyebrow mb-4 text-ink">{t('ui.solutions.ctaEyebrow')}</p>
+            <h2 className="section-title max-w-3xl text-ink">{t('solutions.ctaTitle')}</h2>
+            <p className="mt-5 max-w-2xl text-body">{t('solutions.ctaDesc')}</p>
+          </div>
+          <div className="md:col-span-4 md:text-end">
+            <Link className="button button-gold" to="/contact#devis">{t('solutions.ctaButton')} <span aria-hidden="true">↗</span></Link>
+          </div>
         </div>
       </section>
     </>

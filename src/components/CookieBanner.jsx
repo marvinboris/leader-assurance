@@ -1,12 +1,15 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Cookie } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import './CookieBanner.css'
+
+const BANNER_GAP = 16 // px, correspond à pb-4
 
 export default function CookieBanner() {
   const { t } = useTranslation()
   const [visible, setVisible] = useState(false)
+  const panelRef = useRef(null)
 
   useEffect(() => {
     const consent = localStorage.getItem('cookie-consent')
@@ -15,6 +18,20 @@ export default function CookieBanner() {
       return () => clearTimeout(timer)
     }
   }, [])
+
+  // Publie la hauteur de la bannière pour que le chatbot se place au-dessus (pas de chevauchement)
+  useEffect(() => {
+    const root = document.documentElement
+    if (!visible || !panelRef.current) return
+    const update = () => root.style.setProperty('--cookie-banner-h', `${panelRef.current.offsetHeight + BANNER_GAP}px`)
+    update()
+    const observer = new ResizeObserver(update)
+    observer.observe(panelRef.current)
+    return () => {
+      observer.disconnect()
+      root.style.removeProperty('--cookie-banner-h')
+    }
+  }, [visible])
 
   const accept = () => {
     localStorage.setItem('cookie-consent', 'accepted')
@@ -33,26 +50,25 @@ export default function CookieBanner() {
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 100, opacity: 0 }}
-          className="fixed bottom-0 left-0 right-0 z-50 bg-primary-950 text-white p-4 shadow-2xl"
+          className="fixed inset-x-0 bottom-0 z-50 pb-4"
         >
-          <div className="container mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <div className="flex items-start gap-3">
-              <Cookie size={20} className="text-gold-400 mt-0.5 flex-shrink-0" />
-              <p className="text-sm text-gray-300">
-                {t('cookie.message')}{' '}
-                <Link to="/privacy#cookies" className="text-gold-400 hover:underline">
-                  {t('cookie.learnMore')}
-                </Link>
-              </p>
-            </div>
-            <div className="flex gap-3 flex-shrink-0">
-              <button onClick={decline} className="px-4 py-2 text-sm border border-gray-600 rounded-lg hover:border-gray-400 transition-colors">
-                {t('cookie.decline')}
-              </button>
-              <button onClick={accept} className="px-4 py-2 text-sm bg-gold-500 hover:bg-gold-600 text-white rounded-lg transition-colors font-medium">
-                {t('cookie.accept')}
-              </button>
-            </div>
+          <div className="site-wrap">
+            <aside ref={panelRef} className="cookie-panel" aria-label={t('ui.cookie.label')}>
+              <div className="flex items-start gap-4">
+                <span className="cookie-mark" aria-hidden="true">i</span>
+                <div>
+                  <h3 className="font-sans text-base font-extrabold text-white">{t('ui.cookie.title')}</h3>
+                  <p className="mt-2 max-w-2xl text-small leading-relaxed text-white/75">
+                    {t('cookie.message')}{' '}
+                    <Link to="/privacy#cookies" className="cookie-link">{t('cookie.learnMore')}</Link>
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-wrap gap-3">
+                <button className="button button-outline" type="button" onClick={decline}>{t('cookie.decline')}</button>
+                <button className="button button-gold" type="button" onClick={accept}>{t('cookie.accept')}</button>
+              </div>
+            </aside>
           </div>
         </motion.div>
       )}

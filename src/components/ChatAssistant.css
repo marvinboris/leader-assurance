@@ -1,0 +1,11 @@
+.quick-reply { border: 1px solid var(--color-line); border-radius: var(--radius-pill); background: var(--color-paper); color: var(--color-ink); padding: .55rem .8rem; font: 700 .75rem/1.4 var(--font-text); cursor: pointer; }
+.quick-reply:hover { border-color: var(--color-ink); }
+.quick-reply:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; }
+.chat-float { width: 3.5rem; height: 3.5rem; border: 0; border-radius: var(--radius-pill); background: var(--color-ink); color: var(--color-white); font: 700 1.4rem/1 var(--font-text); box-shadow: var(--shadow-float); cursor: pointer; }
+.chat-float:hover { background: var(--color-ink-soft); }
+.chat-float:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; }
+/* Position logique (passe à gauche en RTL) et décalage au-dessus de la bannière cookies (--cookie-banner-h posée par CookieBanner) */
+.chat-dock-button { position: fixed; z-index: 50; inset-inline-end: 1.5rem; bottom: calc(1.5rem + var(--cookie-banner-h, 0px)); transition: bottom var(--duration-enter) var(--ease-out); }
+.chat-dock-window { position: fixed; z-index: 50; inset-inline-end: 1.5rem; bottom: calc(6rem + var(--cookie-banner-h, 0px)); width: min(24rem, calc(100vw - 3rem)); max-height: calc(100dvh - 7.5rem - var(--cookie-banner-h, 0px)); display: flex; flex-direction: column; transition: bottom var(--duration-enter) var(--ease-out); }
+.chat-dock-window .chat-scroll { flex: 1 1 auto; min-height: 0; overflow-y: auto; }
+@media (prefers-reduced-motion: reduce) { .chat-dock-button, .chat-dock-window { transition: none; } }

@@ -371,5 +371,626 @@
     "cookies": "Gestión de cookies",
     "rights": "Todos los derechos reservados",
     "follow": "Síguenos"
+  },
+  "ui": {
+    "about": {
+      "metaTitle": "Sobre nosotros — Leader Assurance | Douala, Camerún",
+      "metaDescription": "Descubra Leader Assurance SARL, su despacho de correduría y asesoramiento en seguros en Douala. Nuestro equipo, nuestra misión y nuestros valores.",
+      "heroEyebrow": "Nuestra historia · Douala, Camerún",
+      "heroLead": "Su socio de confianza desde hace más de 10 años. Leader Assurance SARL acompaña a particulares y empresas en la gestión de sus riesgos y la protección de sus activos.",
+      "heroCta": "Cuéntenos su necesidad",
+      "heroSide": "años a su lado para elegir una protección adecuada, con un interlocutor en Douala.",
+      "whoEyebrow": "Quiénes somos",
+      "whoTitle": "Un despacho al servicio de sus decisiones.",
+      "quote": "Primero su situación. Después las garantías.",
+      "partnerCompanies": "Compañías asociadas",
+      "capEyebrow": "Nuestro rumbo",
+      "capTitle": "Asesorar con claridad, proteger con sentido.",
+      "capText": "Un buen contrato empieza por comprender bien a la persona, la familia o la actividad que se quiere proteger.",
+      "valuesHeading": "Los principios que guían nuestros actos.",
+      "journeyEyebrow": "Desde 2010",
+      "journeyText": "Quince años de desarrollo al servicio de las necesidades de protección en Camerún.",
+      "teamTitle": "Expertos a su escucha.",
+      "teamText": "Competencias complementarias para acompañarle en sus decisiones y en el seguimiento de sus expedientes.",
+      "ctaEyebrow": "Una primera conversación, sin compromiso",
+      "ctaTitle": "Trabajemos juntos en su protección.",
+      "ctaText": "Nuestro equipo está listo para acompañarle en su estrategia de seguros. Hablemos de su situación y de las garantías que le importan.",
+      "ctaPhone": "o llámenos al"
+    },
+    "contact": {
+      "eyebrow": "Contacto · Akwa, Douala",
+      "h1": "Contáctenos.",
+      "heroText": "Nuestro equipo está disponible para acompañarle. Cuéntenos su necesidad y le responderemos con rapidez.",
+      "kicker": "Sigamos en contacto",
+      "coordsTitle": "Nuestros datos de contacto.",
+      "formEyebrow": "Escríbanos",
+      "formIntro": "Solicitud de presupuesto, pregunta sobre una garantía o declaración de siniestro: indíquenos el asunto para que podamos orientarle.",
+      "requiredNote": "Campos obligatorios",
+      "mapLabel": "Ubicación",
+      "mapEyebrow": "Dónde estamos",
+      "mapTitle": "En el corazón de Akwa.",
+      "mapIframe": "Leader Assurance — ubicación en Akwa, Douala"
+    },
+    "faq": {
+      "metaTitle": "FAQ - Leader Assurance | Preguntas Frecuentes",
+      "metaDescription": "Encuentre las respuestas a sus preguntas sobre seguros, contratos y nuestros servicios en Leader Assurance.",
+      "eyebrow": "Respuestas claras, decisiones serenas",
+      "lead": "Encuentre rápidamente las respuestas a sus preguntas. Nuestro equipo en Douala también le ayuda a elegir la cobertura adecuada.",
+      "searchLabel": "Buscar en las preguntas",
+      "clearSearch": "Borrar la búsqueda",
+      "filterAria": "Filtrar por categoría",
+      "categories": "Categorías",
+      "categoriesGroupAria": "Categorías de preguntas",
+      "questionsCount_one": "{{num}} pregunta",
+      "questionsCount_other": "{{num}} preguntas",
+      "sectionsCount_one": "{{num}} sección",
+      "sectionsCount_other": "{{num}} secciones",
+      "emptyTitle": "No se encontró ninguna pregunta.",
+      "reset": "Restablecer los filtros",
+      "ctaEyebrow": "Un asesor a su disposición",
+      "whatsappMessage": "Hola Leader Assurance, tengo una pregunta que no figura en la FAQ."
+    },
+    "chat": {
+      "open": "Abrir el asistente",
+      "close": "Cerrar el asistente",
+      "window": "Ventana del asistente",
+      "closeWindow": "Cerrar la ventana",
+      "today": "Hoy · {{time}}",
+      "typing": "El asistente está escribiendo una respuesta",
+      "faq": "Preguntas frecuentes",
+      "messageLabel": "Su mensaje",
+      "quick": {
+        "quote": "Obtener un presupuesto",
+        "business": "Seguro para empresas",
+        "advisor": "Hablar con un asesor"
+      }
+    },
+    "cookie": {
+      "label": "Banner de cookies",
+      "title": "Su privacidad importa"
+    },
+    "home": {
+      "hero": {
+        "eyebrow": "Correduría independiente · Douala",
+        "title": "El buen contrato empieza con un buen consejo.",
+        "copy": "Comparamos varias aseguradoras para ayudarle a elegir una protección adecuada para su familia o su actividad.",
+        "ctaPrimary": "Hablar con un asesor",
+        "ctaWhatsapp": "Escribir por WhatsApp",
+        "whatsappMessage": "Hola Leader Assurance, deseo recibir asesoramiento.",
+        "calloutTitle": "Un único interlocutor.",
+        "calloutText": "Varias compañías consultadas. Una propuesta pensada en torno a sus necesidades."
+      },
+      "solutions": {
+        "eyebrow": "Dos formas de protegerse",
+        "title": "A cada uno su prioridad.",
+        "text": "Particular o directivo, nos tomamos el tiempo de entender qué desea proteger antes de comparar las ofertas.",
+        "individuals": {
+          "label": "01 / Particulares",
+          "title": "La tranquilidad de sus seres queridos.",
+          "text": "Salud, vida, viaje o ahorro: soluciones para proteger a su familia y preparar sus proyectos.",
+          "items": [
+            "Seguro de Salud",
+            "Seguro de Vida y Ahorro",
+            "Seguro de Viaje"
+          ],
+          "cta": "Encontrar mi cobertura"
+        },
+        "companies": {
+          "label": "02 / Empresas",
+          "title": "La continuidad de su actividad.",
+          "text": "Flota, empleados, responsabilidad civil o activos: una lectura concreta de sus riesgos profesionales.",
+          "items": [
+            "Multirriesgo profesional",
+            "Seguro de Empleados",
+            "Responsabilidad Civil Profesional"
+          ],
+          "cta": "Hablar de mis riesgos"
+        }
+      },
+      "approach": {
+        "eyebrow": "Nuestra diferencia",
+        "title": "Su interés guía la elección.",
+        "text": "Como corredor independiente, estudiamos sus necesidades, analizamos los riesgos y comparamos las propuestas de nuestras compañías asociadas.",
+        "cta": "Hablar con un asesor",
+        "steps": [
+          {
+            "title": "Un análisis antes de una recomendación",
+            "text": "Empezamos por comprender su situación y los riesgos que cubrir."
+          },
+          {
+            "title": "Varias compañías consultadas",
+            "text": "Activa, Chanas, AXA, NSIA y otros socios según su necesidad."
+          },
+          {
+            "title": "Acompañamiento cuando importa",
+            "text": "Un interlocutor a su lado para asistirle, incluso en caso de siniestro."
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": 500,
+          "label": "Clientes acompañados"
+        },
+        {
+          "value": 10,
+          "label": "Años de experiencia"
+        },
+        {
+          "value": 15,
+          "label": "Socios aseguradores"
+        },
+        {
+          "value": 1200,
+          "label": "Pólizas gestionadas"
+        }
+      ],
+      "partnersLabel": "Compañías asociadas",
+      "testimonials": {
+        "eyebrow": "Confían en nosotros",
+        "title": "Consejos que se abren camino.",
+        "quote": "«{{text}}»"
+      },
+      "quote": {
+        "eyebrow": "Primer contacto, sin compromiso",
+        "title": "Hablemos de lo que desea proteger.",
+        "text": "Bastan unos datos para obtener una primera estimación. Después, un asesor de Douala precisará su necesidad y preparará una propuesta adaptada.",
+        "callPrompt": "¿Prefiere llamar?",
+        "formLabel": "Calculadora y solicitud de presupuesto por WhatsApp",
+        "typeLabel": "¿Qué tipo de seguro busca?",
+        "typePlaceholder": "Elegir un seguro",
+        "ageLabel": "Su edad",
+        "agePlaceholder": "Ej. 34",
+        "employeesLabel": "Número de empleados",
+        "employeesPlaceholder": "Ej. 12",
+        "coverageLabel": "Nivel de cobertura",
+        "nameLabel": "Su nombre",
+        "namePlaceholder": "Nombre y apellidos",
+        "phoneLabel": "Su número de teléfono",
+        "phonePlaceholder": "+237 …",
+        "currency": "FCFA",
+        "note": "Su mensaje se abrirá en WhatsApp para enviarlo a nuestro equipo.",
+        "sent": "Su solicitud está lista en WhatsApp. Envíe el mensaje para contactar con nuestro equipo.",
+        "errors": {
+          "insurance": "Elija un tipo de seguro.",
+          "age": "Indique una edad entre 0 y 120 años.",
+          "employees": "Indique un número de empleados superior a cero.",
+          "coverage": "Elija un nivel de cobertura.",
+          "name": "Indique su nombre.",
+          "phone": "Indique su número de teléfono."
+        },
+        "whatsapp": {
+          "message": "Hola Leader Assurance, me llamo {{name}} ({{phone}}). Deseo un presupuesto para {{insurance}}, nivel {{coverage}}. {{quantity}}. Estimación mensual: {{estimate}}.",
+          "age": "Edad: {{value}} años",
+          "employees": "Número de empleados: {{value}}"
+        }
+      },
+      "finalCta": {
+        "eyebrow": "En Akwa, Douala",
+        "title": "¿Una pregunta antes de elegir? Nuestro equipo le escucha.",
+        "button": "Contactar con un asesor"
+      }
+    },
+    "news": {
+      "hero": {
+        "eyebrow": "La mirada del corredor",
+        "lead": "Claves para entender sus seguros, proteger mejor a su familia y anticipar los riesgos de su actividad."
+      },
+      "featured": {
+        "eyebrow": "Para leer primero",
+        "title": "El consejo del momento.",
+        "note": "Información práctica, pensada para Camerún.",
+        "read": "Leer el artículo",
+        "readAria": "Leer: {{title}}"
+      },
+      "list": {
+        "eyebrow": "El diario",
+        "title": "Todos los artículos.",
+        "searchLabel": "Buscar un artículo",
+        "filterTitle": "Filtrar por tema",
+        "filterAria": "Categorías de artículos",
+        "status": "Artículos mostrados: {{count}}."
+      },
+      "cta": {
+        "eyebrow": "En Akwa, Douala",
+        "title": "¿Un artículo le plantea una duda? Nuestro equipo le escucha.",
+        "button": "Hablar con un asesor"
+      },
+      "article": {
+        "eyebrow": "Artículo de consejos · {{category}}",
+        "published": "Publicado el",
+        "reading": "Lectura",
+        "section": "Sección",
+        "quoteTitle": "Entender mejor para elegir mejor.",
+        "quoteText": "Las coberturas se eligen según las personas o los bienes que proteger, los riesgos que cubrir y el presupuesto disponible.",
+        "figcaption": "{{category}} · Los consejos de Leader Assurance",
+        "share": "Compartir este artículo",
+        "shareOn": "Compartir en {{network}}",
+        "adviceEyebrow": "A su escucha",
+        "quote": "Solicitar un presupuesto",
+        "whatsapp": "Escribir por WhatsApp",
+        "whatsappMsg": "Hola Leader Assurance, deseo un consejo sobre seguros.",
+        "relatedEyebrow": "Para ir más lejos",
+        "relatedTitle": "Artículos relacionados",
+        "all": "Todos los artículos",
+        "ctaEyebrow": "Su protección, sus prioridades",
+        "ctaTitle": "Comparemos las coberturas adecuadas a su situación.",
+        "ctaText": "Hable con un asesor independiente en Douala para precisar su necesidad de cobertura.",
+        "ctaButton": "Solicitar un presupuesto"
+      },
+      "content": [
+        {
+          "intro": "El seguro de salud es una de las protecciones más importantes que puede ofrecer a su familia. En Camerún, el sistema de salud público no siempre cubre la totalidad de los gastos médicos, lo que hace indispensable el seguro de salud privado.",
+          "sections": [
+            {
+              "label": "Lo básico",
+              "title": "¿Qué es el seguro de salud?",
+              "paragraphs": [
+                "El seguro de salud es un contrato entre usted y una compañía aseguradora que se hace cargo de todo o parte de sus gastos médicos a cambio del pago regular de una prima."
+              ]
+            },
+            {
+              "label": "Las coberturas",
+              "title": "Los tipos de cobertura disponibles",
+              "items": [
+                {
+                  "label": "Hospitalización",
+                  "text": "Cubre los gastos de hospitalización."
+                },
+                {
+                  "label": "Atención ambulatoria",
+                  "text": "Cubre las consultas y los cuidados habituales."
+                },
+                {
+                  "label": "Maternidad",
+                  "text": "Cubre los partos y la atención prenatal."
+                },
+                {
+                  "label": "Dental y óptica",
+                  "text": "Abarca los cuidados especializados."
+                }
+              ]
+            },
+            {
+              "label": "Su elección",
+              "title": "¿Cómo elegir su cobertura?",
+              "paragraphs": [
+                "La elección depende de varios factores: su edad, su situación familiar, su estado de salud general y su presupuesto. Nuestros asesores de Leader Assurance pueden ayudarle a seleccionar la fórmula más adecuada a su situación."
+              ]
+            }
+          ]
+        },
+        {
+          "intro": "Las empresas camerunesas se enfrentan a numerosos riesgos que pueden poner en peligro su actividad. El seguro de empresa es una solución indispensable para protegerse frente a estas contingencias.",
+          "sections": [
+            {
+              "label": "Los riesgos",
+              "title": "Los principales riesgos para las empresas",
+              "items": [
+                {
+                  "label": "Riesgos materiales",
+                  "text": "incendio, robo, daños por agua."
+                },
+                {
+                  "label": "Riesgos humanos",
+                  "text": "accidentes laborales, enfermedad de los empleados."
+                },
+                {
+                  "label": "Riesgos de responsabilidad",
+                  "text": "daños causados a terceros."
+                },
+                {
+                  "label": "Riesgos financieros",
+                  "text": "pérdidas de explotación en caso de siniestro."
+                }
+              ]
+            },
+            {
+              "label": "La solución",
+              "title": "La importancia del seguro multirriesgo profesional",
+              "paragraphs": [
+                "Un buen seguro de empresa le protege frente a todos estos riesgos en una única póliza, simplificando la gestión de su cobertura y optimizando los costes."
+              ]
+            },
+            {
+              "label": "Nuestro papel",
+              "title": "Cómo puede ayudarle Leader Assurance",
+              "paragraphs": [
+                "Nuestro equipo de expertos analiza su actividad, identifica sus riesgos específicos y le propone una cobertura a medida con las mejores compañías asociadas."
+              ]
+            }
+          ]
+        },
+        {
+          "intro": "El mercado de seguros en África registra un crecimiento notable, impulsado por la aparición de una clase media, la digitalización y una conciencia cada vez mayor de la importancia de la protección.",
+          "sections": [
+            {
+              "label": "El mercado",
+              "title": "El crecimiento del mercado africano",
+              "paragraphs": [
+                "La tasa de penetración del seguro en el África subsahariana sigue siendo baja (alrededor del 3 %), pero el crecimiento es fuerte, con enormes oportunidades para los actores del sector."
+              ]
+            },
+            {
+              "label": "Las tendencias",
+              "title": "Las principales tendencias",
+              "items": [
+                {
+                  "label": "Digitalización",
+                  "text": "las InsurTech revolucionan la distribución."
+                },
+                {
+                  "label": "Microseguros",
+                  "text": "coberturas accesibles para las poblaciones de bajos ingresos."
+                },
+                {
+                  "label": "Seguro de salud",
+                  "text": "fuerte crecimiento tras la COVID."
+                },
+                {
+                  "label": "Agricultura",
+                  "text": "seguros para los agricultores."
+                }
+              ]
+            },
+            {
+              "label": "El contexto local",
+              "title": "Camerún en este contexto",
+              "paragraphs": [
+                "Camerún se posiciona como un centro asegurador en África Central, con una regulación modernizada y actores dinámicos como Leader Assurance."
+              ]
+            }
+          ]
+        },
+        {
+          "intro": "Elegir un seguro puede parecer complejo ante la multitud de ofertas disponibles. Esta es una guía práctica para ayudarle a tomar la decisión correcta.",
+          "sections": [
+            {
+              "label": "Sus necesidades",
+              "title": "Paso 1: Identificar sus necesidades",
+              "paragraphs": [
+                "Empiece por enumerar lo que desea proteger: su salud, su familia, sus bienes, su actividad profesional."
+              ]
+            },
+            {
+              "label": "Sus riesgos",
+              "title": "Paso 2: Evaluar sus riesgos",
+              "paragraphs": [
+                "Analice los riesgos a los que está expuesto según su situación, su actividad y su entorno."
+              ]
+            },
+            {
+              "label": "Las ofertas",
+              "title": "Paso 3: Comparar las ofertas",
+              "paragraphs": [
+                "No se limite a una sola aseguradora. Compare las coberturas, las exclusiones y las tarifas de varias compañías."
+              ]
+            },
+            {
+              "label": "El corredor",
+              "title": "Paso 4: Recurrir a un corredor",
+              "paragraphs": [
+                "Un corredor independiente como Leader Assurance puede ahorrarle tiempo y dinero negociando las mejores condiciones para usted."
+              ]
+            }
+          ]
+        },
+        {
+          "intro": "La responsabilidad civil (RC) le protege cuando causa involuntariamente daños a terceros. Es una cobertura fundamental que toda persona y toda empresa debería tener.",
+          "sections": [
+            {
+              "label": "Lo básico",
+              "title": "¿Qué es la responsabilidad civil?",
+              "paragraphs": [
+                "La RC cubre los daños corporales, materiales o inmateriales que pudiera causar a otros en el marco de sus actividades."
+              ]
+            },
+            {
+              "label": "Particulares",
+              "title": "RC para particulares",
+              "paragraphs": [
+                "La RC personal cubre los daños causados por usted mismo, sus hijos, sus animales y, en ciertos casos, sus bienes inmuebles."
+              ]
+            },
+            {
+              "label": "Profesionales",
+              "title": "RC profesional",
+              "paragraphs": [
+                "Para las empresas y las profesiones liberales, la RC profesional cubre los errores, faltas y omisiones en el ejercicio de su actividad."
+              ]
+            },
+            {
+              "label": "Lo esencial",
+              "title": "Por qué es indispensable",
+              "paragraphs": [
+                "Sin RC, tendrá que asumir personalmente indemnizaciones que pueden alcanzar sumas considerables."
+              ]
+            }
+          ]
+        },
+        {
+          "intro": "El seguro de vida es un producto financiero polivalente que combina la protección en caso de fallecimiento con la constitución de un ahorro a largo plazo.",
+          "sections": [
+            {
+              "label": "Las funciones",
+              "title": "Doble función del seguro de vida",
+              "items": [
+                {
+                  "label": "Protección",
+                  "text": "en caso de fallecimiento, se abona un capital a los beneficiarios designados."
+                },
+                {
+                  "label": "Ahorro",
+                  "text": "acumulación de un capital a largo plazo con rendimientos garantizados."
+                }
+              ]
+            },
+            {
+              "label": "Fiscalidad",
+              "title": "Las ventajas fiscales",
+              "paragraphs": [
+                "En muchos países, el seguro de vida goza de ventajas fiscales especiales, en particular en la transmisión del capital."
+              ]
+            },
+            {
+              "label": "Contratación",
+              "title": "Cómo contratarlo",
+              "paragraphs": [
+                "Leader Assurance le acompaña en la elección del contrato de seguro de vida más adecuado a sus objetivos financieros y familiares."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "partners": {
+      "metaDescription": "Descubra las compañías de seguros asociadas de Leader Assurance en Camerún y en África.",
+      "eyebrow": "Nuestra red · Douala",
+      "heroTitle": "Aseguradoras reconocidas. Asesoramiento independiente.",
+      "heroSubtitle": "Trabajamos con las mejores compañías de seguros para comparar ofertas y elegir una protección adecuada.",
+      "countLabel": "compañías presentadas en nuestra red de socios",
+      "roleEyebrow": "Nuestro papel",
+      "roleTitle": "Varias opciones, un único interlocutor.",
+      "roleText": "Nuestro enfoque de corredor le da acceso a varias ofertas, con un acompañamiento cercano para comparar y elegir.",
+      "networkEyebrow": "La red",
+      "cameroon": "Camerún",
+      "international": "Internacional",
+      "centralAfrica": "África central",
+      "stripAria": "Desplazamiento de las compañías asociadas",
+      "stripEyebrow": "Compañías de la red",
+      "stripHint": "Desplazamiento lento · pase el cursor o seleccione para detener",
+      "trackLabel": "Nombres de las compañías asociadas",
+      "brokerEyebrow": "Su interés primero",
+      "certifiedTitle": "Un asesoramiento conforme, un acompañamiento cercano."
+    },
+    "privacy": {
+      "metaTitle": "Política de privacidad - Leader Assurance",
+      "eyebrow": "Información legal",
+      "title": "Política de privacidad",
+      "lead": "Cómo recopilamos, utilizamos y protegemos la información confiada a Leader Assurance.",
+      "updatedLabel": "Última actualización",
+      "updatedDate": "Marzo de 2025",
+      "tocLabel": "Índice",
+      "tocTitle": "En esta página",
+      "toc": [
+        "Protección de datos",
+        "Datos recopilados",
+        "Uso",
+        "Cookies",
+        "Condiciones de uso",
+        "Sus derechos",
+        "Contacto"
+      ],
+      "sections": [
+        {
+          "eyebrow": "Compromiso",
+          "title": "Protección de los datos personales",
+          "paragraphs": [
+            "Leader Assurance SARL se compromete a proteger la privacidad de sus clientes y visitantes. La información personal recopilada en este sitio se utiliza únicamente para prestarle nuestros servicios de seguros y contactarle en relación con sus solicitudes.",
+            "Sus datos nunca serán vendidos, cedidos ni compartidos con terceros sin su consentimiento explícito, salvo por obligaciones legales o contractuales con nuestras aseguradoras asociadas, estrictamente en el marco de la gestión de sus contratos."
+          ]
+        },
+        {
+          "eyebrow": "Información",
+          "title": "Datos recopilados",
+          "intro": "Recopilamos los siguientes datos:",
+          "items": [
+            "Información de identificación (apellidos, nombre, fecha de nacimiento)",
+            "Datos de contacto (dirección, teléfono, correo electrónico)",
+            "Información necesaria para la formalización de los contratos de seguro",
+            "Datos de navegación en nuestro sitio (cookies)"
+          ]
+        },
+        {
+          "eyebrow": "Finalidades",
+          "title": "Uso de los datos",
+          "intro": "Sus datos se utilizan para:",
+          "items": [
+            "Elaborar presupuestos y contratos de seguro personalizados",
+            "Gestionar sus contratos y siniestros",
+            "Informarle de nuestros servicios y novedades",
+            "Mejorar nuestro sitio web y nuestros servicios"
+          ]
+        },
+        {
+          "eyebrow": "Navegación",
+          "title": "Política de cookies",
+          "intro": "Nuestro sitio utiliza cookies para mejorar su experiencia de navegación. Las cookies son pequeños archivos de texto almacenados en su dispositivo que nos ayudan a:",
+          "items": [
+            "Recordar sus preferencias de idioma y de navegación",
+            "Analizar el tráfico y el uso de nuestro sitio",
+            "Mejorar las funcionalidades de nuestro sitio"
+          ],
+          "outro": "Puede rechazar las cookies no esenciales haciendo clic en \"Rechazar\" en nuestro aviso de cookies. El rechazo de las cookies puede afectar a algunas funcionalidades del sitio."
+        },
+        {
+          "eyebrow": "Marco de uso",
+          "title": "Condiciones de uso",
+          "paragraphs": [
+            "El uso de este sitio implica la aceptación de las presentes condiciones. El contenido de este sitio se ofrece con carácter informativo y no constituye un compromiso contractual. Solo los contratos de seguro firmados entre las partes constituyen compromisos legales."
+          ]
+        },
+        {
+          "eyebrow": "Sus datos",
+          "title": "Sus derechos",
+          "intro": "De conformidad con la normativa vigente, usted dispone de los siguientes derechos sobre sus datos personales:",
+          "items": [
+            "Derecho de acceso a sus datos",
+            "Derecho de rectificación de los datos inexactos",
+            "Derecho de supresión de sus datos",
+            "Derecho de oposición al tratamiento"
+          ],
+          "contactPrefix": "Para ejercer estos derechos, contáctenos en:"
+        },
+        {
+          "eyebrow": "Contacto directo",
+          "title": "Contacto",
+          "intro": "Para cualquier pregunta relativa a esta política de privacidad, contáctenos:"
+        }
+      ],
+      "emailLabel": "Correo electrónico:",
+      "phoneLabel": "Tel.:",
+      "ctaText": "¿Tiene alguna pregunta sobre la protección de su información? Nuestro equipo en Douala está a su disposición.",
+      "ctaButton": "Escribir a nuestro equipo"
+    },
+    "shell": {
+      "skip": "Ir al contenido",
+      "homeLabel": "Leader Assurance, inicio",
+      "menu": "Menú",
+      "pages": "Páginas",
+      "language": "Idioma",
+      "languages": "Idiomas",
+      "chooseLanguage": "Elegir idioma",
+      "mainNav": "Navegación principal",
+      "footerNav": "Páginas del sitio",
+      "footerTagline": "Como corredor independiente, comparamos las ofertas para ayudarle a elegir la protección adecuada.",
+      "explore": "Explorar",
+      "findUs": "Dónde estamos"
+    },
+    "solutions": {
+      "metaTitle": "Nuestras soluciones — Leader Assurance",
+      "metaDesc": "Descubra nuestras soluciones de seguros para particulares y empresas en Douala, Camerún.",
+      "heroEyebrow": "Nuestras soluciones · particulares y empresas",
+      "heroTitle": "Una protección pensada en torno a sus proyectos.",
+      "heroText": "Coberturas completas para particulares y empresas. Como corredor independiente, comparamos varias aseguradoras para ayudarle a elegir.",
+      "navLabel": "Recorridos de soluciones",
+      "individualsTitle": "Para usted y quienes le importan.",
+      "individualsText": "Salud, futuro, viajes o ahorro: partimos de su situación para construir una cobertura adecuada.",
+      "companiesTitle": "Para su actividad y sus equipos.",
+      "companiesText": "Un análisis de riesgos para cubrir las responsabilidades, los colaboradores y los bienes de su empresa.",
+      "eyebrows": {
+        "health": "Salud",
+        "life": "Previsión",
+        "travel": "Viajes",
+        "savings": "Ahorro",
+        "enterprise": "Actividad",
+        "liability": "Responsabilidad",
+        "employees": "Colaboradores",
+        "assets": "Patrimonio profesional"
+      },
+      "processEyebrow": "Un acompañamiento claro",
+      "processText": "Un proceso sencillo y transparente, desde el primer contacto hasta la contratación.",
+      "ctaEyebrow": "Primer contacto, sin compromiso"
+    }
   }
 }

@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import ChatAssistant from './components/ChatAssistant'
 import CookieBanner from './components/CookieBanner'
 import ScrollToTop from './components/ScrollToTop'
+import useRevealSections from './hooks/useRevealSections'
 import Home from './pages/Home'
 import About from './pages/About'
 import Solutions from './pages/Solutions'
@@ -27,10 +28,21 @@ function App() {
 
   return (
     <Router>
+      <Layout />
+      <Toaster position="top-right" />
+    </Router>
+  )
+}
+
+function Layout() {
+  useRevealSections()
+
+  return (
+    <>
       <ScrollToTop />
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen bg-paper">
         <Navbar />
-        <main className="flex-grow">
+        <main id="contenu" className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -48,8 +60,7 @@ function App() {
         <ChatAssistant />
         <CookieBanner />
       </div>
-      <Toaster position="top-right" />
-    </Router>
+    </>
   )
 }
 

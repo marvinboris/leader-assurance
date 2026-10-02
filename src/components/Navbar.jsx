@@ -1,33 +1,79 @@
-import { useState, useEffect } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { useState, useEffect, useRef } from 'react'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Globe, ChevronDown, Phone } from 'lucide-react'
 
 const languages = [
-  { code: 'fr', name: 'Français', flag: '🇫🇷' },
-  { code: 'en', name: 'English', flag: '🇬🇧' },
-  { code: 'es', name: 'Español', flag: '🇪🇸' },
-  { code: 'ar', name: 'العربية', flag: '🇸🇦' },
-  { code: 'zh', name: '中文', flag: '🇨🇳' },
+  { code: 'fr', label: 'Français · FR', short: 'FR' },
+  { code: 'en', label: 'English · EN', short: 'EN' },
+  { code: 'es', label: 'Español · ES', short: 'ES' },
+  { code: 'ar', label: 'العربية · AR', short: 'AR' },
+  { code: 'zh', label: '中文 · ZH', short: '中文' },
 ]
+
+const Chevron = () => (
+  <svg aria-hidden="true" viewBox="0 0 12 12" fill="none">
+    <path d="m2 4 4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+)
+
+function LanguageList({ current, onPick, label }) {
+  return (
+    <div className="shell-language-list" role="group" aria-label={label}>
+      {languages.map(l => (
+        <button key={l.code} type="button" lang={l.code} aria-pressed={current === l.code} onClick={() => onPick(l.code)}>
+          {l.label}
+        </button>
+      ))}
+    </div>
+  )
+}
+
+// <details> contrôlé : React garde l'état, le navigateur garde le comportement natif (clavier, summary).
+function LanguageMenu({ open, setOpen, current, onPick, t }) {
+  return (
+    <details className="shell-languages" open={open} onToggle={e => setOpen(e.currentTarget.open)}>
+      <summary className="shell-language-trigger" aria-label={t('ui.shell.chooseLanguage')}>
+        {languages.find(l => l.code === current)?.short ?? 'FR'} <Chevron />
+      </summary>
+      <LanguageList current={current} onPick={onPick} label={t('ui.shell.languages')} />
+    </details>
+  )
+}
 
 export default function Navbar() {
   const { t, i18n } = useTranslation()
   const location = useLocation()
-  const [isOpen, setIsOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
   const [langOpen, setLangOpen] = useState(false)
+  const [mobileLangOpen, setMobileLangOpen] = useState(false)
+  const [pagesOpen, setPagesOpen] = useState(false)
+  const headerRef = useRef(null)
+  const toggleRef = useRef(null)
+  const current = (i18n.language || 'fr').slice(0, 2)
+
+  const closeAll = () => { setMenuOpen(false); setLangOpen(false); setMobileLangOpen(false); setPagesOpen(false) }
+
+  useEffect(closeAll, [location])
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20)
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+    const onKey = e => {
+      if (e.key !== 'Escape') return
+      if (menuOpen) toggleRef.current?.focus()
+      closeAll()
+    }
+    const onClick = e => { if (!headerRef.current?.contains(e.target)) closeAll() }
+    const onResize = () => { if (window.matchMedia('(min-width: 1280px)').matches) setMenuOpen(false) }
+    document.addEventListener('keydown', onKey)
+    document.addEventListener('click', onClick)
+    window.addEventListener('resize', onResize)
+    return () => {
+      document.removeEventListener('keydown', onKey)
+      document.removeEventListener('click', onClick)
+      window.removeEventListener('resize', onResize)
+    }
+  }, [menuOpen])
 
-  useEffect(() => {
-    setIsOpen(false)
-  }, [location])
+  const pickLanguage = code => { i18n.changeLanguage(code); closeAll() }
 
   const navLinks = [
     { path: '/', label: t('nav.home') },
@@ -39,188 +85,54 @@ export default function Navbar() {
     { path: '/contact', label: t('nav.contact') },
   ]
 
-  const currentLang = languages.find(l => l.code === i18n.language) || languages[0]
-
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white shadow-md' : 'bg-white/95 backdrop-blur-sm'
-      }`}
-    >
-      {/* Top bar */}
-      <div className="hidden lg:block bg-primary-900 text-white text-sm py-1.5">
-        <div className="container mx-auto px-4 flex justify-between items-center">
-          <span className="flex items-center gap-2">
-            <Phone size={14} />
-            <a href="tel:+237696411012" className="hover:text-gold-400 transition-colors">+237 696 41 10 12</a>
-            <span className="mx-2">|</span>
-            <a href="tel:+237681806975" className="hover:text-gold-400 transition-colors">+237 681 80 69 75</a>
-          </span>
-          <span>
-            <a href="mailto:leaderassurance1@yahoo.fr" className="hover:text-gold-400 transition-colors">
-              leaderassurance1@yahoo.fr
-            </a>
-          </span>
+    <header ref={headerRef} className="shell-header relative z-20 bg-paper">
+      <a href="#contenu" className="sr-only focus:not-sr-only focus:fixed focus:start-4 focus:top-4 focus:z-50 focus:bg-white focus:px-4 focus:py-3 focus:text-ink">
+        {t('ui.shell.skip')}
+      </a>
+      <div className="site-wrap nav-height flex items-center justify-between gap-4">
+        <Link to="/" className="shrink-0" aria-label={t('ui.shell.homeLabel')}>
+          <img src="/logo.svg" alt="Leader Assurance" className="h-12 w-auto" />
+        </Link>
+
+        <div className="shell-mobile-controls">
+          <button
+            ref={toggleRef}
+            className="shell-mobile-menu"
+            type="button"
+            aria-expanded={menuOpen}
+            aria-controls="main-nav"
+            onClick={() => setMenuOpen(o => !o)}
+          >
+            {t('ui.shell.menu')}
+          </button>
+          <LanguageMenu open={mobileLangOpen} setOpen={setMobileLangOpen} current={current} onPick={pickLanguage} t={t} />
         </div>
-      </div>
 
-      <nav className={`container mx-auto px-4 transition-all duration-300 ${scrolled ? 'py-2' : 'py-3'}`}>
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 flex-shrink-0">
-            <img src="/logo.jpg" alt="Leader Assurance" className="h-12 w-auto rounded" />
-            <div className="hidden sm:block">
-              <div className="text-primary-900 font-heading font-bold text-lg leading-tight">
-                LEADER ASSURANCE
-              </div>
-              <div className="text-gold-500 text-xs font-semibold tracking-widest uppercase">
-                ASSUREUR CONSEIL
-              </div>
-            </div>
-          </Link>
-
-          {/* Desktop nav */}
-          <div className="hidden lg:flex items-center gap-1">
-            {navLinks.map(link => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                  location.pathname === link.path
-                    ? 'text-primary-900 bg-primary-50 font-semibold'
-                    : 'text-gray-700 hover:text-primary-900 hover:bg-gray-50'
-                }`}
-              >
-                {link.label}
-              </Link>
+        <nav id="main-nav" className={`shell-nav${menuOpen ? ' is-open' : ''}`} aria-label={t('ui.shell.mainNav')}>
+          <div className="shell-links">
+            {navLinks.map(l => (
+              <NavLink key={l.path} to={l.path} end={l.path === '/'} className="shell-link">{l.label}</NavLink>
             ))}
           </div>
-
-          {/* Right side */}
-          <div className="hidden lg:flex items-center gap-3">
-            {/* Language switcher */}
-            <div className="relative">
-              <button
-                onClick={() => setLangOpen(!langOpen)}
-                className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-gray-700 hover:bg-gray-50 transition-colors"
-              >
-                <Globe size={16} />
-                <span>{currentLang.flag} {currentLang.code.toUpperCase()}</span>
-                <ChevronDown size={14} className={`transition-transform ${langOpen ? 'rotate-180' : ''}`} />
-              </button>
-              <AnimatePresence>
-                {langOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
-                    className="absolute right-0 top-full mt-1 bg-white rounded-xl shadow-xl border border-gray-100 py-2 min-w-[160px] z-50"
-                  >
-                    {languages.map(lang => (
-                      <button
-                        key={lang.code}
-                        onClick={() => { i18n.changeLanguage(lang.code); setLangOpen(false) }}
-                        className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-50 transition-colors flex items-center gap-2 ${
-                          i18n.language === lang.code ? 'text-primary-900 font-semibold' : 'text-gray-700'
-                        }`}
-                      >
-                        <span>{lang.flag}</span>
-                        <span>{lang.name}</span>
-                      </button>
-                    ))}
-                  </motion.div>
-                )}
-              </AnimatePresence>
+          <details className="shell-pages" open={pagesOpen} onToggle={e => setPagesOpen(e.currentTarget.open)}>
+            <summary className="shell-link">{t('ui.shell.pages')} <span aria-hidden="true">⌄</span></summary>
+            <div className="shell-pages-list">
+              {navLinks.map(l => (
+                <NavLink key={l.path} to={l.path} end={l.path === '/'}>{l.label}</NavLink>
+              ))}
             </div>
-
-            <Link to="/contact" className="btn-primary text-sm">
-              {t('nav.quote')}
-            </Link>
+          </details>
+          <LanguageMenu open={langOpen} setOpen={setLangOpen} current={current} onPick={pickLanguage} t={t} />
+          <Link className="button button-gold" to="/contact#devis">
+            {t('nav.quote')} <span aria-hidden="true" className="rtl:-scale-x-100">↗</span>
+          </Link>
+          <div className="shell-mobile-languages">
+            <p className="eyebrow text-muted">{t('ui.shell.language')}</p>
+            <LanguageList current={current} onPick={pickLanguage} label={t('ui.shell.languages')} />
           </div>
-
-          {/* Mobile menu button */}
-          <div className="flex items-center gap-2 lg:hidden">
-            <button
-              onClick={() => setLangOpen(!langOpen)}
-              className="p-2 rounded-lg text-gray-700 hover:bg-gray-50"
-            >
-              <Globe size={20} />
-            </button>
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-lg text-gray-700 hover:bg-gray-50"
-            >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
-        </div>
-
-        {/* Mobile language dropdown */}
-        <AnimatePresence>
-          {langOpen && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden overflow-hidden"
-            >
-              <div className="grid grid-cols-5 gap-2 py-3">
-                {languages.map(lang => (
-                  <button
-                    key={lang.code}
-                    onClick={() => { i18n.changeLanguage(lang.code); setLangOpen(false) }}
-                    className={`flex flex-col items-center gap-1 p-2 rounded-lg text-xs transition-colors ${
-                      i18n.language === lang.code ? 'bg-primary-50 text-primary-900 font-semibold' : 'text-gray-600 hover:bg-gray-50'
-                    }`}
-                  >
-                    <span className="text-xl">{lang.flag}</span>
-                    <span>{lang.code.toUpperCase()}</span>
-                  </button>
-                ))}
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-
-        {/* Mobile menu */}
-        <AnimatePresence>
-          {isOpen && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden overflow-hidden"
-            >
-              <div className="py-4 space-y-1 border-t border-gray-100 mt-2">
-                {navLinks.map(link => (
-                  <Link
-                    key={link.path}
-                    to={link.path}
-                    className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
-                      location.pathname === link.path
-                        ? 'text-primary-900 bg-primary-50 font-semibold'
-                        : 'text-gray-700 hover:text-primary-900 hover:bg-gray-50'
-                    }`}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-                <div className="pt-3">
-                  <Link to="/contact" className="btn-primary w-full text-center block">
-                    {t('nav.quote')}
-                  </Link>
-                </div>
-                <div className="pt-2 border-t border-gray-100 mt-2">
-                  <a href="tel:+237696411012" className="flex items-center gap-2 px-4 py-2 text-sm text-gray-600">
-                    <Phone size={14} />
-                    +237 696 41 10 12
-                  </a>
-                </div>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </nav>
+        </nav>
+      </div>
     </header>
   )
 }

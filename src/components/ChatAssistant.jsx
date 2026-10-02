@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { motion, AnimatePresence } from 'framer-motion'
-import { MessageCircle, X, Send, User, Bot, Phone } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import './ChatAssistant.css'
 
 const responses = {
   fr: {
@@ -36,6 +36,12 @@ function getBotResponse(message, lang = 'fr') {
   return r.default
 }
 
+const QUICK_REPLIES = [
+  { id: 'quote', responseKey: 'devis' },
+  { id: 'business', responseKey: 'entreprise' },
+  { id: 'advisor', responseKey: 'contact' }
+]
+
 export default function ChatAssistant() {
   const { t, i18n } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
@@ -52,20 +58,22 @@ export default function ChatAssistant() {
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
-  }, [messages])
+  }, [messages, isTyping])
 
-  const sendMessage = () => {
-    if (!input.trim()) return
-    const userMsg = { type: 'user', text: input, time: new Date() }
-    setMessages(prev => [...prev, userMsg])
+  const send = (text, responseKey) => {
+    if (!text.trim()) return
+    setMessages(prev => [...prev, { type: 'user', text, time: new Date() }])
     setInput('')
     setIsTyping(true)
     setTimeout(() => {
-      const response = getBotResponse(input, i18n.language)
+      const r = responses[i18n.language] || responses.fr
+      const response = responseKey ? (r[responseKey] || r.default) : getBotResponse(text, i18n.language)
       setMessages(prev => [...prev, { type: 'bot', text: response, time: new Date() }])
       setIsTyping(false)
     }, 1000 + Math.random() * 500)
   }
+
+  const sendMessage = () => send(input)
 
   const handleKeyPress = (e) => {
     if (e.key === 'Enter' && !e.shiftKey) {
@@ -74,120 +82,102 @@ export default function ChatAssistant() {
     }
   }
 
+  const formatTime = (date) => new Intl.DateTimeFormat(i18n.language, { hour: '2-digit', minute: '2-digit' }).format(date)
+
   return (
     <>
-      {/* Chat button */}
+      {/* Bouton flottant */}
       <motion.button
+        type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-primary-900 text-white rounded-full shadow-2xl flex items-center justify-center hover:bg-primary-800 transition-colors"
-        whileHover={{ scale: 1.1 }}
+        className="chat-float chat-dock-button"
+        aria-label={isOpen ? t('ui.chat.close') : t('ui.chat.open')}
+        aria-expanded={isOpen}
+        whileHover={{ scale: 1.06 }}
         whileTap={{ scale: 0.95 }}
       >
-        <AnimatePresence mode="wait">
-          {isOpen ? (
-            <motion.div key="close" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: 90, opacity: 0 }}>
-              <X size={24} />
-            </motion.div>
-          ) : (
-            <motion.div key="open" initial={{ rotate: 90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: -90, opacity: 0 }}>
-              <MessageCircle size={24} />
-            </motion.div>
-          )}
-        </AnimatePresence>
-        {!isOpen && (
-          <span className="absolute -top-1 -right-1 w-4 h-4 bg-gold-500 rounded-full animate-pulse" />
-        )}
+        <span aria-hidden="true">{isOpen ? '×' : '✉'}</span>
       </motion.button>
 
-      {/* Chat window */}
+      {/* Fenêtre */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: 20, scale: 0.95 }}
+          <motion.article
+            initial={{ opacity: 0, y: 20, scale: 0.97 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 20, scale: 0.95 }}
-            className="fixed bottom-24 right-6 z-50 w-80 sm:w-96 bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100"
+            exit={{ opacity: 0, y: 20, scale: 0.97 }}
+            className="chat-dock-window overflow-hidden rounded-lg border border-line bg-paper shadow-float"
+            aria-label={t('ui.chat.window')}
           >
-            {/* Header */}
-            <div className="gradient-bg p-4 flex items-center gap-3">
-              <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
-                <Bot size={20} className="text-white" />
-              </div>
-              <div>
-                <div className="text-white font-semibold">{t('chat.title')}</div>
-                <div className="flex items-center gap-1.5">
-                  <span className="w-2 h-2 bg-green-400 rounded-full" />
-                  <span className="text-white/70 text-xs">{t('chat.online')}</span>
+            <div className="flex items-center justify-between gap-3 bg-ink px-5 py-4 text-white">
+              <div className="flex items-center gap-3">
+                <span className="flex h-10 w-10 items-center justify-center rounded-pill border border-white/25 font-bold" aria-hidden="true">LA</span>
+                <div>
+                  <h3 className="font-sans text-base font-extrabold">{t('chat.title')}</h3>
+                  <p className="mt-1 flex items-center gap-2 text-micro text-white/75"><span className="h-2 w-2 rounded-pill bg-focus"></span>{t('chat.online')}</p>
                 </div>
               </div>
+              <button className="flex h-10 w-10 items-center justify-center rounded-sm border border-white/25 text-white hover:bg-white/10" aria-label={t('ui.chat.closeWindow')} type="button" onClick={() => setIsOpen(false)}>×</button>
             </div>
 
-            {/* Messages */}
-            <div className="h-72 overflow-y-auto p-4 space-y-3 bg-gray-50">
+            <div className="chat-scroll space-y-4 bg-mist p-5" role="log" aria-live="polite">
+              <p className="text-micro font-bold uppercase tracking-wide text-muted">{t('ui.chat.today', { time: messages[0] ? formatTime(messages[0].time) : '' })}</p>
               {messages.map((msg, i) => (
-                <div key={i} className={`flex gap-2 ${msg.type === 'user' ? 'flex-row-reverse' : ''}`}>
-                  <div className={`w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 ${
-                    msg.type === 'bot' ? 'bg-primary-100' : 'bg-gold-100'
-                  }`}>
-                    {msg.type === 'bot' ? <Bot size={14} className="text-primary-900" /> : <User size={14} className="text-gold-600" />}
-                  </div>
-                  <div className={`max-w-[80%] p-3 rounded-2xl text-sm leading-relaxed ${
-                    msg.type === 'bot'
-                      ? 'bg-white text-gray-800 rounded-tl-none shadow-sm'
-                      : 'bg-primary-900 text-white rounded-tr-none'
-                  }`}>
-                    {msg.text}
-                  </div>
+                <div
+                  key={i}
+                  className={msg.type === 'bot'
+                    ? 'max-w-[90%] rounded-md border border-line bg-paper p-4 text-small leading-relaxed text-body'
+                    : 'ms-auto max-w-[82%] rounded-md bg-ink px-4 py-3 text-small leading-relaxed text-white'}
+                >
+                  {msg.text}
                 </div>
               ))}
               {isTyping && (
-                <div className="flex gap-2">
-                  <div className="w-7 h-7 rounded-full bg-primary-100 flex items-center justify-center">
-                    <Bot size={14} className="text-primary-900" />
-                  </div>
-                  <div className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm">
-                    <div className="flex gap-1">
-                      {[0, 1, 2].map(i => (
-                        <span key={i} className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: `${i * 0.15}s` }} />
-                      ))}
-                    </div>
+                <div className="max-w-[90%] rounded-md border border-line bg-paper p-4" role="status" aria-label={t('ui.chat.typing')}>
+                  <div className="flex gap-1" aria-hidden="true">
+                    {[0, 1, 2].map(i => (
+                      <span key={i} className="h-2 w-2 animate-bounce rounded-pill bg-muted" style={{ animationDelay: `${i * 0.15}s` }} />
+                    ))}
                   </div>
                 </div>
               )}
+              <p className="pt-1 text-micro font-extrabold text-ink">{t('ui.chat.faq')}</p>
+              <div className="flex flex-wrap gap-2">
+                {QUICK_REPLIES.map(({ id, responseKey }) => (
+                  <button key={id} type="button" className="quick-reply" onClick={() => send(t(`ui.chat.quick.${id}`), responseKey)}>
+                    {t(`ui.chat.quick.${id}`)}
+                  </button>
+                ))}
+              </div>
               <div ref={messagesEndRef} />
             </div>
 
-            {/* Contact advisor */}
-            <div className="px-4 py-2 bg-gray-50 border-t border-gray-100">
+            <div className="border-t border-line px-5 py-3">
               <Link
                 to="/contact"
                 onClick={() => setIsOpen(false)}
-                className="flex items-center gap-2 text-xs text-primary-900 font-medium hover:text-primary-700 transition-colors"
+                className="inline-flex min-h-11 items-center gap-2 text-small font-extrabold text-ink underline decoration-gold decoration-2 underline-offset-4"
               >
-                <Phone size={12} />
-                {t('chat.contact')}
+                {t('chat.contact')} <span aria-hidden="true" className="inline-block rtl:-scale-x-100">↗</span>
               </Link>
             </div>
 
-            {/* Input */}
-            <div className="p-3 border-t border-gray-100 flex gap-2">
+            <form className="flex gap-2 border-t border-line p-4" onSubmit={(e) => { e.preventDefault(); sendMessage() }}>
+              <label className="sr-only" htmlFor="chat-message">{t('ui.chat.messageLabel')}</label>
               <input
+                id="chat-message"
                 type="text"
                 value={input}
                 onChange={e => setInput(e.target.value)}
-                onKeyPress={handleKeyPress}
+                onKeyDown={handleKeyPress}
                 placeholder={t('chat.placeholder')}
-                className="flex-1 px-3 py-2 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-primary-400 focus:ring-1 focus:ring-primary-400"
+                className="field min-w-0"
               />
-              <button
-                onClick={sendMessage}
-                disabled={!input.trim()}
-                className="w-9 h-9 bg-primary-900 text-white rounded-xl flex items-center justify-center hover:bg-primary-800 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
-              >
-                <Send size={16} />
+              <button className="button button-navy shrink-0" type="submit" aria-label={t('chat.send')} disabled={!input.trim()}>
+                <span aria-hidden="true">↑</span>
               </button>
-            </div>
-          </motion.div>
+            </form>
+          </motion.article>
         )}
       </AnimatePresence>
     </>

@@ -1,244 +1,116 @@
 import { useTranslation } from 'react-i18next'
-import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
 import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
-import { Target, Eye, Users, Award, Shield, Heart, ArrowRight, CheckCircle2 } from 'lucide-react'
+import numberFormat from '../utils/numberFormat'
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+const pad = (i) => String(i + 1).padStart(2, '0')
+
+function Arrow() {
+  return <span aria-hidden="true" className="inline-block rtl:-scale-x-100">↗</span>
 }
-
-const stagger = { visible: { transition: { staggerChildren: 0.1 } } }
-
-function AnimatedSection({ children, className = '' }) {
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 })
-  return (
-    <motion.div ref={ref} initial="hidden" animate={inView ? 'visible' : 'hidden'} variants={stagger} className={className}>
-      {children}
-    </motion.div>
-  )
-}
-
-const valuesConfig = [
-  { icon: Shield, color: 'text-blue-600 bg-blue-50' },
-  { icon: Heart, color: 'text-red-600 bg-red-50' },
-  { icon: Award, color: 'text-yellow-600 bg-yellow-50' },
-  { icon: Users, color: 'text-green-600 bg-green-50' },
-]
-
-const teamConfig = [
-  { initials: 'DG', color: 'from-primary-700 to-primary-900' },
-  { initials: 'RC', color: 'from-blue-600 to-blue-900' },
-  { initials: 'CS', color: 'from-indigo-600 to-indigo-900' },
-  { initials: 'CE', color: 'from-primary-600 to-primary-900' },
-  { initials: 'JF', color: 'from-purple-600 to-purple-900' },
-  { initials: 'AF', color: 'from-teal-600 to-teal-900' },
-]
 
 export default function About() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+  const nf = numberFormat(i18n.language)
 
-  const valuesData = t('about.values', { returnObjects: true })
-  const values = valuesConfig.map((cfg, i) => ({ ...cfg, ...valuesData[i] }))
-
-  const teamData = t('about.teamMembers', { returnObjects: true })
-  const teamMembers = teamConfig.map((cfg, i) => ({ ...cfg, ...teamData[i] }))
-
+  const values = t('about.values', { returnObjects: true })
+  const team = t('about.teamMembers', { returnObjects: true })
   const milestones = t('about.milestones', { returnObjects: true })
+  const initials = ['DG', 'RC', 'CS', 'CE', 'JF', 'AF']
 
-  const statsItems = [
-    { label: '500+', sub: t('about.clientsSatisfied') },
-    { label: '15+', sub: t('stats.partners') },
-    { label: '10+', sub: t('about.yearsExperience') },
-    { label: '1200+', sub: t('about.policiesManaged') },
+  const stats = [
+    { n: `${nf.format(500)}+`, label: t('about.clientsSatisfied') },
+    { n: `${nf.format(15)}+`, label: t('ui.about.partnerCompanies') },
+    { n: `${nf.format(10)}+`, label: t('about.yearsExperience') },
+    { n: `${nf.format(1200)}+`, label: t('about.policiesManaged') },
   ]
 
   return (
     <>
       <Helmet>
-        <title>À propos - Leader Assurance | Douala, Cameroun</title>
-        <meta name="description" content="Découvrez Leader Assurance SARL, votre cabinet de courtage et conseil en assurance à Douala, Cameroun. Notre équipe, notre mission et nos valeurs." />
+        <title>{t('ui.about.metaTitle')}</title>
+        <meta name="description" content={t('ui.about.metaDescription')} />
       </Helmet>
 
-      {/* Hero */}
-      <section className="relative pt-32 pb-20 gradient-bg overflow-hidden">
-        <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1920&h=600&fit=crop" alt="" className="w-full h-full object-cover opacity-10" />
-        </div>
-        <div className="container mx-auto px-4 relative z-10">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center text-white max-w-3xl mx-auto">
-            <span className="inline-block px-4 py-2 bg-white/10 rounded-full text-sm font-medium mb-4">
-              {t('about.ourHistory')}
-            </span>
-            <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">{t('about.title')}</h1>
-            <p className="text-white/80 text-lg">{t('about.subtitle')}</p>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* About content */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <AnimatedSection>
-              <motion.div variants={fadeUp}>
-                <h2 className="section-title mb-6">{t('about.title')}</h2>
-                <p className="text-gray-600 leading-relaxed mb-4">{t('about.description1')}</p>
-                <p className="text-gray-600 leading-relaxed mb-8">{t('about.description2')}</p>
-                <div className="grid grid-cols-2 gap-4">
-                  {statsItems.map((s, i) => (
-                    <div key={i} className="bg-primary-50 rounded-2xl p-4 text-center">
-                      <div className="text-2xl font-heading font-bold text-primary-900">{s.label}</div>
-                      <div className="text-gray-500 text-sm mt-1">{s.sub}</div>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
-            </AnimatedSection>
-
-            <AnimatedSection>
-              <motion.div variants={fadeUp} className="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=700&h=500&fit=crop"
-                  alt="Notre équipe"
-                  className="rounded-3xl w-full shadow-2xl"
-                />
-                <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-5">
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center">
-                      <Shield size={22} className="text-gold-400" />
-                    </div>
-                    <div>
-                      <div className="font-heading font-bold text-primary-900">Leader Assurance</div>
-                      <div className="text-gray-500 text-sm">{t('about.certifiedAdvisor')}</div>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            </AnimatedSection>
+      <section className="bg-ink-deep text-white">
+        <div className="site-wrap grid min-h-[23rem] items-center gap-10 py-16 md:grid-cols-12 md:py-22">
+          <div className="md:col-span-8">
+            <p className="eyebrow mb-5 text-focus">{t('ui.about.heroEyebrow')}</p>
+            <h1 className="display-title hero-heading">{t('about.title')}.</h1>
+            <p className="hero-copy mt-6 text-lead text-white/80">{t('ui.about.heroLead')}</p>
+            <Link className="button button-gold mt-8" to="/contact#devis">{t('ui.about.heroCta')} <Arrow /></Link>
+          </div>
+          <div className="hidden border-s border-white/20 ps-8 md:col-span-4 md:block">
+            <p className="font-display text-5xl leading-tight text-focus">{nf.format(10)}<span className="text-3xl">+</span></p>
+            <p className="mt-2 max-w-xs text-small leading-relaxed text-white/75">{t('ui.about.heroSide')}</p>
+            <p className="mt-8 text-small font-bold text-white">Akwa · Rue Bernabé</p>
           </div>
         </div>
       </section>
 
-      {/* Mission & Vision */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              { icon: Target, title: t('about.mission'), text: t('about.missionText'), color: 'bg-primary-900', light: 'bg-primary-50 text-primary-700' },
-              { icon: Eye, title: t('about.vision'), text: t('about.visionText'), color: 'bg-gold-500', light: 'bg-gold-50 text-gold-700' },
-            ].map(({ icon: Icon, title, text, color }, i) => (
-              <AnimatedSection key={i}>
-                <motion.div variants={fadeUp} className="card p-8 h-full">
-                  <div className={`w-14 h-14 ${color} rounded-2xl flex items-center justify-center mb-5`}>
-                    <Icon size={28} className="text-white" />
-                  </div>
-                  <h3 className="text-2xl font-heading font-bold text-primary-900 mb-4">{title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{text}</p>
-                </motion.div>
-              </AnimatedSection>
+      <section className="site-wrap py-22">
+        <div className="grid gap-10 md:grid-cols-12 md:gap-8">
+          <div className="md:col-span-4"><p className="eyebrow mb-5 text-muted">{t('ui.about.whoEyebrow')}</p><h2 className="section-title section-heading-narrow text-ink">{t('ui.about.whoTitle')}</h2></div>
+          <div className="md:col-span-8 md:columns-2 md:gap-10">
+            <p className="text-body leading-relaxed">{t('about.description1')}</p>
+            <p className="mt-5 text-body leading-relaxed md:mt-0">{t('about.description2')}</p>
+            <p className="mt-8 border-s-2 border-gold ps-5 font-display text-2xl leading-snug text-ink md:break-inside-avoid">{t('ui.about.quote')}</p>
+          </div>
+        </div>
+        <div className="mt-16 grid grid-cols-2 gap-y-8 border-t border-line pt-8 md:grid-cols-4 md:gap-8">
+          {stats.map((s) => (
+            <div key={s.label}><p className="stat-number text-4xl text-ink">{s.n}</p><p className="mt-2 text-small text-muted">{s.label}</p></div>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-mist py-22">
+        <div className="site-wrap">
+          <div className="mb-10 grid gap-6 md:grid-cols-12 md:items-end"><div className="md:col-span-5"><p className="eyebrow mb-5 text-ink">{t('ui.about.capEyebrow')}</p><h2 className="section-title text-ink">{t('ui.about.capTitle')}</h2></div><p className="max-w-xl text-body leading-relaxed md:col-span-6 md:col-start-7">{t('ui.about.capText')}</p></div>
+          <div className="grid gap-0 border-t border-line md:grid-cols-2">
+            <article className="py-8 md:pe-10"><p className="font-display text-5xl text-gold" aria-hidden="true">01</p><h3 className="mt-5 text-3xl text-ink">{t('about.mission')}</h3><p className="mt-4 max-w-xl text-body leading-relaxed">{t('about.missionText')}</p></article>
+            <article className="border-t border-line py-8 md:border-s md:border-t-0 md:ps-10"><p className="font-display text-5xl text-gold" aria-hidden="true">02</p><h3 className="mt-5 text-3xl text-ink">{t('about.vision')}</h3><p className="mt-4 max-w-xl text-body leading-relaxed">{t('about.visionText')}</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section className="site-wrap py-22">
+        <div className="grid gap-10 md:grid-cols-12 md:gap-8">
+          <div className="md:col-span-4"><p className="eyebrow mb-5 text-ink">{t('about.valuesTitle')}</p><h2 className="section-title section-heading-narrow text-ink">{t('ui.about.valuesHeading')}</h2></div>
+          <div className="md:col-span-8">
+            {values.map((v, i) => (
+              <article key={i} className={`grid gap-2 ${i === values.length - 1 ? 'border-y' : 'border-t'} border-line py-5 sm:grid-cols-[3rem_1fr] sm:gap-5`}><span className="font-display text-2xl text-gold">{pad(i)}</span><div><h3 className="font-sans text-base font-extrabold text-ink">{v.title}</h3><p className="mt-2 text-small leading-relaxed text-muted">{v.description}</p></div></article>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Values */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <AnimatedSection>
-            <motion.div variants={fadeUp} className="text-center mb-14">
-              <h2 className="section-title">{t('about.valuesTitle')}</h2>
-              <p className="section-subtitle">{t('about.valuesSubtitle')}</p>
-            </motion.div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {values.map((value, i) => (
-                <motion.div key={i} variants={fadeUp} className="card p-6 text-center">
-                  <div className={`w-16 h-16 ${value.color} rounded-2xl flex items-center justify-center mx-auto mb-4`}>
-                    <value.icon size={28} />
-                  </div>
-                  <h3 className="font-heading font-semibold text-primary-900 text-lg mb-2">{value.title}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{value.description}</p>
-                </motion.div>
-              ))}
-            </div>
-          </AnimatedSection>
+      <section className="bg-ink py-22 text-white">
+        <div className="site-wrap grid gap-10 md:grid-cols-12 md:gap-8">
+          <div className="md:col-span-4"><p className="eyebrow mb-5 text-focus">{t('ui.about.journeyEyebrow')}</p><h2 className="section-title text-white">{t('about.journeyTitle')}.</h2><p className="mt-5 max-w-sm text-small leading-relaxed text-white/75">{t('ui.about.journeyText')}</p></div>
+          <ol className="border-t border-white/25 md:col-span-8">
+            {milestones.map((m, i) => (
+              <li key={i} className="grid gap-3 border-b border-white/25 py-5 sm:grid-cols-[5rem_1fr] sm:gap-6"><span className="font-display text-2xl text-focus">{m.year}</span><div><h3 className="font-sans text-base font-extrabold text-white">{m.title}</h3><p className="mt-1 text-small leading-relaxed text-white/70">{m.description}</p></div></li>
+            ))}
+          </ol>
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <AnimatedSection>
-            <motion.div variants={fadeUp} className="text-center mb-14">
-              <h2 className="section-title">{t('about.journeyTitle')}</h2>
-              <p className="section-subtitle">{t('about.journeySubtitle')}</p>
-            </motion.div>
-            <div className="relative max-w-4xl mx-auto">
-              <div className="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-primary-100 hidden md:block" />
-              {milestones.map((milestone, i) => (
-                <motion.div
-                  key={i}
-                  variants={fadeUp}
-                  className={`flex gap-8 mb-8 ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center`}
-                >
-                  <div className={`flex-1 ${i % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
-                    <div className="card p-6 inline-block">
-                      <div className="text-gold-500 font-heading font-bold text-lg">{milestone.year}</div>
-                      <h3 className="font-heading font-semibold text-primary-900 mt-1">{milestone.title}</h3>
-                      <p className="text-gray-600 text-sm mt-1">{milestone.description}</p>
-                    </div>
-                  </div>
-                  <div className="w-10 h-10 gradient-bg rounded-full flex items-center justify-center flex-shrink-0 z-10 shadow-lg hidden md:flex">
-                    <CheckCircle2 size={18} className="text-white" />
-                  </div>
-                  <div className="flex-1 hidden md:block" />
-                </motion.div>
-              ))}
-            </div>
-          </AnimatedSection>
+      <section className="site-wrap py-22">
+        <div className="grid gap-10 md:grid-cols-12 md:gap-8">
+          <div className="md:col-span-4"><p className="eyebrow mb-5 text-ink">{t('about.team')}</p><h2 className="section-title section-heading-narrow text-ink">{t('ui.about.teamTitle')}</h2><p className="mt-5 text-body leading-relaxed">{t('ui.about.teamText')}</p></div>
+          <div className="md:col-span-8">
+            {team.map((m, i) => (
+              <article key={i} className={`grid gap-3 ${i === team.length - 1 ? 'border-y' : 'border-t'} border-line py-5 sm:grid-cols-[4rem_1fr] sm:gap-6`}><span className="font-display text-2xl text-gold">{initials[i]}</span><div><h3 className="font-sans text-base font-extrabold text-ink">{m.name}</h3><p className="mt-1 text-small font-bold text-muted">{m.role}</p><p className="mt-3 text-small leading-relaxed text-body">{m.bio}</p></div></article>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Team */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <AnimatedSection>
-            <motion.div variants={fadeUp} className="text-center mb-14">
-              <h2 className="section-title">{t('about.team')}</h2>
-              <p className="section-subtitle">{t('about.teamSubtitle')}</p>
-            </motion.div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {teamMembers.map((member, i) => (
-                <motion.div key={i} variants={fadeUp} className="card p-6 text-center group">
-                  <div className={`w-24 h-24 rounded-full bg-gradient-to-br ${member.color} flex items-center justify-center text-white font-heading font-bold text-2xl mx-auto mb-4 shadow-lg group-hover:scale-105 transition-transform`}>
-                    {member.initials}
-                  </div>
-                  <h3 className="font-heading font-semibold text-primary-900 text-lg">{member.name}</h3>
-                  <p className="text-gold-600 text-sm font-medium mt-1 mb-3">{member.role}</p>
-                  <p className="text-gray-600 text-sm leading-relaxed">{member.bio}</p>
-                </motion.div>
-              ))}
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-20 gradient-bg">
-        <div className="container mx-auto px-4 text-center">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <h2 className="text-3xl font-heading font-bold text-white mb-4">
-              {t('about.ctaTitle')}
-            </h2>
-            <p className="text-white/70 mb-8 max-w-xl mx-auto">
-              {t('about.ctaDesc')}
-            </p>
-            <Link to="/contact" className="btn-gold inline-flex items-center gap-2">
-              {t('about.contactUs')} <ArrowRight size={16} />
-            </Link>
-          </motion.div>
+      <section className="bg-gold-pale py-16">
+        <div className="site-wrap grid gap-8 md:grid-cols-12 md:items-center">
+          <div className="md:col-span-8"><p className="eyebrow mb-4 text-ink">{t('ui.about.ctaEyebrow')}</p><h2 className="section-title max-w-3xl text-ink">{t('ui.about.ctaTitle')}</h2><p className="mt-5 max-w-2xl text-body leading-relaxed">{t('ui.about.ctaText')}</p></div>
+          <div className="md:col-span-4 md:text-end"><Link className="button button-gold" to="/contact#devis">{t('about.contactUs')} <Arrow /></Link><p className="mt-4 text-small text-ink">{t('ui.about.ctaPhone')} <a className="font-extrabold underline decoration-gold decoration-2 underline-offset-4" href="tel:+237696411012" dir="ltr">+237 696 41 10 12</a></p></div>
         </div>
       </section>
     </>

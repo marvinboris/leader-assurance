@@ -371,5 +371,626 @@
     "cookies": "Cookie management",
     "rights": "All rights reserved",
     "follow": "Follow us"
+  },
+  "ui": {
+    "about": {
+      "metaTitle": "About us — Leader Assurance | Douala, Cameroon",
+      "metaDescription": "Discover Leader Assurance SARL, your insurance brokerage and advisory firm in Douala. Our team, our mission and our values.",
+      "heroEyebrow": "Our story · Douala, Cameroon",
+      "heroLead": "Your trusted partner for over 10 years. Leader Assurance SARL supports individuals and businesses in managing their risks and protecting their assets.",
+      "heroCta": "Tell us what you need",
+      "heroSide": "years by your side to choose suitable protection, with a contact person in Douala.",
+      "whoEyebrow": "Who we are",
+      "whoTitle": "A firm serving your choices.",
+      "quote": "Your situation first. Coverage second.",
+      "partnerCompanies": "Partner companies",
+      "capEyebrow": "Our direction",
+      "capTitle": "Advise with clarity, protect with purpose.",
+      "capText": "A good policy starts with a true understanding of the person, family or business to be protected.",
+      "valuesHeading": "The principles that guide our actions.",
+      "journeyEyebrow": "Since 2010",
+      "journeyText": "Fifteen years of growth serving protection needs in Cameroon.",
+      "teamTitle": "Experts who listen.",
+      "teamText": "Complementary skills to support you in your choices and in following up your files.",
+      "ctaEyebrow": "A first conversation, no commitment",
+      "ctaTitle": "Let’s work together on your protection.",
+      "ctaText": "Our team is ready to support you with your insurance strategy. Let’s talk about your situation and the coverage that matters to you.",
+      "ctaPhone": "or call us on"
+    },
+    "contact": {
+      "eyebrow": "Contact · Akwa, Douala",
+      "h1": "Contact us.",
+      "heroText": "Our team is available to help. Tell us what you need and we will get back to you quickly.",
+      "kicker": "Let’s stay in touch",
+      "coordsTitle": "Our contact details.",
+      "formEyebrow": "Write to us",
+      "formIntro": "Quote request, question about a cover or claim report: tell us your topic so that we can point you in the right direction.",
+      "requiredNote": "Required fields",
+      "mapLabel": "Location",
+      "mapEyebrow": "Find us",
+      "mapTitle": "In the heart of Akwa.",
+      "mapIframe": "Leader Assurance — location in Akwa, Douala"
+    },
+    "faq": {
+      "metaTitle": "FAQ - Leader Assurance | Frequently Asked Questions",
+      "metaDescription": "Find answers to your questions about insurance, contracts and our services at Leader Assurance.",
+      "eyebrow": "Clear answers, confident decisions",
+      "lead": "Quickly find answers to your questions. Our team in Douala can also help you choose the right coverage.",
+      "searchLabel": "Search the questions",
+      "clearSearch": "Clear search",
+      "filterAria": "Filter by category",
+      "categories": "Categories",
+      "categoriesGroupAria": "Question categories",
+      "questionsCount_one": "{{num}} question",
+      "questionsCount_other": "{{num}} questions",
+      "sectionsCount_one": "{{num}} section",
+      "sectionsCount_other": "{{num}} sections",
+      "emptyTitle": "No questions found.",
+      "reset": "Reset filters",
+      "ctaEyebrow": "An advisor ready to listen",
+      "whatsappMessage": "Hello Leader Assurance, I have a question that is not in the FAQ."
+    },
+    "chat": {
+      "open": "Open the assistant",
+      "close": "Close the assistant",
+      "window": "Assistant window",
+      "closeWindow": "Close the window",
+      "today": "Today · {{time}}",
+      "typing": "The assistant is typing a reply",
+      "faq": "Frequently asked questions",
+      "messageLabel": "Your message",
+      "quick": {
+        "quote": "Get a quote",
+        "business": "Business insurance",
+        "advisor": "Speak to an advisor"
+      }
+    },
+    "cookie": {
+      "label": "Cookie banner",
+      "title": "Your privacy matters"
+    },
+    "home": {
+      "hero": {
+        "eyebrow": "Independent brokerage · Douala",
+        "title": "The right policy starts with good advice.",
+        "copy": "We compare several insurers to help you choose protection that fits your family or your business.",
+        "ctaPrimary": "Talk to an advisor",
+        "ctaWhatsapp": "Write on WhatsApp",
+        "whatsappMessage": "Hello Leader Assurance, I would like some advice.",
+        "calloutTitle": "One single point of contact.",
+        "calloutText": "Several insurers consulted. A proposal built around your needs."
+      },
+      "solutions": {
+        "eyebrow": "Two ways to protect yourself",
+        "title": "A priority for everyone.",
+        "text": "Individual or business owner, we take the time to understand what you want to protect before comparing offers.",
+        "individuals": {
+          "label": "01 / Individuals",
+          "title": "Peace of mind for your loved ones.",
+          "text": "Health, life, travel or savings: solutions to protect your family and prepare your plans.",
+          "items": [
+            "Health Insurance",
+            "Life Insurance & Savings",
+            "Travel Insurance"
+          ],
+          "cta": "Find my coverage"
+        },
+        "companies": {
+          "label": "02 / Businesses",
+          "title": "The continuity of your business.",
+          "text": "Fleet, employees, liability or assets: a concrete reading of your professional risks.",
+          "items": [
+            "Professional multi-risk",
+            "Employee Insurance",
+            "Professional Liability"
+          ],
+          "cta": "Talk about my risks"
+        }
+      },
+      "approach": {
+        "eyebrow": "What sets us apart",
+        "title": "Your interest guides the choice.",
+        "text": "As an independent broker, we study your needs, analyse the risks and compare the offers of our partner insurers.",
+        "cta": "Talk to an advisor",
+        "steps": [
+          {
+            "title": "Analysis before recommendation",
+            "text": "We start by understanding your situation and the risks to cover."
+          },
+          {
+            "title": "Several insurers consulted",
+            "text": "Activa, Chanas, AXA, NSIA and other partners depending on your needs."
+          },
+          {
+            "title": "Support when it matters",
+            "text": "A contact at your side to assist you, including in the event of a claim."
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": 500,
+          "label": "Clients supported"
+        },
+        {
+          "value": 10,
+          "label": "Years of experience"
+        },
+        {
+          "value": 15,
+          "label": "Insurance partners"
+        },
+        {
+          "value": 1200,
+          "label": "Policies managed"
+        }
+      ],
+      "partnersLabel": "Partner insurers",
+      "testimonials": {
+        "eyebrow": "They trust us",
+        "title": "Advice that makes its way.",
+        "quote": "“{{text}}”"
+      },
+      "quote": {
+        "eyebrow": "First conversation, no commitment",
+        "title": "Let’s talk about what you want to protect.",
+        "text": "A few details are enough to get a first estimate. An advisor in Douala will then refine your needs and prepare a suitable proposal.",
+        "callPrompt": "Prefer to call?",
+        "formLabel": "Quote calculator and WhatsApp quote request",
+        "typeLabel": "What type of insurance are you looking for?",
+        "typePlaceholder": "Choose an insurance",
+        "ageLabel": "Your age",
+        "agePlaceholder": "E.g. 34",
+        "employeesLabel": "Number of employees",
+        "employeesPlaceholder": "E.g. 12",
+        "coverageLabel": "Coverage level",
+        "nameLabel": "Your name",
+        "namePlaceholder": "Full name",
+        "phoneLabel": "Your phone number",
+        "phonePlaceholder": "+237 …",
+        "currency": "FCFA",
+        "note": "Your message will open in WhatsApp to be sent to our team.",
+        "sent": "Your request is ready in WhatsApp. Send the message to reach our team.",
+        "errors": {
+          "insurance": "Choose a type of insurance.",
+          "age": "Enter an age between 0 and 120.",
+          "employees": "Enter a number of employees greater than zero.",
+          "coverage": "Choose a coverage level.",
+          "name": "Enter your name.",
+          "phone": "Enter your phone number."
+        },
+        "whatsapp": {
+          "message": "Hello Leader Assurance, my name is {{name}} ({{phone}}). I would like a quote for {{insurance}}, {{coverage}} level. {{quantity}}. Monthly estimate: {{estimate}}.",
+          "age": "Age: {{value}}",
+          "employees": "Number of employees: {{value}}"
+        }
+      },
+      "finalCta": {
+        "eyebrow": "In Akwa, Douala",
+        "title": "A question before you choose? Our team is listening.",
+        "button": "Contact an advisor"
+      }
+    },
+    "news": {
+      "hero": {
+        "eyebrow": "The broker’s view",
+        "lead": "Practical insights to understand your insurance, better protect your family and anticipate the risks of your business."
+      },
+      "featured": {
+        "eyebrow": "Read first",
+        "title": "Advice of the moment.",
+        "note": "Practical information, designed for Cameroon.",
+        "read": "Read the article",
+        "readAria": "Read: {{title}}"
+      },
+      "list": {
+        "eyebrow": "The journal",
+        "title": "All articles.",
+        "searchLabel": "Search for an article",
+        "filterTitle": "Filter by topic",
+        "filterAria": "Article categories",
+        "status": "Articles displayed: {{count}}."
+      },
+      "cta": {
+        "eyebrow": "In Akwa, Douala",
+        "title": "Does an article raise a question? Our team is listening.",
+        "button": "Talk to an advisor"
+      },
+      "article": {
+        "eyebrow": "Advice article · {{category}}",
+        "published": "Published on",
+        "reading": "Reading time",
+        "section": "Section",
+        "quoteTitle": "Understand better to choose better.",
+        "quoteText": "Coverage is chosen according to the people or assets to protect, the risks to cover and the available budget.",
+        "figcaption": "{{category}} · Advice from Leader Assurance",
+        "share": "Share this article",
+        "shareOn": "Share on {{network}}",
+        "adviceEyebrow": "We are listening",
+        "quote": "Request a quote",
+        "whatsapp": "Write on WhatsApp",
+        "whatsappMsg": "Hello Leader Assurance, I would like advice about insurance.",
+        "relatedEyebrow": "Go further",
+        "relatedTitle": "Related articles",
+        "all": "All articles",
+        "ctaEyebrow": "Your protection, your priorities",
+        "ctaTitle": "Let’s compare the coverage that suits your situation.",
+        "ctaText": "Talk to an independent advisor in Douala to clarify your coverage needs.",
+        "ctaButton": "Request a quote"
+      },
+      "content": [
+        {
+          "intro": "Health insurance is one of the most important protections you can offer your family. In Cameroon, the public health system does not always cover all medical costs, which makes private health insurance essential.",
+          "sections": [
+            {
+              "label": "The basics",
+              "title": "What is health insurance?",
+              "paragraphs": [
+                "Health insurance is a contract between you and an insurance company that pays all or part of your medical expenses in exchange for regular premium payments."
+              ]
+            },
+            {
+              "label": "Coverage",
+              "title": "Types of coverage available",
+              "items": [
+                {
+                  "label": "Hospitalization",
+                  "text": "Covers hospital stay costs."
+                },
+                {
+                  "label": "Outpatient care",
+                  "text": "Covers consultations and routine care."
+                },
+                {
+                  "label": "Maternity",
+                  "text": "Covers childbirth and prenatal care."
+                },
+                {
+                  "label": "Dental and optical",
+                  "text": "Covers specialized care."
+                }
+              ]
+            },
+            {
+              "label": "Your choice",
+              "title": "How to choose your coverage?",
+              "paragraphs": [
+                "The choice depends on several factors: your age, your family situation, your general health and your budget. Our advisors at Leader Assurance can help you select the plan best suited to your situation."
+              ]
+            }
+          ]
+        },
+        {
+          "intro": "Cameroonian businesses face many risks that can jeopardize their activity. Business insurance is an essential solution to protect against these hazards.",
+          "sections": [
+            {
+              "label": "The risks",
+              "title": "The main risks for businesses",
+              "items": [
+                {
+                  "label": "Property risks",
+                  "text": "fire, theft, water damage."
+                },
+                {
+                  "label": "Human risks",
+                  "text": "workplace accidents, employee illness."
+                },
+                {
+                  "label": "Liability risks",
+                  "text": "damage caused to third parties."
+                },
+                {
+                  "label": "Financial risks",
+                  "text": "loss of income following a claim."
+                }
+              ]
+            },
+            {
+              "label": "The solution",
+              "title": "The importance of professional multi-risk insurance",
+              "paragraphs": [
+                "Good business insurance protects you against all these risks in a single policy, simplifying the management of your coverage while optimizing costs."
+              ]
+            },
+            {
+              "label": "Our role",
+              "title": "How Leader Assurance can help you",
+              "paragraphs": [
+                "Our team of experts analyzes your activity, identifies your specific risks and offers tailor-made coverage with the best partner companies."
+              ]
+            }
+          ]
+        },
+        {
+          "intro": "The insurance market in Africa is growing remarkably, driven by the emergence of a middle class, digitalization and a growing awareness of the importance of protection.",
+          "sections": [
+            {
+              "label": "The market",
+              "title": "The growth of the African market",
+              "paragraphs": [
+                "The insurance penetration rate in sub-Saharan Africa remains low (about 3%), but growth is strong, with immense opportunities for industry players."
+              ]
+            },
+            {
+              "label": "The trends",
+              "title": "The major trends",
+              "items": [
+                {
+                  "label": "Digitalization",
+                  "text": "InsurTechs are revolutionizing distribution."
+                },
+                {
+                  "label": "Microinsurance",
+                  "text": "accessible coverage for low-income populations."
+                },
+                {
+                  "label": "Health insurance",
+                  "text": "strong post-COVID growth."
+                },
+                {
+                  "label": "Agriculture",
+                  "text": "insurance for farmers."
+                }
+              ]
+            },
+            {
+              "label": "Local context",
+              "title": "Cameroon in this context",
+              "paragraphs": [
+                "Cameroon is positioning itself as an insurance hub in Central Africa, with modernized regulation and dynamic players such as Leader Assurance."
+              ]
+            }
+          ]
+        },
+        {
+          "intro": "Choosing insurance can seem complex given the multitude of offers available. Here is a practical guide to help you make the right decision.",
+          "sections": [
+            {
+              "label": "Your needs",
+              "title": "Step 1: Identify your needs",
+              "paragraphs": [
+                "Start by listing what you want to protect: your health, your family, your property, your professional activity."
+              ]
+            },
+            {
+              "label": "Your risks",
+              "title": "Step 2: Assess your risks",
+              "paragraphs": [
+                "Analyze the risks you are exposed to according to your situation, your activity and your environment."
+              ]
+            },
+            {
+              "label": "The offers",
+              "title": "Step 3: Compare offers",
+              "paragraphs": [
+                "Do not limit yourself to a single insurer. Compare the coverage, exclusions and prices of several companies."
+              ]
+            },
+            {
+              "label": "The broker",
+              "title": "Step 4: Call on a broker",
+              "paragraphs": [
+                "An independent broker like Leader Assurance can save you time and money by negotiating the best terms for you."
+              ]
+            }
+          ]
+        },
+        {
+          "intro": "Civil liability (CL) protects you when you unintentionally cause damage to third parties. It is a fundamental coverage that every individual and every business should have.",
+          "sections": [
+            {
+              "label": "The basics",
+              "title": "What is civil liability?",
+              "paragraphs": [
+                "CL covers the bodily, material or non-material damage you could cause to others in the course of your activities."
+              ]
+            },
+            {
+              "label": "Individuals",
+              "title": "CL for individuals",
+              "paragraphs": [
+                "Personal CL covers damage caused by yourself, your children, your pets and, in some cases, your property."
+              ]
+            },
+            {
+              "label": "Professionals",
+              "title": "Professional CL",
+              "paragraphs": [
+                "For businesses and liberal professions, professional CL covers errors, faults and omissions in the exercise of your activity."
+              ]
+            },
+            {
+              "label": "The essentials",
+              "title": "Why it is essential",
+              "paragraphs": [
+                "Without CL, you will have to personally bear compensation that can reach considerable amounts."
+              ]
+            }
+          ]
+        },
+        {
+          "intro": "Life insurance is a versatile financial product that combines protection in the event of death with the building of long-term savings.",
+          "sections": [
+            {
+              "label": "The roles",
+              "title": "The dual role of life insurance",
+              "items": [
+                {
+                  "label": "Protection",
+                  "text": "in the event of death, a capital sum is paid to the designated beneficiaries."
+                },
+                {
+                  "label": "Savings",
+                  "text": "accumulation of capital over the long term with guaranteed returns."
+                }
+              ]
+            },
+            {
+              "label": "Taxation",
+              "title": "Tax advantages",
+              "paragraphs": [
+                "In many countries, life insurance benefits from special tax advantages, particularly when the capital is passed on."
+              ]
+            },
+            {
+              "label": "Subscription",
+              "title": "How to subscribe",
+              "paragraphs": [
+                "Leader Assurance supports you in choosing the life insurance contract best suited to your financial and family goals."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "partners": {
+      "metaDescription": "Discover the partner insurance companies of Leader Assurance in Cameroon and across Africa.",
+      "eyebrow": "Our network · Douala",
+      "heroTitle": "Recognised insurers. Independent advice.",
+      "heroSubtitle": "We work with leading insurance companies to compare offers and help you choose suitable protection.",
+      "countLabel": "companies featured in our partner network",
+      "roleEyebrow": "Our role",
+      "roleTitle": "Several options, one point of contact.",
+      "roleText": "Our broker approach gives you access to several offers, with close support to compare and choose.",
+      "networkEyebrow": "The network",
+      "cameroon": "Cameroon",
+      "international": "International",
+      "centralAfrica": "Central Africa",
+      "stripAria": "Scrolling list of partner companies",
+      "stripEyebrow": "Network companies",
+      "stripHint": "Slow scroll · hover or focus to pause",
+      "trackLabel": "Names of partner companies",
+      "brokerEyebrow": "Your interest first",
+      "certifiedTitle": "Compliant advice, close personal support."
+    },
+    "privacy": {
+      "metaTitle": "Privacy Policy - Leader Assurance",
+      "eyebrow": "Legal information",
+      "title": "Privacy Policy",
+      "lead": "How we collect, use and protect the information entrusted to Leader Assurance.",
+      "updatedLabel": "Last updated",
+      "updatedDate": "March 2025",
+      "tocLabel": "Table of contents",
+      "tocTitle": "On this page",
+      "toc": [
+        "Data protection",
+        "Data collected",
+        "Use of data",
+        "Cookies",
+        "Terms of use",
+        "Your rights",
+        "Contact"
+      ],
+      "sections": [
+        {
+          "eyebrow": "Commitment",
+          "title": "Protection of personal data",
+          "paragraphs": [
+            "Leader Assurance SARL is committed to protecting the privacy of its clients and visitors. The personal information collected on this site is used solely to provide you with our insurance services and to contact you regarding your requests.",
+            "Your data will never be sold, transferred or shared with third parties without your explicit consent, except for legal or contractual obligations with our partner insurers, strictly within the scope of managing your contracts."
+          ]
+        },
+        {
+          "eyebrow": "Information",
+          "title": "Data collected",
+          "intro": "We collect the following data:",
+          "items": [
+            "Identification details (last name, first name, date of birth)",
+            "Contact details (address, phone, email)",
+            "Information required to establish insurance contracts",
+            "Browsing data on our site (cookies)"
+          ]
+        },
+        {
+          "eyebrow": "Purposes",
+          "title": "Use of data",
+          "intro": "Your data is used to:",
+          "items": [
+            "Prepare personalised insurance quotes and contracts",
+            "Manage your contracts and claims",
+            "Keep you informed about our services and news",
+            "Improve our website and our services"
+          ]
+        },
+        {
+          "eyebrow": "Browsing",
+          "title": "Cookie policy",
+          "intro": "Our site uses cookies to improve your browsing experience. Cookies are small text files stored on your device that help us to:",
+          "items": [
+            "Remember your language and browsing preferences",
+            "Analyse traffic and the use of our site",
+            "Improve the features of our site"
+          ],
+          "outro": "You can refuse non-essential cookies by clicking \"Decline\" in our cookie banner. Refusing cookies may affect some features of the site."
+        },
+        {
+          "eyebrow": "Framework of use",
+          "title": "Terms of use",
+          "paragraphs": [
+            "Use of this site implies acceptance of these terms. The content of this site is provided for information purposes only and does not constitute a contractual commitment. Only insurance contracts signed between the parties constitute legal commitments."
+          ]
+        },
+        {
+          "eyebrow": "Your data",
+          "title": "Your rights",
+          "intro": "In accordance with applicable regulations, you have the following rights over your personal data:",
+          "items": [
+            "Right of access to your data",
+            "Right to rectification of inaccurate data",
+            "Right to erasure of your data",
+            "Right to object to processing"
+          ],
+          "contactPrefix": "To exercise these rights, contact us at:"
+        },
+        {
+          "eyebrow": "Direct contact",
+          "title": "Contact",
+          "intro": "For any question regarding this privacy policy, contact us:"
+        }
+      ],
+      "emailLabel": "Email:",
+      "phoneLabel": "Tel:",
+      "ctaText": "A question about the protection of your information? Our team in Douala is here to help.",
+      "ctaButton": "Write to our team"
+    },
+    "shell": {
+      "skip": "Skip to content",
+      "homeLabel": "Leader Assurance, home",
+      "menu": "Menu",
+      "pages": "Pages",
+      "language": "Language",
+      "languages": "Languages",
+      "chooseLanguage": "Choose language",
+      "mainNav": "Main navigation",
+      "footerNav": "Site pages",
+      "footerTagline": "As an independent broker, we compare offers to help you choose the right protection.",
+      "explore": "Explore",
+      "findUs": "Find us"
+    },
+    "solutions": {
+      "metaTitle": "Our solutions — Leader Assurance",
+      "metaDesc": "Discover our insurance solutions for individuals and businesses in Douala, Cameroon.",
+      "heroEyebrow": "Our solutions · individuals and businesses",
+      "heroTitle": "Protection built around your plans.",
+      "heroText": "Comprehensive coverage for individuals and businesses. As an independent broker, we compare several insurers to help you choose.",
+      "navLabel": "Solution paths",
+      "individualsTitle": "For you and the people who matter.",
+      "individualsText": "Health, the future, travel or savings: we start from your situation to build suitable coverage.",
+      "companiesTitle": "For your business and your teams.",
+      "companiesText": "A risk analysis to cover the liabilities, employees and assets of your company.",
+      "eyebrows": {
+        "health": "Health",
+        "life": "Protection",
+        "travel": "Travel",
+        "savings": "Savings",
+        "enterprise": "Business",
+        "liability": "Liability",
+        "employees": "Employees",
+        "assets": "Business assets"
+      },
+      "processEyebrow": "Clear guidance",
+      "processText": "A simple, transparent process, from the first conversation to signing up.",
+      "ctaEyebrow": "First conversation, no commitment"
+    }
   }
 }

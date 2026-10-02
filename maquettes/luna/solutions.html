@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1b5e">
+  <meta name="description" content="Découvrez nos solutions d’assurance pour particuliers et entreprises à Douala, Cameroun.">
+  <title>Nos solutions — Leader Assurance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { ink: '#0D1B5E', 'ink-deep': '#08133F', 'ink-soft': '#24366F', gold: '#C99A3B', 'gold-pale': '#F4E9CF', paper: '#FFFFFF', mist: '#F3F5F8', line: '#DCE1EA', body: '#27314D', muted: '#65708A', white: '#FFFFFF', focus: '#F2BE55' },
+        fontFamily: { display: ['DM Serif Display', 'serif'], sans: ['Manrope', 'sans-serif'] },
+        fontSize: { micro: ['.75rem', { lineHeight: '1.4' }], small: ['.875rem', { lineHeight: '1.5' }], body: ['1rem', { lineHeight: '1.7' }], lead: ['1.25rem', { lineHeight: '1.55' }], h2: ['1.5rem', { lineHeight: '1.2' }], '2xl': ['1.5rem', { lineHeight: '1.2' }], '3xl': ['1.875rem', { lineHeight: '1.2' }], '4xl': ['2.25rem', { lineHeight: '1.1' }], '5xl': ['3rem', { lineHeight: '1.1' }], base: ['1rem', { lineHeight: '1.5' }] },
+        maxWidth: { site: '82rem' },
+        spacing: { 1: '.25rem', 2: '.5rem', 3: '.75rem', 4: '1rem', 5: '1.25rem', 6: '1.5rem', 7: '1.75rem', 8: '2rem', 10: '2.5rem', 12: '3rem', 16: '4rem', 22: '5.5rem', 28: '7rem' },
+        borderRadius: { sm: '4px', md: '10px', lg: '18px', pill: '999px' },
+        boxShadow: { card: '0 16px 44px rgba(8, 19, 63, .09)', float: '0 24px 64px rgba(8, 19, 63, .18)' }
+      } }
+    };
+  </script>
+  <style>
+    /* Hallmark · macrostructure: Split Ledger · tone: editorial and assured · anchor hue: navy */
+    :root {
+      --color-ink: #0D1B5E; --color-ink-deep: #08133F; --color-ink-soft: #24366F;
+      --color-gold: #C99A3B; --color-gold-pale: #F4E9CF; --color-paper: #FFFFFF;
+      --color-mist: #F3F5F8; --color-line: #DCE1EA; --color-body: #27314D;
+      --color-muted: #65708A; --color-white: #FFFFFF; --color-focus: #F2BE55; --color-error: #B42318;
+      --font-display: 'DM Serif Display', Georgia, serif; --font-text: 'Manrope', sans-serif;
+      --space-1: .25rem; --space-2: .5rem; --space-3: .75rem; --space-4: 1rem;
+      --space-6: 1.5rem; --space-8: 2rem; --space-12: 3rem; --space-16: 4rem;
+      --space-22: 5.5rem; --space-28: 7rem;
+      --radius-sm: 4px; --radius-md: 10px; --radius-lg: 18px; --radius-pill: 999px;
+      --shadow-card: 0 16px 44px rgba(8, 19, 63, .09); --shadow-float: 0 24px 64px rgba(8, 19, 63, .18);
+      --ease-out: cubic-bezier(.2,.7,.2,1); --duration-ui: 160ms; --duration-enter: 500ms;
+      --container-gutter: clamp(1.25rem, 5vw, 5rem);
+      --height-nav: 5.25rem; --height-hero-mobile: 42rem; --height-hero-desktop: 46rem; --height-hero-detail: 23rem;
+      --width-hero-heading: 11ch; --width-section-heading: 10ch; --width-hero-copy: 39rem; --width-hero-callout: 22rem;
+      --size-hero-index: 11rem;
+    }
+    html, body { overflow-x: clip; }
+    body { color: var(--color-body); font-family: var(--font-text); }
+    h1, h2, h3 { font-family: var(--font-display); font-weight: 400; font-style: normal; }
+    .site-wrap { width: min(100% - (var(--container-gutter) * 2), 82rem); margin-inline: auto; }
+    .display-title { font-size: clamp(3rem, 6.6vw, 6.75rem); line-height: .98; overflow-wrap: normal; hyphens: manual; min-width: 0; }
+    .section-title { font-size: clamp(2.25rem, 4vw, 3.5rem); line-height: 1.05; overflow-wrap: normal; hyphens: manual; min-width: 0; }
+    .hero-heading { max-width: var(--width-hero-heading); }
+    .hero-copy { max-width: var(--width-hero-copy); }
+    .section-heading-narrow { max-width: var(--width-section-heading); }
+    .nav-height { min-height: var(--height-nav); }
+    .hero-height { min-height: var(--height-hero-mobile); }
+    .hero-detail { min-height: var(--height-hero-detail); }
+    .hero-callout { width: min(100%, var(--width-hero-callout)); }
+    .hero-index { font-size: var(--size-hero-index); }
+    .approach-row { grid-template-columns: 3rem 1fr; }
+    .maquette-badge { font-size: .6875rem; }
+    .eyebrow { font-size: .75rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+    .hero-photo { background-image: linear-gradient(90deg, var(--color-ink-deep) 0%, rgba(8,19,63,.93) 33%, rgba(8,19,63,.48) 100%), url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80'); background-size: cover; background-position: center; }
+    .reveal { opacity: 0; transform: translateY(12px); transition: opacity var(--duration-enter) var(--ease-out), transform var(--duration-enter) var(--ease-out); }
+    .reveal.is-visible { opacity: 1; transform: translateY(0); }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-3); min-height: 3.25rem; padding: var(--space-3) var(--space-6); border: 1px solid transparent; border-radius: var(--radius-sm); font-size: .875rem; font-weight: 800; line-height: 1.25; text-decoration: none; white-space: nowrap; transition: color var(--duration-ui), background-color var(--duration-ui), border-color var(--duration-ui), transform var(--duration-ui); }
+    .button:active { transform: translateY(1px); }
+    .button:disabled, .button[aria-disabled="true"] { opacity: .55; cursor: not-allowed; }
+    .button-gold { color: var(--color-ink-deep); background: var(--color-gold); }
+    .button-gold:hover { background: var(--color-focus); }
+    .button-outline { color: var(--color-white); border-color: rgba(255,255,255,.65); background: transparent; }
+    .button-outline:hover { color: var(--color-ink); background: var(--color-white); }
+    .button-navy { color: var(--color-white); background: var(--color-ink); }
+    .button-navy:hover { background: var(--color-ink-soft); }
+    :focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; }
+    input, select { font: inherit; }
+    .field { width: 100%; min-height: 3.25rem; padding: var(--space-3) var(--space-4); color: var(--color-ink-deep); border: 1px solid var(--color-line); border-radius: var(--radius-sm); background: var(--color-paper); }
+    .field:focus { border-color: var(--color-ink); }
+    .field[aria-invalid="true"] { border-color: var(--color-error); }
+    .field-error { min-height: 1.25rem; color: var(--color-error); font-size: .75rem; line-height: 1.4; }
+    .shell-language-trigger { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); min-height: 3.25rem; padding: var(--space-3) var(--space-4); font-size: .875rem; line-height: 1.25; }
+    .shell-language-trigger svg { width: .75rem; height: .75rem; flex: none; transition: transform var(--duration-ui) var(--ease-out); }
+    .shell-languages[open] > .shell-language-trigger svg { transform: rotate(180deg); }
+    .coverage-choice:has(input:focus-visible) { outline: 3px solid var(--color-focus); outline-offset: -3px; }
+    .partner-name { font-family: var(--font-text); font-weight: 800; letter-spacing: -.04em; }
+    .stat-number { font-family: var(--font-display); }
+    .shell-header .site-wrap { position: relative; }
+    .shell-nav { display: flex; align-items: center; gap: var(--space-4); }
+    .shell-links { display: flex; align-items: center; gap: clamp(.55rem, 1.15vw, 1.1rem); }
+    .shell-link { color: var(--color-ink); font-size: .8125rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .shell-link:hover, .shell-link[aria-current="page"] { color: var(--color-muted); text-decoration: underline; text-decoration-color: var(--color-gold); text-decoration-thickness: 2px; text-underline-offset: 5px; }
+    .shell-pages { position: relative; display: none; }
+    .shell-pages > summary { cursor: pointer; list-style: none; }
+    .shell-pages > summary::-webkit-details-marker, .shell-languages > summary::-webkit-details-marker { display: none; }
+    .shell-languages > summary { list-style: none; }
+    .shell-pages[open] .shell-pages-list, .shell-languages[open] .shell-language-list { display: grid; }
+    .shell-pages-list, .shell-language-list { position: absolute; z-index: 40; top: calc(100% + .75rem); right: 0; min-width: 13rem; gap: .25rem; padding: .75rem; border: 1px solid var(--color-line); border-radius: var(--radius-sm); background: var(--color-paper); box-shadow: var(--shadow-card); }
+    .shell-pages-list a, .shell-language-list button { display: block; padding: .55rem .65rem; color: var(--color-ink); font: 700 .8125rem/1.4 var(--font-text); text-align: left; text-decoration: none; background: transparent; border: 0; cursor: pointer; }
+    .shell-pages-list a:hover, .shell-language-list button:hover, .shell-language-list button[aria-pressed="true"] { background: var(--color-mist); }
+    .shell-languages { position: relative; }
+    .shell-language-trigger { color: var(--color-ink); border: 1px solid var(--color-line); border-radius: var(--radius-sm); background: var(--color-paper); font: 800 .875rem/1.25 var(--font-text); cursor: pointer; }
+    .shell-mobile-controls { display: none; align-items: center; gap: .5rem; }
+    .shell-mobile-menu { display: none; min-height: 3.25rem; padding: .55rem .8rem; color: var(--color-ink); border: 1px solid var(--color-line); border-radius: var(--radius-sm); background: var(--color-paper); font: 800 .8125rem/1.4 var(--font-text); cursor: pointer; }
+    .shell-mobile-menu[aria-expanded="true"] { background: var(--color-mist); }
+    .shell-mobile-languages { display: none; }
+    .shell-footer-link { color: rgba(255,255,255,.8); font-size: .8125rem; line-height: 1.6; text-decoration: none; }
+    .shell-footer-link:hover, .shell-footer-link[aria-current="page"] { color: var(--color-focus); text-decoration: underline; text-underline-offset: 3px; }
+    @media (max-width: 1279px) and (min-width: 768px) {
+      .shell-nav { display: flex; align-items: center; gap: var(--space-4); }
+      .shell-links { display: none; }
+      .shell-nav .shell-pages { display: block; }
+      .shell-nav .shell-pages-list { left: 0; right: auto; }
+      .shell-mobile-controls { display: none; }
+    }
+    @media (max-width: 767px) {
+      .shell-mobile-controls { display: flex; }
+      .shell-mobile-menu { display: inline-flex; align-items: center; }
+      .shell-nav { display: none; position: absolute; top: 100%; left: calc(var(--container-gutter) * -1); right: calc(var(--container-gutter) * -1); z-index: 35; align-items: stretch; padding: 1rem var(--container-gutter) 1.5rem; border-block: 1px solid var(--color-line); background: var(--color-paper); box-shadow: var(--shadow-card); }
+      .shell-nav.is-open { display: grid; gap: .65rem; }
+      .shell-links { display: grid; gap: .15rem; }
+      .shell-link { display: block; padding: .6rem 0; font-size: .9rem; }
+      .shell-pages { display: none; }
+      .shell-nav > .button { width: 100%; margin-top: .25rem; }
+      .shell-nav > .shell-languages { display: none; }
+      .shell-mobile-languages { display: block; padding-top: .75rem; border-top: 1px solid var(--color-line); }
+      .shell-mobile-languages .shell-language-list { position: static; display: flex; flex-wrap: wrap; gap: .25rem; padding: .5rem 0 0; border: 0; box-shadow: none; }
+      .shell-footer-links { columns: 2; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+    @media (max-width: 767px) {
+      .hero-photo { background-position: 62% center; }
+      .display-title { font-size: clamp(3rem, 13vw, 4.75rem); }
+    }
+    @media (min-width: 768px) { .hero-height { min-height: var(--height-hero-desktop); } }
+  </style>
+</head>
+<body class="bg-paper antialiased">
+  <a href="#contenu" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-white focus:px-4 focus:py-3 focus:text-ink">Aller au contenu</a>
+  <!-- SHELL:HEADER START -->
+  <header class="shell-header relative z-20 bg-paper">
+    <div class="site-wrap nav-height flex items-center justify-between gap-4">
+      <a href="index.html" class="shrink-0" aria-label="Leader Assurance, accueil">
+        <img src="../logo.svg" alt="Leader Assurance" class="h-12 w-auto">
+      </a>
+      <div class="shell-mobile-controls">
+        <button class="shell-mobile-menu" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+        <details class="shell-languages" data-language-menu>
+          <summary class="shell-language-trigger" aria-label="Choisir la langue">FR <svg aria-hidden="true" viewBox="0 0 12 12" fill="none"><path d="m2 4 4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="shell-language-list" role="group" aria-label="Langues">
+            <button type="button" lang="fr" data-language="FR" aria-pressed="true">Français · FR</button>
+            <button type="button" lang="en" data-language="EN" aria-pressed="false">English · EN</button>
+            <button type="button" lang="es" data-language="ES" aria-pressed="false">Español · ES</button>
+            <button type="button" lang="ar" data-language="AR" aria-pressed="false">العربية · AR</button>
+            <button type="button" lang="zh" data-language="中文" aria-pressed="false">中文 · ZH</button>
+          </div>
+        </details>
+      </div>
+      <nav id="main-nav" class="shell-nav" aria-label="Navigation principale">
+        <div class="shell-links">
+          <a class="shell-link" href="index.html">Accueil</a>
+          <a class="shell-link" href="a-propos.html">À propos</a>
+          <a class="shell-link" href="solutions.html" aria-current="page">Nos solutions</a>
+          <a class="shell-link" href="partenaires.html">Partenaires</a>
+          <a class="shell-link" href="actualites.html">Actualités</a>
+          <a class="shell-link" href="faq.html">FAQ</a>
+          <a class="shell-link" href="contact.html">Contact</a>
+        </div>
+        <details class="shell-pages">
+          <summary class="shell-link">Pages <span aria-hidden="true">⌄</span></summary>
+          <div class="shell-pages-list">
+            <a href="index.html">Accueil</a><a href="a-propos.html">À propos</a><a href="solutions.html" aria-current="page">Nos solutions</a><a href="partenaires.html">Partenaires</a><a href="actualites.html">Actualités</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a>
+          </div>
+        </details>
+        <details class="shell-languages" data-language-menu>
+          <summary class="shell-language-trigger" aria-label="Choisir la langue">FR <svg aria-hidden="true" viewBox="0 0 12 12" fill="none"><path d="m2 4 4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="shell-language-list" role="group" aria-label="Langues">
+            <button type="button" lang="fr" data-language="FR" aria-pressed="true">Français · FR</button><button type="button" lang="en" data-language="EN" aria-pressed="false">English · EN</button><button type="button" lang="es" data-language="ES" aria-pressed="false">Español · ES</button><button type="button" lang="ar" data-language="AR" aria-pressed="false">العربية · AR</button><button type="button" lang="zh" data-language="中文" aria-pressed="false">中文 · ZH</button>
+          </div>
+        </details>
+        <a class="button button-gold" href="contact.html#devis">Demander un devis <span aria-hidden="true">↗</span></a>
+        <div class="shell-mobile-languages">
+          <p class="eyebrow text-muted">Langue</p>
+            <div class="shell-language-list" role="group" aria-label="Langues">
+            <button type="button" lang="fr" data-language="FR" aria-pressed="true">Français · FR</button><button type="button" lang="en" data-language="EN" aria-pressed="false">English · EN</button><button type="button" lang="es" data-language="ES" aria-pressed="false">Español · ES</button><button type="button" lang="ar" data-language="AR" aria-pressed="false">العربية · AR</button><button type="button" lang="zh" data-language="中文" aria-pressed="false">中文 · ZH</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- SHELL:HEADER END -->
+  <main id="contenu">
+    <section class="bg-ink-deep text-white">
+      <div class="site-wrap grid hero-detail content-center gap-8 py-16 md:grid-cols-12 md:items-end md:py-22">
+        <div class="md:col-span-7">
+          <p class="eyebrow mb-5 text-focus">Nos solutions · particuliers et entreprises</p>
+          <h1 class="display-title max-w-3xl">Une protection pensée autour de vos projets.</h1>
+        </div>
+        <p class="max-w-xl text-lead text-white/80 md:col-span-5 md:pb-2">Des couvertures complètes pour particuliers et entreprises. En tant que courtier indépendant, nous comparons plusieurs assureurs pour vous aider à choisir.</p>
+      </div>
+    </section>
+    <nav class="sticky top-0 z-10 border-b border-line bg-paper" aria-label="Parcours de solutions">
+      <div class="site-wrap flex flex-wrap gap-x-8 gap-y-2 py-4">
+        <button type="button" class="solution-tab border-b-2 border-gold py-2 text-small font-extrabold text-ink" data-tab="individuals" aria-pressed="true">Pour les particuliers</button>
+        <button type="button" class="solution-tab border-b-2 border-transparent py-2 text-small font-extrabold text-muted" data-tab="companies" aria-pressed="false">Pour les entreprises</button>
+      </div>
+    </nav>
+    <section class="site-wrap py-16 md:py-22" aria-labelledby="individuals-title" data-panel="individuals">
+      <div class="mb-12 grid gap-6 md:grid-cols-12 md:items-end">
+        <h2 id="individuals-title" class="section-title text-ink md:col-span-6">Pour vous et ceux qui comptent.</h2>
+        <p class="max-w-xl text-body md:col-span-5 md:col-start-8">Santé, avenir, déplacements ou épargne : partons de votre situation pour construire une couverture adaptée.</p>
+      </div>
+      <div class="divide-y divide-line border-y border-line">
+        <article class="grid gap-6 py-8 md:grid-cols-12 md:gap-8" id="sante">
+          <div class="md:col-span-3"><p class="eyebrow text-muted">01 · Santé</p><h3 class="mt-3 font-display text-3xl text-ink">Assurance Santé</h3></div>
+          <div class="md:col-span-5"><p class="text-body">Une couverture complète pour vos soins médicaux et ceux de votre famille.</p><details class="group mt-5"><summary class="cursor-pointer text-small font-extrabold text-ink underline decoration-gold decoration-2 underline-offset-4">En savoir plus</summary><div class="mt-5 grid gap-5 sm:grid-cols-2"><div><h4 class="text-small font-extrabold text-ink">Avantages</h4><ul class="mt-2 list-inside list-disc space-y-1 text-small text-body"><li>Remboursement des consultations</li><li>Couverture hospitalisation</li><li>Médicaments inclus</li><li>Accès réseau médical élargi</li></ul></div><div><h4 class="text-small font-extrabold text-ink">Exemples de situations</h4><ul class="mt-2 list-inside list-disc space-y-1 text-small text-body"><li>Hospitalisation urgente</li><li>Chirurgie programmée</li><li>Soins dentaires</li><li>Maternité</li></ul></div></div></details></div>
+          <div class="md:col-span-3 md:col-start-10 md:text-right"><a class="button button-navy" href="contact.html#devis">Demander un devis <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="grid gap-6 py-8 md:grid-cols-12 md:gap-8" id="vie">
+          <div class="md:col-span-3"><p class="eyebrow text-muted">02 · Prévoyance</p><h3 class="mt-3 font-display text-3xl text-ink">Assurance Vie</h3></div>
+          <div class="md:col-span-5"><p class="text-body">Protégez l’avenir financier de vos proches.</p><details class="group mt-5"><summary class="cursor-pointer text-small font-extrabold text-ink underline decoration-gold decoration-2 underline-offset-4">En savoir plus</summary><div class="mt-5 grid gap-5 sm:grid-cols-2"><div><h4 class="text-small font-extrabold text-ink">Avantages</h4><ul class="mt-2 list-inside list-disc space-y-1 text-small text-body"><li>Capital garanti</li><li>Rente viagère</li><li>Fiscalité avantageuse</li><li>Bénéficiaires désignés</li></ul></div><div><h4 class="text-small font-extrabold text-ink">Exemples de situations</h4><ul class="mt-2 list-inside list-disc space-y-1 text-small text-body"><li>Décès prématuré</li><li>Invalidité permanente</li><li>Protection famille</li><li>Succession</li></ul></div></div></details></div>
+          <div class="md:col-span-3 md:col-start-10 md:text-right"><a class="button button-navy" href="contact.html#devis">Demander un devis <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="grid gap-6 py-8 md:grid-cols-12 md:gap-8" id="voyage">
+          <div class="md:col-span-3"><p class="eyebrow text-muted">03 · Déplacements</p><h3 class="mt-3 font-display text-3xl text-ink">Assurance Voyage</h3></div>
+          <div class="md:col-span-5"><p class="text-body">Voyagez l’esprit tranquille partout dans le monde.</p><details class="group mt-5"><summary class="cursor-pointer text-small font-extrabold text-ink underline decoration-gold decoration-2 underline-offset-4">En savoir plus</summary><div class="mt-5 grid gap-5 sm:grid-cols-2"><div><h4 class="text-small font-extrabold text-ink">Avantages</h4><ul class="mt-2 list-inside list-disc space-y-1 text-small text-body"><li>Assistance rapatriement</li><li>Frais médicaux</li><li>Annulation voyage</li><li>Bagages perdus</li></ul></div><div><h4 class="text-small font-extrabold text-ink">Exemples de situations</h4><ul class="mt-2 list-inside list-disc space-y-1 text-small text-body"><li>Voyage d’affaires</li><li>Vacances en famille</li><li>Séjour étudiant</li><li>Expatriation</li></ul></div></div></details></div>
+          <div class="md:col-span-3 md:col-start-10 md:text-right"><a class="button button-navy" href="contact.html#devis">Demander un devis <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="grid gap-6 py-8 md:grid-cols-12 md:gap-8" id="epargne">
+          <div class="md:col-span-3"><p class="eyebrow text-muted">04 · Épargne</p><h3 class="mt-3 font-display text-3xl text-ink">Assurance Épargne</h3></div>
+          <div class="md:col-span-5"><p class="text-body">Construisez votre patrimoine avec des produits d’épargne sécurisés.</p><details class="group mt-5"><summary class="cursor-pointer text-small font-extrabold text-ink underline decoration-gold decoration-2 underline-offset-4">En savoir plus</summary><div class="mt-5 grid gap-5 sm:grid-cols-2"><div><h4 class="text-small font-extrabold text-ink">Avantages</h4><ul class="mt-2 list-inside list-disc space-y-1 text-small text-body"><li>Rendement garanti</li><li>Épargne progressive</li><li>Liquidité</li><li>Protection décès incluse</li></ul></div><div><h4 class="text-small font-extrabold text-ink">Exemples de situations</h4><ul class="mt-2 list-inside list-disc space-y-1 text-small text-body"><li>Retraite</li><li>Études enfants</li><li>Projet immobilier</li><li>Constitution patrimoine</li></ul></div></div></details></div>
+          <div class="md:col-span-3 md:col-start-10 md:text-right"><a class="button button-navy" href="contact.html#devis">Demander un devis <span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
+    </section>
+    <section class="hidden bg-mist" aria-labelledby="companies-title" data-panel="companies" hidden>
+      <div class="site-wrap py-16 md:py-22">
+        <div class="mb-12 grid gap-6 md:grid-cols-12 md:items-end"><h2 id="companies-title" class="section-title text-ink md:col-span-6">Pour votre activité et vos équipes.</h2><p class="max-w-xl text-body md:col-span-5 md:col-start-8">Une analyse des risques pour couvrir les responsabilités, les collaborateurs et les biens de votre entreprise.</p></div>
+        <div class="divide-y divide-line border-y border-line">
+          <article class="grid gap-6 py-8 md:grid-cols-12 md:gap-8" id="entreprise"><div class="md:col-span-3"><p class="eyebrow text-muted">01 · Activité</p><h3 class="mt-3 font-display text-3xl text-ink">Assurance Entreprise</h3></div><div class="md:col-span-5"><p class="text-body">Protégez votre activité professionnelle contre tous les risques.</p><details class="mt-5"><summary class="cursor-pointer text-small font-extrabold text-ink underline decoration-gold decoration-2 underline-offset-4">En savoir plus</summary><div class="mt-5 grid gap-5 sm:grid-cols-2"><div><h4 class="text-small font-extrabold text-ink">Avantages</h4><ul class="mt-2 list-inside list-disc space-y-1 text-small text-body"><li>Multirisque professionnel</li><li>Pertes d’exploitation</li><li>Protection actifs</li><li>Couverture globale</li></ul></div><div><h4 class="text-small font-extrabold text-ink">Exemples de situations</h4><ul class="mt-2 list-inside list-disc space-y-1 text-small text-body"><li>Incendie locaux</li><li>Vol équipements</li><li>Dommages tiers</li><li>Interruption activité</li></ul></div></div></details></div><div class="md:col-span-3 md:col-start-10 md:text-right"><a class="button button-navy" href="contact.html#devis">Demander un devis <span aria-hidden="true">↗</span></a></div></article>
+          <article class="grid gap-6 py-8 md:grid-cols-12 md:gap-8" id="responsabilite"><div class="md:col-span-3"><p class="eyebrow text-muted">02 · Responsabilité</p><h3 class="mt-3 font-display text-3xl text-ink">Responsabilité Civile Pro</h3></div><div class="md:col-span-5"><p class="text-body">Couvrez votre responsabilité professionnelle.</p><details class="mt-5"><summary class="cursor-pointer text-small font-extrabold text-ink underline decoration-gold decoration-2 underline-offset-4">En savoir plus</summary><div class="mt-5 grid gap-5 sm:grid-cols-2"><div><h4 class="text-small font-extrabold text-ink">Avantages</h4><ul class="mt-2 list-inside list-disc space-y-1 text-small text-body"><li>Protection juridique</li><li>Indemnisation dommages</li><li>Défense intérêts</li><li>Couverture erreurs</li></ul></div><div><h4 class="text-small font-extrabold text-ink">Exemples de situations</h4><ul class="mt-2 list-inside list-disc space-y-1 text-small text-body"><li>Erreur conseils</li><li>Préjudice client</li><li>Litige contractuel</li><li>Dommages corporels</li></ul></div></div></details></div><div class="md:col-span-3 md:col-start-10 md:text-right"><a class="button button-navy" href="contact.html#devis">Demander un devis <span aria-hidden="true">↗</span></a></div></article>
+          <article class="grid gap-6 py-8 md:grid-cols-12 md:gap-8" id="employes"><div class="md:col-span-3"><p class="eyebrow text-muted">03 · Collaborateurs</p><h3 class="mt-3 font-display text-3xl text-ink">Assurance Employés</h3></div><div class="md:col-span-5"><p class="text-body">Protégez votre capital humain avec des solutions adaptées.</p><details class="mt-5"><summary class="cursor-pointer text-small font-extrabold text-ink underline decoration-gold decoration-2 underline-offset-4">En savoir plus</summary><div class="mt-5 grid gap-5 sm:grid-cols-2"><div><h4 class="text-small font-extrabold text-ink">Avantages</h4><ul class="mt-2 list-inside list-disc space-y-1 text-small text-body"><li>Prévoyance collective</li><li>Complémentaire santé</li><li>Accidents travail</li><li>Fidélisation talents</li></ul></div><div><h4 class="text-small font-extrabold text-ink">Exemples de situations</h4><ul class="mt-2 list-inside list-disc space-y-1 text-small text-body"><li>Maladie salarié</li><li>Accident travail</li><li>Décès employé</li><li>Invalidité</li></ul></div></div></details></div><div class="md:col-span-3 md:col-start-10 md:text-right"><a class="button button-navy" href="contact.html#devis">Demander un devis <span aria-hidden="true">↗</span></a></div></article>
+          <article class="grid gap-6 py-8 md:grid-cols-12 md:gap-8" id="actifs"><div class="md:col-span-3"><p class="eyebrow text-muted">04 · Patrimoine professionnel</p><h3 class="mt-3 font-display text-3xl text-ink">Protection des Actifs</h3></div><div class="md:col-span-5"><p class="text-body">Sécurisez tous vos biens et équipements professionnels.</p><details class="mt-5"><summary class="cursor-pointer text-small font-extrabold text-ink underline decoration-gold decoration-2 underline-offset-4">En savoir plus</summary><div class="mt-5 grid gap-5 sm:grid-cols-2"><div><h4 class="text-small font-extrabold text-ink">Avantages</h4><ul class="mt-2 list-inside list-disc space-y-1 text-small text-body"><li>Tous risques matériels</li><li>Flotte automobile</li><li>Machines industrielles</li><li>Informatique</li></ul></div><div><h4 class="text-small font-extrabold text-ink">Exemples de situations</h4><ul class="mt-2 list-inside list-disc space-y-1 text-small text-body"><li>Destruction matériel</li><li>Vol équipements</li><li>Bris de machine</li><li>Dégât des eaux</li></ul></div></div></details></div><div class="md:col-span-3 md:col-start-10 md:text-right"><a class="button button-navy" href="contact.html#devis">Demander un devis <span aria-hidden="true">↗</span></a></div></article>
+        </div>
+      </div>
+    </section>
+    <section class="bg-ink py-16 text-white md:py-22">
+      <div class="site-wrap"><div class="grid gap-6 border-b border-white/20 pb-10 md:grid-cols-12 md:items-end"><div class="md:col-span-6"><p class="eyebrow mb-4 text-focus">Un accompagnement clair</p><h2 class="section-title">Comment ça marche ?</h2></div><p class="text-lead text-white/75 md:col-span-5 md:col-start-8">Un processus simple et transparent, du premier échange à la souscription.</p></div>
+        <ol class="grid gap-8 pt-10 sm:grid-cols-2 lg:grid-cols-4"><li class="border-l border-gold pl-5"><p class="font-display text-4xl text-focus">01</p><h3 class="mt-4 text-2xl">Consultation</h3><p class="mt-3 text-small leading-relaxed text-white/75">Échange initial avec notre conseiller pour comprendre vos besoins et votre situation.</p></li><li class="border-l border-gold pl-5"><p class="font-display text-4xl text-focus">02</p><h3 class="mt-4 text-2xl">Analyse</h3><p class="mt-3 text-small leading-relaxed text-white/75">Analyse approfondie de vos risques et identification des solutions adaptées.</p></li><li class="border-l border-gold pl-5"><p class="font-display text-4xl text-focus">03</p><h3 class="mt-4 text-2xl">Proposition</h3><p class="mt-3 text-small leading-relaxed text-white/75">Présentation d’offres personnalisées issues de nos meilleurs partenaires.</p></li><li class="border-l border-gold pl-5"><p class="font-display text-4xl text-focus">04</p><h3 class="mt-4 text-2xl">Souscription</h3><p class="mt-3 text-small leading-relaxed text-white/75">Finalisation du contrat et accompagnement tout au long de la durée de votre couverture.</p></li></ol>
+      </div>
+    </section>
+    <section class="bg-gold-pale py-16 md:py-22"><div class="site-wrap grid gap-8 md:grid-cols-12 md:items-center"><div class="md:col-span-8"><p class="eyebrow mb-4 text-ink">Premier échange, sans engagement</p><h2 class="section-title max-w-3xl text-ink">Besoin d’une solution sur mesure ?</h2><p class="mt-5 max-w-2xl text-body">Nos experts vous accompagnent dans le choix de la meilleure protection.</p></div><div class="md:col-span-4 md:text-right"><a class="button button-gold" href="contact.html#devis">Demander un devis personnalisé <span aria-hidden="true">↗</span></a></div></div></section>
+  </main>
+  <!-- SHELL:FOOTER START -->
+  <footer class="bg-ink-deep text-white">
+    <div class="site-wrap grid gap-10 border-t border-white/20 py-10 md:grid-cols-12">
+      <div class="md:col-span-4"><a href="index.html" aria-label="Leader Assurance, accueil"><img src="../logo-white.svg" alt="Leader Assurance" class="h-12 w-auto"></a><p class="mt-5 max-w-sm text-small leading-relaxed text-white/70">Courtier indépendant, nous comparons les offres pour vous aider à choisir une protection adaptée.</p></div>
+      <nav class="md:col-span-4" aria-label="Pages du site"><p class="eyebrow mb-4 text-white/60">Explorer</p><div class="shell-footer-links grid grid-cols-2 gap-x-4 gap-y-2"><a class="shell-footer-link" href="index.html">Accueil</a><a class="shell-footer-link" href="a-propos.html">À propos</a><a class="shell-footer-link" href="solutions.html" aria-current="page">Nos solutions</a><a class="shell-footer-link" href="partenaires.html">Partenaires</a><a class="shell-footer-link" href="actualites.html">Actualités</a><a class="shell-footer-link" href="faq.html">FAQ</a><a class="shell-footer-link" href="contact.html">Contact</a><a class="shell-footer-link" href="confidentialite.html">Politique de confidentialité</a></div></nav>
+      <div class="md:col-span-4"><p class="eyebrow mb-4 text-white/60">Nous trouver</p><address class="not-italic text-small leading-loose text-white/80">Akwa, Rue Bernabé, Douala<br><a class="hover:text-focus" href="mailto:leaderassurance1@yahoo.fr">leaderassurance1@yahoo.fr</a><br><a class="hover:text-focus" href="tel:+237696411012">+237 696 41 10 12</a><br><a class="hover:text-focus" href="tel:+237681806975">+237 681 80 69 75</a></address><a class="mt-3 inline-flex min-h-11 items-center gap-3 text-small font-bold text-white underline decoration-gold decoration-2 underline-offset-4" href="https://wa.me/237696411012" target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <div class="site-wrap flex flex-col gap-2 border-t border-white/15 py-5 text-micro text-white/55 sm:flex-row sm:justify-between"><span>© <span id="year"></span> Leader Assurance SARL</span><span>Akwa · Douala · Cameroun</span></div>
+  </footer>
+  <!-- SHELL:FOOTER END -->
+  <div class="maquette-badge fixed bottom-3 right-3 z-30 border border-white/15 bg-ink-deep/90 px-3 py-2 font-semibold tracking-wide text-white/75">Maquette A — GPT-6 Luna</div>
+  <script>
+    (() => {
+      const tabs = [...document.querySelectorAll('[data-tab]')];
+      const panels = [...document.querySelectorAll('[data-panel]')];
+      const setTab = key => {
+        tabs.forEach(tab => {
+          const active = tab.dataset.tab === key;
+          tab.setAttribute('aria-pressed', String(active));
+          tab.classList.toggle('border-gold', active);
+          tab.classList.toggle('text-ink', active);
+          tab.classList.toggle('border-transparent', !active);
+          tab.classList.toggle('text-muted', !active);
+        });
+        panels.forEach(panel => {
+          const active = panel.dataset.panel === key;
+          panel.hidden = !active;
+          panel.classList.toggle('hidden', !active);
+        });
+        const url = new URL(location.href);
+        url.searchParams.set('tab', key);
+        history.replaceState(null, '', url);
+      };
+      tabs.forEach(tab => tab.addEventListener('click', () => setTab(tab.dataset.tab)));
+      const initial = new URLSearchParams(location.search).get('tab');
+      if (initial === 'companies' || initial === 'individuals') setTab(initial);
+    })();
+  </script>
+  <!-- SHELL:SCRIPT START -->
+  <script>
+    (() => {
+      const toggle = document.querySelector('.shell-mobile-menu');
+      const nav = document.querySelector('#main-nav');
+      if (!toggle || !nav) return;
+      const currentPage = location.pathname.split('/').filter(Boolean).pop() || 'index.html';
+      const year = document.querySelector('#year');
+      if (year) year.textContent = new Date().getFullYear();
+      document.querySelectorAll('a[aria-current="page"]').forEach(link => link.removeAttribute('aria-current'));
+      document.querySelectorAll('a[href]').forEach(link => {
+        const href = link.getAttribute('href');
+        const target = href.split('#')[0];
+        if (target && !href.includes('#') && target === currentPage) link.setAttribute('aria-current', 'page');
+      });
+      const closeNav = () => { nav.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); };
+      toggle.addEventListener('click', () => {
+        const open = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!open));
+        nav.classList.toggle('is-open', !open);
+        if (open) nav.querySelector('a')?.focus();
+      });
+      nav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeNav));
+      document.querySelectorAll('[data-language-menu]').forEach(menu => {
+        menu.querySelectorAll('[data-language]').forEach(option => option.addEventListener('click', () => {
+          const code = option.dataset.language;
+          document.querySelectorAll('[data-language]').forEach(item => item.setAttribute('aria-pressed', String(item.dataset.language === code)));
+          document.querySelectorAll('[data-language-menu] > summary').forEach(label => { label.childNodes[0].textContent = code; });
+          document.querySelectorAll('[data-language-menu]').forEach(item => item.open = false);
+        }));
+      });
+      document.addEventListener('keydown', event => {
+        if (event.key !== 'Escape') return;
+        document.querySelectorAll('details[open]').forEach(detail => detail.open = false);
+        if (toggle.getAttribute('aria-expanded') === 'true') { closeNav(); toggle.focus(); }
+      });
+      document.addEventListener('click', event => {
+        document.querySelectorAll('details[open]').forEach(detail => { if (!detail.contains(event.target)) detail.open = false; });
+      });
+      window.addEventListener('resize', () => { if (window.matchMedia('(min-width: 1280px)').matches) closeNav(); });
+    })();
+  </script>
+  <!-- SHELL:SCRIPT END -->
+</body>
+</html>

@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1b5e">
+  <meta name="description" content="Courtier indépendant à Douala, Leader Assurance compare les offres de plusieurs compagnies pour protéger votre famille et votre entreprise.">
+  <title>Leader Assurance — Le bon contrat commence par un bon conseil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { ink: '#0D1B5E', 'ink-deep': '#08133F', 'ink-soft': '#24366F', gold: '#C99A3B', 'gold-pale': '#F4E9CF', paper: '#FFFFFF', mist: '#F3F5F8', line: '#DCE1EA', body: '#27314D', muted: '#65708A', white: '#FFFFFF', focus: '#F2BE55' },
+        fontFamily: { display: ['DM Serif Display', 'serif'], sans: ['Manrope', 'sans-serif'] },
+        fontSize: { micro: ['.75rem', { lineHeight: '1.4' }], small: ['.875rem', { lineHeight: '1.5' }], body: ['1rem', { lineHeight: '1.7' }], lead: ['1.25rem', { lineHeight: '1.55' }], h2: ['1.5rem', { lineHeight: '1.2' }], '2xl': ['1.5rem', { lineHeight: '1.2' }], '3xl': ['1.875rem', { lineHeight: '1.2' }], '4xl': ['2.25rem', { lineHeight: '1.1' }], '5xl': ['3rem', { lineHeight: '1.1' }], base: ['1rem', { lineHeight: '1.5' }] },
+        maxWidth: { site: '82rem' },
+        spacing: { 1: '.25rem', 2: '.5rem', 3: '.75rem', 4: '1rem', 5: '1.25rem', 6: '1.5rem', 7: '1.75rem', 8: '2rem', 10: '2.5rem', 12: '3rem', 16: '4rem', 22: '5.5rem', 28: '7rem' },
+        borderRadius: { sm: '4px', md: '10px', lg: '18px', pill: '999px' },
+        boxShadow: { card: '0 16px 44px rgba(8, 19, 63, .09)', float: '0 24px 64px rgba(8, 19, 63, .18)' }
+      } }
+    };
+  </script>
+  <style>
+    /* Hallmark · macrostructure: Split Ledger · tone: editorial and assured · anchor hue: navy */
+    :root {
+      --color-ink: #0D1B5E; --color-ink-deep: #08133F; --color-ink-soft: #24366F;
+      --color-gold: #C99A3B; --color-gold-pale: #F4E9CF; --color-paper: #FFFFFF;
+      --color-mist: #F3F5F8; --color-line: #DCE1EA; --color-body: #27314D;
+      --color-muted: #65708A; --color-white: #FFFFFF; --color-focus: #F2BE55; --color-error: #B42318;
+      --font-display: 'DM Serif Display', Georgia, serif; --font-text: 'Manrope', sans-serif;
+      --space-1: .25rem; --space-2: .5rem; --space-3: .75rem; --space-4: 1rem;
+      --space-6: 1.5rem; --space-8: 2rem; --space-12: 3rem; --space-16: 4rem;
+      --space-22: 5.5rem; --space-28: 7rem;
+      --radius-sm: 4px; --radius-md: 10px; --radius-lg: 18px; --radius-pill: 999px;
+      --shadow-card: 0 16px 44px rgba(8, 19, 63, .09); --shadow-float: 0 24px 64px rgba(8, 19, 63, .18);
+      --ease-out: cubic-bezier(.2,.7,.2,1); --duration-ui: 160ms; --duration-enter: 500ms;
+      --container-gutter: clamp(1.25rem, 5vw, 5rem);
+      --height-nav: 5.25rem; --height-hero-mobile: 42rem; --height-hero-desktop: 46rem; --height-hero-detail: 23rem;
+      --width-hero-heading: 11ch; --width-section-heading: 10ch; --width-hero-copy: 39rem; --width-hero-callout: 22rem;
+      --size-hero-index: 11rem;
+    }
+    html, body { overflow-x: clip; }
+    body { color: var(--color-body); font-family: var(--font-text); }
+    h1, h2, h3 { font-family: var(--font-display); font-weight: 400; font-style: normal; }
+    .site-wrap { width: min(100% - (var(--container-gutter) * 2), 82rem); margin-inline: auto; }
+    .display-title { font-size: clamp(3rem, 6.6vw, 6.75rem); line-height: .98; overflow-wrap: normal; hyphens: manual; min-width: 0; }
+    .section-title { font-size: clamp(2.25rem, 4vw, 3.5rem); line-height: 1.05; overflow-wrap: normal; hyphens: manual; min-width: 0; }
+    .hero-heading { max-width: var(--width-hero-heading); }
+    .hero-copy { max-width: var(--width-hero-copy); }
+    .section-heading-narrow { max-width: var(--width-section-heading); }
+    .nav-height { min-height: var(--height-nav); }
+    .hero-height { min-height: var(--height-hero-mobile); }
+    .hero-detail { min-height: var(--height-hero-detail); }
+    .hero-callout { width: min(100%, var(--width-hero-callout)); }
+    .hero-index { font-size: var(--size-hero-index); }
+    .approach-row { grid-template-columns: 3rem 1fr; }
+    .maquette-badge { font-size: .6875rem; }
+    .eyebrow { font-size: .75rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+    .hero-photo { background-image: linear-gradient(90deg, var(--color-ink-deep) 0%, rgba(8,19,63,.93) 33%, rgba(8,19,63,.48) 100%), url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80'); background-size: cover; background-position: center; }
+    .reveal { opacity: 0; transform: translateY(12px); transition: opacity var(--duration-enter) var(--ease-out), transform var(--duration-enter) var(--ease-out); }
+    .reveal.is-visible { opacity: 1; transform: translateY(0); }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-3); min-height: 3.25rem; padding: var(--space-3) var(--space-6); border: 1px solid transparent; border-radius: var(--radius-sm); font-size: .875rem; font-weight: 800; line-height: 1.25; text-decoration: none; white-space: nowrap; transition: color var(--duration-ui), background-color var(--duration-ui), border-color var(--duration-ui), transform var(--duration-ui); }
+    .button:active { transform: translateY(1px); }
+    .button:disabled, .button[aria-disabled="true"] { opacity: .55; cursor: not-allowed; }
+    .button-gold { color: var(--color-ink-deep); background: var(--color-gold); }
+    .button-gold:hover { background: var(--color-focus); }
+    .button-outline { color: var(--color-white); border-color: rgba(255,255,255,.65); background: transparent; }
+    .button-outline:hover { color: var(--color-ink); background: var(--color-white); }
+    .button-navy { color: var(--color-white); background: var(--color-ink); }
+    .button-navy:hover { background: var(--color-ink-soft); }
+    :focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; }
+    input, select { font: inherit; }
+    .field { width: 100%; min-height: 3.25rem; padding: var(--space-3) var(--space-4); color: var(--color-ink-deep); border: 1px solid var(--color-line); border-radius: var(--radius-sm); background: var(--color-paper); }
+    .field:focus { border-color: var(--color-ink); }
+    .field[aria-invalid="true"] { border-color: var(--color-error); }
+    .field-error { min-height: 1.25rem; color: var(--color-error); font-size: .75rem; line-height: 1.4; }
+    .shell-language-trigger { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); min-height: 3.25rem; padding: var(--space-3) var(--space-4); font-size: .875rem; line-height: 1.25; }
+    .shell-language-trigger svg { width: .75rem; height: .75rem; flex: none; transition: transform var(--duration-ui) var(--ease-out); }
+    .shell-languages[open] > .shell-language-trigger svg { transform: rotate(180deg); }
+    .coverage-choice:has(input:focus-visible) { outline: 3px solid var(--color-focus); outline-offset: -3px; }
+    .partner-name { font-family: var(--font-text); font-weight: 800; letter-spacing: -.04em; }
+    .stat-number { font-family: var(--font-display); }
+    .shell-header .site-wrap { position: relative; }
+    .shell-nav { display: flex; align-items: center; gap: var(--space-4); }
+    .shell-links { display: flex; align-items: center; gap: clamp(.55rem, 1.15vw, 1.1rem); }
+    .shell-link { color: var(--color-ink); font-size: .8125rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .shell-link:hover, .shell-link[aria-current="page"] { color: var(--color-muted); text-decoration: underline; text-decoration-color: var(--color-gold); text-decoration-thickness: 2px; text-underline-offset: 5px; }
+    .shell-pages { position: relative; display: none; }
+    .shell-pages > summary { cursor: pointer; list-style: none; }
+    .shell-pages > summary::-webkit-details-marker, .shell-languages > summary::-webkit-details-marker { display: none; }
+    .shell-languages > summary { list-style: none; }
+    .shell-pages[open] .shell-pages-list, .shell-languages[open] .shell-language-list { display: grid; }
+    .shell-pages-list, .shell-language-list { position: absolute; z-index: 40; top: calc(100% + .75rem); right: 0; min-width: 13rem; gap: .25rem; padding: .75rem; border: 1px solid var(--color-line); border-radius: var(--radius-sm); background: var(--color-paper); box-shadow: var(--shadow-card); }
+    .shell-pages-list a, .shell-language-list button { display: block; padding: .55rem .65rem; color: var(--color-ink); font: 700 .8125rem/1.4 var(--font-text); text-align: left; text-decoration: none; background: transparent; border: 0; cursor: pointer; }
+    .shell-pages-list a:hover, .shell-language-list button:hover, .shell-language-list button[aria-pressed="true"] { background: var(--color-mist); }
+    .shell-languages { position: relative; }
+    .shell-language-trigger { color: var(--color-ink); border: 1px solid var(--color-line); border-radius: var(--radius-sm); background: var(--color-paper); font: 800 .875rem/1.25 var(--font-text); cursor: pointer; }
+    .shell-mobile-controls { display: none; align-items: center; gap: .5rem; }
+    .shell-mobile-menu { display: none; min-height: 3.25rem; padding: .55rem .8rem; color: var(--color-ink); border: 1px solid var(--color-line); border-radius: var(--radius-sm); background: var(--color-paper); font: 800 .8125rem/1.4 var(--font-text); cursor: pointer; }
+    .shell-mobile-menu[aria-expanded="true"] { background: var(--color-mist); }
+    .shell-mobile-languages { display: none; }
+    .shell-footer-link { color: rgba(255,255,255,.8); font-size: .8125rem; line-height: 1.6; text-decoration: none; }
+    .shell-footer-link:hover, .shell-footer-link[aria-current="page"] { color: var(--color-focus); text-decoration: underline; text-underline-offset: 3px; }
+    @media (max-width: 1279px) and (min-width: 768px) {
+      .shell-nav { display: flex; align-items: center; gap: var(--space-4); }
+      .shell-links { display: none; }
+      .shell-nav .shell-pages { display: block; }
+      .shell-nav .shell-pages-list { left: 0; right: auto; }
+      .shell-mobile-controls { display: none; }
+    }
+    @media (max-width: 767px) {
+      .shell-mobile-controls { display: flex; }
+      .shell-mobile-menu { display: inline-flex; align-items: center; }
+      .shell-nav { display: none; position: absolute; top: 100%; left: calc(var(--container-gutter) * -1); right: calc(var(--container-gutter) * -1); z-index: 35; align-items: stretch; padding: 1rem var(--container-gutter) 1.5rem; border-block: 1px solid var(--color-line); background: var(--color-paper); box-shadow: var(--shadow-card); }
+      .shell-nav.is-open { display: grid; gap: .65rem; }
+      .shell-links { display: grid; gap: .15rem; }
+      .shell-link { display: block; padding: .6rem 0; font-size: .9rem; }
+      .shell-pages { display: none; }
+      .shell-nav > .button { width: 100%; margin-top: .25rem; }
+      .shell-nav > .shell-languages { display: none; }
+      .shell-mobile-languages { display: block; padding-top: .75rem; border-top: 1px solid var(--color-line); }
+      .shell-mobile-languages .shell-language-list { position: static; display: flex; flex-wrap: wrap; gap: .25rem; padding: .5rem 0 0; border: 0; box-shadow: none; }
+      .shell-footer-links { columns: 2; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+    @media (max-width: 767px) {
+      .hero-photo { background-position: 62% center; }
+      .display-title { font-size: clamp(3rem, 13vw, 4.75rem); }
+    }
+    @media (min-width: 768px) { .hero-height { min-height: var(--height-hero-desktop); } }
+  </style>
+</head>
+<body class="bg-paper antialiased">
+  <a href="#contenu" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-white focus:px-4 focus:py-3 focus:text-ink">Aller au contenu</a>
+  <!-- SHELL:HEADER START -->
+  <header class="shell-header relative z-20 bg-paper">
+    <div class="site-wrap nav-height flex items-center justify-between gap-4">
+      <a href="index.html" class="shrink-0" aria-label="Leader Assurance, accueil">
+        <img src="../logo.svg" alt="Leader Assurance" class="h-12 w-auto">
+      </a>
+      <div class="shell-mobile-controls">
+        <button class="shell-mobile-menu" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+        <details class="shell-languages" data-language-menu>
+          <summary class="shell-language-trigger" aria-label="Choisir la langue">FR <svg aria-hidden="true" viewBox="0 0 12 12" fill="none"><path d="m2 4 4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="shell-language-list" role="group" aria-label="Langues">
+            <button type="button" lang="fr" data-language="FR" aria-pressed="true">Français · FR</button>
+            <button type="button" lang="en" data-language="EN" aria-pressed="false">English · EN</button>
+            <button type="button" lang="es" data-language="ES" aria-pressed="false">Español · ES</button>
+            <button type="button" lang="ar" data-language="AR" aria-pressed="false">العربية · AR</button>
+            <button type="button" lang="zh" data-language="中文" aria-pressed="false">中文 · ZH</button>
+          </div>
+        </details>
+      </div>
+      <nav id="main-nav" class="shell-nav" aria-label="Navigation principale">
+        <div class="shell-links">
+          <a class="shell-link" href="index.html" aria-current="page">Accueil</a>
+          <a class="shell-link" href="a-propos.html">À propos</a>
+          <a class="shell-link" href="solutions.html">Nos solutions</a>
+          <a class="shell-link" href="partenaires.html">Partenaires</a>
+          <a class="shell-link" href="actualites.html">Actualités</a>
+          <a class="shell-link" href="faq.html">FAQ</a>
+          <a class="shell-link" href="contact.html">Contact</a>
+        </div>
+        <details class="shell-pages">
+          <summary class="shell-link">Pages <span aria-hidden="true">⌄</span></summary>
+          <div class="shell-pages-list">
+            <a href="index.html" aria-current="page">Accueil</a><a href="a-propos.html">À propos</a><a href="solutions.html">Nos solutions</a><a href="partenaires.html">Partenaires</a><a href="actualites.html">Actualités</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a>
+          </div>
+        </details>
+        <details class="shell-languages" data-language-menu>
+          <summary class="shell-language-trigger" aria-label="Choisir la langue">FR <svg aria-hidden="true" viewBox="0 0 12 12" fill="none"><path d="m2 4 4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="shell-language-list" role="group" aria-label="Langues">
+            <button type="button" lang="fr" data-language="FR" aria-pressed="true">Français · FR</button><button type="button" lang="en" data-language="EN" aria-pressed="false">English · EN</button><button type="button" lang="es" data-language="ES" aria-pressed="false">Español · ES</button><button type="button" lang="ar" data-language="AR" aria-pressed="false">العربية · AR</button><button type="button" lang="zh" data-language="中文" aria-pressed="false">中文 · ZH</button>
+          </div>
+        </details>
+        <a class="button button-gold" href="contact.html#devis">Demander un devis <span aria-hidden="true">↗</span></a>
+        <div class="shell-mobile-languages">
+          <p class="eyebrow text-muted">Langue</p>
+            <div class="shell-language-list" role="group" aria-label="Langues">
+            <button type="button" lang="fr" data-language="FR" aria-pressed="true">Français · FR</button><button type="button" lang="en" data-language="EN" aria-pressed="false">English · EN</button><button type="button" lang="es" data-language="ES" aria-pressed="false">Español · ES</button><button type="button" lang="ar" data-language="AR" aria-pressed="false">العربية · AR</button><button type="button" lang="zh" data-language="中文" aria-pressed="false">中文 · ZH</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- SHELL:HEADER END -->
+
+  <main id="contenu">
+    <section id="accueil" class="hero-photo hero-height relative isolate overflow-hidden text-white">
+      <div class="site-wrap grid hero-height items-center py-16 md:grid-cols-12 md:gap-8 md:py-22">
+        <div class="relative z-10 md:col-span-8 lg:col-span-7">
+          <p class="eyebrow mb-6 flex items-center gap-3 text-focus"><span class="h-px w-10 bg-gold"></span> Courtage indépendant · Douala</p>
+          <h1 class="display-title hero-heading">Le bon contrat commence par un bon conseil.</h1>
+          <p class="hero-copy mt-8 text-lead text-white/85">Nous comparons plusieurs assureurs pour vous aider à choisir une protection adaptée à votre famille ou à votre activité.</p>
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a class="button button-gold" href="#devis">Parler à un conseiller <span aria-hidden="true">↗</span></a>
+            <a class="button button-outline" href="https://wa.me/237696411012?text=Bonjour%20Leader%20Assurance%2C%20je%20souhaite%20%C3%AAtre%20conseill%C3%A9." target="_blank" rel="noopener noreferrer">Écrire sur WhatsApp</a>
+          </div>
+          <div class="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-white/25 pt-5 text-small text-white/80">
+            <span>Akwa, Rue Bernabé</span><a class="hover:text-white" href="tel:+237696411012">+237 696 41 10 12</a>
+          </div>
+        </div>
+        <div class="hero-detail relative mt-12 hidden md:col-span-4 md:mt-0 md:block lg:col-span-5">
+          <div class="hero-callout absolute bottom-4 right-0 border-l border-gold/70 pl-6">
+            <p class="font-display text-4xl leading-none text-white">Un seul interlocuteur.</p>
+            <p class="mt-4 max-w-xs text-small leading-relaxed text-white/75">Plusieurs compagnies consultées. Une proposition pensée autour de vos besoins.</p>
+          </div>
+          <span class="hero-index absolute right-0 top-4 select-none font-display leading-none text-white/10" aria-hidden="true">01</span>
+        </div>
+      </div>
+      <div class="absolute bottom-0 left-0 h-1 w-1/3 bg-gold" aria-hidden="true"></div>
+    </section>
+
+    <section id="solutions" class="site-wrap py-22">
+      <div class="grid gap-10 md:grid-cols-12 md:gap-8">
+        <div class="md:col-span-4">
+          <p class="eyebrow mb-5 text-ink">Deux façons de vous protéger</p>
+          <h2 class="section-title text-ink">À chacun sa priorité.</h2>
+          <p class="mt-6 max-w-sm text-body leading-relaxed">Particulier ou dirigeant, nous prenons le temps de comprendre ce que vous souhaitez protéger avant de comparer les offres.</p>
+        </div>
+        <div class="grid gap-0 border-t border-line md:col-span-8 md:grid-cols-2 md:border-l md:border-t-0">
+          <article class="border-b border-line py-8 md:border-b-0 md:px-8 md:py-0">
+            <p class="eyebrow text-muted">01 / Particuliers</p>
+            <h3 class="mt-4 text-3xl text-ink">La sérénité de vos proches.</h3>
+            <p class="mt-4 text-body leading-relaxed">Santé, vie, voyage ou épargne : des solutions pour protéger votre famille et préparer vos projets.</p>
+            <ul class="mt-6 space-y-3 border-t border-line pt-5 text-small text-ink">
+              <li class="flex justify-between gap-3"><span>Assurance Santé</span><span class="text-gold" aria-hidden="true">↗</span></li>
+              <li class="flex justify-between gap-3"><span>Assurance Vie & Épargne</span><span class="text-gold" aria-hidden="true">↗</span></li>
+              <li class="flex justify-between gap-3"><span>Assurance Voyage</span><span class="text-gold" aria-hidden="true">↗</span></li>
+            </ul>
+            <a href="#devis" class="mt-7 inline-flex min-h-11 items-center gap-3 text-small font-extrabold text-ink underline decoration-gold decoration-2 underline-offset-4">Trouver ma couverture <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="py-8 md:border-l md:border-line md:px-8 md:py-0">
+            <p class="eyebrow text-muted">02 / Entreprises</p>
+            <h3 class="mt-4 text-3xl text-ink">La continuité de votre activité.</h3>
+            <p class="mt-4 text-body leading-relaxed">Flotte, employés, responsabilité civile ou actifs : une lecture concrète de vos risques professionnels.</p>
+            <ul class="mt-6 space-y-3 border-t border-line pt-5 text-small text-ink">
+              <li class="flex justify-between gap-3"><span>Multirisque professionnelle</span><span class="text-gold" aria-hidden="true">↗</span></li>
+              <li class="flex justify-between gap-3"><span>Assurance Employés</span><span class="text-gold" aria-hidden="true">↗</span></li>
+              <li class="flex justify-between gap-3"><span>Responsabilité Civile Pro</span><span class="text-gold" aria-hidden="true">↗</span></li>
+            </ul>
+            <a href="#devis" class="mt-7 inline-flex min-h-11 items-center gap-3 text-small font-extrabold text-ink underline decoration-gold decoration-2 underline-offset-4">Échanger sur mes risques <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="approche" class="bg-mist py-22">
+      <div class="site-wrap grid gap-12 md:grid-cols-12 md:gap-8">
+        <div class="md:col-span-5">
+          <p class="eyebrow mb-5 text-ink">Notre différence</p>
+          <h2 class="section-title section-heading-narrow text-ink">Votre intérêt guide le choix.</h2>
+          <p class="mt-6 max-w-md text-body leading-relaxed">En tant que courtier indépendant, nous étudions vos besoins, analysons les risques et mettons en regard les propositions de nos compagnies partenaires.</p>
+          <a class="button button-navy mt-8" href="#devis">Échanger avec un conseiller <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="md:col-span-7 md:pt-10">
+          <ol class="border-t border-ink/25">
+            <li class="approach-row grid gap-5 border-b border-ink/25 py-6">
+              <span class="font-display text-2xl text-gold">01</span><div><h3 class="font-sans text-base font-extrabold text-ink">Une analyse avant une recommandation</h3><p class="mt-2 max-w-lg text-small leading-relaxed text-muted">Nous commençons par comprendre votre situation et les risques à couvrir.</p></div>
+            </li>
+            <li class="approach-row grid gap-5 border-b border-ink/25 py-6">
+              <span class="font-display text-2xl text-gold">02</span><div><h3 class="font-sans text-base font-extrabold text-ink">Plusieurs compagnies à consulter</h3><p class="mt-2 max-w-lg text-small leading-relaxed text-muted">Activa, Chanas, AXA, NSIA et d’autres partenaires selon votre besoin.</p></div>
+            </li>
+            <li class="approach-row grid gap-5 border-b border-ink/25 py-6">
+              <span class="font-display text-2xl text-gold">03</span><div><h3 class="font-sans text-base font-extrabold text-ink">Un accompagnement quand ça compte</h3><p class="mt-2 max-w-lg text-small leading-relaxed text-muted">Un interlocuteur à vos côtés pour vous assister, y compris en cas de sinistre.</p></div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="reperes" class="bg-ink py-16 text-white">
+      <div class="site-wrap">
+        <div class="grid grid-cols-2 gap-y-10 md:grid-cols-4 md:gap-8">
+          <div class="border-l border-gold pl-5"><p class="stat-number text-4xl text-focus md:text-5xl">500<span class="text-2xl md:text-3xl">+</span></p><p class="mt-2 text-small text-white/75">Clients accompagnés</p></div>
+          <div class="border-l border-gold pl-5"><p class="stat-number text-4xl text-focus md:text-5xl">10<span class="text-2xl md:text-3xl">+</span></p><p class="mt-2 text-small text-white/75">Années d’expérience</p></div>
+          <div class="border-l border-gold pl-5"><p class="stat-number text-4xl text-focus md:text-5xl">15<span class="text-2xl md:text-3xl">+</span></p><p class="mt-2 text-small text-white/75">Partenaires d’assurance</p></div>
+          <div class="border-l border-gold pl-5"><p class="stat-number text-4xl text-focus md:text-5xl">1 200<span class="text-2xl md:text-3xl">+</span></p><p class="mt-2 text-small text-white/75">Polices gérées</p></div>
+        </div>
+        <div class="mt-16 grid gap-6 border-t border-white/20 pt-8 md:grid-cols-12 md:items-start">
+          <p class="eyebrow text-white/65 md:col-span-3">Compagnies partenaires</p>
+          <div class="grid grid-cols-2 gap-x-6 gap-y-5 md:col-span-9 md:grid-cols-4">
+            <span class="partner-name text-lg text-white">Activa</span><span class="partner-name text-lg text-white">Chanas</span><span class="partner-name text-lg text-white">AXA</span><span class="partner-name text-lg text-white">NSIA</span>
+            <span class="partner-name text-lg text-white">Saar</span><span class="partner-name text-lg text-white">Zenithe</span><span class="partner-name text-lg text-white">Beneficial Life</span><span class="partner-name text-lg text-white">GIC-Vie</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-wrap py-22">
+      <div class="grid gap-10 md:grid-cols-12 md:gap-8">
+        <div class="md:col-span-4">
+          <p class="eyebrow mb-5 text-ink">Ils nous font confiance</p>
+          <h2 class="section-title text-ink">Des conseils qui font leur chemin.</h2>
+        </div>
+        <div class="grid gap-0 md:col-span-8">
+          <figure class="border-t border-line py-7">
+            <blockquote class="max-w-2xl font-display text-2xl leading-snug text-ink">« Leader Assurance nous a aidés à trouver une couverture adaptée à notre entreprise tout en optimisant nos coûts. Service professionnel et réactif. »</blockquote>
+            <figcaption class="mt-5 text-small font-extrabold text-ink">Jean-Paul Mbarga <span class="font-medium text-muted">· Directeur, PME Douala</span></figcaption>
+          </figure>
+          <figure class="border-t border-line py-7">
+            <blockquote class="max-w-2xl font-display text-2xl leading-snug text-ink">« Grâce à l’assurance santé proposée par Leader Assurance, ma famille et moi sommes bien protégés. Je recommande vivement leurs services. »</blockquote>
+            <figcaption class="mt-5 text-small font-extrabold text-ink">Marie-Claire Ekoto <span class="font-medium text-muted">· Particulier, Yaoundé</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+      <section id="devis" class="bg-gold-pale py-22">
+      <div class="site-wrap grid gap-10 md:grid-cols-12 md:items-start md:gap-8">
+        <div class="md:col-span-5 md:pt-7">
+          <p class="eyebrow mb-5 text-ink">Premier échange, sans engagement</p>
+          <h2 class="section-title text-ink">Parlons de ce que vous voulez protéger.</h2>
+          <p class="mt-6 max-w-md text-body leading-relaxed">Quelques repères suffisent pour obtenir une première estimation. Un conseiller de Douala précisera ensuite votre besoin et préparera une proposition adaptée.</p>
+          <p class="mt-8 text-small font-semibold text-ink">Vous préférez appeler ? <a class="underline decoration-gold decoration-2 underline-offset-4" href="tel:+237696411012">+237 696 41 10 12</a></p>
+        </div>
+        <form id="quote-form" class="bg-paper p-6 shadow-float md:col-span-7 md:p-8" aria-label="Calculateur et demande de devis WhatsApp" novalidate>
+          <div class="grid gap-6">
+            <div>
+              <label for="insurance" class="mb-2 block text-small font-extrabold text-ink">Quel type d’assurance recherchez-vous ?</label>
+              <select id="insurance" name="insurance" class="field" required aria-describedby="insurance-error">
+                <option value="" disabled selected>Choisir une assurance</option>
+                <option value="sante">Assurance Santé</option><option value="vie">Assurance Vie</option><option value="voyage">Assurance Voyage</option><option value="epargne">Épargne</option><option value="entreprise">Assurance Entreprise</option><option value="responsabilite">Responsabilité Civile</option><option value="employes">Assurance Employés</option><option value="actifs">Protection des Actifs</option>
+              </select><p id="insurance-error" class="field-error" role="alert"></p>
+            </div>
+            <div id="age-field">
+              <label for="age" class="mb-2 block text-small font-extrabold text-ink">Votre âge</label>
+              <input id="age" name="age" class="field" type="number" min="0" max="120" step="1" inputmode="numeric" placeholder="Ex. 34" required aria-describedby="age-error">
+              <p id="age-error" class="field-error" role="alert"></p>
+            </div>
+            <div id="employees-field" hidden>
+              <label for="employees" class="mb-2 block text-small font-extrabold text-ink">Nombre d’employés</label>
+              <input id="employees" name="employees" class="field" type="number" min="1" step="1" inputmode="numeric" placeholder="Ex. 12" disabled required aria-describedby="employees-error">
+              <p id="employees-error" class="field-error" role="alert"></p>
+            </div>
+            <fieldset class="grid gap-2 border-0 p-0">
+              <legend class="mb-2 text-small font-extrabold text-ink">Niveau de couverture</legend>
+              <div class="grid grid-cols-3 overflow-hidden rounded-sm border border-line">
+                <label class="coverage-choice flex min-h-12 cursor-pointer items-center justify-center border-r border-line px-2 text-small font-bold text-ink has-[:checked]:bg-ink has-[:checked]:text-white"><input class="sr-only" type="radio" name="coverage" value="basic" required>Basique</label>
+                <label class="coverage-choice flex min-h-12 cursor-pointer items-center justify-center border-r border-line px-2 text-small font-bold text-ink has-[:checked]:bg-ink has-[:checked]:text-white"><input class="sr-only" type="radio" name="coverage" value="standard">Standard</label>
+                <label class="coverage-choice flex min-h-12 cursor-pointer items-center justify-center px-2 text-small font-bold text-ink has-[:checked]:bg-ink has-[:checked]:text-white"><input class="sr-only" type="radio" name="coverage" value="premium">Premium</label>
+              </div><p id="coverage-error" class="field-error" role="alert"></p>
+            </fieldset>
+            <div class="border-y border-line py-5">
+              <p class="text-small font-bold text-muted">Estimation mensuelle</p>
+              <p id="estimate" class="mt-1 font-display text-4xl leading-tight text-ink" aria-live="polite">— FCFA</p>
+              <p class="mt-2 text-small leading-relaxed text-muted">Cette estimation est indicative. Contactez-nous pour un devis personnalisé.</p>
+            </div>
+            <div><label for="name" class="mb-2 block text-small font-extrabold text-ink">Votre nom</label><input id="name" name="name" class="field" autocomplete="name" placeholder="Nom et prénom" required aria-describedby="name-error"><p id="name-error" class="field-error" role="alert"></p></div>
+            <div><label for="phone" class="mb-2 block text-small font-extrabold text-ink">Votre numéro de téléphone</label><input id="phone" name="phone" class="field" type="tel" autocomplete="tel" inputmode="tel" placeholder="+237 …" required aria-describedby="phone-error"><p id="phone-error" class="field-error" role="alert"></p></div>
+            <button type="submit" class="button button-gold w-full sm:w-auto">Demander un devis personnalisé <span aria-hidden="true">↗</span></button>
+            <p id="form-note" class="text-small text-muted" aria-live="polite">Votre message s’ouvrira dans WhatsApp pour être envoyé à notre équipe.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="bg-ink-deep py-16 text-white">
+      <div class="site-wrap grid gap-8 md:grid-cols-12 md:items-center">
+        <div class="md:col-span-8"><p class="eyebrow mb-4 text-focus">À Akwa, Douala</p><h2 class="max-w-3xl font-display text-4xl leading-tight md:text-5xl">Une question avant de choisir ? Notre équipe vous écoute.</h2></div>
+        <div class="md:col-span-4 md:text-right"><a class="button button-gold" href="https://wa.me/237696411012" target="_blank" rel="noopener noreferrer">Contacter un conseiller <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SHELL:FOOTER START -->
+  <footer class="bg-ink-deep text-white">
+    <div class="site-wrap grid gap-10 border-t border-white/20 py-10 md:grid-cols-12">
+      <div class="md:col-span-4"><a href="index.html" aria-label="Leader Assurance, accueil"><img src="../logo-white.svg" alt="Leader Assurance" class="h-12 w-auto"></a><p class="mt-5 max-w-sm text-small leading-relaxed text-white/70">Courtier indépendant, nous comparons les offres pour vous aider à choisir une protection adaptée.</p></div>
+      <nav class="md:col-span-4" aria-label="Pages du site"><p class="eyebrow mb-4 text-white/60">Explorer</p><div class="shell-footer-links grid grid-cols-2 gap-x-4 gap-y-2"><a class="shell-footer-link" href="index.html" aria-current="page">Accueil</a><a class="shell-footer-link" href="a-propos.html">À propos</a><a class="shell-footer-link" href="solutions.html">Nos solutions</a><a class="shell-footer-link" href="partenaires.html">Partenaires</a><a class="shell-footer-link" href="actualites.html">Actualités</a><a class="shell-footer-link" href="faq.html">FAQ</a><a class="shell-footer-link" href="contact.html">Contact</a><a class="shell-footer-link" href="confidentialite.html">Politique de confidentialité</a></div></nav>
+      <div class="md:col-span-4"><p class="eyebrow mb-4 text-white/60">Nous trouver</p><address class="not-italic text-small leading-loose text-white/80">Akwa, Rue Bernabé, Douala<br><a class="hover:text-focus" href="mailto:leaderassurance1@yahoo.fr">leaderassurance1@yahoo.fr</a><br><a class="hover:text-focus" href="tel:+237696411012">+237 696 41 10 12</a><br><a class="hover:text-focus" href="tel:+237681806975">+237 681 80 69 75</a></address><a class="mt-3 inline-flex min-h-11 items-center gap-3 text-small font-bold text-white underline decoration-gold decoration-2 underline-offset-4" href="https://wa.me/237696411012" target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <div class="site-wrap flex flex-col gap-2 border-t border-white/15 py-5 text-micro text-white/55 sm:flex-row sm:justify-between"><span>© <span id="year"></span> Leader Assurance SARL</span><span>Akwa · Douala · Cameroun</span></div>
+  </footer>
+  <!-- SHELL:FOOTER END -->
+  <div class="maquette-badge fixed bottom-3 right-3 z-30 border border-white/15 bg-ink-deep/90 px-3 py-2 font-semibold tracking-wide text-white/75">Maquette A — GPT-6 Luna</div>
+
+  <script>
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+    }), { threshold: 0.12 });
+    document.querySelectorAll('section:not(#accueil)').forEach(section => { section.classList.add('reveal'); observer.observe(section); });
+
+    document.querySelector('#year').textContent = new Date().getFullYear();
+    const quoteForm = document.querySelector('#quote-form');
+    const insurance = document.querySelector('#insurance');
+    const ageField = document.querySelector('#age-field');
+    const ageInput = document.querySelector('#age');
+    const employeesField = document.querySelector('#employees-field');
+    const employeesInput = document.querySelector('#employees');
+    const estimateOutput = document.querySelector('#estimate');
+    const businessTypes = new Set(['entreprise', 'responsabilite', 'employes', 'actifs']);
+    const insuranceNames = { sante: 'Assurance Santé', vie: 'Assurance Vie', voyage: 'Assurance Voyage', epargne: 'Épargne', entreprise: 'Assurance Entreprise', responsabilite: 'Responsabilité Civile', employes: 'Assurance Employés', actifs: 'Protection des Actifs' };
+    const coverageNames = { basic: 'Basique', standard: 'Standard', premium: 'Premium' };
+    const basePrices = { sante: 15000, vie: 20000, voyage: 8000, epargne: 25000, entreprise: 50000, responsabilite: 30000, employes: 20000, actifs: 35000 };
+    const coverageFactors = { basic: .7, standard: 1, premium: 1.5 };
+    const money = new Intl.NumberFormat('fr-FR');
+    const isBusiness = () => businessTypes.has(insurance.value);
+    const updateEstimate = () => {
+      const type = insurance.value;
+      const coverage = quoteForm.querySelector('[name="coverage"]:checked')?.value;
+      const measure = isBusiness() ? employeesInput.value : ageInput.value;
+      ageField.hidden = isBusiness();
+      ageInput.disabled = isBusiness();
+      employeesField.hidden = !isBusiness();
+      employeesInput.disabled = !isBusiness();
+      if (!type || !coverage || measure === '') { estimateOutput.textContent = '— FCFA'; return null; }
+      let ageFactor = 1;
+      if (!isBusiness()) ageFactor = Number(measure) > 50 ? 1.4 : Number(measure) > 35 ? 1.2 : 1;
+      const employeeFactor = isBusiness() ? Math.max(1, Number(measure) / 10) : 1;
+      const amount = Math.round((basePrices[type] || 20000) * coverageFactors[coverage] * ageFactor * employeeFactor);
+      estimateOutput.textContent = `${money.format(amount)} FCFA`;
+      return amount;
+    };
+    const fieldMessages = {
+      insurance: 'Choisissez un type d’assurance.', age: 'Indiquez un âge entre 0 et 120 ans.', employees: 'Indiquez un nombre d’employés supérieur à zéro.',
+      name: 'Indiquez votre nom.', phone: 'Indiquez votre numéro de téléphone.'
+    };
+    const setError = (field, message) => {
+      const input = typeof field === 'string' ? quoteForm.querySelector(`[name="${field}"]`) : field;
+      const error = document.getElementById(`${input.id || input.name}-error`);
+      input.setAttribute('aria-invalid', String(Boolean(message)));
+      if (error) error.textContent = message || '';
+    };
+    quoteForm.addEventListener('input', event => {
+      if (event.target.name) setError(event.target, '');
+      updateEstimate();
+    });
+    quoteForm.addEventListener('change', event => {
+      if (event.target.name) setError(event.target, '');
+      updateEstimate();
+    });
+    quoteForm.addEventListener('submit', event => {
+      event.preventDefault();
+      updateEstimate();
+      const isCompany = isBusiness();
+      const requiredFields = [insurance, isCompany ? employeesInput : ageInput, quoteForm.querySelector('[name="coverage"]'), document.querySelector('#name'), document.querySelector('#phone')];
+      let firstInvalid = null;
+      requiredFields.forEach(input => {
+        const invalid = !input.value.trim() || !input.checkValidity();
+        const message = invalid ? (input.name === 'coverage' ? 'Choisissez un niveau de couverture.' : fieldMessages[input.name] || 'Vérifiez cette information.') : '';
+        setError(input, message);
+        if (invalid && !firstInvalid) firstInvalid = input;
+      });
+      if (firstInvalid) { firstInvalid.focus(); return; }
+      const form = new FormData(quoteForm);
+      const type = form.get('insurance');
+      const coverage = form.get('coverage');
+      const quantity = isCompany ? `Nombre d’employés : ${form.get('employees')}` : `Âge : ${form.get('age')} ans`;
+      const message = `Bonjour Leader Assurance, je m'appelle ${form.get('name')} (${form.get('phone')}). Je souhaite un devis pour ${insuranceNames[type]}, niveau ${coverageNames[coverage]}. ${quantity}. Estimation mensuelle : ${estimateOutput.textContent}.`;
+      window.open(`https://wa.me/237696411012?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+      document.querySelector('#form-note').textContent = 'Votre demande est prête dans WhatsApp. Envoyez le message pour joindre notre équipe.';
+    });
+  </script>
+  <!-- SHELL:SCRIPT START -->
+  <script>
+    (() => {
+      const toggle = document.querySelector('.shell-mobile-menu');
+      const nav = document.querySelector('#main-nav');
+      if (!toggle || !nav) return;
+      const currentPage = location.pathname.split('/').filter(Boolean).pop() || 'index.html';
+      const year = document.querySelector('#year');
+      if (year) year.textContent = new Date().getFullYear();
+      document.querySelectorAll('a[aria-current="page"]').forEach(link => link.removeAttribute('aria-current'));
+      document.querySelectorAll('a[href]').forEach(link => {
+        const href = link.getAttribute('href');
+        const target = href.split('#')[0];
+        if (target && !href.includes('#') && target === currentPage) link.setAttribute('aria-current', 'page');
+      });
+      const closeNav = () => { nav.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); };
+      toggle.addEventListener('click', () => {
+        const open = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!open));
+        nav.classList.toggle('is-open', !open);
+        if (open) nav.querySelector('a')?.focus();
+      });
+      nav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeNav));
+      document.querySelectorAll('[data-language-menu]').forEach(menu => {
+        menu.querySelectorAll('[data-language]').forEach(option => option.addEventListener('click', () => {
+          const code = option.dataset.language;
+          document.querySelectorAll('[data-language]').forEach(item => item.setAttribute('aria-pressed', String(item.dataset.language === code)));
+          document.querySelectorAll('[data-language-menu] > summary').forEach(label => { label.childNodes[0].textContent = code; });
+          document.querySelectorAll('[data-language-menu]').forEach(item => item.open = false);
+        }));
+      });
+      document.addEventListener('keydown', event => {
+        if (event.key !== 'Escape') return;
+        document.querySelectorAll('details[open]').forEach(detail => detail.open = false);
+        if (toggle.getAttribute('aria-expanded') === 'true') { closeNav(); toggle.focus(); }
+      });
+      document.addEventListener('click', event => {
+        document.querySelectorAll('details[open]').forEach(detail => { if (!detail.contains(event.target)) detail.open = false; });
+      });
+      window.addEventListener('resize', () => { if (window.matchMedia('(min-width: 1280px)').matches) closeNav(); });
+    })();
+  </script>
+  <!-- SHELL:SCRIPT END -->
+</body>
+</html>

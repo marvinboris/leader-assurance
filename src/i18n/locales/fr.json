@@ -17,7 +17,7 @@
     "cta2": "Découvrir nos solutions"
   },
   "services": {
-    "title": "Nos Services",
+    "title": "Nos services",
     "subtitle": "Des solutions adaptées à chaque besoin",
     "health": { "title": "Assurance Santé", "description": "Protégez votre santé et celle de votre famille avec nos couvertures complètes." },
     "business": { "title": "Assurance Entreprise", "description": "Sécurisez vos activités professionnelles contre tous les risques." },
@@ -25,7 +25,7 @@
     "savings": { "title": "Épargne & Investissement", "description": "Faites fructifier votre patrimoine avec nos solutions d'épargne." }
   },
   "why": {
-    "title": "Pourquoi choisir Leader Assurance ?",
+    "title": "Pourquoi choisir Leader Assurance ?",
     "subtitle": "Votre conseiller indépendant en assurance",
     "ourDifference": "Notre différence",
     "independent": "Conseiller indépendant en assurance",
@@ -55,7 +55,7 @@
     "teamSubtitle": "Des experts dédiés à votre service",
     "viewAll": "Voir tous",
     "viewAllArticles": "Voir tous les articles",
-    "ctaTitle": "Prêt à protéger ce qui compte le plus ?",
+    "ctaTitle": "Prêt à protéger ce qui compte le plus ?",
     "ctaDesc": "Contactez nos experts et obtenez un devis personnalisé gratuit dès aujourd'hui.",
     "getFreeQuote": "Obtenir un devis gratuit",
     "team": [
@@ -86,19 +86,19 @@
     "subtitle": "Votre partenaire de confiance depuis plus de 10 ans",
     "description1": "Leader Assurance SARL est un cabinet de conseil et de courtage en assurance basé à Douala, Cameroun. Nous accompagnons particuliers et entreprises dans la gestion de leurs risques et la protection de leurs actifs.",
     "description2": "Notre approche indépendante nous permet de sélectionner les meilleures offres du marché pour vous proposer des solutions sur mesure, adaptées à vos besoins spécifiques.",
-    "mission": "Notre Mission",
+    "mission": "Notre mission",
     "missionText": "Offrir un service de conseil en assurance de qualité supérieure, personnalisé et transparent, pour permettre à nos clients de prendre les meilleures décisions en matière de protection.",
-    "vision": "Notre Vision",
+    "vision": "Notre vision",
     "visionText": "Devenir le cabinet de courtage en assurance de référence en Afrique centrale, reconnu pour son expertise, son intégrité et son engagement envers l'excellence.",
-    "team": "Notre Équipe",
-    "ourHistory": "Notre Histoire",
+    "team": "Notre équipe",
+    "ourHistory": "Notre histoire",
     "certifiedAdvisor": "Assureur Conseil Certifié",
     "clientsSatisfied": "Clients satisfaits",
     "yearsExperience": "Ans d'expérience",
     "policiesManaged": "Polices gérées",
-    "valuesTitle": "Nos Valeurs",
+    "valuesTitle": "Nos valeurs",
     "valuesSubtitle": "Les principes qui guident chacune de nos actions",
-    "journeyTitle": "Notre Parcours",
+    "journeyTitle": "Notre parcours",
     "journeySubtitle": "15 ans d'excellence au service de nos clients",
     "teamSubtitle": "Des experts passionnés à votre service",
     "ctaTitle": "Travaillons ensemble",
@@ -128,18 +128,18 @@
     ]
   },
   "solutions": {
-    "title": "Nos Solutions d'Assurance",
+    "title": "Nos solutions d'assurance",
     "subtitle": "Des couvertures complètes pour particuliers et entreprises",
-    "individuals": "Pour les Particuliers",
-    "companies": "Pour les Entreprises",
+    "individuals": "Pour les particuliers",
+    "companies": "Pour les entreprises",
     "learnMore": "En savoir plus",
     "lessDetails": "Moins de détails",
     "getQuote": "Demander un devis",
     "advantages": "Avantages",
     "examples": "Exemples de situations",
-    "howItWorks": "Comment ça marche ?",
+    "howItWorks": "Comment ça marche ?",
     "howItWorksSubtitle": "Un processus simple et transparent",
-    "ctaTitle": "Besoin d'une solution sur mesure ?",
+    "ctaTitle": "Besoin d'une solution sur mesure ?",
     "ctaDesc": "Nos experts vous accompagnent dans le choix de la meilleure protection.",
     "ctaButton": "Demander un devis personnalisé",
     "steps": [
@@ -198,11 +198,11 @@
     }
   },
   "partners": {
-    "title": "Nos Partenaires",
+    "title": "Nos partenaires",
     "subtitle": "Nous travaillons avec les meilleures compagnies d'assurance",
     "description": "Leader Assurance travaille avec plusieurs compagnies d'assurance reconnues afin d'offrir les meilleures solutions adaptées aux besoins de nos clients.",
-    "ourCompanies": "Nos Compagnies Partenaires",
-    "whyBroker": "Pourquoi passer par un courtier ?",
+    "ourCompanies": "Nos compagnies partenaires",
+    "whyBroker": "Pourquoi passer par un courtier ?",
     "whyBrokerSubtitle": "Les avantages de travailler avec Leader Assurance",
     "certified": "Certifié et agréé",
     "certifiedDesc": "Leader Assurance est dûment agréé par les autorités de régulation camerounaises (CIMA - Conférence Interafricaine des Marchés d'Assurances), garantissant notre conformité et votre protection.",
@@ -236,7 +236,7 @@
     "notFound": "Aucun article trouvé pour votre recherche.",
     "readingTime": "de lecture",
     "backToArticles": "Retour aux articles",
-    "needAdvice": "Besoin d'un conseil ?",
+    "needAdvice": "Besoin d'un conseil ?",
     "needAdviceDesc": "Nos experts sont disponibles pour répondre à toutes vos questions sur l'assurance.",
     "contactUs": "Nous contacter",
     "categoryList": ["Tous", "Santé", "Entreprise", "Tendances", "Conseils", "Protection", "Épargne"],
@@ -246,7 +246,7 @@
       { "title": "Les tendances de l'assurance en Afrique", "excerpt": "Le marché de l'assurance africain est en pleine croissance. Analyse des nouvelles tendances et opportunités.", "category": "Tendances", "date": "20 Décembre 2024", "readTime": "6 min" },
       { "title": "Comment choisir la bonne assurance", "excerpt": "Guide pratique pour sélectionner la couverture d'assurance adaptée à vos besoins spécifiques.", "category": "Conseils", "date": "5 Novembre 2024", "readTime": "8 min" },
       { "title": "L'importance de la responsabilité civile", "excerpt": "Pourquoi l'assurance responsabilité civile est indispensable pour particuliers et professionnels.", "category": "Protection", "date": "15 Octobre 2024", "readTime": "5 min" },
-      { "title": "L'assurance vie : épargner et se protéger", "excerpt": "Découvrez comment l'assurance vie peut servir à la fois d'outil d'épargne et de protection pour votre famille.", "category": "Épargne", "date": "1 Octobre 2024", "readTime": "6 min" }
+      { "title": "L'assurance vie : épargner et se protéger", "excerpt": "Découvrez comment l'assurance vie peut servir à la fois d'outil d'épargne et de protection pour votre famille.", "category": "Épargne", "date": "1 Octobre 2024", "readTime": "6 min" }
     ]
   },
   "calculator": {
@@ -269,7 +269,7 @@
     "subtitle": "Trouvez rapidement les réponses à vos questions",
     "searchPlaceholder": "Rechercher une question...",
     "notFound": "Aucune question trouvée pour votre recherche.",
-    "notAnswered": "Vous n'avez pas trouvé votre réponse ?",
+    "notAnswered": "Vous n'avez pas trouvé votre réponse ?",
     "notAnsweredDesc": "Notre équipe de conseillers est disponible pour répondre à toutes vos questions spécifiques.",
     "contactUs": "Nous contacter",
     "all": "Tous",
@@ -278,38 +278,38 @@
         "key": "general",
         "category": "Général",
         "questions": [
-          { "q": "Quel est le rôle d'un courtier en assurance ?", "a": "Un courtier en assurance est un intermédiaire indépendant qui représente les intérêts du client. Contrairement à un agent exclusif d'une compagnie, le courtier peut comparer les offres de plusieurs assureurs pour vous proposer la meilleure solution selon votre profil et vos besoins." },
-          { "q": "Pourquoi passer par Leader Assurance plutôt que directement par une compagnie ?", "a": "Leader Assurance vous offre plusieurs avantages : accès à de multiples compagnies, conseil personnalisé et objectif, négociation de meilleures conditions, accompagnement en cas de sinistre, et un interlocuteur unique pour tous vos contrats. Notre service est souvent sans coût supplémentaire pour le client." },
-          { "q": "Leader Assurance est-elle une compagnie d'assurance ?", "a": "Non, Leader Assurance est un cabinet de courtage et de conseil en assurance. Nous ne portons pas directement les risques mais nous travaillons avec des compagnies d'assurance agréées pour vous proposer les meilleures couvertures." },
-          { "q": "Êtes-vous agréés par les autorités de régulation ?", "a": "Oui, Leader Assurance est dûment agréée conformément aux exigences de la CIMA (Conférence Interafricaine des Marchés d'Assurances) qui régule le secteur assurantiel en Afrique centrale, dont le Cameroun." }
+          { "q": "Quel est le rôle d'un courtier en assurance ?", "a": "Un courtier en assurance est un intermédiaire indépendant qui représente les intérêts du client. Contrairement à un agent exclusif d'une compagnie, le courtier peut comparer les offres de plusieurs assureurs pour vous proposer la meilleure solution selon votre profil et vos besoins." },
+          { "q": "Pourquoi passer par Leader Assurance plutôt que directement par une compagnie ?", "a": "Leader Assurance vous offre plusieurs avantages : accès à de multiples compagnies, conseil personnalisé et objectif, négociation de meilleures conditions, accompagnement en cas de sinistre, et un interlocuteur unique pour tous vos contrats. Notre service est souvent sans coût supplémentaire pour le client." },
+          { "q": "Leader Assurance est-elle une compagnie d'assurance ?", "a": "Non, Leader Assurance est un cabinet de courtage et de conseil en assurance. Nous ne portons pas directement les risques mais nous travaillons avec des compagnies d'assurance agréées pour vous proposer les meilleures couvertures." },
+          { "q": "Êtes-vous agréés par les autorités de régulation ?", "a": "Oui, Leader Assurance est dûment agréée conformément aux exigences de la CIMA (Conférence Interafricaine des Marchés d'Assurances) qui régule le secteur assurantiel en Afrique centrale, dont le Cameroun." }
         ]
       },
       {
         "key": "quotes",
         "category": "Devis & Contrats",
         "questions": [
-          { "q": "Comment obtenir un devis ?", "a": "Vous pouvez obtenir un devis de plusieurs façons : en remplissant notre formulaire en ligne sur la page Contact, en nous appelant au +237 696 41 10 12 ou +237 681 80 69 75, via WhatsApp, ou en vous rendant directement dans nos bureaux à Akwa, Douala. Notre réponse est généralement sous 24-48h." },
-          { "q": "Est-ce que les devis sont gratuits ?", "a": "Oui, tous nos devis et consultations initiales sont entièrement gratuits et sans engagement de votre part. Vous n'êtes tenu de rien tant que vous n'avez pas signé de contrat." },
-          { "q": "Combien de temps faut-il pour souscrire à une assurance ?", "a": "Selon le type d'assurance, le délai varie. Pour les assurances simples (santé, vie), la souscription peut se faire en 24 à 48h. Pour des couvertures plus complexes (entreprises, actifs importants), le processus peut prendre 5 à 10 jours ouvrés pour l'analyse des risques et la finalisation." },
-          { "q": "Peut-on modifier son contrat après la souscription ?", "a": "Oui, vos contrats peuvent être adaptés à l'évolution de vos besoins. Des avenants peuvent être ajoutés pour modifier les garanties, les capitaux ou les bénéficiaires. Contactez votre conseiller Leader Assurance pour toute demande de modification." }
+          { "q": "Comment obtenir un devis ?", "a": "Vous pouvez obtenir un devis de plusieurs façons : en remplissant notre formulaire en ligne sur la page Contact, en nous appelant au +237 696 41 10 12 ou +237 681 80 69 75, via WhatsApp, ou en vous rendant directement dans nos bureaux à Akwa, Douala. Notre réponse est généralement sous 24-48h." },
+          { "q": "Est-ce que les devis sont gratuits ?", "a": "Oui, tous nos devis et consultations initiales sont entièrement gratuits et sans engagement de votre part. Vous n'êtes tenu de rien tant que vous n'avez pas signé de contrat." },
+          { "q": "Combien de temps faut-il pour souscrire à une assurance ?", "a": "Selon le type d'assurance, le délai varie. Pour les assurances simples (santé, vie), la souscription peut se faire en 24 à 48h. Pour des couvertures plus complexes (entreprises, actifs importants), le processus peut prendre 5 à 10 jours ouvrés pour l'analyse des risques et la finalisation." },
+          { "q": "Peut-on modifier son contrat après la souscription ?", "a": "Oui, vos contrats peuvent être adaptés à l'évolution de vos besoins. Des avenants peuvent être ajoutés pour modifier les garanties, les capitaux ou les bénéficiaires. Contactez votre conseiller Leader Assurance pour toute demande de modification." }
         ]
       },
       {
         "key": "business",
         "category": "Entreprises",
         "questions": [
-          { "q": "Les entreprises peuvent-elles personnaliser leur couverture ?", "a": "Absolument ! C'est l'un de nos points forts. Chaque entreprise a des risques spécifiques liés à son secteur, sa taille et ses activités. Nous réalisons une analyse complète de vos risques pour concevoir une couverture sur mesure qui répond exactement à vos besoins sans superflu." },
-          { "q": "Quels types d'entreprises peuvent être assurées ?", "a": "Nous couvrons tout type d'entreprise : TPE, PME, grandes entreprises, professions libérales, commerçants, industriels. Nos solutions s'adaptent à tous les secteurs d'activité : commerce, industrie, services, santé, technologie, etc." },
-          { "q": "L'assurance responsabilité civile professionnelle est-elle obligatoire ?", "a": "La RC professionnelle n'est pas toujours légalement obligatoire pour toutes les professions au Cameroun, mais elle est fortement recommandée pour toute activité professionnelle. Elle protège votre entreprise contre les conséquences financières d'erreurs, fautes ou omissions dans l'exercice de votre activité." }
+          { "q": "Les entreprises peuvent-elles personnaliser leur couverture ?", "a": "Absolument ! C'est l'un de nos points forts. Chaque entreprise a des risques spécifiques liés à son secteur, sa taille et ses activités. Nous réalisons une analyse complète de vos risques pour concevoir une couverture sur mesure qui répond exactement à vos besoins sans superflu." },
+          { "q": "Quels types d'entreprises peuvent être assurées ?", "a": "Nous couvrons tout type d'entreprise : TPE, PME, grandes entreprises, professions libérales, commerçants, industriels. Nos solutions s'adaptent à tous les secteurs d'activité : commerce, industrie, services, santé, technologie, etc." },
+          { "q": "L'assurance responsabilité civile professionnelle est-elle obligatoire ?", "a": "La RC professionnelle n'est pas toujours légalement obligatoire pour toutes les professions au Cameroun, mais elle est fortement recommandée pour toute activité professionnelle. Elle protège votre entreprise contre les conséquences financières d'erreurs, fautes ou omissions dans l'exercice de votre activité." }
         ]
       },
       {
         "key": "claims",
         "category": "Sinistres",
         "questions": [
-          { "q": "Que faire en cas de sinistre ?", "a": "En cas de sinistre : 1) Sécurisez les personnes et les biens si possible. 2) Contactez immédiatement Leader Assurance et/ou la compagnie d'assurance. 3) Constituez les preuves (photos, témoignages). 4) Remplissez la déclaration de sinistre dans les délais prévus au contrat. Notre équipe vous accompagne tout au long de cette procédure." },
-          { "q": "Quel est le délai d'indemnisation après un sinistre ?", "a": "Les délais varient selon la nature et la complexité du sinistre. Pour les sinistres simples, l'indemnisation peut intervenir en quelques semaines. Pour les sinistres complexes nécessitant une expertise, le délai peut être de 1 à 3 mois. Nous suivons activement chaque dossier pour accélérer le processus." },
-          { "q": "Leader Assurance m'aide-t-elle en cas de litige avec la compagnie d'assurance ?", "a": "Oui, l'un de nos rôles essentiels est de défendre vos intérêts face aux compagnies d'assurance. En cas de désaccord ou de litige, nous intervenons comme votre mandataire pour vous obtenir une indemnisation juste et conforme à votre contrat." }
+          { "q": "Que faire en cas de sinistre ?", "a": "En cas de sinistre : 1) Sécurisez les personnes et les biens si possible. 2) Contactez immédiatement Leader Assurance et/ou la compagnie d'assurance. 3) Constituez les preuves (photos, témoignages). 4) Remplissez la déclaration de sinistre dans les délais prévus au contrat. Notre équipe vous accompagne tout au long de cette procédure." },
+          { "q": "Quel est le délai d'indemnisation après un sinistre ?", "a": "Les délais varient selon la nature et la complexité du sinistre. Pour les sinistres simples, l'indemnisation peut intervenir en quelques semaines. Pour les sinistres complexes nécessitant une expertise, le délai peut être de 1 à 3 mois. Nous suivons activement chaque dossier pour accélérer le processus." },
+          { "q": "Leader Assurance m'aide-t-elle en cas de litige avec la compagnie d'assurance ?", "a": "Oui, l'un de nos rôles essentiels est de défendre vos intérêts face aux compagnies d'assurance. En cas de désaccord ou de litige, nous intervenons comme votre mandataire pour vous obtenir une indemnisation juste et conforme à votre contrat." }
         ]
       }
     ]
@@ -324,12 +324,12 @@
     "message": "Message",
     "send": "Envoyer le message",
     "sending": "Envoi en cours...",
-    "success": "Message envoyé avec succès !",
+    "success": "Message envoyé avec succès !",
     "error": "Erreur lors de l'envoi. Veuillez réessayer.",
     "address": "Adresse",
     "whatsapp": "Contacter via WhatsApp",
     "schedule": "Horaires d'ouverture",
-    "scheduleText": "Lundi - Vendredi : 8h00 - 18h00\nSamedi : 9h00 - 13h00",
+    "scheduleText": "Lundi - Vendredi : 8h00 - 18h00\nSamedi : 9h00 - 13h00",
     "ourCoordinates": "Nos coordonnées",
     "coordinatesDesc": "Contactez-nous par le moyen de votre choix. Nous vous répondons rapidement.",
     "phones": "Téléphones",
@@ -352,7 +352,7 @@
     "placeholder": "Posez votre question...",
     "send": "Envoyer",
     "online": "En ligne",
-    "welcome": "Bonjour ! Je suis l'assistant de Leader Assurance. Comment puis-je vous aider aujourd'hui ?",
+    "welcome": "Bonjour ! Je suis l'assistant de Leader Assurance. Comment puis-je vous aider aujourd'hui ?",
     "contact": "Contacter un conseiller"
   },
   "cookie": {
@@ -371,5 +371,626 @@
     "cookies": "Gestion des cookies",
     "rights": "Tous droits réservés",
     "follow": "Suivez-nous"
+  },
+  "ui": {
+    "about": {
+      "metaTitle": "À propos — Leader Assurance | Douala, Cameroun",
+      "metaDescription": "Découvrez Leader Assurance SARL, votre cabinet de courtage et conseil en assurance à Douala. Notre équipe, notre mission et nos valeurs.",
+      "heroEyebrow": "Notre histoire · Douala, Cameroun",
+      "heroLead": "Votre partenaire de confiance depuis plus de 10 ans. Leader Assurance SARL accompagne particuliers et entreprises dans la gestion de leurs risques et la protection de leurs actifs.",
+      "heroCta": "Parler de mon besoin",
+      "heroSide": "années à vos côtés pour choisir une protection adaptée, avec un interlocuteur à Douala.",
+      "whoEyebrow": "Qui nous sommes",
+      "whoTitle": "Un cabinet au service de vos choix.",
+      "quote": "Votre situation d’abord. Les garanties ensuite.",
+      "partnerCompanies": "Compagnies partenaires",
+      "capEyebrow": "Notre cap",
+      "capTitle": "Conseiller avec clarté, protéger avec sens.",
+      "capText": "Un bon contrat commence par une compréhension juste de la personne, de la famille ou de l’activité à protéger.",
+      "valuesHeading": "Les principes qui guident nos actes.",
+      "journeyEyebrow": "Depuis 2010",
+      "journeyText": "Quinze années de développement au service des besoins de protection au Cameroun.",
+      "teamTitle": "Des experts à votre écoute.",
+      "teamText": "Des compétences complémentaires pour vous accompagner dans vos choix et le suivi de vos dossiers.",
+      "ctaEyebrow": "Un premier échange, sans engagement",
+      "ctaTitle": "Travaillons ensemble à votre protection.",
+      "ctaText": "Notre équipe est prête à vous accompagner dans votre stratégie d’assurance. Parlons de votre situation et des garanties qui comptent pour vous.",
+      "ctaPhone": "ou appelez-nous au"
+    },
+    "contact": {
+      "eyebrow": "Contact · Akwa, Douala",
+      "h1": "Contactez-nous.",
+      "heroText": "Notre équipe est disponible pour vous accompagner. Parlez-nous de votre besoin, nous vous répondrons rapidement.",
+      "kicker": "Restons en contact",
+      "coordsTitle": "Nos coordonnées.",
+      "formEyebrow": "Écrivez-nous",
+      "formIntro": "Demande de devis, question sur une garantie ou déclaration de sinistre : précisez votre sujet pour que nous puissions vous orienter.",
+      "requiredNote": "Champs obligatoires",
+      "mapLabel": "Localisation",
+      "mapEyebrow": "Nous trouver",
+      "mapTitle": "Au cœur d’Akwa.",
+      "mapIframe": "Leader Assurance — localisation à Akwa, Douala"
+    },
+    "faq": {
+      "metaTitle": "FAQ - Leader Assurance | Questions Fréquentes",
+      "metaDescription": "Trouvez les réponses à vos questions sur l'assurance, les contrats et nos services chez Leader Assurance.",
+      "eyebrow": "Réponses claires, décisions sereines",
+      "lead": "Trouvez rapidement les réponses à vos questions. Notre équipe à Douala vous aide aussi à choisir la couverture adaptée.",
+      "searchLabel": "Rechercher dans les questions",
+      "clearSearch": "Effacer la recherche",
+      "filterAria": "Filtrer par catégorie",
+      "categories": "Catégories",
+      "categoriesGroupAria": "Catégories de questions",
+      "questionsCount_one": "{{num}} question",
+      "questionsCount_other": "{{num}} questions",
+      "sectionsCount_one": "{{num}} rubrique",
+      "sectionsCount_other": "{{num}} rubriques",
+      "emptyTitle": "Aucune question trouvée.",
+      "reset": "Réinitialiser les filtres",
+      "ctaEyebrow": "Un conseiller à votre écoute",
+      "whatsappMessage": "Bonjour Leader Assurance, j'ai une question qui n'est pas dans la FAQ."
+    },
+    "chat": {
+      "open": "Ouvrir l’assistant",
+      "close": "Fermer l’assistant",
+      "window": "Fenêtre de l’assistant",
+      "closeWindow": "Fermer la fenêtre",
+      "today": "Aujourd’hui · {{time}}",
+      "typing": "L’assistant écrit une réponse",
+      "faq": "Questions fréquentes",
+      "messageLabel": "Votre message",
+      "quick": {
+        "quote": "Obtenir un devis",
+        "business": "Assurance entreprise",
+        "advisor": "Parler à un conseiller"
+      }
+    },
+    "cookie": {
+      "label": "Bannière de cookies",
+      "title": "Votre confidentialité compte"
+    },
+    "home": {
+      "hero": {
+        "eyebrow": "Courtage indépendant · Douala",
+        "title": "Le bon contrat commence par un bon conseil.",
+        "copy": "Nous comparons plusieurs assureurs pour vous aider à choisir une protection adaptée à votre famille ou à votre activité.",
+        "ctaPrimary": "Parler à un conseiller",
+        "ctaWhatsapp": "Écrire sur WhatsApp",
+        "whatsappMessage": "Bonjour Leader Assurance, je souhaite être conseillé.",
+        "calloutTitle": "Un seul interlocuteur.",
+        "calloutText": "Plusieurs compagnies consultées. Une proposition pensée autour de vos besoins."
+      },
+      "solutions": {
+        "eyebrow": "Deux façons de vous protéger",
+        "title": "À chacun sa priorité.",
+        "text": "Particulier ou dirigeant, nous prenons le temps de comprendre ce que vous souhaitez protéger avant de comparer les offres.",
+        "individuals": {
+          "label": "01 / Particuliers",
+          "title": "La sérénité de vos proches.",
+          "text": "Santé, vie, voyage ou épargne : des solutions pour protéger votre famille et préparer vos projets.",
+          "items": [
+            "Assurance Santé",
+            "Assurance Vie & Épargne",
+            "Assurance Voyage"
+          ],
+          "cta": "Trouver ma couverture"
+        },
+        "companies": {
+          "label": "02 / Entreprises",
+          "title": "La continuité de votre activité.",
+          "text": "Flotte, employés, responsabilité civile ou actifs : une lecture concrète de vos risques professionnels.",
+          "items": [
+            "Multirisque professionnelle",
+            "Assurance Employés",
+            "Responsabilité Civile Pro"
+          ],
+          "cta": "Échanger sur mes risques"
+        }
+      },
+      "approach": {
+        "eyebrow": "Notre différence",
+        "title": "Votre intérêt guide le choix.",
+        "text": "En tant que courtier indépendant, nous étudions vos besoins, analysons les risques et mettons en regard les propositions de nos compagnies partenaires.",
+        "cta": "Échanger avec un conseiller",
+        "steps": [
+          {
+            "title": "Une analyse avant une recommandation",
+            "text": "Nous commençons par comprendre votre situation et les risques à couvrir."
+          },
+          {
+            "title": "Plusieurs compagnies à consulter",
+            "text": "Activa, Chanas, AXA, NSIA et d’autres partenaires selon votre besoin."
+          },
+          {
+            "title": "Un accompagnement quand ça compte",
+            "text": "Un interlocuteur à vos côtés pour vous assister, y compris en cas de sinistre."
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": 500,
+          "label": "Clients accompagnés"
+        },
+        {
+          "value": 10,
+          "label": "Années d’expérience"
+        },
+        {
+          "value": 15,
+          "label": "Partenaires d’assurance"
+        },
+        {
+          "value": 1200,
+          "label": "Polices gérées"
+        }
+      ],
+      "partnersLabel": "Compagnies partenaires",
+      "testimonials": {
+        "eyebrow": "Ils nous font confiance",
+        "title": "Des conseils qui font leur chemin.",
+        "quote": "« {{text}} »"
+      },
+      "quote": {
+        "eyebrow": "Premier échange, sans engagement",
+        "title": "Parlons de ce que vous voulez protéger.",
+        "text": "Quelques repères suffisent pour obtenir une première estimation. Un conseiller de Douala précisera ensuite votre besoin et préparera une proposition adaptée.",
+        "callPrompt": "Vous préférez appeler ?",
+        "formLabel": "Calculateur et demande de devis WhatsApp",
+        "typeLabel": "Quel type d’assurance recherchez-vous ?",
+        "typePlaceholder": "Choisir une assurance",
+        "ageLabel": "Votre âge",
+        "agePlaceholder": "Ex. 34",
+        "employeesLabel": "Nombre d’employés",
+        "employeesPlaceholder": "Ex. 12",
+        "coverageLabel": "Niveau de couverture",
+        "nameLabel": "Votre nom",
+        "namePlaceholder": "Nom et prénom",
+        "phoneLabel": "Votre numéro de téléphone",
+        "phonePlaceholder": "+237 …",
+        "currency": "FCFA",
+        "note": "Votre message s’ouvrira dans WhatsApp pour être envoyé à notre équipe.",
+        "sent": "Votre demande est prête dans WhatsApp. Envoyez le message pour joindre notre équipe.",
+        "errors": {
+          "insurance": "Choisissez un type d’assurance.",
+          "age": "Indiquez un âge entre 0 et 120 ans.",
+          "employees": "Indiquez un nombre d’employés supérieur à zéro.",
+          "coverage": "Choisissez un niveau de couverture.",
+          "name": "Indiquez votre nom.",
+          "phone": "Indiquez votre numéro de téléphone."
+        },
+        "whatsapp": {
+          "message": "Bonjour Leader Assurance, je m'appelle {{name}} ({{phone}}). Je souhaite un devis pour {{insurance}}, niveau {{coverage}}. {{quantity}}. Estimation mensuelle : {{estimate}}.",
+          "age": "Âge : {{value}} ans",
+          "employees": "Nombre d’employés : {{value}}"
+        }
+      },
+      "finalCta": {
+        "eyebrow": "À Akwa, Douala",
+        "title": "Une question avant de choisir ? Notre équipe vous écoute.",
+        "button": "Contacter un conseiller"
+      }
+    },
+    "news": {
+      "hero": {
+        "eyebrow": "Le regard du courtier",
+        "lead": "Des repères pour comprendre vos assurances, mieux protéger votre famille et anticiper les risques de votre activité."
+      },
+      "featured": {
+        "eyebrow": "À lire en premier",
+        "title": "Le conseil du moment.",
+        "note": "Des informations pratiques, pensées pour le Cameroun.",
+        "read": "Lire l’article",
+        "readAria": "Lire : {{title}}"
+      },
+      "list": {
+        "eyebrow": "Le journal",
+        "title": "Tous les articles.",
+        "searchLabel": "Rechercher un article",
+        "filterTitle": "Filtrer par sujet",
+        "filterAria": "Catégories d’articles",
+        "status": "Articles affichés : {{count}}."
+      },
+      "cta": {
+        "eyebrow": "À Akwa, Douala",
+        "title": "Un article soulève une question ? Notre équipe vous écoute.",
+        "button": "Parler à un conseiller"
+      },
+      "article": {
+        "eyebrow": "Article conseil · {{category}}",
+        "published": "Publié le",
+        "reading": "Lecture",
+        "section": "Rubrique",
+        "quoteTitle": "Mieux comprendre pour mieux choisir.",
+        "quoteText": "Les garanties se choisissent selon les personnes ou les biens à protéger, les risques à couvrir et le budget disponible.",
+        "figcaption": "{{category}} · Les conseils de Leader Assurance",
+        "share": "Partager cet article",
+        "shareOn": "Partager sur {{network}}",
+        "adviceEyebrow": "À votre écoute",
+        "quote": "Demander un devis",
+        "whatsapp": "Écrire sur WhatsApp",
+        "whatsappMsg": "Bonjour Leader Assurance, je souhaite un conseil sur l’assurance.",
+        "relatedEyebrow": "Pour aller plus loin",
+        "relatedTitle": "Articles liés",
+        "all": "Tous les articles",
+        "ctaEyebrow": "Votre protection, vos priorités",
+        "ctaTitle": "Comparons les garanties adaptées à votre situation.",
+        "ctaText": "Parlez à un conseiller indépendant à Douala pour préciser votre besoin de couverture.",
+        "ctaButton": "Demander un devis"
+      },
+      "content": [
+        {
+          "intro": "L’assurance santé est l’une des protections les plus importantes que vous puissiez offrir à votre famille. Au Cameroun, le système de santé public ne couvre pas toujours l’intégralité des frais médicaux, ce qui rend l’assurance santé privée indispensable.",
+          "sections": [
+            {
+              "label": "Les bases",
+              "title": "Qu’est-ce que l’assurance santé ?",
+              "paragraphs": [
+                "L’assurance santé est un contrat entre vous et une compagnie d’assurance qui prend en charge tout ou partie de vos frais médicaux en échange du paiement régulier d’une prime."
+              ]
+            },
+            {
+              "label": "Les garanties",
+              "title": "Les types de couvertures disponibles",
+              "items": [
+                {
+                  "label": "Hospitalisation",
+                  "text": "Couvre les frais d’hospitalisation."
+                },
+                {
+                  "label": "Soins ambulatoires",
+                  "text": "Couvre les consultations et les soins courants."
+                },
+                {
+                  "label": "Maternité",
+                  "text": "Prend en charge les accouchements et les soins prénataux."
+                },
+                {
+                  "label": "Dentaire et optique",
+                  "text": "Concerne les soins spécialisés."
+                }
+              ]
+            },
+            {
+              "label": "Votre choix",
+              "title": "Comment choisir sa couverture ?",
+              "paragraphs": [
+                "Le choix dépend de plusieurs facteurs : votre âge, votre situation familiale, votre état de santé général et votre budget. Nos conseillers chez Leader Assurance peuvent vous aider à sélectionner la formule la plus adaptée à votre situation."
+              ]
+            }
+          ]
+        },
+        {
+          "intro": "Les entreprises camerounaises font face à de nombreux risques qui peuvent mettre en péril leur activité. L’assurance entreprise est une solution indispensable pour se protéger contre ces aléas.",
+          "sections": [
+            {
+              "label": "Les risques",
+              "title": "Les principaux risques pour les entreprises",
+              "items": [
+                {
+                  "label": "Risques matériels",
+                  "text": "incendie, vol, dégâts des eaux."
+                },
+                {
+                  "label": "Risques humains",
+                  "text": "accidents du travail, maladie des employés."
+                },
+                {
+                  "label": "Risques de responsabilité",
+                  "text": "dommages causés à des tiers."
+                },
+                {
+                  "label": "Risques financiers",
+                  "text": "pertes d’exploitation en cas de sinistre."
+                }
+              ]
+            },
+            {
+              "label": "La solution",
+              "title": "L’importance de l’assurance multirisque professionnelle",
+              "paragraphs": [
+                "Une bonne assurance entreprise vous protège contre tous ces risques en une seule police, simplifiant la gestion de votre couverture tout en optimisant les coûts."
+              ]
+            },
+            {
+              "label": "Notre rôle",
+              "title": "Comment Leader Assurance peut vous aider",
+              "paragraphs": [
+                "Notre équipe d’experts analyse votre activité, identifie vos risques spécifiques et vous propose une couverture sur mesure avec les meilleures compagnies partenaires."
+              ]
+            }
+          ]
+        },
+        {
+          "intro": "Le marché de l’assurance en Afrique connaît une croissance remarquable, portée par l’émergence d’une classe moyenne, la digitalisation et une prise de conscience croissante de l’importance de la protection.",
+          "sections": [
+            {
+              "label": "Le marché",
+              "title": "La croissance du marché africain",
+              "paragraphs": [
+                "Le taux de pénétration de l’assurance en Afrique subsaharienne reste faible (environ 3 %), mais la croissance est forte, avec des opportunités immenses pour les acteurs du secteur."
+              ]
+            },
+            {
+              "label": "Les tendances",
+              "title": "Les tendances majeures",
+              "items": [
+                {
+                  "label": "Digitalisation",
+                  "text": "les InsurTechs révolutionnent la distribution."
+                },
+                {
+                  "label": "Microassurance",
+                  "text": "couvertures accessibles pour les populations à faibles revenus."
+                },
+                {
+                  "label": "Assurance santé",
+                  "text": "forte croissance post-COVID."
+                },
+                {
+                  "label": "Agriculture",
+                  "text": "assurance pour les exploitants agricoles."
+                }
+              ]
+            },
+            {
+              "label": "Le contexte local",
+              "title": "Le Cameroun dans ce contexte",
+              "paragraphs": [
+                "Le Cameroun se positionne comme un hub assurantiel en Afrique centrale, avec une régulation modernisée et des acteurs dynamiques comme Leader Assurance."
+              ]
+            }
+          ]
+        },
+        {
+          "intro": "Choisir une assurance peut sembler complexe face à la multitude d’offres disponibles. Voici un guide pratique pour vous aider à prendre la bonne décision.",
+          "sections": [
+            {
+              "label": "Vos besoins",
+              "title": "Étape 1 : Identifier vos besoins",
+              "paragraphs": [
+                "Commencez par lister ce que vous souhaitez protéger : votre santé, votre famille, vos biens, votre activité professionnelle."
+              ]
+            },
+            {
+              "label": "Vos risques",
+              "title": "Étape 2 : Évaluer vos risques",
+              "paragraphs": [
+                "Analysez les risques auxquels vous êtes exposé selon votre situation, votre activité et votre environnement."
+              ]
+            },
+            {
+              "label": "Les offres",
+              "title": "Étape 3 : Comparer les offres",
+              "paragraphs": [
+                "Ne vous limitez pas à un seul assureur. Comparez les garanties, les exclusions et les tarifs de plusieurs compagnies."
+              ]
+            },
+            {
+              "label": "Le courtier",
+              "title": "Étape 4 : Faire appel à un courtier",
+              "paragraphs": [
+                "Un courtier indépendant comme Leader Assurance peut vous faire économiser du temps et de l’argent en négociant les meilleures conditions pour vous."
+              ]
+            }
+          ]
+        },
+        {
+          "intro": "La responsabilité civile (RC) vous protège lorsque vous causez involontairement des dommages à des tiers. C’est une couverture fondamentale que tout individu et toute entreprise devrait posséder.",
+          "sections": [
+            {
+              "label": "Les bases",
+              "title": "Qu’est-ce que la responsabilité civile ?",
+              "paragraphs": [
+                "La RC couvre les dommages corporels, matériels ou immatériels que vous pourriez causer à autrui dans le cadre de vos activités."
+              ]
+            },
+            {
+              "label": "Particuliers",
+              "title": "RC pour les particuliers",
+              "paragraphs": [
+                "La RC personnelle couvre les dommages causés par vous-même, vos enfants, vos animaux et dans certains cas, vos biens immobiliers."
+              ]
+            },
+            {
+              "label": "Professionnels",
+              "title": "RC professionnelle",
+              "paragraphs": [
+                "Pour les entreprises et les professions libérales, la RC professionnelle couvre les erreurs, fautes et omissions dans l’exercice de votre activité."
+              ]
+            },
+            {
+              "label": "L’essentiel",
+              "title": "Pourquoi c’est indispensable",
+              "paragraphs": [
+                "Sans RC, vous devrez assumer personnellement les indemnisations qui peuvent atteindre des sommes considérables."
+              ]
+            }
+          ]
+        },
+        {
+          "intro": "L’assurance vie est un produit financier polyvalent qui combine protection en cas de décès et constitution d’une épargne à long terme.",
+          "sections": [
+            {
+              "label": "Les rôles",
+              "title": "Double rôle de l’assurance vie",
+              "items": [
+                {
+                  "label": "Protection",
+                  "text": "en cas de décès, un capital est versé aux bénéficiaires désignés."
+                },
+                {
+                  "label": "Épargne",
+                  "text": "accumulation d’un capital sur le long terme avec des rendements garantis."
+                }
+              ]
+            },
+            {
+              "label": "Fiscalité",
+              "title": "Les avantages fiscaux",
+              "paragraphs": [
+                "Dans de nombreux pays, l’assurance vie bénéficie d’avantages fiscaux spéciaux, notamment lors de la transmission du capital."
+              ]
+            },
+            {
+              "label": "Souscription",
+              "title": "Comment souscrire",
+              "paragraphs": [
+                "Leader Assurance vous accompagne dans le choix du contrat d’assurance vie le plus adapté à vos objectifs financiers et familiaux."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "partners": {
+      "metaDescription": "Découvrez les compagnies d'assurance partenaires de Leader Assurance au Cameroun et en Afrique.",
+      "eyebrow": "Notre réseau · Douala",
+      "heroTitle": "Des assureurs reconnus. Un conseil indépendant.",
+      "heroSubtitle": "Nous travaillons avec les meilleures compagnies d'assurance pour comparer les offres et choisir une protection adaptée.",
+      "countLabel": "compagnies présentées dans notre réseau partenaire",
+      "roleEyebrow": "Notre rôle",
+      "roleTitle": "Plusieurs options, un interlocuteur.",
+      "roleText": "Notre approche de courtier vous donne accès à plusieurs offres, avec un accompagnement de proximité pour comparer et choisir.",
+      "networkEyebrow": "Le réseau",
+      "cameroon": "Cameroun",
+      "international": "International",
+      "centralAfrica": "Afrique centrale",
+      "stripAria": "Défilement des compagnies partenaires",
+      "stripEyebrow": "Compagnies du réseau",
+      "stripHint": "Défilement lent · survolez ou sélectionnez pour arrêter",
+      "trackLabel": "Noms des compagnies partenaires",
+      "brokerEyebrow": "Votre intérêt d'abord",
+      "certifiedTitle": "Un conseil conforme, un accompagnement de proximité."
+    },
+    "privacy": {
+      "metaTitle": "Politique de confidentialité - Leader Assurance",
+      "eyebrow": "Informations légales",
+      "title": "Politique de confidentialité",
+      "lead": "Comment nous recueillons, utilisons et protégeons les informations confiées à Leader Assurance.",
+      "updatedLabel": "Dernière mise à jour",
+      "updatedDate": "Mars 2025",
+      "tocLabel": "Table des matières",
+      "tocTitle": "Dans cette page",
+      "toc": [
+        "Protection des données",
+        "Données collectées",
+        "Utilisation",
+        "Cookies",
+        "Conditions d’utilisation",
+        "Vos droits",
+        "Contact"
+      ],
+      "sections": [
+        {
+          "eyebrow": "Engagement",
+          "title": "Protection des données personnelles",
+          "paragraphs": [
+            "Leader Assurance SARL s'engage à protéger la vie privée de ses clients et visiteurs. Les informations personnelles collectées sur ce site sont utilisées uniquement pour vous fournir nos services d'assurance et vous contacter dans le cadre de vos demandes.",
+            "Vos données ne seront jamais vendues, cédées ou partagées avec des tiers sans votre consentement explicite, sauf obligations légales ou contractuelles avec nos partenaires assureurs dans le strict cadre de la gestion de vos contrats."
+          ]
+        },
+        {
+          "eyebrow": "Informations",
+          "title": "Données collectées",
+          "intro": "Nous collectons les données suivantes :",
+          "items": [
+            "Informations d'identification (nom, prénom, date de naissance)",
+            "Coordonnées (adresse, téléphone, email)",
+            "Informations nécessaires à l'établissement des contrats d'assurance",
+            "Données de navigation sur notre site (cookies)"
+          ]
+        },
+        {
+          "eyebrow": "Finalités",
+          "title": "Utilisation des données",
+          "intro": "Vos données sont utilisées pour :",
+          "items": [
+            "Établir des devis et contrats d'assurance personnalisés",
+            "Gérer vos contrats et sinistres",
+            "Vous informer de nos services et actualités",
+            "Améliorer notre site web et nos services"
+          ]
+        },
+        {
+          "eyebrow": "Navigation",
+          "title": "Politique des cookies",
+          "intro": "Notre site utilise des cookies pour améliorer votre expérience de navigation. Les cookies sont de petits fichiers texte stockés sur votre appareil qui nous aident à :",
+          "items": [
+            "Mémoriser vos préférences de langue et de navigation",
+            "Analyser le trafic et l'utilisation de notre site",
+            "Améliorer les fonctionnalités de notre site"
+          ],
+          "outro": "Vous pouvez refuser les cookies non essentiels en cliquant sur \"Refuser\" dans notre bandeau de cookies. Le refus des cookies peut affecter certaines fonctionnalités du site."
+        },
+        {
+          "eyebrow": "Cadre d’utilisation",
+          "title": "Conditions d'utilisation",
+          "paragraphs": [
+            "L'utilisation de ce site implique l'acceptation des présentes conditions. Le contenu de ce site est fourni à titre informatif et ne constitue pas un engagement contractuel. Seuls les contrats d'assurance signés entre les parties constituent des engagements légaux."
+          ]
+        },
+        {
+          "eyebrow": "Vos données",
+          "title": "Vos droits",
+          "intro": "Conformément à la réglementation en vigueur, vous disposez des droits suivants sur vos données personnelles :",
+          "items": [
+            "Droit d'accès à vos données",
+            "Droit de rectification des données inexactes",
+            "Droit à l'effacement de vos données",
+            "Droit d'opposition au traitement"
+          ],
+          "contactPrefix": "Pour exercer ces droits, contactez-nous à :"
+        },
+        {
+          "eyebrow": "Échange direct",
+          "title": "Contact",
+          "intro": "Pour toute question relative à cette politique de confidentialité, contactez-nous :"
+        }
+      ],
+      "emailLabel": "Email :",
+      "phoneLabel": "Tél :",
+      "ctaText": "Une question sur la protection de vos informations ? Notre équipe à Douala est à votre écoute.",
+      "ctaButton": "Écrire à notre équipe"
+    },
+    "shell": {
+      "skip": "Aller au contenu",
+      "homeLabel": "Leader Assurance, accueil",
+      "menu": "Menu",
+      "pages": "Pages",
+      "language": "Langue",
+      "languages": "Langues",
+      "chooseLanguage": "Choisir la langue",
+      "mainNav": "Navigation principale",
+      "footerNav": "Pages du site",
+      "footerTagline": "Courtier indépendant, nous comparons les offres pour vous aider à choisir une protection adaptée.",
+      "explore": "Explorer",
+      "findUs": "Nous trouver"
+    },
+    "solutions": {
+      "metaTitle": "Nos solutions — Leader Assurance",
+      "metaDesc": "Découvrez nos solutions d’assurance pour particuliers et entreprises à Douala, Cameroun.",
+      "heroEyebrow": "Nos solutions · particuliers et entreprises",
+      "heroTitle": "Une protection pensée autour de vos projets.",
+      "heroText": "Des couvertures complètes pour particuliers et entreprises. En tant que courtier indépendant, nous comparons plusieurs assureurs pour vous aider à choisir.",
+      "navLabel": "Parcours de solutions",
+      "individualsTitle": "Pour vous et ceux qui comptent.",
+      "individualsText": "Santé, avenir, déplacements ou épargne : partons de votre situation pour construire une couverture adaptée.",
+      "companiesTitle": "Pour votre activité et vos équipes.",
+      "companiesText": "Une analyse des risques pour couvrir les responsabilités, les collaborateurs et les biens de votre entreprise.",
+      "eyebrows": {
+        "health": "Santé",
+        "life": "Prévoyance",
+        "travel": "Déplacements",
+        "savings": "Épargne",
+        "enterprise": "Activité",
+        "liability": "Responsabilité",
+        "employees": "Collaborateurs",
+        "assets": "Patrimoine professionnel"
+      },
+      "processEyebrow": "Un accompagnement clair",
+      "processText": "Un processus simple et transparent, du premier échange à la souscription.",
+      "ctaEyebrow": "Premier échange, sans engagement"
+    }
   }
 }

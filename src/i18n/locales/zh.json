@@ -371,5 +371,624 @@
     "cookies": "Cookie管理",
     "rights": "版权所有",
     "follow": "关注我们"
+  },
+  "ui": {
+    "about": {
+      "metaTitle": "关于我们 — Leader Assurance | 喀麦隆杜阿拉",
+      "metaDescription": "了解 Leader Assurance SARL，位于杜阿拉的保险经纪与咨询机构。我们的团队、使命与价值观。",
+      "heroEyebrow": "我们的故事 · 喀麦隆杜阿拉",
+      "heroLead": "十多年来值得信赖的伙伴。Leader Assurance SARL 协助个人和企业管理风险、保护资产。",
+      "heroCta": "告诉我们您的需求",
+      "heroSide": "年相伴左右，帮助您选择合适的保障，并在杜阿拉为您提供专属联系人。",
+      "whoEyebrow": "我们是谁",
+      "whoTitle": "为您的选择服务的机构。",
+      "quote": "先看您的处境，再谈保障。",
+      "partnerCompanies": "合作保险公司",
+      "capEyebrow": "我们的方向",
+      "capTitle": "清晰地建议，有意义地保护。",
+      "capText": "好的合同，始于对所要保护的个人、家庭或业务的准确了解。",
+      "valuesHeading": "指引我们行动的原则。",
+      "journeyEyebrow": "自 2010 年起",
+      "journeyText": "十五年来，在喀麦隆持续发展，服务于各类保障需求。",
+      "teamTitle": "用心倾听的专家。",
+      "teamText": "互补的专业能力，协助您做出选择并跟进您的案件。",
+      "ctaEyebrow": "先聊一聊，无需承诺",
+      "ctaTitle": "携手为您的保障努力。",
+      "ctaText": "我们的团队随时准备协助您制定保险策略。请与我们谈谈您的情况和您最看重的保障。",
+      "ctaPhone": "或致电"
+    },
+    "contact": {
+      "eyebrow": "联系我们 · 杜阿拉阿克瓦",
+      "h1": "联系我们。",
+      "heroText": "我们的团队随时为您提供帮助。请告诉我们您的需求，我们会尽快回复。",
+      "kicker": "保持联系",
+      "coordsTitle": "我们的联系方式。",
+      "formEyebrow": "给我们留言",
+      "formIntro": "报价申请、保障咨询或理赔申报：请说明主题，以便我们为您提供指引。",
+      "requiredNote": "必填项",
+      "mapLabel": "位置",
+      "mapEyebrow": "联系地址",
+      "mapTitle": "位于阿克瓦的中心。",
+      "mapIframe": "Leader Assurance — 杜阿拉阿克瓦位置"
+    },
+    "faq": {
+      "metaTitle": "常见问题 - Leader Assurance | FAQ",
+      "metaDescription": "在 Leader Assurance 查找有关保险、合同和我们服务的常见问题解答。",
+      "eyebrow": "解答清晰，决策从容",
+      "lead": "快速找到您问题的答案。我们位于杜阿拉的团队也可以帮助您选择合适的保障。",
+      "searchLabel": "搜索问题",
+      "clearSearch": "清除搜索",
+      "filterAria": "按类别筛选",
+      "categories": "类别",
+      "categoriesGroupAria": "问题类别",
+      "questionsCount_other": "{{num}} 个问题",
+      "sectionsCount_other": "{{num}} 个分类",
+      "emptyTitle": "未找到相关问题。",
+      "reset": "重置筛选",
+      "ctaEyebrow": "顾问随时为您服务",
+      "whatsappMessage": "您好 Leader Assurance，我有一个常见问题中没有的问题。"
+    },
+    "chat": {
+      "open": "打开智能助手",
+      "close": "关闭智能助手",
+      "window": "智能助手窗口",
+      "closeWindow": "关闭窗口",
+      "today": "今天 · {{time}}",
+      "typing": "助手正在输入回复",
+      "faq": "常见问题",
+      "messageLabel": "您的消息",
+      "quick": {
+        "quote": "获取报价",
+        "business": "企业保险",
+        "advisor": "联系顾问"
+      }
+    },
+    "cookie": {
+      "label": "Cookie 提示栏",
+      "title": "您的隐私很重要"
+    },
+    "home": {
+      "hero": {
+        "eyebrow": "独立经纪 · 杜阿拉",
+        "title": "好合同，从好建议开始。",
+        "copy": "我们为您比较多家保险公司，帮助您为家庭或企业选择合适的保障。",
+        "ctaPrimary": "咨询顾问",
+        "ctaWhatsapp": "通过 WhatsApp 联系",
+        "whatsappMessage": "您好 Leader Assurance，我想获得保险建议。",
+        "calloutTitle": "唯一的对接人。",
+        "calloutText": "咨询多家公司，围绕您的需求量身定制方案。"
+      },
+      "solutions": {
+        "eyebrow": "两种保障方式",
+        "title": "各有所重。",
+        "text": "无论您是个人还是企业负责人，我们都会先了解您想保障的对象，再比较各家方案。",
+        "individuals": {
+          "label": "01 / 个人",
+          "title": "让家人安心。",
+          "text": "健康、人寿、旅行或储蓄：保护家人并为未来规划提供解决方案。",
+          "items": [
+            "健康保险",
+            "人寿与储蓄保险",
+            "旅行保险"
+          ],
+          "cta": "找到适合我的保障"
+        },
+        "companies": {
+          "label": "02 / 企业",
+          "title": "保障业务持续运转。",
+          "text": "车队、员工、民事责任或资产：对您的经营风险进行具体分析。",
+          "items": [
+            "企业综合险",
+            "员工保险",
+            "职业责任险"
+          ],
+          "cta": "聊聊我的风险"
+        }
+      },
+      "approach": {
+        "eyebrow": "我们的不同之处",
+        "title": "以您的利益为先。",
+        "text": "作为独立经纪人，我们研究您的需求，分析风险，并对比合作保险公司的方案。",
+        "cta": "咨询顾问",
+        "steps": [
+          {
+            "title": "先分析，后建议",
+            "text": "我们首先了解您的情况和需要保障的风险。"
+          },
+          {
+            "title": "咨询多家公司",
+            "text": "根据您的需求，对接 Activa、Chanas、AXA、NSIA 等合作伙伴。"
+          },
+          {
+            "title": "关键时刻有人陪伴",
+            "text": "有专人在您身边提供协助，包括发生理赔时。"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": 500,
+          "label": "服务客户"
+        },
+        {
+          "value": 10,
+          "label": "年从业经验"
+        },
+        {
+          "value": 15,
+          "label": "保险合作伙伴"
+        },
+        {
+          "value": 1200,
+          "label": "管理保单"
+        }
+      ],
+      "partnersLabel": "合作保险公司",
+      "testimonials": {
+        "eyebrow": "值得信赖",
+        "title": "建议，自有口碑。",
+        "quote": "“{{text}}”"
+      },
+      "quote": {
+        "eyebrow": "首次沟通，无需承诺",
+        "title": "聊聊您想保障的内容。",
+        "text": "只需几项信息即可获得初步估算。随后杜阿拉的顾问会进一步了解您的需求，并准备合适的方案。",
+        "callPrompt": "更愿意打电话？",
+        "formLabel": "报价计算器及 WhatsApp 报价申请",
+        "typeLabel": "您需要哪种保险？",
+        "typePlaceholder": "选择保险类型",
+        "ageLabel": "您的年龄",
+        "agePlaceholder": "例如 34",
+        "employeesLabel": "员工人数",
+        "employeesPlaceholder": "例如 12",
+        "coverageLabel": "保障等级",
+        "nameLabel": "您的姓名",
+        "namePlaceholder": "姓名",
+        "phoneLabel": "您的电话号码",
+        "phonePlaceholder": "+237 …",
+        "currency": "FCFA",
+        "note": "您的消息将在 WhatsApp 中打开并发送给我们的团队。",
+        "sent": "您的申请已在 WhatsApp 中准备好。发送消息即可联系我们的团队。",
+        "errors": {
+          "insurance": "请选择保险类型。",
+          "age": "请输入 0 至 120 岁之间的年龄。",
+          "employees": "请输入大于零的员工人数。",
+          "coverage": "请选择保障等级。",
+          "name": "请输入您的姓名。",
+          "phone": "请输入您的电话号码。"
+        },
+        "whatsapp": {
+          "message": "您好 Leader Assurance，我叫{{name}}（{{phone}}）。我想获取{{insurance}}的报价，保障等级：{{coverage}}。{{quantity}}。每月估算：{{estimate}}。",
+          "age": "年龄：{{value}} 岁",
+          "employees": "员工人数：{{value}}"
+        }
+      },
+      "finalCta": {
+        "eyebrow": "杜阿拉阿夸区",
+        "title": "选择前有疑问？我们的团队愿意倾听。",
+        "button": "联系顾问"
+      }
+    },
+    "news": {
+      "hero": {
+        "eyebrow": "经纪人的视角",
+        "lead": "帮助您了解保险、更好地保护家人并预见业务风险的实用指南。"
+      },
+      "featured": {
+        "eyebrow": "优先阅读",
+        "title": "本期建议。",
+        "note": "专为喀麦隆打造的实用资讯。",
+        "read": "阅读文章",
+        "readAria": "阅读：{{title}}"
+      },
+      "list": {
+        "eyebrow": "资讯专栏",
+        "title": "全部文章。",
+        "searchLabel": "搜索文章",
+        "filterTitle": "按主题筛选",
+        "filterAria": "文章分类",
+        "status": "已显示文章：{{count}} 篇。"
+      },
+      "cta": {
+        "eyebrow": "位于杜阿拉阿夸",
+        "title": "某篇文章引发了您的疑问？我们的团队愿意倾听。",
+        "button": "咨询顾问"
+      },
+      "article": {
+        "eyebrow": "建议文章 · {{category}}",
+        "published": "发布于",
+        "reading": "阅读时间",
+        "section": "栏目",
+        "quoteTitle": "了解更多，选择更明智。",
+        "quoteText": "保障应根据需要保护的人员或财产、需要覆盖的风险以及可用预算来选择。",
+        "figcaption": "{{category}} · Leader Assurance 的建议",
+        "share": "分享本文",
+        "shareOn": "分享到 {{network}}",
+        "adviceEyebrow": "我们随时倾听",
+        "quote": "申请报价",
+        "whatsapp": "通过 WhatsApp 联系",
+        "whatsappMsg": "您好 Leader Assurance，我想咨询保险方面的建议。",
+        "relatedEyebrow": "延伸阅读",
+        "relatedTitle": "相关文章",
+        "all": "全部文章",
+        "ctaEyebrow": "您的保障，您的优先事项",
+        "ctaTitle": "让我们比较适合您情况的保障方案。",
+        "ctaText": "请联系杜阿拉的独立顾问，明确您的保障需求。",
+        "ctaButton": "申请报价"
+      },
+      "content": [
+        {
+          "intro": "健康保险是您能为家人提供的最重要的保障之一。在喀麦隆，公共医疗体系并不总能覆盖全部医疗费用，因此私人健康保险必不可少。",
+          "sections": [
+            {
+              "label": "基础知识",
+              "title": "什么是健康保险？",
+              "paragraphs": [
+                "健康保险是您与保险公司之间的合同，保险公司在您定期缴纳保费的前提下，承担您全部或部分医疗费用。"
+              ]
+            },
+            {
+              "label": "保障范围",
+              "title": "可选的保障类型",
+              "items": [
+                {
+                  "label": "住院",
+                  "text": "涵盖住院费用。"
+                },
+                {
+                  "label": "门诊",
+                  "text": "涵盖问诊和日常护理。"
+                },
+                {
+                  "label": "生育",
+                  "text": "涵盖分娩和产前护理。"
+                },
+                {
+                  "label": "牙科与眼科",
+                  "text": "涵盖专科护理。"
+                }
+              ]
+            },
+            {
+              "label": "您的选择",
+              "title": "如何选择保障？",
+              "paragraphs": [
+                "选择取决于多个因素：您的年龄、家庭状况、总体健康状况和预算。Leader Assurance 的顾问可以帮助您选出最适合您情况的方案。"
+              ]
+            }
+          ]
+        },
+        {
+          "intro": "喀麦隆的企业面临诸多可能危及经营的风险。企业保险是抵御这些意外的必要方案。",
+          "sections": [
+            {
+              "label": "风险",
+              "title": "企业面临的主要风险",
+              "items": [
+                {
+                  "label": "财产风险",
+                  "text": "火灾、盗窃、水损。"
+                },
+                {
+                  "label": "人员风险",
+                  "text": "工伤、员工患病。"
+                },
+                {
+                  "label": "责任风险",
+                  "text": "对第三方造成的损害。"
+                },
+                {
+                  "label": "财务风险",
+                  "text": "发生事故后的营业损失。"
+                }
+              ]
+            },
+            {
+              "label": "解决方案",
+              "title": "职业综合保险的重要性",
+              "paragraphs": [
+                "完善的企业保险通过一份保单即可覆盖上述所有风险，既简化保障管理，又优化成本。"
+              ]
+            },
+            {
+              "label": "我们的角色",
+              "title": "Leader Assurance 如何帮助您",
+              "paragraphs": [
+                "我们的专家团队会分析您的业务，识别您特有的风险，并与最优秀的合作公司为您量身定制保障方案。"
+              ]
+            }
+          ]
+        },
+        {
+          "intro": "在中产阶层兴起、数字化发展以及对保障重要性认识不断提高的推动下，非洲保险市场正在显著增长。",
+          "sections": [
+            {
+              "label": "市场",
+              "title": "非洲市场的增长",
+              "paragraphs": [
+                "撒哈拉以南非洲的保险渗透率仍然较低（约 3%），但增长强劲，为行业参与者带来巨大机遇。"
+              ]
+            },
+            {
+              "label": "趋势",
+              "title": "主要趋势",
+              "items": [
+                {
+                  "label": "数字化",
+                  "text": "保险科技正在革新销售渠道。"
+                },
+                {
+                  "label": "微型保险",
+                  "text": "面向低收入人群的可负担保障。"
+                },
+                {
+                  "label": "健康保险",
+                  "text": "疫情后强劲增长。"
+                },
+                {
+                  "label": "农业",
+                  "text": "面向农户的保险。"
+                }
+              ]
+            },
+            {
+              "label": "本地背景",
+              "title": "喀麦隆的处境",
+              "paragraphs": [
+                "喀麦隆正将自己定位为中部非洲的保险枢纽，监管不断现代化，并拥有 Leader Assurance 这样充满活力的参与者。"
+              ]
+            }
+          ]
+        },
+        {
+          "intro": "面对琳琅满目的产品，选择保险可能显得复杂。以下是帮助您做出正确决定的实用指南。",
+          "sections": [
+            {
+              "label": "您的需求",
+              "title": "第 1 步：明确您的需求",
+              "paragraphs": [
+                "首先列出您想保护的对象：您的健康、家人、财产和职业活动。"
+              ]
+            },
+            {
+              "label": "您的风险",
+              "title": "第 2 步：评估您的风险",
+              "paragraphs": [
+                "根据您的情况、业务和环境，分析您面临的风险。"
+              ]
+            },
+            {
+              "label": "比较方案",
+              "title": "第 3 步：比较各家方案",
+              "paragraphs": [
+                "不要只局限于一家保险公司。请比较多家公司的保障范围、免责条款和价格。"
+              ]
+            },
+            {
+              "label": "经纪人",
+              "title": "第 4 步：求助经纪人",
+              "paragraphs": [
+                "像 Leader Assurance 这样的独立经纪人，可以为您争取最佳条件，帮您节省时间和金钱。"
+              ]
+            }
+          ]
+        },
+        {
+          "intro": "当您无意中对第三方造成损害时，民事责任险（RC）为您提供保护。这是每个人和每家企业都应拥有的基础保障。",
+          "sections": [
+            {
+              "label": "基础知识",
+              "title": "什么是民事责任？",
+              "paragraphs": [
+                "民事责任险涵盖您在活动中可能对他人造成的人身、财产或非物质损害。"
+              ]
+            },
+            {
+              "label": "个人",
+              "title": "个人民事责任险",
+              "paragraphs": [
+                "个人民事责任险涵盖由您本人、您的子女、宠物以及某些情况下您的不动产所造成的损害。"
+              ]
+            },
+            {
+              "label": "专业人士",
+              "title": "职业民事责任险",
+              "paragraphs": [
+                "对于企业和自由职业者，职业民事责任险涵盖在从事业务过程中的错误、过失和疏漏。"
+              ]
+            },
+            {
+              "label": "要点",
+              "title": "为何必不可少",
+              "paragraphs": [
+                "没有民事责任险，您将不得不自行承担可能数额巨大的赔偿。"
+              ]
+            }
+          ]
+        },
+        {
+          "intro": "人寿保险是一种多功能的金融产品，兼具身故保障和长期储蓄功能。",
+          "sections": [
+            {
+              "label": "双重作用",
+              "title": "人寿保险的双重作用",
+              "items": [
+                {
+                  "label": "保障",
+                  "text": "身故时，将一笔保险金支付给指定受益人。"
+                },
+                {
+                  "label": "储蓄",
+                  "text": "通过有保证的收益，长期积累资本。"
+                }
+              ]
+            },
+            {
+              "label": "税务",
+              "title": "税收优惠",
+              "paragraphs": [
+                "在许多国家，人寿保险享有特殊的税收优惠，尤其是在资本传承时。"
+              ]
+            },
+            {
+              "label": "投保",
+              "title": "如何投保",
+              "paragraphs": [
+                "Leader Assurance 将协助您选择最符合您财务和家庭目标的人寿保险合同。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "partners": {
+      "metaDescription": "了解 Leader Assurance 在喀麦隆及非洲的合作保险公司。",
+      "eyebrow": "我们的网络 · 杜阿拉",
+      "heroTitle": "知名保险公司，独立专业建议。",
+      "heroSubtitle": "我们与优秀的保险公司合作，为您比较方案，选择合适的保障。",
+      "countLabel": "家公司已列入我们的合作伙伴网络",
+      "roleEyebrow": "我们的角色",
+      "roleTitle": "多种选择，一位对接人。",
+      "roleText": "作为经纪人，我们让您可以接触多家公司的方案，并提供贴身协助，帮助您比较和选择。",
+      "networkEyebrow": "合作网络",
+      "cameroon": "喀麦隆",
+      "international": "国际",
+      "centralAfrica": "中非",
+      "stripAria": "合作保险公司滚动展示",
+      "stripEyebrow": "网络内公司",
+      "stripHint": "缓慢滚动 · 悬停或聚焦即可暂停",
+      "trackLabel": "合作保险公司名称",
+      "brokerEyebrow": "您的利益优先",
+      "certifiedTitle": "合规的建议，贴身的服务。"
+    },
+    "privacy": {
+      "metaTitle": "隐私政策 - Leader Assurance",
+      "eyebrow": "法律信息",
+      "title": "隐私政策",
+      "lead": "我们如何收集、使用和保护您托付给 Leader Assurance 的信息。",
+      "updatedLabel": "最后更新",
+      "updatedDate": "2025年3月",
+      "tocLabel": "目录",
+      "tocTitle": "本页内容",
+      "toc": [
+        "数据保护",
+        "收集的数据",
+        "数据使用",
+        "Cookie",
+        "使用条款",
+        "您的权利",
+        "联系我们"
+      ],
+      "sections": [
+        {
+          "eyebrow": "承诺",
+          "title": "个人数据保护",
+          "paragraphs": [
+            "Leader Assurance SARL 承诺保护客户和访客的隐私。本网站收集的个人信息仅用于向您提供保险服务，并就您的咨询与您联系。",
+            "未经您的明确同意，您的数据绝不会被出售、转让或与第三方共享，但因法律义务或与合作保险公司之间的合同义务而在管理您的合同的严格范围内共享的情形除外。"
+          ]
+        },
+        {
+          "eyebrow": "信息",
+          "title": "收集的数据",
+          "intro": "我们收集以下数据：",
+          "items": [
+            "身份信息（姓、名、出生日期）",
+            "联系方式（地址、电话、电子邮箱）",
+            "订立保险合同所需的信息",
+            "本网站的浏览数据（Cookie）"
+          ]
+        },
+        {
+          "eyebrow": "用途",
+          "title": "数据使用",
+          "intro": "您的数据用于：",
+          "items": [
+            "制作个性化的保险报价和合同",
+            "管理您的合同和理赔",
+            "向您通报我们的服务和动态",
+            "改进我们的网站和服务"
+          ]
+        },
+        {
+          "eyebrow": "浏览",
+          "title": "Cookie 政策",
+          "intro": "本网站使用 Cookie 来改善您的浏览体验。Cookie 是存储在您设备上的小型文本文件，可帮助我们：",
+          "items": [
+            "记住您的语言和浏览偏好",
+            "分析流量和网站使用情况",
+            "改进网站功能"
+          ],
+          "outro": "您可以在 Cookie 横幅中点击“拒绝”来拒绝非必要的 Cookie。拒绝 Cookie 可能会影响网站的部分功能。"
+        },
+        {
+          "eyebrow": "使用框架",
+          "title": "使用条款",
+          "paragraphs": [
+            "使用本网站即表示接受本条款。本网站内容仅供参考，不构成合同承诺。只有双方签署的保险合同才构成具有法律效力的承诺。"
+          ]
+        },
+        {
+          "eyebrow": "您的数据",
+          "title": "您的权利",
+          "intro": "根据现行法规，您对个人数据享有以下权利：",
+          "items": [
+            "访问您的数据的权利",
+            "更正不准确数据的权利",
+            "删除您的数据的权利",
+            "反对数据处理的权利"
+          ],
+          "contactPrefix": "如需行使上述权利，请通过以下方式联系我们："
+        },
+        {
+          "eyebrow": "直接联系",
+          "title": "联系我们",
+          "intro": "如对本隐私政策有任何疑问，请联系我们："
+        }
+      ],
+      "emailLabel": "电子邮箱：",
+      "phoneLabel": "电话：",
+      "ctaText": "对您的信息保护有疑问？我们位于杜阿拉的团队随时为您服务。",
+      "ctaButton": "写信给我们的团队"
+    },
+    "shell": {
+      "skip": "跳至正文",
+      "homeLabel": "Leader Assurance 首页",
+      "menu": "菜单",
+      "pages": "页面",
+      "language": "语言",
+      "languages": "语言",
+      "chooseLanguage": "选择语言",
+      "mainNav": "主导航",
+      "footerNav": "网站页面",
+      "footerTagline": "作为独立经纪人，我们比较各家方案，帮助您选择合适的保障。",
+      "explore": "浏览",
+      "findUs": "联系地址"
+    },
+    "solutions": {
+      "metaTitle": "我们的解决方案 — Leader Assurance",
+      "metaDesc": "了解我们为喀麦隆杜阿拉的个人和企业提供的保险解决方案。",
+      "heroEyebrow": "我们的解决方案 · 个人与企业",
+      "heroTitle": "围绕您的计划量身打造的保障。",
+      "heroText": "为个人和企业提供全面保障。作为独立经纪人，我们比较多家保险公司，帮助您做出选择。",
+      "navLabel": "解决方案导航",
+      "individualsTitle": "为您，也为您在乎的人。",
+      "individualsText": "健康、未来、出行或储蓄：我们从您的实际情况出发，构建合适的保障。",
+      "companiesTitle": "为您的业务和团队。",
+      "companiesText": "通过风险分析，覆盖贵公司的责任、员工和资产。",
+      "eyebrows": {
+        "health": "健康",
+        "life": "保障",
+        "travel": "出行",
+        "savings": "储蓄",
+        "enterprise": "经营",
+        "liability": "责任",
+        "employees": "员工",
+        "assets": "企业资产"
+      },
+      "processEyebrow": "清晰的陪伴",
+      "processText": "简单透明的流程，从首次沟通到投保。",
+      "ctaEyebrow": "首次沟通，无需承诺"
+    }
   }
 }

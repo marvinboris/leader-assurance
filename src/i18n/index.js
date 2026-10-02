@@ -20,7 +20,9 @@ i18n
       zh: { translation: zh },
     },
     fallbackLng: 'fr',
-    lng: 'fr',
+    supportedLngs: ['fr', 'en', 'es', 'ar', 'zh'],
+    // Langue choisie conservée d'une visite à l'autre ; ?lng=ar pour un lien direct. Sinon : français.
+    detection: { order: ['querystring', 'localStorage'], caches: ['localStorage'] },
     interpolation: {
       escapeValue: false,
     },
