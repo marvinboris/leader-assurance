@@ -21,7 +21,10 @@
 **Ton** : sérieux, chaleureux, local (Douala), jamais jargonneux. Langue principale FR ; EN/ES/AR(RTL)/ZH via i18n.
 
 ## Tech
-React 18 + Vite + Tailwind, React Router, framer-motion, react-i18next. `npm run dev` (port 3000). Prod : Firebase (`npm run deploy`). Maquettes de refonte : `maquettes/` (statique, Vercel).
+React 18 + Vite + Tailwind, React Router, framer-motion, react-i18next. `npm run dev` (port 3000).
+Prod : Vercel, projet `leader-assurance-cm` → https://leader-assurconseil.com (`npx vercel deploy --prod`). L'ancien site Firebase (`npm run deploy`) n'est plus la cible.
+Formulaire de contact : `api/contact.js` (fonction Vercel → Resend). Variables Vercel : `RESEND_API_KEY`, `RESEND_FROM`, `CONTACT_TO` ; en local dans `.env.local` (ignoré par git). Test : `node scripts/check-contact.mjs`.
+i18n : les textes de la refonte sont sous `ui.<page>` dans chaque locale. Maquettes de refonte : `maquettes/` (statique, Vercel).
 
 ## Design
-Identité : bleu marine du logo (`#0d1b5e`) + accent or. Les maquettes ont chacune leur `DESIGN.md` — toute modif visuelle d'une maquette doit respecter son DESIGN.md.
+Identité : marine `#0D1B5E` + accent or `#C99A3B` ; le logo garde son bleu exact `#000080` (`public/logo.svg`, `logo-white.svg`). Système visuel : `maquettes/luna/DESIGN.md`. Les maquettes ont chacune leur `DESIGN.md` — toute modif visuelle d'une maquette doit respecter son DESIGN.md.
